@@ -15,8 +15,7 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
         foreach ($pole_slider as $cislo => $r) {
             if ($cislo == 0) {
                 ?>
-                <div class="content-tab mm-center mm-welcome"
-                     style="background-image: url(<?= image_style_url('none', $r->field_c_hp_img['und'][0]['uri']) ?>);">
+                <div class="content-tab mm-center mm-welcome" style="background-image: url(<?= image_style_url('none', $r->field_c_hp_img['und'][0]['uri']) ?>);">
                     <div class="row">
                         <div class="description">
                             <p><?= $r->field_c_hp_text['und'][0]['value'] ?></p>
@@ -24,15 +23,14 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                     </div>
                 </div>
             <?php } else { ?>
-                <div class="content-tab <?php echo ($cislo <= 3) ? '' : 'mm-right'; ?>"
-                     style="background-image: url(<?= image_style_url('none', $r->field_c_hp_img['und'][0]['uri']) ?>);">
+                <div class="content-tab <?php echo ($cislo <= 3) ? '' : 'mm-right'; ?>" style="background-image: url(<?= image_style_url('none', $r->field_c_hp_img['und'][0]['uri']) ?>);">
                     <div class="row">
                         <div class="description">
                             <p><?= $r->field_c_hp_text['und'][0]['value'] ?></p>
                         </div>
                     </div>
                 </div>
-            <?php
+                <?php
             }
         }
         ?>
@@ -46,13 +44,12 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                 <div class="tab color-<?= $cislo ?>" slick-to="<?= $cislo ?>">
                     <a href=""><?= $r->field_c_hp_popiska['und'][0]['value'] ?></a>
                 </div>
-            <?php
+                <?php
             }
             ?>
         </div>
     </div>
-</div>
-<!--slider-->
+</div><!--slider-->
 <?php
 
 ?>
@@ -64,8 +61,8 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top"><?= $wrapper->field_hp_1_prvni_text->value() ?><br/><span
-                        class="color-primary"><?= $wrapper->field_hp_1_druhy_text->value() ?></span></h2>
+                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top"><?= $wrapper->field_hp_1_prvni_text->value() ?>
+                    <br /><span class="color-primary"><?= $wrapper->field_hp_1_druhy_text->value() ?></span></h2>
             </div>
         </header>
     </div>
@@ -74,19 +71,14 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 
         <?php
         foreach ($pole_prvnitri as $prvnitri) {
-
-
             ?>
             <div class="m-card_standard l-single">
 
                 <article class="m-story">
                     <header>
-                        <div class="m-item--image"
-                             style="background-image: url(<?= image_style_url('x282-181', $prvnitri->field_hpc_1_img['und'][0]['uri']) ?>)">
+                        <div class="m-item--image" style="background-image: url(<?= image_style_url('x282-181', $prvnitri->field_hpc_1_img['und'][0]['uri']) ?>)">
                             <a href="<?= $prvnitri->field_hpc_1_odkaz['und'][0]['value'] ?>" title="<?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?>">
-                                <img
-                                    src="<?= image_style_url('x282-181', $prvnitri->field_hpc_1_img['und'][0]['uri']) ?>"
-                                    alt="<?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?>"/>
+                                <img src="<?= image_style_url('x282-181', $prvnitri->field_hpc_1_img['und'][0]['uri']) ?>" alt="<?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?>" />
                             </a>
                         </div>
                         <div class="m-item--summary">
@@ -100,17 +92,17 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                         </div>
                     </header>
                 </article>
-                <div class="m-card--more"><a href="<?= $prvnitri->field_hpc_1_odkaz['und'][0]['value'] ?>"  title="<?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?>"><i class="fa fa-arrow-right"></i></a></div>
+                <div class="m-card--more">
+                    <a href="<?= $prvnitri->field_hpc_1_odkaz['und'][0]['value'] ?>" title="<?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?>"><i class="fa fa-arrow-right"></i></a>
+                </div>
 
             </div>
 
-        <?php
+            <?php
         }
         ?>
     </div>
-</div>
-<!--tri odkazy-->
-<!--koma zpravodaj-->
+</div><!--tri odkazy--><!--koma zpravodaj-->
 <div class="m-section l-feed_block-carousel">
 
     <div class="m-section--underlay"></div>
@@ -141,21 +133,16 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 
         </div>
     </div>
-</div>
-<!--koma zpravodaj-->
-<!--cim se lisime-->
+</div><!--koma zpravodaj--><!--cim se lisime-->
 <div class="m-section l-section_side-triple">
 
     <div class="l-grid">
-        <?php
-//        @TODO upravit, v PDF je text na vic radku.
-        foreach ($content['field_hp_2_text']['#items'] as $cislo2 => $text) {
-            if($cislo2>0)break;
-            ?>
-            <h2 class="m-section--hed mm-big mm-tiny"><?= $text['value'] ?></h2>
-        <?php
-        }
-        ?>
+        <h2 class="m-section--hed mm-big mm-tiny">
+            <?php foreach ($content['field_hp_2_text']['#items'] as $cislo2 => $text) { ?>
+                <?= $text['value'] ?><br/>
+            <?php } ?>
+        </h2>
+
         <?php
         foreach ($pole_druhetri as $druhetri) {
             ?>
@@ -163,12 +150,9 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
             <div class="l-section--item m-card_image">
                 <article class="m-story">
                     <header>
-                        <div class="m-item--image"
-                             style="background-image: url(<?= image_style_url('x294-430', $druhetri->field_hpc_2_img['und'][0]['uri']) ?>)">
+                        <div class="m-item--image" style="background-image: url(<?= image_style_url('x294-430', $druhetri->field_hpc_2_img['und'][0]['uri']) ?>)">
                             <a href="<?= $druhetri->field_hpc_2_odkaz['und'][0]['value'] ?>">
-                                <img
-                                    src="<?= image_style_url('x294-430', $druhetri->field_hpc_2_img['und'][0]['uri']) ?>"
-                                    alt=""/>
+                                <img src="<?= image_style_url('x294-430', $druhetri->field_hpc_2_img['und'][0]['uri']) ?>" alt="" />
                             </a>
                         </div>
                         <div class="m-item--summary">
@@ -176,14 +160,13 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                                 <a href="<?= $druhetri->field_hpc_2_odkaz['und'][0]['value'] ?>"><?= $druhetri->field_hpc_2_nadpis['und'][0]['value'] ?></a>
                             </h1>
 
-                            <div class="m-item--description ellipsis">
-                            </div>
+                            <div class="m-item--description ellipsis"></div>
                         </div>
                     </header>
                     <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
                 </article>
             </div>
-        <?php
+            <?php
         }
         ?>
     </div>
@@ -197,11 +180,9 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
             </div>
         </footer>
     </div>
-</div>
-<!--cim se lisime-->
+</div><!--cim se lisime-->
 
-<script type="text/javascript"
-        src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/slick-carousel/slick/slick.min.js"></script>
+<script type="text/javascript" src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/slick-carousel/slick/slick.min.js"></script>
 <script type="text/javascript">
     (function (jQuery) {
         jQuery('[slick]').each(function () {

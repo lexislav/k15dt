@@ -19,9 +19,9 @@
                     </a>
                 </li>
 
-                <li class="m-navbar--menu-social m-navbar--menu-instagram">
+                <li class="m-navbar--menu-social m-navbar--menu-youtube">
                     <a target="_blank" title="" href="https://twitter.com/rww">
-                        <span class="fa fa-instagram"><em class="">Instagram</em></span>
+                        <span class="fa fa-youtube-play"><em class="">YouTube</em></span>
                     </a>
                 </li>
             </ul>
@@ -374,10 +374,10 @@
                         <a href="" target="" title=""><i class="fa fa-facebook"></i></a>
                     </li>
                     <li class="m-footer--menu-link">
-                        <a href="" target="" title=""><i class="fa fa-pinterest"></i></a>
+                        <a href="" target="" title=""><i class="fa fa-twitter"></i></a>
                     </li>
                     <li class="m-footer--menu-link">
-                        <a href="" target="" title=""><i class="fa fa-youtube"></i></a>
+                        <a href="" target="" title=""><i class="fa fa-youtube-play"></i></a>
                     </li>
                 </ul>
 

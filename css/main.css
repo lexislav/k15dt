@@ -1776,20 +1776,14 @@ body {
   .m-navbar.mm-secondary {
     display: none; }
     .m-navbar.mm-secondary .m-navbar--menu-primary {
-      float: left;
-      width: calc(100% * 0.4 - 30px);
-      margin-left: 15px;
-      margin-right: 15px; }
+      width: auto;
+      float: right; }
     .m-navbar.mm-secondary .m-navbar--menu-secondary {
-      float: left;
-      width: calc(100% * 0.3 - 30px);
-      margin-left: 15px;
-      margin-right: 15px; }
+      width: auto;
+      float: right; }
     .m-navbar.mm-secondary .m-navbar--menu-tertiary {
-      float: left;
-      width: calc(100% * 0.3 - 30px);
-      margin-left: 15px;
-      margin-right: 15px; }
+      width: auto;
+      float: right; }
     @media only screen and (min-width:961px) {
       .m-navbar.mm-secondary {
         display: block; } }
@@ -1844,21 +1838,21 @@ body {
         margin-right: 0; }
       .m-navbar .m-navbar--menu > li > *, .m-navbar .m-navbar--menu-primary > li > * {
         display: inline-block; }
-  .m-navbar .m-navbar--menu-secondary {
+  .m-navbar .m-navbar--menu-secondary, .m-navbar .m-navbar--menu-tertiary {
     padding: 0;
     list-style: none;
     overflow: hidden;
     margin: 0; }
-    .m-navbar .m-navbar--menu-secondary > li {
+    .m-navbar .m-navbar--menu-secondary > li, .m-navbar .m-navbar--menu-tertiary > li {
       list-style: none;
       float: right;
       margin-right: 0;
       margin-left: 0px;
       display: block;
       height: 100%; }
-      .m-navbar .m-navbar--menu-secondary > li:last-child {
+      .m-navbar .m-navbar--menu-secondary > li:last-child, .m-navbar .m-navbar--menu-tertiary > li:last-child {
         margin-left: 0; }
-      .m-navbar .m-navbar--menu-secondary > li > * {
+      .m-navbar .m-navbar--menu-secondary > li > *, .m-navbar .m-navbar--menu-tertiary > li > * {
         display: inline-block; }
   .m-navbar .m-navbar--menu-social a {
     padding: 0; }
@@ -1877,9 +1871,13 @@ body {
         padding: 0 10px; }
       .m-navbar.mm-secondary .m-navbar--menu a {
         padding: 0; }
-      .m-navbar.mm-secondary .m-navbar--menu:last-of-type {
+        .m-navbar.mm-secondary .m-navbar--menu a:hover {
+          color: #C20E1A;
+          background-color: transparent;
+          border-bottom: none; }
+      .m-navbar.mm-secondary .m-navbar--menu:first-of-type {
         border: none; }
-        .m-navbar.mm-secondary .m-navbar--menu:last-of-type > li {
+        .m-navbar.mm-secondary .m-navbar--menu:first-of-type > li {
           padding-right: 0; }
     .m-navbar.mm-secondary a {
       font-size: 0.75rem;

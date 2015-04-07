@@ -46,11 +46,6 @@ function koma_theme() {
 }
 
 function koma_preprocess_user_login(&$vars) {
-
-//    echo '<pre>';
-//    var_dump($vars); echo '</pre>';
-
-
     $vars['intro_text'] = t('This is my awesome login form');
 }
 
@@ -61,6 +56,30 @@ function koma_preprocess_user_register_form(&$vars) {
 function koma_preprocess_user_pass(&$vars) {
     $vars['intro_text'] = t('This is my super awesome request new password form');
 }
+function koma_menu_local_tasks(&$variables) {
+    $output = '';
+
+    // Add theme hook suggestions for tab type.
+    foreach (array('primary', 'secondary') as $type) {
+        if (!empty($variables[$type])) {
+            foreach (array_keys($variables[$type]) as $key) {
+                if (isset($variables[$type][$key]['#theme']) && ($variables[$type][$key]['#theme'] == 'menu_local_task' || is_array($variables[$type][$key]['#theme']) && in_array('menu_local_task', $variables[$type][$key]['#theme']))) {
+                    $variables[$type][$key]['#theme'] = array('menu_local_task__' . $type, 'menu_local_task');
+                }
+            }
+        }
+    }
+
+    if (!empty($variables['primary'])) {
+        $variables['primary']['#prefix'] = '<div class="tabs_wrap">';
+        $variables['primary']['#prefix'] .= '<ul class="tabs-primary tabs primary">';
+        $variables['primary']['#suffix'] = '</ul><span class="fa fa-cogs"></span></div>';
+        $output .= drupal_render($variables['primary']);
+    }
+
+    return $output;
+}
+
 /**
  * Override or insert variables into the maintenance page template.
  *

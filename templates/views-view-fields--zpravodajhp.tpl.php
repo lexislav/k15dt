@@ -9,7 +9,7 @@ if (isset($row->field_field_zpravodaj_main_img[0])) {
 } else {
     $uricko = $row->field_field_zpravodaj_foogalerie[0]['raw']['entity']->field_fotogalerie_main_img['und'][0]['uri'];
 }
-if ($cislo == 1 OR $cislo == 7 OR $cislo == 13) {
+if ($cislo == 1 OR $cislo == 4 OR $cislo == 7 OR $cislo == 10  OR $cislo == 13 OR $cislo == 16 ) {
     echo ' <div class="blok-feed-slide">';
 }
 ?>
@@ -36,6 +36,6 @@ if ($cislo == 1 OR $cislo == 7 OR $cislo == 13) {
         </article>
     </div>
 <?php
-if ($cislo == 1 OR $cislo == 7 OR $cislo == 13) {
+if ($cislo == 3 OR $cislo == 6 OR $cislo == 9 OR $cislo == 12  OR $cislo == 15 OR $cislo == 18 ) {
     echo '</div>';
 }

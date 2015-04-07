@@ -149,7 +149,8 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
     <div class="l-grid">
         <?php
 //        @TODO upravit, v PDF je text na vic radku.
-        foreach ($content['field_hp_2_text']['#items'] as $text) {
+        foreach ($content['field_hp_2_text']['#items'] as $cislo2 => $text) {
+            if($cislo2>0)break;
             ?>
             <h2 class="m-section--hed mm-big mm-tiny"><?= $text['value'] ?></h2>
         <?php

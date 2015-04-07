@@ -163,7 +163,7 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                             <div class="m-item--description ellipsis"></div>
                         </div>
                     </header>
-                    <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                    <div class="m-card--more"><a href="<?= $druhetri->field_hpc_2_odkaz['und'][0]['value'] ?>"><i class="fa fa-arrow-right"></i></a></div>
                 </article>
             </div>
             <?php

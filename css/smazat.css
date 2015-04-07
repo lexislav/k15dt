@@ -1,0 +1,33 @@
+.tabs-primary {
+    position: fixed;
+    top: 200px;
+    z-index: 9999;
+    background: #c20e1a;
+    padding: 0 0 0 10px;
+    left: -50px;
+    color: white;
+    height: 146px;
+}
+.tabs-primary a {
+    color: white;
+    text-decoration: none;
+}
+.tabs-primary:hover {
+
+    left: 0;
+}
+.messages--status{
+    background: orange;
+    border: black 1px solid;
+}
+#l10n-client {
+    text-align: left;
+    z-index: 99999999 !important;
+    line-height: 1em;
+    color: #000;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}

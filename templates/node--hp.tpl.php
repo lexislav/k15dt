@@ -64,7 +64,7 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big mm-tiny mm-center"><?= $wrapper->field_hp_1_prvni_text->value() ?><br/><span
+                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top"><?= $wrapper->field_hp_1_prvni_text->value() ?><br/><span
                         class="color-primary"><?= $wrapper->field_hp_1_druhy_text->value() ?></span></h2>
             </div>
         </header>
@@ -83,15 +83,15 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                     <header>
                         <div class="m-item--image"
                              style="background-image: url(<?= image_style_url('x282-181', $prvnitri->field_hpc_1_img['und'][0]['uri']) ?>)">
-                            <a href="<?= $prvnitri->field_hpc_1_odkaz['und'][0]['value'] ?>">
+                            <a href="<?= $prvnitri->field_hpc_1_odkaz['und'][0]['value'] ?>" title="<?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?>">
                                 <img
                                     src="<?= image_style_url('x282-181', $prvnitri->field_hpc_1_img['und'][0]['uri']) ?>"
-                                    alt=""/>
+                                    alt="<?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?>"/>
                             </a>
                         </div>
                         <div class="m-item--summary">
                             <h1 class="m-item--hed">
-                                <a href="<?= $prvnitri->field_hpc_1_odkaz['und'][0]['value'] ?>"><?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?></a>
+                                <a href="<?= $prvnitri->field_hpc_1_odkaz['und'][0]['value'] ?>" title="<?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?>"><?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?></a>
                             </h1>
 
                             <div class="m-item--description">
@@ -100,7 +100,7 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                         </div>
                     </header>
                 </article>
-                <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                <div class="m-card--more"><a href="<?= $prvnitri->field_hpc_1_odkaz['und'][0]['value'] ?>"  title="<?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?>"><i class="fa fa-arrow-right"></i></a></div>
 
             </div>
 

@@ -1,21 +1,57 @@
-.tabs-primary {
+.tabs_wrap {
     position: fixed;
-    top: 200px;
+    top: 50%;
     z-index: 9999;
     background: #c20e1a;
-    padding: 0 0 0 10px;
-    left: -50px;
+    padding: 0;
+    left: -114px;
     color: white;
     height: 146px;
+    cursor: hand;
+    cursor: pointer;
+
+}
+.tabs_wrap span {
+
+    width: 60px;
+    height: 146px;
+    display: table-cell;
+    font-size: 28px;
+    text-align: center;
+    vertical-align: middle;
+}
+.tabs_wrap ul{
+    padding: 0 0 0 20px;
+    list-style: none;
+    width: 110px;
+    float: left;
 }
 .tabs-primary a {
-    color: white;
-    text-decoration: none;
+    font-size: 18px;
+     color: #383838;
+     text-decoration: none;
+ }
+.tabs-primary a:hover {
+    color: #c20e1a;
+    text-decoration: underline;
 }
-.tabs-primary:hover {
-
+.tabs_wrap:hover {
     left: 0;
 }
+
+.tabs_wrap:hover {
+    background: #d8d8d8;
+}
+
+
+.tabs_wrap:hover span {
+
+
+    background: #383838;
+}
+
+
+
 .messages--status{
     background: orange;
     border: black 1px solid;

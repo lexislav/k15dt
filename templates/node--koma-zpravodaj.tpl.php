@@ -57,7 +57,7 @@
                         </div>
                     </header>
                     <div class="m-aside-block--content">
-                        <div class="m-gallery">
+                        <div class="m-gallery mm-medium">
                             <?php foreach($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $obrazek){?>
                             <div class="m-gallery-item">
                                 <div class="m-gallery-item--image" style="background-image: url(<?= image_style_url('x412-300', $obrazek['uri']) ?>)">
@@ -72,6 +72,9 @@
                             <?php } ?>
                         </div>
                     </div>
+
+                    <!--
+                        not used here
                     <footer class="m-aside-block--footer">
                         <div class="l-half">
                             <div class="m-aside-block--top"><a href="">Block footer<i class="fa fa-arrow-up"></i></a></div>
@@ -80,6 +83,8 @@
                             <div class="m-aside-block--more"><a href="">Block footer2<i class="fa fa-arrow-right"></i></a></div>
                         </div>
                     </footer>
+                    -->
+
                 </div>
             </aside>
             <?php

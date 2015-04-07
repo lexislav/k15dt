@@ -1,19 +1,9 @@
 <?php print render($tabs); ?>
 <?php  print $messages; ?>
 <div class="l-navbar {% if navbar.isSticky %}is-sticky{% endif %}">
+
     <div class="m-navbar mm-secondary">
         <div class="m-navbar--container">
-            <ul class="m-navbar--menu m-navbar--menu-primary">
-                <li class="m-navbar--menu-callout">
-                    <span class="color-primary"><?php print t('Call us')?>:</span> <?php print t('(+421) 20 577 007 711')?>
-                </li>
-            </ul>
-
-            <ul class="m-navbar--menu m-navbar--menu-secondary">
-                <li class="m-navbar--menu-dropdown">
-                    <a target="" title="Topics"><em class="">Language</em></a>
-                </li>
-            </ul>
 
             <ul class="m-navbar--menu m-navbar--menu-tertiary">
 
@@ -33,6 +23,18 @@
                     <a target="_blank" title="" href="https://twitter.com/rww">
                         <span class="fa fa-instagram"><em class="">Instagram</em></span>
                     </a>
+                </li>
+            </ul>
+
+            <ul class="m-navbar--menu m-navbar--menu-secondary">
+                <li class="m-navbar--menu-dropdown">
+                    <a target="" title="Topics"><em class="">Language</em></a>
+                </li>
+            </ul>
+
+            <ul class="m-navbar--menu m-navbar--menu-primary">
+                <li class="m-navbar--menu-callout">
+                    <span class="color-primary"><?php print t('Call us')?>:</span> <?php print t('(+421) 20 577 007 711')?>
                 </li>
             </ul>
 

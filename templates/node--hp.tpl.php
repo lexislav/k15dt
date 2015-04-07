@@ -137,7 +137,7 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 <div class="m-section l-section_side-triple">
 
     <div class="l-grid">
-        <h2 class="m-section--hed mm-big mm-tiny">
+        <h2 class="m-section--hed mm-big mm-tiny mm-pad-bottom">
             <?php foreach ($content['field_hp_2_text']['#items'] as $cislo2 => $text) { ?>
                 <?= $text['value'] ?><br/>
             <?php } ?>

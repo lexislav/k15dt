@@ -1,4 +1,4 @@
-<?php  print $messages; ?>
+<?php print $messages; ?>
 <div class="l-navbar">
     <div class="m-navbar mm-primary mm-admin">
         <div class="m-navbar--container">
@@ -29,7 +29,11 @@
     </div>
 </div>
 <div class="m-section l-login">
+    <div class="m-section--container">
+        <div class="row">
             <?php print render($page['content']); ?>
+        </div>
+    </div>
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">

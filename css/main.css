@@ -1879,11 +1879,17 @@ body {
     margin: 0 10px;
     cursor: pointer;
     color: #666;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    transition: color .3s; }
     .m-navbar .m-navbar--menu a:hover {
       color: #C20E1A;
       background-color: transparent;
-      border-bottom: 2px solid #C20E1A; }
+      border-bottom: 2px solid #C20E1A;
+      -webkit-transition: color .3s;
+      -moz-transition: color .3s;
+      transition: color .3s; }
   .m-navbar .m-navbar--menu, .m-navbar .m-navbar--menu-primary {
     padding: 0;
     list-style: none;
@@ -4327,5 +4333,13 @@ body {
 
 * {
   box-sizing: border-box; }
+
+select {
+  -webkit-appearance: none; }
+  select option {
+    -webkit-appearance: none !important;
+    font-weight: bold;
+    color: red;
+    background-color: orangered; }
 
 /*# sourceMappingURL=main.css.map */

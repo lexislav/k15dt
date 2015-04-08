@@ -8,7 +8,7 @@
 
     <!-- filter markup-->
 
-    <div class="m-filter">
+    <!--<div class="m-filter">
         <div class="l-grid">
             <form action="">
                 <div class="l-left">
@@ -56,7 +56,8 @@
 
             </form>
         </div>
-    </div>
+    </div>-->
+
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
         <?php print $title; ?>

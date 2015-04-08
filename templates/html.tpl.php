@@ -113,14 +113,14 @@
 
         jQuery(window).scroll(function () {
             if (currentTop() > 150) {
-                if (!navbarPrimary.hasClass("is-sticky")) {
-                    navbarPrimary.addClass("is-sticky");
+                if (!navbarPrimary.hasClass("is-collapsed")) {
+                    navbarPrimary.addClass("is-collapsed");
                 }
                 if (!navbarSecondary.hasClass("is-hidden")) {
                     navbarSecondary.addClass("is-hidden");
                 }
             } else {
-                navbarPrimary.removeClass("is-sticky");
+                navbarPrimary.removeClass("is-collapsed");
                 navbarSecondary.removeClass("is-hidden");
             }
         });

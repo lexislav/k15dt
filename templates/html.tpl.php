@@ -27,8 +27,6 @@
     <meta name="format-detection" content="address=no" />
     <?php print $styles; ?>
 
-    <!--  @todo move to components  -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.2/css/select2.min.css" rel="stylesheet" />
 
     <?php print $scripts; ?>
 
@@ -61,14 +59,12 @@
 <?php print $page; ?>
 <?php print $page_bottom; ?>
 
-<!-- @todo: move to components - style with sass -->
 
 <!--
 <script type="text/javascript" src="<?/*= $GLOBALS['base_url'] */?>/sites/all/themes/koma/components/foundation/js/foundation.min.js"></script>
 <script type="text/javascript" src="<?/*= $GLOBALS['base_url'] */?>/sites/all/themes/koma/components/foundation/js/foundation.clearing.js"></script>
 <script>jQuery(document).foundation();</script>
 -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.2/js/select2.min.js"></script>
 <script>
 
     // slick controll
@@ -146,8 +142,6 @@
 
     });
 
-    // apply custom filters
-    jQuery('.m-filter select').select2();
 
 </script>
 </body>

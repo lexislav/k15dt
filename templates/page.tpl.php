@@ -1,8 +1,8 @@
 <?php print render($tabs); ?>
 <?php  print $messages; ?>
-<div class="l-navbar {% if navbar.isSticky %}is-sticky{% endif %}">
+<div class="l-navbar">
 
-    <div class="m-navbar mm-secondary">
+    <div class="m-navbar mm-secondary" id="navbarSecondary">
         <div class="m-navbar--container">
 
             <ul class="m-navbar--menu m-navbar--menu-tertiary">
@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <div class="m-navbar mm-primary">
+    <div class="m-navbar mm-primary" id="navbarPrimary">
         <div class="m-navbar--container">
             <a class="m-navbar--logo" href="/"><div class="mm-has-svg" style="background-image: url('/sites/koma/assets/images/logo-koma-modular.svg');"></div></a>
 

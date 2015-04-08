@@ -6,56 +6,44 @@
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728208
  */
-?><!DOCTYPE html>
-<!--[if IEMobile 7]>
-<html class="iem7" <?php print $html_attributes; ?>><![endif]-->
-<!--[if lte IE 6]>
-<html class="lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?>><![endif]-->
-<!--[if (IE 7)&(!IEMobile)]>
-<html class="lt-ie9 lt-ie8" <?php print $html_attributes; ?>><![endif]-->
-<!--[if IE 8]>
-<html class="lt-ie9" <?php print $html_attributes; ?>><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+?><!DOCTYPE html><!--[if IEMobile 7]>
+<html class="iem7" <?php print $html_attributes; ?>><![endif]--><!--[if lte IE 6]>
+<html class="lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?>><![endif]--><!--[if (IE 7)&(!IEMobile)]>
+<html class="lt-ie9 lt-ie8" <?php print $html_attributes; ?>><![endif]--><!--[if IE 8]>
+<html class="lt-ie9" <?php print $html_attributes; ?>><![endif]--><!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
 <html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
 
 <head>
     <?php print $head; ?>
     <title><?php print $head_title; ?></title>
 
-    <meta name="HandheldFriendly" content="True"/>
-    <meta name="MobileOptimized" content="320"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <meta http-equiv="cleartype" content="on">
 
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="format-detection" content="address=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
     <?php print $styles; ?>
     <?php print $scripts; ?>
     <?php if ($add_html5_shim and !$add_respond_js): ?>
         <!--[if lt IE 9]>
-        <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
-        <![endif]-->
+        <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script><![endif]-->
     <?php elseif ($add_html5_shim and $add_respond_js): ?>
         <!--[if lt IE 9]>
-        <script src="<?php print $base_path . $path_to_zen; ?>/js/html5-respond.js"></script>
-        <![endif]-->
+        <script src="<?php print $base_path . $path_to_zen; ?>/js/html5-respond.js"></script><![endif]-->
     <?php elseif ($add_respond_js): ?>
         <!--[if lt IE 9]>
-        <script src="<?php print $base_path . $path_to_zen; ?>/js/respond.js"></script>
-        <![endif]-->
+        <script src="<?php print $base_path . $path_to_zen; ?>/js/respond.js"></script><![endif]-->
     <?php endif; ?>
-
-
-
 
 
 </head>
 <body class="l-page <?php print $classes; ?>" <?php print $attributes; ?>>
 <?php if ($skip_link_text && $skip_link_anchor): ?>
     <p id="skip-link">
-        <a href="#<?php print $skip_link_anchor; ?>"
-           class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>
+        <a href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>
     </p>
 <?php endif; ?>
 
@@ -71,7 +59,7 @@
     // slick controll
     jQuery(function () {
 
-               // mega menu
+        // mega menu
 
         var lastMegaTab = null;
 
@@ -113,8 +101,35 @@
         // end mega menu
 
 
-    });
+        // resize Navbar
 
+        var navbarPrimary = jQuery('#navbarPrimary');
+        var navbarSecondary = jQuery('#navbarSecondary');
+        var scrollDriver = jQuery('body');
+
+        var currentTop = function () {
+            return scrollDriver.scrollTop();
+        }
+
+        jQuery(window).scroll(function () {
+            if (currentTop() > 150) {
+                if (!navbarPrimary.hasClass("is-sticky")) {
+                    navbarPrimary.addClass("is-sticky");
+                }
+                if (!navbarSecondary.hasClass("is-hidden")) {
+                    navbarSecondary.addClass("is-hidden");
+                }
+            } else {
+                navbarPrimary.removeClass("is-sticky");
+                navbarSecondary.removeClass("is-hidden");
+            }
+        });
+
+        // end resize Navbar
+
+
+
+    });
 
 
 </script>

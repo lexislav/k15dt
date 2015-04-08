@@ -3687,33 +3687,18 @@ body {
   font-size: 0.875rem; }
 
 .m-filter {
-  height: 48px;
-  overflow: hidden;
   margin-bottom: 30px; }
   .m-filter .m-filter--items li {
     width: auto;
     line-height: 48px;
-    height: 48px;
-    overflow: hidden;
-    color: #000;
-    font-weight: 800; }
+    color: #000; }
     .m-filter .m-filter--items li.label {
       padding: 0 20px;
-      height: 46px;
       color: #B5BBB4; }
-  .m-filter .m-filter--items select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    outline: 0;
-    display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 50px;
-    margin: 0;
-    border-radius: 0;
-    outline: none; }
+  .m-filter .active-result {
+    font-weight: 400; }
+  .m-filter .category {
+    font-weight: 800; }
   .m-filter .l-left {
     float: left;
     width: calc(100% * 0.75 - 30px);
@@ -3723,7 +3708,8 @@ body {
       padding: 0;
       list-style: none;
       overflow: hidden;
-      margin: 0; }
+      margin: 0;
+      overflow: visible; }
       .m-filter .l-left .m-filter--items > li {
         list-style: none;
         float: left;
@@ -3744,7 +3730,8 @@ body {
       padding: 0;
       list-style: none;
       overflow: hidden;
-      margin: 0; }
+      margin: 0;
+      overflow: visible; }
       .m-filter .l-right .m-filter--items > li {
         list-style: none;
         float: right;
@@ -4331,13 +4318,5 @@ body {
 
 * {
   box-sizing: border-box; }
-
-select {
-  -webkit-appearance: none; }
-  select option {
-    -webkit-appearance: none !important;
-    font-weight: bold;
-    color: red;
-    background-color: orangered; }
 
 /*# sourceMappingURL=main.css.map */

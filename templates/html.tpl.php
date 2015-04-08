@@ -26,7 +26,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="format-detection" content="address=no" />
     <?php print $styles; ?>
-
+    <link rel="stylesheet" href="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/chosen/chosen.min.css" />
 
     <?php print $scripts; ?>
 
@@ -59,6 +59,8 @@
 <?php print $page; ?>
 <?php print $page_bottom; ?>
 
+
+<script type="text/javascript" src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/chosen/chosen.jquery.min.js"></script>
 
 <!--
 <script type="text/javascript" src="<?/*= $GLOBALS['base_url'] */?>/sites/all/themes/koma/components/foundation/js/foundation.min.js"></script>
@@ -139,9 +141,13 @@
         // end resize Navbar
 
 
-
+        // chosen select box
+        jQuery(".ch-select").chosen({
+            create_option: true,
+            persistent_create_option: true,
+            create_option_text: 'add'
+        });
     });
-
 
 </script>
 </body>

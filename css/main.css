@@ -1961,6 +1961,8 @@ body {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
+    .m-navbar.is-collapsed .m-navbar--logo .mm-has-svg {
+      background-size: auto 32px; }
   .m-navbar.is-hidden {
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
@@ -2151,7 +2153,7 @@ body {
   -o-transform: translateY(150px);
   transform: translateY(150px); }
 
-.m-navbar.is-sticky ~ .m-mega {
+.m-navbar.is-collapsed ~ .m-mega {
   top: 0;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;

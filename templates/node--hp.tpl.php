@@ -181,6 +181,7 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 </div><!--cim se lisime-->
 
 <script type="text/javascript" src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/slick-carousel/slick/slick.min.js"></script>
+
 <script type="text/javascript">
     (function (jQuery) {
         jQuery('[slick]').each(function () {

@@ -54,6 +54,13 @@
 <?php print $page_top; ?>
 <?php print $page; ?>
 <?php print $page_bottom; ?>
+
+<!--
+<script type="text/javascript" src="<?/*= $GLOBALS['base_url'] */?>/sites/all/themes/koma/components/foundation/js/foundation.min.js"></script>
+<script type="text/javascript" src="<?/*= $GLOBALS['base_url'] */?>/sites/all/themes/koma/components/foundation/js/foundation.clearing.js"></script>
+<script>jQuery(document).foundation();</script>
+-->
+
 <script>
 
     // slick controll

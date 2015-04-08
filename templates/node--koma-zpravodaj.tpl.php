@@ -29,11 +29,11 @@
                 <div class="m-story--meta">
 
                     <dl>
-                        <dt><?php print t('Kategorie') ?></dt><dd><?=($content['field_zpravodaj_kategorie'][0]['#title']); ?></dd>
+                        <dt><?php print t('Kategorie') ?></dt><dd><?= ($content['field_zpravodaj_kategorie'][0]['#title']); ?></dd>
                     </dl>
 
                     <dl>
-                        <dt><?php print t('Datum') ?></dt><dd><?=($content['field_zpravodaj_publikace'][0]['#markup']); ?></dd>
+                        <dt><?php print t('Datum') ?></dt><dd><?= ($content['field_zpravodaj_publikace'][0]['#markup']); ?></dd>
                     </dl>
 
                 </div>
@@ -41,54 +41,58 @@
         </header>
         <div class="m-story--content">
             <div class="m-body--content">
-                <?=($content['field_zpravodaj_text']['#items'][0]['value']); ?>
+                <?= ($content['field_zpravodaj_text']['#items'][0]['value']); ?>
             </div>
             <?php
-            if(isset($node->field_zpravodaj_foogalerie['und'])):
-            ?>
-            <aside>
-                <div class="m-aside-block">
-                    <header class="m-aside-block--header">
-                        <div class="m-aside-block--summary">
-                            <h2 class="m-aside-block--hed"><i class="fa fa-arrow-right"></i> <?php print t('Fotogalerie') ?></h2>
-                            <div class="m-aside-block--meta">
-                                (<?=count($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'])?> <?php print t('fotografií') ?>)
-                            </div>
-                        </div>
-                    </header>
-                    <div class="m-aside-block--content">
-                        <div class="m-gallery mm-medium">
-                            <?php foreach($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $obrazek){?>
-                            <div class="m-gallery-item">
-                                <div class="m-gallery-item--image" style="background-image: url(<?= image_style_url('x412-300', $obrazek['uri']) ?>)">
-                                    <a href=""><img src="<?= image_style_url('x412-300', $obrazek['uri']) ?>" alt="" /></a>
-                                </div>
-                                <div class="m-gallery-item--summary">
-                                    <h2 class="m-gallery-item--hed">Item header</h2>
+            if (isset($node->field_zpravodaj_foogalerie['und'])):
+                ?>
+                <aside>
+                    <div class="m-aside-block">
+                        <header class="m-aside-block--header">
+                            <div class="m-aside-block--summary">
+                                <h2 class="m-aside-block--hed">
+                                    <i class="fa fa-arrow-right"></i> <?php print t('Fotogalerie') ?></h2>
 
-                                    <div class="m-gallery-item--description">Description</div>
+                                <div class="m-aside-block--meta">
+                                    (<?= count($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und']) ?> <?php print t('fotografií') ?>)
                                 </div>
                             </div>
-                            <?php } ?>
+                        </header>
+                        <div class="m-aside-block--content">
+                            <div class="m-gallery mm-medium">
+                                <?php foreach ($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $obrazek) { ?>
+
+                                    <div class="m-gallery-item">
+                                        <div class="m-gallery-item--image" style="background-image: url(<?= image_style_url('x412-300', $obrazek['uri']) ?>)">
+                                            <a href=""><img src="<?= image_style_url('x412-300', $obrazek['uri']) ?>" alt="" /></a>
+                                        </div>
+                                        <div class="m-gallery-item--summary">
+                                            <h2 class="m-gallery-item--hed">Item header</h2>
+
+                                            <div class="m-gallery-item--description">Description</div>
+                                        </div>
+                                    </div>
+
+                                <?php } ?>
+                            </div>
                         </div>
+
+                        <!--
+                            not used here
+                        <footer class="m-aside-block--footer">
+                            <div class="l-half">
+                                <div class="m-aside-block--top"><a href="">Block footer<i class="fa fa-arrow-up"></i></a></div>
+                            </div>
+                            <div class="l-half">
+                                <div class="m-aside-block--more"><a href="">Block footer2<i class="fa fa-arrow-right"></i></a></div>
+                            </div>
+                        </footer>
+                        -->
+
                     </div>
-
-                    <!--
-                        not used here
-                    <footer class="m-aside-block--footer">
-                        <div class="l-half">
-                            <div class="m-aside-block--top"><a href="">Block footer<i class="fa fa-arrow-up"></i></a></div>
-                        </div>
-                        <div class="l-half">
-                            <div class="m-aside-block--more"><a href="">Block footer2<i class="fa fa-arrow-right"></i></a></div>
-                        </div>
-                    </footer>
-                    -->
-
-                </div>
-            </aside>
-            <?php
-           endif;
+                </aside>
+                <?php
+            endif;
             ?>
         </div>
     </article>

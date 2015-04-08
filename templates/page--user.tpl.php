@@ -3,26 +3,28 @@
     <div class="m-navbar mm-primary mm-admin">
         <div class="m-navbar--container">
             <a class="m-navbar--logo" href="/">
-                <div class="mm-has-svg" style="background-image: url('/sites/koma/assets/images/logo-koma-modular.svg');"></div>
+                <div class="mm-has-svg" style="background-image: url('/sites/koma/assets/images/logo-koma-administrace.svg');"></div>
             </a>
             <ul class="m-navbar--menu m-navbar--menu-secondary">
+
+
+
+
                 <li class="m-navbar--menu-link">
-                    <a target="" title=""><em class="">Kontakt</em></a>
+                    <a target="" href="http://www.koma-slovakia.sk" title="www.koma-slovakia.sk"><em class="">Koma Slovakia</em></a>
+                </li>
+
+                <li class="m-navbar--menu-link">
+                    <a target="" href="http://www.koma-rent.cz" title="www.koma-rent.cz"><em class="">Koma rent</em></a>
                 </li>
                 <li class="m-navbar--menu-link">
-                    <a target="" title=""><em class="">Koma Group</em></a>
+                    <a target="" href="http://www.koma-space.at/cs" title="www.koma-space.at/cs"><em class="">Koma Space</em></a>
                 </li>
                 <li class="m-navbar--menu-link">
-                    <a target="" title=""><em class="">Koma Space</em></a>
+                    <a target="" href="http://www.koma-modular.cz/" title="www.koma-modular.cz/"><em class="">Koma Modular</em></a>
                 </li>
                 <li class="m-navbar--menu-link">
-                    <a target="" title=""><em class="">Koma Modular</em></a>
-                </li>
-                <li class="m-navbar--menu-link">
-                    <a target="" title=""><em class="">Koma rent</em></a>
-                </li>
-                <li class="m-navbar--menu-link">
-                    <a target="" title=""><em class="">Koma Slovakia</em></a>
+                    <a target="" href="http://www.koma-group.cz" title="www.koma-group.cz"><em class="">Koma Group</em></a>
                 </li>
             </ul>
         </div>

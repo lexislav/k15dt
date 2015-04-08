@@ -1,7 +1,101 @@
+<div>filter</div>
+
+
 <div class="m-section l-feed_two">
         <header class="m-section--header">
             <h2 class="m-section--hed mm-medium mm-center"><?php print t('Zpravodaj')?></h2>
         </header>
+
+
+    <!-- filter markup-->
+
+    <div class="m-filter">
+        <div class="l-grid">
+            <form action="">
+                <div class="l-left">
+
+                    <ul class="m-filter--items">
+                        <li class="label">
+                            <div>vyber</div>
+                        </li>
+                        <li>
+                            <select name="timepass">
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="timepass">
+
+                                <optgroup label="label">
+                                    <option value="A">Option A</option>
+                                    <option value="A">Option A</option>
+                                    <option value="A">Option A</option>
+                                    <option value="A">Option A</option>
+                                </optgroup>
+                                <optgroup label="label">
+                                    <option value="A">Option A</option>
+                                    <option value="A">Option A</option>
+                                    <option value="A">Option A</option>
+                                    <option value="A">Option A</option>
+                                </optgroup>
+                                <optgroup label="label">
+                                    <option value="A">Option A</option>
+                                    <option value="A">Option A</option>
+                                    <option value="A">Option A</option>
+                                    <option value="A">Option A</option>
+                                </optgroup>
+
+                            </select>
+                        </li>
+                        <li>
+                            <select name="timepass">
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="timepass">
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="timepass">
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="l-right">
+                    <ul class=" m-filter--items">
+                        <li>
+                            <select name="timepass">
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
         <?php print $title; ?>

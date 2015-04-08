@@ -1860,7 +1860,7 @@ body {
   font-family: "Purista", "purista-web", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
-  text-transform: uppercase; }
+  text-transform: none; }
   .m-navbar em {
     font-style: normal; }
   .m-navbar .m-navbar--logo .mm-has-svg {

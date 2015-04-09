@@ -102,8 +102,10 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
         }
         ?>
     </div>
-</div><!--tri odkazy--><!--koma zpravodaj-->
-<div class="m-section l-feed_block-carousel">
+</div><!--tri odkazy-->
+
+<!--koma zpravodaj-->
+<div class="m-section l-feed_block-carousel bg-white">
 
     <div class="m-section--underlay"></div>
 
@@ -133,7 +135,10 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 
         </div>
     </div>
-</div><!--koma zpravodaj--><!--cim se lisime-->
+</div>
+<!--koma zpravodaj-->
+
+<!--cim se lisime-->
 <div class="m-section l-section_side-triple">
 
     <div class="l-grid">

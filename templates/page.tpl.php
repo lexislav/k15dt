@@ -1,5 +1,5 @@
 <?php print render($tabs); ?>
-<?php  print $messages; ?>
+<?php print $messages; ?>
 <div class="l-navbar">
 
     <div class="m-navbar mm-secondary" id="navbarSecondary">
@@ -34,7 +34,7 @@
 
             <ul class="m-navbar--menu m-navbar--menu-primary">
                 <li class="m-navbar--menu-callout">
-                    <span class="color-primary"><?php print t('Call us')?>:</span> <?php print t('(+421) 20 577 007 711')?>
+                    <span class="color-primary"><?php print t('Call us') ?>:</span> <?php print t('(+421) 20 577 007 711') ?>
                 </li>
             </ul>
 
@@ -43,18 +43,20 @@
 
     <div class="m-navbar mm-primary" id="navbarPrimary">
         <div class="m-navbar--container">
-            <a class="m-navbar--logo" href="/"><div class="mm-has-svg" style="background-image: url('/sites/koma/assets/images/logo-koma-modular.svg');"></div></a>
+            <a class="m-navbar--logo" href="/">
+                <div class="mm-has-svg" style="background-image: url('/sites/koma/assets/images/logo-koma-modular.svg');"></div>
+            </a>
 
             <!--            @TODO Upravit podle predlohy, kuli megamenu-->
-<!--            --><?php //if ($main_menu): ?>
-<!--                --><?php
-//                print theme('links__system_main_menu', array(
-//                    'links' => $main_menu,
-//                    'attributes' => array(
-//                        'class' => array('m-navbar--menu', 'm-navbar--menu-secondary'),
-//                    ),
-//                )); ?>
-<!--            --><?php //endif; ?>
+            <!--            --><?php //if ($main_menu): ?>
+            <!--                --><?php
+            //                print theme('links__system_main_menu', array(
+            //                    'links' => $main_menu,
+            //                    'attributes' => array(
+            //                        'class' => array('m-navbar--menu', 'm-navbar--menu-secondary'),
+            //                    ),
+            //                )); ?>
+            <!--            --><?php //endif; ?>
             <!--            @TODO Upravit podle predlohy, kuli megamenu-->
 
             <ul class="m-navbar--menu m-navbar--menu-secondary">
@@ -77,17 +79,17 @@
 
         </div>
     </div>
-
-           <?=$zip_code = db_query("SELECT field_megamenu_html_value from {field_data_field_megamenu_html} ")->fetchField();?>
-
-
+    <?= $zip_code = db_query("SELECT field_megamenu_html_value from {field_data_field_megamenu_html} ")->fetchField(); ?>
 
 </div>
+
 <?php print render($page['content']); ?>
+
+
 <!--certifikace-->
 <div class="m-section l-feed_six">
     <header class="m-section--header">
-        <h2 class="m-section--hed mm-medium mm-center"><?php print t('Certifikace')?></h2>
+        <h2 class="m-section--hed mm-medium mm-center"><?php print t('Certifikace') ?></h2>
     </header>
     <div class="row">
         <?php
@@ -97,6 +99,8 @@
     </div>
 </div>
 <!--certifikace-->
+
+
 <!--support-->
 <div class="m-section m-section_support">
 
@@ -105,16 +109,16 @@
 
             <article class="m-newsletter">
                 <header>
-                    <h1 class="m-item--hed"><?php print t('Podpora pro zákazníky')?></h1>
+                    <h1 class="m-item--hed"><?php print t('Podpora pro zákazníky') ?></h1>
                 </header>
 
-                <div class="m-item--description"><?php print t('Nenašli jste zde odpověď na Vaše otázky? Zeptejte se nás přímo!')?></div>
-                <button><?php print t('Zeptejte se nás')?> <i class="fa fa-arrow-right"></i></button>
+                <div class="m-item--description"><?php print t('Nenašli jste zde odpověď na Vaše otázky? Zeptejte se nás přímo!') ?></div>
+                <button><?php print t('Zeptejte se nás') ?> <i class="fa fa-arrow-right"></i></button>
             </article>
 
         </div>
 
-        <div class="m-section--item worker" >
+        <div class="m-section--item worker">
             <img src="http://koma-group.cz/sites/koma/assets/images/worker.jpg" />
         </div>
 
@@ -122,15 +126,15 @@
 
             <article class="m-bulletin">
                 <header>
-                    <h1 class="m-item--hed"><?php print t('Podpora pro zákazníky')?></h1>
+                    <h1 class="m-item--hed"><?php print t('Podpora pro zákazníky') ?></h1>
                 </header>
                 <form action="">
                     <div class="input-group">
-                        <span class="prefix">http://</span><input type="text" placeholder="<?php print t('Enter your URL')?>..."><a href="#" class="button postfix"><i class="fa fa-envelope"></i></a>
+                        <span class="prefix">http://</span><input type="text" placeholder="<?php print t('Enter your URL') ?>..."><a href="#" class="button postfix"><i class="fa fa-envelope"></i></a>
                     </div>
                 </form>
 
-                <div class="m-item--description"><?php print t('Odběrem našeho měsíčního ebulletinu získáte přehled o dění ve světě modulární architektury i o novinkách systému modulární výstavby KOMA.')?></div>
+                <div class="m-item--description"><?php print t('Odběrem našeho měsíčního ebulletinu získáte přehled o dění ve světě modulární architektury i o novinkách systému modulární výstavby KOMA.') ?></div>
 
             </article>
 
@@ -138,6 +142,7 @@
     </div>
 </div>
 <!--support-->
+
 <!--paticka-->
 <footer class="m-footer m-section l-footer">
     <div class="m-footer--container">
@@ -162,9 +167,9 @@
                     )
                 )); ?>
                 <!--            @TODO Upravit podle predlohy-->
-<!--                    <li class="m-footer--menu-link">-->
-<!--                        <a target="{{ link.target }}" title="{{ link.title }}"><em class="">{{ link.title }}</em></a>-->
-<!--                    </li>-->
+                <!--                    <li class="m-footer--menu-link">-->
+                <!--                        <a target="{{ link.target }}" title="{{ link.title }}"><em class="">{{ link.title }}</em></a>-->
+                <!--                    </li>-->
             </section>
 
             <section class="m-footer--section">
@@ -201,5 +206,4 @@
 
 
     </div>
-</footer>
-<!--paticka-->
+</footer><!--paticka-->

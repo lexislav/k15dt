@@ -3,7 +3,7 @@
     <div class="m-navbar mm-primary mm-admin">
         <div class="m-navbar--container">
             <a class="m-navbar--logo" href="/">
-                <div class="mm-has-svg" style="background-image: url('/sites/koma/assets/images/logo-koma-administrace.svg');"></div>
+                <div class="mm-has-svg" style="background-image: url('<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/logo-koma-administrace.svg');"></div>
             </a>
             <ul class="m-navbar--menu m-navbar--menu-secondary">
 

@@ -60,6 +60,14 @@
 <?php print $page_bottom; ?>
 
 
+<div class="m-page-scroll">
+    <div class="m-page-scroll--item">
+        <img src="<?= $GLOBALS['base_url']?>/sites/all/themes/koma/assets/images/scroll-down-sipka.svg" alt="Scroll Down" class="scroll-sipka" /> Scroll down
+    </div>
+</div>
+
+
+
 <script type="text/javascript" src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/chosen/chosen.jquery.min.js"></script>
 
 <!--

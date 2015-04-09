@@ -146,7 +146,7 @@
 
             <section class="m-footer--section">
                 <a class="m-footer--logo" href="/">
-                    <div class="mm-has-svg" style="background-image: url('/sites/koma/assets/images/logo-koma-modular.svg');"></div>
+                    <img src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/logo-koma-modular-inline-white.svg" alt="" />
                 </a>
 
             </section>

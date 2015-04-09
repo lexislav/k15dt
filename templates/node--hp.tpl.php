@@ -19,6 +19,7 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                     <div class="row">
                         <div class="description">
                             <p><?= $r->field_c_hp_text['und'][0]['value'] ?></p>
+                            <img src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/square-down.svg" alt="" />
                         </div>
                     </div>
                 </div>

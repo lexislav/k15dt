@@ -17,16 +17,39 @@
     <?php print $head; ?>
     <title><?php print $head_title; ?></title>
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <meta name="robots" content="noindex,nofollow"/>
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+    <!--PRYYYYYYCCCCC-->
+
 
     <meta http-equiv="cleartype" content="on">
 
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
     <?php print $styles; ?>
-    <link rel="stylesheet" href="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/chosen/chosen.min.css" />
+    <link rel="stylesheet" href="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/chosen/chosen.min.css"/>
 
     <?php print $scripts; ?>
 
@@ -47,7 +70,8 @@
 <body class="l-page <?php print $classes; ?>" <?php print $attributes; ?>>
 <?php if ($skip_link_text && $skip_link_anchor): ?>
     <p id="skip-link">
-        <a href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>
+        <a href="#<?php print $skip_link_anchor; ?>"
+           class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>
     </p>
 <?php endif; ?>
 
@@ -62,17 +86,18 @@
 
 <div class="m-page-scroll">
     <div class="m-page-scroll--item">
-        <img src="<?= $GLOBALS['base_url']?>/sites/all/themes/koma/assets/images/scroll-down-sipka.svg" alt="Scroll Down" class="scroll-sipka" /> Scroll down
+        <img src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/scroll-down-sipka.svg"
+             alt="Scroll Down" class="scroll-sipka"/> Scroll down
     </div>
 </div>
 
 
-
-<script type="text/javascript" src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/chosen/chosen.jquery.min.js"></script>
+<script type="text/javascript"
+        src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/chosen/chosen.jquery.min.js"></script>
 
 <!--
-<script type="text/javascript" src="<?/*= $GLOBALS['base_url'] */?>/sites/all/themes/koma/components/foundation/js/foundation.min.js"></script>
-<script type="text/javascript" src="<?/*= $GLOBALS['base_url'] */?>/sites/all/themes/koma/components/foundation/js/foundation.clearing.js"></script>
+<script type="text/javascript" src="<? /*= $GLOBALS['base_url'] */ ?>/sites/all/themes/koma/components/foundation/js/foundation.min.js"></script>
+<script type="text/javascript" src="<? /*= $GLOBALS['base_url'] */ ?>/sites/all/themes/koma/components/foundation/js/foundation.clearing.js"></script>
 <script>jQuery(document).foundation();</script>
 -->
 <script>

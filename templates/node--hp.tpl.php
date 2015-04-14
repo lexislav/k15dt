@@ -115,11 +115,23 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
             <div class="l-half">
                 <h2 class="m-section--hed mm-small">Koma zpravodaj</h2>
             </div>
+            <?php
+            $tree = taxonomy_get_tree(5);
+            ?>
+
             <div class="l-half">
                 <ul class="m-section--nav inline-right">
-                    <li><a href="" title="Novinky">Novinky</a></li>
-                    <li><a href=""><a href="">E-Bulletin</a></li>
-                    <li><a href=""><a href="">Projekty</a></li>
+                    <?php
+                    foreach ($tree as $term) {
+                        $term = i18n_taxonomy_localize_terms($term);
+                        ?>
+                        <li>
+                            <!--                            @TODO UPRAVIT CESTU-->
+                            <a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj&field_zpravodaj_kategorie_tid=<?= $term->tid ?>"
+                               title="<?= $term->name ?>"><?= $term->name ?></a></li>
+                    <?php
+                    }
+                    ?>
                 </ul>
             </div>
         </header>
@@ -135,6 +147,16 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 
 
         </div>
+    </div>
+    <div class="row">
+        <footer class="m-section--footer">
+            <div class="l-half">
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> <i class="fa fa-arrow-up"></i></a></div>
+            </div>
+            <div class="l-half">
+                <div class="m-section--more"><a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj"><?php print t('Celý archiv') ?> <i class="fa fa-arrow-right"></i></a></div>
+            </div>
+        </footer>
     </div>
 </div>
 <!--koma zpravodaj-->
@@ -177,9 +199,9 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> <i class="fa fa-arrow-up"></i></a></div>
             </div>
-            <div class="l-half">
+            <div class="l-half"> 
                 <div class="m-section--more"><a href="">Firma a lidé <i class="fa fa-arrow-right"></i></a></div>
             </div>
         </footer>

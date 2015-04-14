@@ -102,11 +102,21 @@
                 <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
             </div>
             <div class="l-half">
+                <?php
+                $tree = taxonomy_get_tree(5);
+                ?>
                 <ul class="m-section--nav inline-right">
-                    <li><a href="" title="">E-Bulletin</a></li>
-                    <li><a href="" title="">Projekty</a></li>
-                    <li><a href="" title="">Novinky</a></li>
-                    <li><a href="" title="Koma Zpravodaj">Koma Zpravodaj</a></li>
+                    <?php
+                    foreach ($tree as $term) {
+                        $term = i18n_taxonomy_localize_terms($term);
+                        ?>
+                        <li>
+<!--                            @TODO UPRAVIT CESTU-->
+                            <a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj&field_zpravodaj_kategorie_tid=<?= $term->tid ?>"
+                               title="<?= $term->name ?>"><?= $term->name ?></a></li>
+                    <?php
+                    }
+                    ?>
                 </ul>
             </div>
         </footer>

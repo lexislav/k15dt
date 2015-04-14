@@ -27,7 +27,7 @@
                         <input type="hidden" name="form_build_id" value="<?=$variables['form']['#build_id']?>">
                         <input type="hidden" name="form_id" value="user_login">
                         <div>
-                            <div class="f-75"><a href="http://koma-group.cz/?q=user/password" title="">Zapomněli jste své heslo?</a></div>
+                            <div class="f-75"><a href="<?= $GLOBALS['base_url'] ?>/?q=user/password" title="">Zapomněli jste své heslo?</a></div>
                             <div class="f-25 f-right">
 
                                 <input type="submit" id="edit-submit" name="op" value="Přihlásit se" class="button">

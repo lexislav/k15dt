@@ -119,7 +119,7 @@
         </div>
 
         <div class="m-section--item worker">
-            <img src="http://koma-group.cz/sites/koma/assets/images/worker.jpg" />
+            <img src="<?= $GLOBALS['base_url'] ?>/sites/koma/assets/images/worker.jpg" />
         </div>
 
         <div class="m-section--item">
@@ -128,12 +128,8 @@
                 <header>
                     <h1 class="m-item--hed"><?php print t('Podpora pro zákazníky') ?></h1>
                 </header>
-                <form action="">
-                    <div class="input-group">
-                        <span class="prefix">http://</span><input type="text" placeholder="<?php print t('Enter your URL') ?>..."><a href="#" class="button postfix"><i class="fa fa-envelope"></i></a>
-                    </div>
-                </form>
 
+                <?php print render($page['form_email']); ?>
                 <div class="m-item--description"><?php print t('Odběrem našeho měsíčního ebulletinu získáte přehled o dění ve světě modulární architektury i o novinkách systému modulární výstavby KOMA.') ?></div>
 
             </article>

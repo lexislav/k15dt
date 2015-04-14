@@ -8,7 +8,7 @@ if (isset($row->field_field_zpravodaj_main_img[0])) {
 <article class="m-story">
     <header>
         <div class="m-item--image" style="background-image: url(<?= image_style_url('x595-0', $uricko) ?>)">
-            <a href="http://koma-group.cz/?q=node/<?= $row->nid ?>">
+            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>">
                 <img src="<?= image_style_url('x595-0', $uricko) ?>" alt=""/>
             </a>
         </div>

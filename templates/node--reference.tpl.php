@@ -15,13 +15,13 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                     <header>
                         <div class="m-item--image"
                              style="background-image: url(<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>)">
-                            <a href="http://koma-group.cz/?q=node/<?= $prev_nid[0]->prev_nid ?>">
+                            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $prev_nid[0]->prev_nid ?>">
                                 <img src="<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>" alt=""/>
                             </a>
                         </div>
                         <div class="m-item--summary">
                             <h1 class="m-item--hed">
-                                <a href="http://koma-group.cz/?q=node/<?= $prev_nid[0]->prev_nid ?>"><?= $prev_title ?></a>
+                                <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $prev_nid[0]->prev_nid ?>"><?= $prev_title ?></a>
                             </h1>
 
                             <div class="m-item--description">
@@ -44,13 +44,13 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                     <header>
                         <div class="m-item--image"
                              style="background-image: url(<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>)">
-                            <a href="http://koma-group.cz/?q=node/<?= $next_nid[0]->next_nid ?>">
+                            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $next_nid[0]->next_nid ?>">
                                 <img src="<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>" alt=""/>
                             </a>
                         </div>
                         <div class="m-item--summary">
                             <h1 class="m-item--hed">
-                                <a href="http://koma-group.cz/?q=node/<?= $next_nid[0]->next_nid ?>"><?= $next_title ?></a>
+                                <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $next_nid[0]->next_nid ?>"><?= $next_title ?></a>
                             </h1>
 
                             <div class="m-item--description">

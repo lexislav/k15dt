@@ -25,13 +25,13 @@ if (isset($row->field_field_reference_main_img[0])) {
     <article class="m-story">
         <header>
             <div class="m-item--image" style="background-image: url(<?= image_style_url('x595-0', $uricko) ?>)">
-                <a href="http://koma-group.cz/?q=node/<?= $row->nid ?>">
+                <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>">
                     <img src="<?= image_style_url('x595-0', $uricko) ?>" alt=""/>
                 </a>
             </div>
             <div class="m-item--summary">
                 <h1 class="m-item--hed">
-                    <a href="http://koma-group.cz/?q=node/<?= $row->nid ?>"><?= $row->node_title ?></a>
+                    <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>"><?= $row->node_title ?></a>
                 </h1>
 
                 <div class="m-item--meta">

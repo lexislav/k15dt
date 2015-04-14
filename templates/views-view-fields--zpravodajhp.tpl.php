@@ -17,7 +17,7 @@ if ($cislo == 1 OR $cislo == 4 OR $cislo == 7 OR $cislo == 10  OR $cislo == 13 O
         <article class="m-story">
             <header>
                 <div class="m-item--image" style="background-image: url(<?= image_style_url('x618-480', $uricko) ?>)">
-                    <a href="http://koma-group.cz/?q=node/<?= $row->nid ?>">
+                    <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>">
                         <img src="<?= image_style_url('x618-480', $uricko) ?>" alt=""/>
                     </a>
                 </div>

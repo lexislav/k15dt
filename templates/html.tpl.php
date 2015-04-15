@@ -94,94 +94,95 @@
 
 <script type="text/javascript"
         src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/chosen/chosen.jquery.min.js"></script>
-
+<script type="text/javascript"
+        src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/js/app.js"></script>
 <!--
 <script type="text/javascript" src="<? /*= $GLOBALS['base_url'] */ ?>/sites/all/themes/koma/components/foundation/js/foundation.min.js"></script>
 <script type="text/javascript" src="<? /*= $GLOBALS['base_url'] */ ?>/sites/all/themes/koma/components/foundation/js/foundation.clearing.js"></script>
 <script>jQuery(document).foundation();</script>
 -->
-<script>
-
-    // slick controll
-    jQuery(function () {
-
-        // mega menu
-
-        var lastMegaTab = null;
-
-        jQuery('[mega-open]').each(function () {
-            var item = jQuery(this);
-            var mega = jQuery("#mega");
-            var tabName = item.attr("mega-open");
-            var tab = jQuery(tabName);
-
-            item.click(function (e) {
-                e.preventDefault();
-
-                if (lastMegaTab) {
-                    lastMegaTab.removeClass("is-active");
-                }
-
-                mega.addClass("is-open");
-                tab.addClass("is-active");
-                lastMegaTab = tab;
-            });
-
-        });
-
-        jQuery('[mega-close]').each(function () {
-            var item = jQuery(this);
-            var mega = jQuery("#mega");
-
-            item.click(function (e) {
-                e.preventDefault();
-                if (lastMegaTab) {
-                    lastMegaTab.removeClass("is-active");
-                }
-                mega.removeClass("is-open");
-                lastMegaTab.removeClass("is-active");
-            });
-
-        });
-
-        // end mega menu
-
-
-        // resize Navbar
-
-        var navbarPrimary = jQuery('#navbarPrimary');
-        var navbarSecondary = jQuery('#navbarSecondary');
-        var scrollDriver = jQuery('body');
-
-        var currentTop = function () {
-            return scrollDriver.scrollTop();
-        }
-
-        jQuery(window).scroll(function () {
-            if (currentTop() > 150) {
-                if (!navbarPrimary.hasClass("is-collapsed")) {
-                    navbarPrimary.addClass("is-collapsed");
-                }
-                if (!navbarSecondary.hasClass("is-hidden")) {
-                    navbarSecondary.addClass("is-hidden");
-                }
-            } else {
-                navbarPrimary.removeClass("is-collapsed");
-                navbarSecondary.removeClass("is-hidden");
-            }
-        });
-
-        // end resize Navbar
-
-
-        // chosen select box
-        jQuery(".ch-select").chosen({
-            create_option: true,
-            persistent_create_option: true,
-            create_option_text: 'add'
-        });
-    });
-
-</script>
+<!--<script>-->
+<!---->
+<!--    // slick controll-->
+<!--    jQuery(function () {-->
+<!---->
+<!--        // mega menu-->
+<!---->
+<!--        var lastMegaTab = null;-->
+<!---->
+<!--        jQuery('[mega-open]').each(function () {-->
+<!--            var item = jQuery(this);-->
+<!--            var mega = jQuery("#mega");-->
+<!--            var tabName = item.attr("mega-open");-->
+<!--            var tab = jQuery(tabName);-->
+<!---->
+<!--            item.click(function (e) {-->
+<!--                e.preventDefault();-->
+<!---->
+<!--                if (lastMegaTab) {-->
+<!--                    lastMegaTab.removeClass("is-active");-->
+<!--                }-->
+<!---->
+<!--                mega.addClass("is-open");-->
+<!--                tab.addClass("is-active");-->
+<!--                lastMegaTab = tab;-->
+<!--            });-->
+<!---->
+<!--        });-->
+<!---->
+<!--        jQuery('[mega-close]').each(function () {-->
+<!--            var item = jQuery(this);-->
+<!--            var mega = jQuery("#mega");-->
+<!---->
+<!--            item.click(function (e) {-->
+<!--                e.preventDefault();-->
+<!--                if (lastMegaTab) {-->
+<!--                    lastMegaTab.removeClass("is-active");-->
+<!--                }-->
+<!--                mega.removeClass("is-open");-->
+<!--                lastMegaTab.removeClass("is-active");-->
+<!--            });-->
+<!---->
+<!--        });-->
+<!---->
+<!--        // end mega menu-->
+<!---->
+<!---->
+<!--        // resize Navbar-->
+<!---->
+<!--        var navbarPrimary = jQuery('#navbarPrimary');-->
+<!--        var navbarSecondary = jQuery('#navbarSecondary');-->
+<!--        var scrollDriver = jQuery('body');-->
+<!---->
+<!--        var currentTop = function () {-->
+<!--            return scrollDriver.scrollTop();-->
+<!--        }-->
+<!---->
+<!--        jQuery(window).scroll(function () {-->
+<!--            if (currentTop() > 150) {-->
+<!--                if (!navbarPrimary.hasClass("is-collapsed")) {-->
+<!--                    navbarPrimary.addClass("is-collapsed");-->
+<!--                }-->
+<!--                if (!navbarSecondary.hasClass("is-hidden")) {-->
+<!--                    navbarSecondary.addClass("is-hidden");-->
+<!--                }-->
+<!--            } else {-->
+<!--                navbarPrimary.removeClass("is-collapsed");-->
+<!--                navbarSecondary.removeClass("is-hidden");-->
+<!--            }-->
+<!--        });-->
+<!---->
+<!--        // end resize Navbar-->
+<!---->
+<!---->
+<!--        // chosen select box-->
+<!--        jQuery(".ch-select").chosen({-->
+<!--            create_option: true,-->
+<!--            persistent_create_option: true,-->
+<!--            create_option_text: 'add'-->
+<!--        });-->
+<!--    });-->
+<!---->
+<!--</script>-->
 </body>
 </html>

@@ -432,7 +432,7 @@
     </div>
 </div>
 
-
-<script type="text/javascript" src="../js/contact.js"></script>
+<!--@TODO nacitat drupaloidne-->
+<script type="text/javascript" src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/js/contact.js"></script>
 
 

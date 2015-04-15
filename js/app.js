@@ -12,11 +12,11 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
 
-    $(function () {
+    jQuery(function () {
 
         //
-        $('[slick]').each(function () {
-            var SlickWrapper = $(this);
+        jQuery('[slick]').each(function () {
+            var SlickWrapper = jQuery(this);
             var carousel = SlickWrapper.find('[carousel]');
             var oldActive = null;
             var nav = SlickWrapper.find('[carouselnav]');
@@ -39,7 +39,7 @@
                 var count = 0;
                 var items = nav.find('[slick-to]');
                 for (var i = 0; i < items.length; i++) {
-                    var item = $(items[i]);
+                    var item = jQuery(items[i]);
 
                     if (nav.attr("slick-method") == "mouseenter") {
                         item.mouseenter(function (e) {
@@ -49,9 +49,9 @@
                             }
 
                             e.preventDefault();
-                            carousel.slick('slickGoTo', $(this).attr('slick-to'));
-                            $(this).addClass("active");
-                            oldActive = $(this);
+                            carousel.slick('slickGoTo', jQuery(this).attr('slick-to'));
+                            jQuery(this).addClass("active");
+                            oldActive = jQuery(this);
                         });
                     } else {
                         item.click(function (e) {
@@ -61,9 +61,9 @@
                             }
 
                             e.preventDefault();
-                            carousel.slick('slickGoTo', $(this).attr('slick-to'));
-                            $(this).addClass("active");
-                            oldActive = $(this);
+                            carousel.slick('slickGoTo', jQuery(this).attr('slick-to'));
+                            jQuery(this).addClass("active");
+                            oldActive = jQuery(this);
                         });
                     }
 
@@ -143,7 +143,7 @@
 
 // block feed JS
 
-    var blogSlick = $('.block-feed-slider').slick({
+    var blogSlick = jQuery('.block-feed-slider').slick({
         dots: false,
         infinite: true,
         speed: 300,
@@ -163,7 +163,7 @@
 
 // full size carousel
 
-    var blogSlick = $('.full-carousel').slick({
+    var blogSlick = jQuery('.full-carousel').slick({
         dots: true,
         infinite: true,
         speed: 300,
@@ -176,8 +176,8 @@
 // script
 
 
-    $('[collapsible]').each(function () {
-        var el = $(this);
+    jQuery('[collapsible]').each(function () {
+        var el = jQuery(this);
 
         if (el.data('target') == "parent") {
             el.click(function () {
@@ -185,7 +185,7 @@
             });
         } else if (el.data('target')) {
             el.click(function () {
-                var tgt = $(el.data('target'));
+                var tgt = jQuery(el.data('target'));
                 tgt.toggleClass("is-open");
             });
         } else {
@@ -198,7 +198,7 @@
 
 // chosen filters - select boxes
 
-    $(".ch-select").chosen({
+    jQuery(".ch-select").chosen({
         width: "95%",
         create_option: true,
         persistent_create_option: true,

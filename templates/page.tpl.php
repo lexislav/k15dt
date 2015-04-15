@@ -1,5 +1,6 @@
 <?php print render($tabs); ?>
 <?php print $messages; ?>
+
 <div class="l-navbar">
 
     <div class="m-navbar mm-secondary" id="navbarSecondary">
@@ -82,7 +83,7 @@
     <?= $zip_code = db_query("SELECT field_megamenu_html_value from {field_data_field_megamenu_html} ")->fetchField(); ?>
 
 </div>
-
+<?php print render($page['hledani']); ?>
 <?php print render($page['content']); ?>
 
 

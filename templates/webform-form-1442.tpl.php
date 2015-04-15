@@ -58,8 +58,8 @@ if (isset($form['preview_message'])) {
         <input type="hidden" name="details[page_num]" value="1">
         <input type="hidden" name="details[page_count]" value="1">
         <input type="hidden" name="details[finished]" value="0">
-        <input type="hidden" name="form_build_id" value="<?= $form['#build_id'] ?>">
-        <input type="hidden" name="form_token" value="<?= $form['form_token']['#default_value'] ?>">
+<!--        <input type="hidden" name="form_build_id" value="--><?//= $form['#build_id'] ?><!--">-->
+<!--        <input type="hidden" name="form_token" value="--><?//= $form['form_token']['#default_value'] ?><!--">-->
         <input type="hidden" name="form_id" value="webform_client_form_1442">
 
         <div class=""><input class="button postfix" type="submit" name="op"

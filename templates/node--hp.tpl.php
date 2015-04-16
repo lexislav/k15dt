@@ -116,13 +116,14 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                 <h2 class="m-section--hed mm-small">Koma zpravodaj</h2>
             </div>
             <?php
-            $tree = taxonomy_get_tree(5);
+          $tree = taxonomy_get_tree(5);
             ?>
 
             <div class="l-half">
                 <ul class="m-section--nav inline-right">
                     <?php
                     foreach ($tree as $term) {
+                        break;
                         $term = i18n_taxonomy_localize_terms($term);
                         ?>
                         <li>

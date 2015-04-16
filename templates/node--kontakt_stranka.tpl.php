@@ -118,27 +118,27 @@
     </div>
 </div>
 
-<div class="m-section">
-    <div class="row">
-        <header class="m-section--header">
-            <div class="l-full">
-                <h2 class="m-section--hed mm-tiny mm-medium mm-center">Formulář byl úspěšně odeslán</h2>
-            </div>
-        </header>
-    </div>
-
-    <div class="row">
-        <div class="m-contact-form mm-sent">
-            <div class="m-contact-form--content">
-                <p>
-                    <i class="fa fa-paper-plane-o"></i> Formulář byl úspěšně odeslán na adresu: <span>@email</span>
-                    <br/>a na vámi zadanou adresu <span>@formemail</span>
-                </p>
-                <button class="button">Odeslat novou zprávu <i class="fa fa-paper-plane-o"></i></button>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div class="m-section">-->
+<!--    <div class="row">-->
+<!--        <header class="m-section--header">-->
+<!--            <div class="l-full">-->
+<!--                <h2 class="m-section--hed mm-tiny mm-medium mm-center">Formulář byl úspěšně odeslán</h2>-->
+<!--            </div>-->
+<!--        </header>-->
+<!--    </div>-->
+<!---->
+<!--    <div class="row">-->
+<!--        <div class="m-contact-form mm-sent">-->
+<!--            <div class="m-contact-form--content">-->
+<!--                <p>-->
+<!--                    <i class="fa fa-paper-plane-o"></i> Formulář byl úspěšně odeslán na adresu: <span>@email</span>-->
+<!--                    <br/>a na vámi zadanou adresu <span>@formemail</span>-->
+<!--                </p>-->
+<!--                <button class="button">Odeslat novou zprávu <i class="fa fa-paper-plane-o"></i></button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <!--@TODO nacitat drupaloidne-->
 <script type="text/javascript" src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/js/contact.js"></script>

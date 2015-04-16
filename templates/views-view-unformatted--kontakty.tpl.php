@@ -16,11 +16,11 @@
         <div class="m-contact-tab--action"><a href=""><i class="fa fa-envelope-o"></i></a></div>
     </header>
 
-<?php endif; ?>
+<?php endif; ?>  <div class="m-contact-tab--content ">
 <?php foreach ($rows as $id => $row): ?>
 
         <?php print $row; ?>
 
 <?php endforeach; ?>
     </div>
-    </div>
+    </div>  </div>

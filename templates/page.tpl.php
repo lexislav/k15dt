@@ -62,7 +62,7 @@
 
             <ul class="m-navbar--menu m-navbar--menu-secondary">
                 <li class="m-navbar--menu-link">
-                    <a target="" title=""><em class="">Kontakt</em></a>
+                    <a href="<?= $GLOBALS['base_url'] ?>/?q=kontakty" target="" title=""><em class="">Kontakt</em></a>
                 </li>
                 <li class="m-navbar--menu-link">
                     <a target="" title="" mega-open="#megaFirma"><em class="">Firma a lidé</em></a>

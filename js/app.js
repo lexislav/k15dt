@@ -1,4 +1,4 @@
-$(function () {
+jQuery(function () {
 
     //
     jQuery('[slick]').each(function () {

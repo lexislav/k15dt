@@ -1,19 +1,4 @@
-/**
- * @file
- * A JavaScript file for the theme.
- *
- * In order for this JavaScript to be loaded on pages, see the instructions in
- * the README.txt next to this file.
- */
-
-// JavaScript should be made compatible with libraries other than jQuery by
-// wrapping it with an "anonymous closure". See:
-// - https://drupal.org/node/1446420
-// - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
-
-//(function ($, Drupal, window, document, undefined) {
-
-jQuery(function () {
+$(function () {
 
     //
     jQuery('[slick]').each(function () {
@@ -89,10 +74,12 @@ jQuery(function () {
 
             if (lastMegaTab) {
                 lastMegaTab.removeClass("is-active");
+                jQuery('body').removeClass("scroll-lock");
             }
 
             mega.addClass("is-open");
             tab.addClass("is-active");
+            jQuery('body').addClass("scroll-lock");
             lastMegaTab = tab;
         });
 
@@ -106,9 +93,11 @@ jQuery(function () {
             e.preventDefault();
             if (lastMegaTab) {
                 lastMegaTab.removeClass("is-active");
+                jQuery('body').removeClass("scroll-lock");
             }
             mega.removeClass("is-open");
             lastMegaTab.removeClass("is-active");
+            jQuery('body').removeClass("scroll-lock");
         });
 
     });
@@ -207,6 +196,3 @@ jQuery(".ch-select").chosen({
     disable_search_threshold: 40,
     //allow_single_deselect: true
 });
-
-
-//})//(jQuery, Drupal, this, this.document);

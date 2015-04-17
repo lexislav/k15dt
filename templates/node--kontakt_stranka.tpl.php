@@ -24,7 +24,7 @@
                     Říčanská 1191 <br/>
                     763 12 Vizovice<br/>
                     Česká republika<br/>
-
+                    <br/>
                     <span class="color-primary">T</span> +420 577 007 711<br/>
                     <span class="color-primary">F</span> +420 577 452 839<br/>
                     <span class="color-primary">E</span> info@container.cz<br/>
@@ -63,7 +63,7 @@
 
 </div>
 
-
+<!-- contact list -->
 <div class="m-section bg-white">
     <div class="row">
         <header class="m-section--header">
@@ -72,17 +72,15 @@
             </div>
         </header>
     </div>
-
-
     <?php
     $block = module_invoke('views', 'block_view', 'kontakty-block');
     print render($block);
     ?>
+
+    <div class="row">
+        <footer class="m-section--footer"></footer>
+    </div>
 </div>
-
-
-
-
 
 
 
@@ -116,6 +114,10 @@
 
         </div>
     </div>
+
+    <div class="row">
+        <footer class="m-section--footer"></footer>
+    </div>
 </div>
 
 <!--<div class="m-section">-->
@@ -139,6 +141,62 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</div>-->
+
+
+<!-- volna mista-->
+
+<!-- volna mista-->
+
+<div class="m-section bg-white">
+    <div class="row">
+        <header class="m-section--header"></header>
+    </div>
+
+    <div class="row">
+        <div class="m-card_bigpromo l-single bg-secondary-light">
+
+            <article class="m-story">
+                <header>
+                    <div class="m-item--image" style="background-image: url(http://lorempixel.com/300/300)">
+                        <a href="">
+                            <img src="http://lorempixel.com/300/300" alt="">
+                        </a>
+                    </div>
+                    <div class="m-item--summary">
+                        <h1 class="m-item--hed mm-center">
+                            <a href="">Kariéra v KOMA</a>
+                        </h1>
+
+                        <div class="m-item--description">
+                            <p>Chcete pracovat v naší firmě neb hledáte zaměstnání.
+                               Prohlédněte si aktuální volná místa případně zašlete Vaši motivační nabídku na naše personální oddělení.
+
+                               Můžete využít výše umístěný kontaktní formulář.</p>
+                        </div>
+
+                        <div class="m-card--more bg-8">
+                            <a href="" title="more">Aktuální volná místa&nbsp;→</a>
+                        </div>
+                    </div>
+                </header>
+
+            </article>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <footer class="m-section--footer">
+            <ul class="m-section--nav inline-right">
+                <li><a href="">Kariéra v KOMA </a></li>
+                <li><a href="">Adresář </a></li>
+                <li><a href=""><i class="fa fa-arrow-down"></i> Kontaktní formulář</a></li>
+            </ul>
+        </footer>
+    </div>
+</div>
+
+
 
 <!--@TODO nacitat drupaloidne-->
 <script type="text/javascript" src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/js/contact.js"></script>

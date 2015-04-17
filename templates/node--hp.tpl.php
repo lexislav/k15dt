@@ -43,7 +43,7 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                 if ($cislo == 0) continue;
                 ?>
                 <div class="tab color-<?= $cislo ?>" slick-to="<?= $cislo ?>">
-                    <a href=""><?= $r->field_c_hp_popiska['und'][0]['value'] ?></a>
+                    <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $r->field_c_hp_odkaz['und'][0]['target_id'] ?>"><?= $r->field_c_hp_popiska['und'][0]['value'] ?></a>
                 </div>
                 <?php
             }
@@ -112,14 +112,14 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 
     <div class="l-grid">
         <header class="m-section--header">
-            <div class="l-half">
+            <div class="l-third">
                 <h2 class="m-section--hed mm-small">Koma zpravodaj</h2>
             </div>
             <?php
           $tree = taxonomy_get_tree(5);
             ?>
 
-            <div class="l-half">
+            <div class="l-two-thirds">
                 <ul class="m-section--nav inline-right">
                     <?php
                     foreach ($tree as $term) {
@@ -163,7 +163,14 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 <!--koma zpravodaj-->
 
 <!--cim se lisime-->
-<div class="m-section l-section_side-triple">
+<div class="m-section l-section_side-triple bg-white" style="background-image: url('/sites/all/themes/koma/assets/images/mozaika-koma.png')">
+
+    <div class="row">
+        <header class="m-section--header">
+            <div class="l-full">
+            </div>
+        </header>
+    </div>
 
     <div class="l-grid">
         <h2 class="m-section--hed mm-big mm-tiny mm-pad-bottom firstline-primary">

@@ -12,6 +12,7 @@
             </div>
         </header>
     </div>
+
     <article class="m-story">
         <header>
             <div class="m-story--image" style="background-image: url(http://lorempixel.com/650/500)">

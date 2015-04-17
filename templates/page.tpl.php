@@ -31,6 +31,8 @@
                 <li class="m-navbar--menu-dropdown">
                     <a target="" title="Topics"><em class="">Language</em></a>
                 </li>
+
+
             </ul>
 
             <ul class="m-navbar--menu m-navbar--menu-primary">
@@ -61,8 +63,14 @@
             <!--            @TODO Upravit podle predlohy, kuli megamenu-->
 
             <ul class="m-navbar--menu m-navbar--menu-secondary">
+                <li class="m-navbar--menu-toc">
+                    <a href="#" title="" mega-open="#megaMobile"><i class="fa fa-bars"></i></a>
+                </li>
+                <li class="m-navbar--menu-search">
+                    <a href="http://koma-group.cz/?q=search" title=""><i class="fa fa-search"></i></a>
+                </li>
                 <li class="m-navbar--menu-link">
-                    <a href="<?= $GLOBALS['base_url'] ?>/?q=kontakty" target="" title=""><em class="">Kontakt</em></a>
+                    <a href="<?= $GLOBALS['base_url'] ?>/?q=kontakty" target="" title="" mega-open="#megaKontakt"><em class="">Kontakt</em></a>
                 </li>
                 <li class="m-navbar--menu-link">
                     <a target="" title="" mega-open="#megaFirma"><em class="">Firma a lidé</em></a>
@@ -90,13 +98,16 @@
 <!--certifikace-->
 <div class="m-section l-feed_six">
     <header class="m-section--header">
-        <h2 class="m-section--hed mm-medium mm-center"><?php print t('Certifikace') ?></h2>
+        <h2 class="m-section--hed mm-medium mm-center color-secondary"><?php print t('Certifikace') ?></h2>
     </header>
     <div class="row">
         <?php
         $block = module_invoke('views', 'block_view', 'certifik_ty-block');
         print render($block);
         ?>
+    </div>
+    <div class="row">
+        <footer class="m-section--footer"></footer>
     </div>
 </div>
 <!--certifikace-->

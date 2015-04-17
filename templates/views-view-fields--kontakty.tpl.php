@@ -12,7 +12,7 @@
                     <a href="" title="" fillform data-subject="Pro vedoucí útvaru"
                        data-name="Hana Babjarová" data-email="<?=$fields['kontakt_email']->content?>">Odeslat
                         zprávu
-                        <i class="fa fa-envelope-o"></i></a></div>
+                        <i class="fa fa-envelope"></i></a></div>
             </div>
 
         </div>

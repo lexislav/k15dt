@@ -50,7 +50,8 @@
     <meta name="format-detection" content="address=no"/>
     <?php print $styles; ?>
     <link rel="stylesheet" href="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/chosen/chosen.min.css"/>
-
+<!--    <script type="text/javascript"-->
+<!--            src="--><?//= $GLOBALS['base_url'] ?><!--/jquery-2.1.3.min.js"></script>-->
     <?php print $scripts; ?>
 
 

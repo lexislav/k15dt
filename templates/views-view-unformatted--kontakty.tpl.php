@@ -11,9 +11,9 @@
     <div class="m-contact-tab">
 <?php if (!empty($title)): ?>
     <header class="m-contact-tab--header" collapsible data-target="parent">
+        <div class="m-contact-tab--mark">+</div>
         <h3 class="m-contact-tab--hed"><?=$title;?></h3>
-
-        <div class="m-contact-tab--action"><a href=""><i class="fa fa-envelope-o"></i></a></div>
+        <div class="m-contact-tab--action"><a href=""><i class="fa fa-envelope"></i></a></div>
     </header>
 
 <?php endif; ?>  <div class="m-contact-tab--content ">

@@ -62,8 +62,7 @@ if (isset($form['preview_message'])) {
 <!--        <input type="hidden" name="form_token" value="--><?//= $form['form_token']['#default_value'] ?><!--">-->
         <input type="hidden" name="form_id" value="webform_client_form_1442">
 
-        <div class=""><input class="button postfix" type="submit" name="op"
-                             value="Odeslat"><i class="fa fa-envelope"></i></div>
+        <div class=""><button class="button postfix" type="submit" name="op" value="Odeslat"><i class="fa fa-envelope"></i></button></div>
 
 
     </div>

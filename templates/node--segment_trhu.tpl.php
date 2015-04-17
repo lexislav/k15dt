@@ -289,7 +289,10 @@ if(isset($node->field_segment_faq['und'])){
 <?php
 }
 ?>
-
+<?php
+$block = module_invoke('views', 'block_view', 'segmentreference-block');
+print render($block);
+?>
 
 
 
@@ -303,9 +306,157 @@ if(isset($node->field_segment_faq['und'])){
     <div class="row">
         <div class="l-section--content slider block-feed-slider">
             <?php
-            $block = module_invoke('views', 'block_view', 'segmentreference-block');
-            print render($block);
+            for($i=0;$i<=3;$i++){
             ?>
+
+            <div class="blok-feed-slide">
+                <div class="m-card_thumb mm-has-hover l-double">
+
+                    <article class="m-story">
+                        <header>
+                            <div class="m-item--image" style="background-image: url(http://lorempixel.com/300/300)">
+                                <a href="">
+                                    <img src="http://lorempixel.com/400/600" alt="" />
+                                </a>
+                            </div>
+                            <div class="m-item--summary">
+                                <h1 class="m-item--hed">
+                                    <a href="">titulek titulek</a>
+                                </h1>
+
+                                <div class="m-item--description">
+                                    <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                                </div>
+                            </div>
+                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                        </header>
+                    </article>
+
+                </div>
+
+                <div class="m-card_thumb  mm-has-hover l-single">
+
+                    <article class="m-story">
+                        <header>
+                            <div class="m-item--image" style="background-image: url(http://lorempixel.com/300/300)">
+                                <a href="">
+                                    <img src="http://lorempixel.com/400/600" alt="" />
+                                </a>
+                            </div>
+                            <div class="m-item--summary">
+                                <h1 class="m-item--hed">
+                                    <a href="">titulek titulek</a>
+                                </h1>
+
+                                <div class="m-item--description">
+                                    <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                                </div>
+                            </div>
+                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                        </header>
+                    </article>
+
+                </div>
+
+                <div class="m-card_thumb  mm-has-hover l-single">
+
+                    <article class="m-story">
+                        <header>
+                            <div class="m-item--image" style="background-image: url(http://lorempixel.com/300/300)">
+                                <a href="">
+                                    <img src="http://lorempixel.com/400/600" alt="" />
+                                </a>
+                            </div>
+                            <div class="m-item--summary">
+                                <h1 class="m-item--hed">
+                                    <a href="">titulek titulek</a>
+                                </h1>
+
+                                <div class="m-item--description">
+                                    <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                                </div>
+                            </div>
+                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                        </header>
+                    </article>
+
+                </div>
+            </div>
+
+            <div class="blok-feed-slide">
+                <div class="m-card_thumb l-single">
+
+                    <article class="m-story">
+                        <header>
+                            <div class="m-item--image" style="background-image: url(http://lorempixel.com/300/300)">
+                                <a href="">
+                                    <img src="http://lorempixel.com/400/600" alt="" />
+                                </a>
+                            </div>
+                            <div class="m-item--summary">
+                                <h1 class="m-item--hed">
+                                    <a href="">titulek titulek</a>
+                                </h1>
+
+                                <div class="m-item--description">
+                                    <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                                </div>
+                            </div>
+                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                        </header>
+                    </article>
+
+                </div>
+
+                <div class="m-card_thumb l-single">
+
+                    <article class="m-story">
+                        <header>
+                            <div class="m-item--image" style="background-image: url(http://lorempixel.com/300/300)">
+                                <a href="">
+                                    <img src="http://lorempixel.com/400/600" alt="" />
+                                </a>
+                            </div>
+                            <div class="m-item--summary">
+                                <h1 class="m-item--hed">
+                                    <a href="">titulek titulek</a>
+                                </h1>
+
+                                <div class="m-item--description">
+                                    <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                                </div>
+                            </div>
+                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                        </header>
+                    </article>
+
+                </div>
+
+                <div class="m-card_thumb l-double">
+
+                    <article class="m-story">
+                        <header>
+                            <div class="m-item--image" style="background-image: url(http://lorempixel.com/300/300)">
+                                <a href="">
+                                    <img src="http://lorempixel.com/400/600" alt="" />
+                                </a>
+                            </div>
+                            <div class="m-item--summary">
+                                <h1 class="m-item--hed">
+                                    <a href="">titulek titulek</a>
+                                </h1>
+
+                                <div class="m-item--description">
+                                    <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                                </div>
+                            </div>
+                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                        </header>
+                    </article>
+
+                </div>
+            </div>
+          <?php } ?>
         </div>
     </div>
 

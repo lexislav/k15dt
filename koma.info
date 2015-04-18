@@ -73,6 +73,8 @@ stylesheets[all][] = components/slick-carousel/slick/slick-theme.css
 
 scripts[] = components/modernizr/modernizr.js
 scripts[] = components/slick-carousel/slick/slick.min.js
+scripts[] = components/foundation/js/foundation.min.js
+scripts[] = components/foundation/js/foundation/foundation.clearing.js
 
 
 ; This section lists the regions defined in Zen's default page.tpl.php and

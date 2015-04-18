@@ -56,6 +56,50 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 ?>
 
 
+<!-- dummy gallery-->
+<div class="m-section">
+    <div class="row">
+        <header class="m-section--header">
+            <div class="l-full">
+                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top">galerie</h2>
+            </div>
+        </header>
+    </div>
+
+    <div class="row">
+        <!-- gallerie -->
+        <!-- zobrazení přes featured image-->
+        <ul class="clearing-thumbs clearing-feature" data-clearing>
+            <li><a href="/sites/all/themes/koma/assets/gallery/full/img-1.jpg"><img src="/sites/all/themes/koma/assets/gallery/thumb/img-1.jpg"></a></li>
+            <li><a href="/sites/all/themes/koma/assets/gallery/full/img-2.jpg"><img src="/sites/all/themes/koma/assets/gallery/thumb/img-2.jpg"></a></li>
+            <li><a href="/sites/all/themes/koma/assets/gallery/full/img-3.jpg"><img src="/sites/all/themes/koma/assets/gallery/thumb/img-3.jpg"></a></li>
+            <li class="clearing-featured-img"><a href="/sites/all/themes/koma/assets/gallery/full/img-4.jpg"><img src="/sites/all/themes/koma/assets/gallery/thumb/img-4.jpg"></a></li>
+            <li><a href="/sites/all/themes/koma/assets/gallery/full/img-5.jpg"><img src="/sites/all/themes/koma/assets/gallery/thumb/img-5.jpg"></a></li>
+        </ul>
+        <!-- konec galerie-->
+    </div>
+    <hr />
+    <div class="row">
+        <!-- gallerie -->
+        <!-- obecná galerie -->
+        <ul class="clearing-thumbs" data-clearing>
+            <li><a href="/sites/all/themes/koma/assets/gallery/full/img-1.jpg"><img src="/sites/all/themes/koma/assets/gallery/thumb/img-1.jpg"></a></li>
+            <li><a href="/sites/all/themes/koma/assets/gallery/full/img-2.jpg"><img src="/sites/all/themes/koma/assets/gallery/thumb/img-2.jpg"></a></li>
+            <li><a href="/sites/all/themes/koma/assets/gallery/full/img-3.jpg"><img src="/sites/all/themes/koma/assets/gallery/thumb/img-3.jpg"></a></li>
+            <li><a href="/sites/all/themes/koma/assets/gallery/full/img-4.jpg"><img src="/sites/all/themes/koma/assets/gallery/thumb/img-4.jpg"></a></li>
+            <li><a href="/sites/all/themes/koma/assets/gallery/full/img-5.jpg"><img src="/sites/all/themes/koma/assets/gallery/thumb/img-5.jpg"></a></li>
+        </ul>
+        <!-- konec galerie-->
+    </div>
+
+    <div class="row">
+        <footer class="m-section--footer">Každá sekce musí mít markup patičky i hlavičky, i když bude jejich obsah prázdný</footer>
+    </div>
+</div>
+<!-- dummy gallery-->
+
+
+
 <!--tri odkazy-->
 <div class="m-section l-feed_triple-card">
 

@@ -1,3 +1,9 @@
+
+// run foundation
+jQuery(document).foundation();
+
+
+//
 jQuery(function () {
 
     //

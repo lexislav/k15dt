@@ -55,7 +55,7 @@
                 <ul class="m-section--nav inline-right">
                     <li><a href="">Kariéra v KOMA </a></li>
                     <li><a href="">Adresář </a></li>
-                    <li><a href=""><i class="fa fa-arrow-down"></i> Kontaktní formulář</a></li>
+                    <li><a href="">&darr; Kontaktní formulář</a></li>
                 </ul>
             </div>
         </footer>
@@ -190,7 +190,7 @@
             <ul class="m-section--nav inline-right">
                 <li><a href="">Kariéra v KOMA </a></li>
                 <li><a href="">Adresář </a></li>
-                <li><a href=""><i class="fa fa-arrow-down"></i> Kontaktní formulář</a></li>
+                <li><a href="">&darr; Kontaktní formulář</a></li>
             </ul>
         </footer>
     </div>

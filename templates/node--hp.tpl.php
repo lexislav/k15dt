@@ -214,7 +214,7 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                     </header>
                 </article>
                 <div class="m-card--more">
-                    <a href="<?= $prvnitri->field_hpc_1_odkaz['und'][0]['value'] ?>" title="<?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?>"><i class="fa fa-arrow-right"></i></a>
+                    <a href="<?= $prvnitri->field_hpc_1_odkaz['und'][0]['value'] ?>" title="<?= $prvnitri->field_hpc_1_nadpis['und'][0]['value'] ?>"><i class="fa">&rarr;</i></a>
                 </div>
 
             </div>
@@ -272,10 +272,10 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> <i class="fa fa-arrow-up"></i></a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj"><?php print t('Celý archiv') ?> <i class="fa fa-arrow-right"></i></a></div>
+                <div class="m-section--more"><a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj"><?php print t('Celý archiv') ?> &rarr;</div>
             </div>
         </footer>
     </div>
@@ -317,7 +317,7 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                             <div class="m-item--description ellipsis"></div>
                         </div>
                     </header>
-                    <div class="m-card--more"><a href="<?= $druhetri->field_hpc_2_odkaz['und'][0]['value'] ?>"><i class="fa fa-arrow-right"></i></a></div>
+                    <div class="m-card--more"><a href="<?= $druhetri->field_hpc_2_odkaz['und'][0]['value'] ?>"> &rarr;</a></div>
                 </article>
             </div>
             <?php
@@ -327,10 +327,10 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> <i class="fa fa-arrow-up"></i></a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href="">Firma a lidé <i class="fa fa-arrow-right"></i></a></div>
+                <div class="m-section--more"><a href="">Firma a lidé &rarr;</a></div>
             </div>
         </footer>
     </div>

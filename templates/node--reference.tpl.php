@@ -141,8 +141,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                 <div class="m-aside-block">
                     <header class="m-aside-block--header">
                         <div class="m-aside-block--summary">
-                            <h2 class="m-aside-block--hed"><i
-                                    class="fa fa-arrow-right"></i> <?php print t('Fotogalerie') ?></h2>
+                            <h2 class="m-aside-block--hed">&rarr; <?php print t('Fotogalerie') ?></h2>
 
                             <div class="m-aside-block--meta">
                                 (<?= count($node->field_reference_fotogalerie['und'][0]['entity']->field_fotogalerie_imgs['und']) ?>
@@ -170,12 +169,11 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                     </div>
                     <footer class="m-aside-block--footer">
                         <div class="l-half">
-                            <div class="m-aside-block--top"><a href="">Block footer<i class="fa fa-arrow-up"></i></a>
+                            <div class="m-aside-block--top"><a href="">Block footer&uarr;</a>
                             </div>
                         </div>
                         <div class="l-half">
-                            <div class="m-aside-block--more"><a href="">Block footer2<i
-                                        class="fa fa-arrow-right"></i></a></div>
+                            <div class="m-aside-block--more"><a href="">Block footer2 &rarr;</a></div>
                         </div>
                     </footer>
                 </div>
@@ -185,10 +183,10 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href="">Celý archiv <i class="fa fa-arrow-right"></i></a></div>
+                <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
             </div>
         </footer>
     </div>

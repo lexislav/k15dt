@@ -171,7 +171,7 @@ $polezemi = country_get_list();
 
                             <div class="m-item--description">
                                 <p><?= $reference['entity']->field_reference_text[$node->language][0]['value'] ?>
-                                    <i class="fa fa-arrow-right"></i></p>
+                                    &rarr;</p>
                             </div>
                             <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>/edit">editovat</a>
                         </div>
@@ -274,7 +274,7 @@ if(isset($node->field_segment_faq['und'])){
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
             </div>
             <div class="l-half">
                 <ul class="m-section--nav inline-right">
@@ -328,7 +328,7 @@ print render($block);
                                     <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
                                 </div>
                             </div>
-                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                            <div class="m-card--more">&rarr;</div>
                         </header>
                     </article>
 
@@ -352,7 +352,7 @@ print render($block);
                                     <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
                                 </div>
                             </div>
-                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                            <div class="m-card--more">&rarr;</div>
                         </header>
                     </article>
 
@@ -376,7 +376,7 @@ print render($block);
                                     <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
                                 </div>
                             </div>
-                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                            <div class="m-card--more">&rarr;</div>
                         </header>
                     </article>
 
@@ -402,7 +402,7 @@ print render($block);
                                     <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
                                 </div>
                             </div>
-                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                            <div class="m-card--more">&rarr;</div>
                         </header>
                     </article>
 
@@ -426,7 +426,7 @@ print render($block);
                                     <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
                                 </div>
                             </div>
-                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                            <div class="m-card--more">&rarr;</div>
                         </header>
                     </article>
 
@@ -450,7 +450,7 @@ print render($block);
                                     <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
                                 </div>
                             </div>
-                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+                            <div class="m-card--more">&rarr;</div>
                         </header>
                     </article>
 
@@ -463,10 +463,10 @@ print render($block);
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href="">Celý archiv <i class="fa fa-arrow-right"></i></a></div>
+                <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
             </div>
         </footer>
     </div>

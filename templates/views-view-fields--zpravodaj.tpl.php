@@ -18,7 +18,7 @@ if (isset($row->field_field_zpravodaj_main_img[0])) {
             </h1>
 
             <div class="m-item--description">
-                <p><?= $fields['field_zpravodaj_perex']->content ?><i class="fa fa-arrow-right"></i></p>
+                <p><?= $fields['field_zpravodaj_perex']->content ?>&rarr;</p>
             </div>
             <div class="m-item--meta">
                 <span><?= $row->field_field_zpravodaj_kategorie[0]['rendered']['#markup'] ?> /</span> <span

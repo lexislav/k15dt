@@ -41,5 +41,5 @@ if (isset($row->field_field_reference_main_img[0])) {
             </div>
         </header>
     </article>
-    <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+    <div class="m-card--more">&rarr;</div>
 </div>

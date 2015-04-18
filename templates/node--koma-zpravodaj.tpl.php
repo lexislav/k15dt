@@ -52,7 +52,7 @@
                         <header class="m-aside-block--header">
                             <div class="m-aside-block--summary">
                                 <h2 class="m-aside-block--hed">
-                                    <i class="fa fa-arrow-right"></i> <?php print t('Fotogalerie') ?></h2>
+                                    &rarr; <?php print t('Fotogalerie') ?></h2>
 
                                 <div class="m-aside-block--meta">
                                     (<?= count($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und']) ?> <?php print t('fotografií') ?>)
@@ -82,7 +82,7 @@
                             not used here
                         <footer class="m-aside-block--footer">
                             <div class="l-half">
-                                <div class="m-aside-block--top"><a href="">Block footer<i class="fa fa-arrow-up"></i></a></div>
+                                <div class="m-aside-block--top"><a href="">Block footer&uarr;</a></div>
                             </div>
                             <div class="l-half">
                                 <div class="m-aside-block--more"><a href="">Block footer2<i class="fa fa-arrow-right"></i></a></div>
@@ -100,7 +100,7 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
             </div>
             <div class="l-half">
                 <?php

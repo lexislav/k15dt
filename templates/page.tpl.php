@@ -125,7 +125,7 @@
                 </header>
 
                 <div class="m-item--description"><?php print t('Nenašli jste zde odpověď na Vaše otázky? Zeptejte se nás přímo!') ?></div>
-                <button><?php print t('Zeptejte se nás') ?> <i class="fa fa-arrow-right"></i></button>
+                <button><?php print t('Zeptejte se nás') ?> &rarr;</button>
             </article>
 
         </div>

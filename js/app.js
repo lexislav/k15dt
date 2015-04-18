@@ -192,6 +192,16 @@ jQuery('[collapsible]').each(function () {
 
 });
 
+// close section
+
+jQuery('[close-section]').each(function () {
+    var el = jQuery(this);
+    el.click(function () {
+        el.parent().css("display", "none");
+    });
+});
+
+
 // chosen filters - select boxes
 
 jQuery(".ch-select").chosen({

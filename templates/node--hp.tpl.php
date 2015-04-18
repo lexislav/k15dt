@@ -51,9 +51,9 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
         </div>
     </div>
 </div><!--slider-->
-<?php
 
-?>
+
+
 
 
 <!-- dummy gallery-->
@@ -97,6 +97,82 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
     </div>
 </div>
 <!-- dummy gallery-->
+
+<!-- dummy bannery-->
+
+<div class="m-section bg-primary">
+    <div class="m-section--close" close-section>&times;</div>
+    <article class="m-banner">
+        <header>
+            <div class="m-banner--image" style="background-image: url(http://lorempixel.com/300/300)">
+                <a href="">
+                    <img src="http://lorempixel.com/300/300" alt="" />
+                </a>
+            </div>
+            <div class="m-banner--summary">
+                <h1 class="m-banner--hed">
+                    Obytné kontejnery si můžete vybrat podle sebe,<a href=""> žádné vaše přání není nerealizovatelné.</a>
+                </h1>
+            </div>
+        </header>
+    </article>
+</div>
+
+<div class="m-section bg-secondary">
+    <div class="m-section--close" close-section>&times;</div>
+    <article class="m-banner">
+        <header>
+            <!--<div class="m-banner--image" style="background-image: url(http://lorempixel.com/300/300)">
+                <a href="">
+                    <img src="http://lorempixel.com/300/300" alt="" />
+                </a>
+            </div>-->
+            <div class="m-banner--summary">
+                <h1 class="m-banner--hed">
+                    Obytné kontejnery si můžete vybrat podle sebe,<a href=""> žádné vaše přání není nerealizovatelné.</a>
+                </h1>
+            </div>
+        </header>
+    </article>
+</div>
+
+<div class="m-section bg-secondary-light">
+    <div class="m-section--close" close-section>&times;</div>
+    <article class="m-banner">
+        <header>
+            <div class="m-banner--image" style="background-image: url(http://lorempixel.com/300/300)">
+                <a href="">
+                    <img src="http://lorempixel.com/300/300" alt="" />
+                </a>
+            </div>
+            <div class="m-banner--summary">
+                <h1 class="m-banner--hed">
+                    Obytné kontejnery si můžete vybrat podle sebe,<a href=""> žádné vaše přání není nerealizovatelné.</a>
+                </h1>
+            </div>
+        </header>
+    </article>
+</div>
+
+<div class="m-section bg-secondary-light">
+    <div class="m-section--close" close-section>&times;</div>
+    <article class="m-banner">
+        <header>
+            <div class="m-banner--image" style="background-image: url(http://lorempixel.com/300/300)">
+                <a href="">
+                    <img src="http://lorempixel.com/300/300" alt="" />
+                </a>
+            </div>
+            <div class="m-banner--summary">
+                <h1 class="m-banner--hed">
+                    <a href=""> žádné vaše přání není nerealizovatelné.</a>
+                </h1>
+            </div>
+        </header>
+    </article>
+</div>
+
+<!-- dummy bannery-->
 
 
 

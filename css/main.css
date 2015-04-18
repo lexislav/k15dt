@@ -3046,6 +3046,9 @@ body {
       height: 100%;
       width: auto; }
 
+.m-section.bg-secondary-light .m-section--close {
+  color: #B5BBB4; }
+
 .m-section--header, .m-section--footer {
   *zoom: 1;
   text-transform: uppercase;
@@ -3132,6 +3135,20 @@ body {
   .m-section.mm-has-background {
     background-position: center;
     background-size: cover; }
+  .m-section .m-section--close {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    content: "x";
+    color: white;
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer; }
 
 .m-section_vertical-tabs {
   position: relative;
@@ -4837,6 +4854,57 @@ body {
       display: none; }
     .m-properties dl.mm-noborder {
       border-bottom: none; }
+
+.m-banner {
+  padding: 25px 0;
+  text-align: center;
+  position: relative;
+  *zoom: 1; }
+  .m-banner:before, .m-banner:after {
+    content: '';
+    display: table; }
+  .m-banner:after {
+    clear: both; }
+  .m-banner > header {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative; }
+  .m-banner .m-banner--hed {
+    font-size: 20px;
+    font-weight: 400; }
+    .m-banner .m-banner--hed a {
+      text-decoration: none; }
+      .m-banner .m-banner--hed a:hover {
+        text-decoration: underline; }
+  .m-banner .m-banner--image {
+    height: 60px;
+    width: 100px;
+    overflow: hidden;
+    margin-right: 20px;
+    float: left;
+    background-size: cover;
+    background-position: center; }
+    .m-banner .m-banner--image a {
+      display: block;
+      height: 100%;
+      width: 100%; }
+    .m-banner .m-banner--image img {
+      visibility: hidden; }
+
+.bg-primary .m-banner {
+  color: white; }
+  .bg-primary .m-banner a {
+    color: white; }
+
+.bg-secondary .m-banner {
+  color: white; }
+  .bg-secondary .m-banner a {
+    color: white; }
+
+.bg-secondary-light .m-banner {
+  color: #4A4A4A; }
+  .bg-secondary-light .m-banner a {
+    color: #000; }
 
 .m-layout-object figure {
   padding: 0;

@@ -53,6 +53,32 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 </div><!--slider-->
 
 
+<!-- full size breakout -->
+<div class="m-section l-feed_one bg-secondary-light mm-has-background" style="background-image: url(http://lorempixel.com/900/600)">
+
+    <header class="m-section--header">
+        <h2 class="m-section--hed mm-medium mm-normal mm-center color-white">Nabídka fasádních systémů</h2>
+    </header>
+
+    <div class="row">
+        <div class="m-card_centered-text l-single bg-secondary-light">
+
+            <article class="m-story">
+                <header class="m-item--header">
+                    <div class="m-item--summary">
+                        <div class="m-item--description color-white mm-bold ">
+                            <p>Obytné kontejnery si můžete vybrat podle sebe, žádné vaše přání není nerealizovatelné. Renomované specializované firmy nabízí řadu variant: na výběr jsou samostatné obytné a sanitární kontejnery i složité sestavy, které mohou mít i tři patra. Obytné buňky se tak stávají jedinečným řešením třeba pro zmíněné mládežnické ubytovny nebo pro školky, kterých je v Česku stále nedostatek.</p>
+                        </div>
+                    </div>
+                </header>
+            </article>
+            <div class="m-card--more "><a class="button" href="">něco dalšího o fasádách &rarr;</a></div>
+        </div>
+    </div>
+
+</div>
+<!-- full size breakout -->
+
 
 <!-- produkt -->
 <div class="m-section l-feed_four">

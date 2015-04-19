@@ -54,6 +54,65 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 
 
 
+<!-- produkt -->
+<div class="m-section l-feed_four">
+
+    <div class="row">
+        <header class="m-section--header">
+            <div class="l-full">
+                <h2 class="m-section--hed mm-big">Reference / <span class="color-primary">archiv referencí</span></h2>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="row">
+       <?php for($i=0; $i<4; $i++) { ?>
+        <div class="m-card_product mm-color-{{ a }} l-single">
+
+            <article class="m-product">
+                <header>
+                    <div class="m-item--image" style="background-image: url(http://lorempixel.com/400/600)">
+                        <a href="">
+                            <img src="http://lorempixel.com/400/600" alt="" />
+                        </a>
+                    </div>
+                    <div class="m-item--summary">
+                        <h1 class="m-item--hed">
+                            <a href="">titulek titulek titulek titulek titulek</a>
+                        </h1>
+
+                        <div class="m-item--description">
+                            <p>Morbi vulpctum ex, enim sit amet ult  s hendrerit.</p>
+                        </div>
+
+                    </div>
+                </header>
+            </article>
+            <div class="m-card--more"><a href="">&rarr;</a></div>
+        </div>
+       <?php } ?>
+    </div>
+
+
+    <div class="row">
+        <footer class="m-section--footer">
+            <div class="l-half">
+                <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+            </div>
+            <div class="l-half">
+                <ul class="m-section--nav inline-right">
+                    <li><a href="" title="Novinky">Technická pomoc</a></li>
+                    <li><a href="">informace pro architekty</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+<!-- produkt -->
+
 
 
 <!-- dummy gallery-->

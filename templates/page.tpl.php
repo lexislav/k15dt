@@ -67,7 +67,7 @@
                     <a href="#" title="" mega-open="#megaMobile"><i class="fa fa-bars"></i></a>
                 </li>
                 <li class="m-navbar--menu-search">
-                    <a href="http://koma-group.cz/?q=search" title=""><i class="fa fa-search"></i></a>
+                    <a href="<?= $GLOBALS['base_url'] ?>/?q=search" title=""><i class="fa fa-search"></i></a>
                 </li>
                 <li class="m-navbar--menu-link">
                     <a href="<?= $GLOBALS['base_url'] ?>/?q=kontakty" target="" title="" mega-open="#megaKontakt"><em class="">Kontakt</em></a>

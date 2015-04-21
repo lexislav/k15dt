@@ -62,63 +62,7 @@ $polezemi = country_get_list();
                 <?php
                 if(isset($content['field_segment_soubory']['#items'])){
                 ?>
-                <aside>
-                    <div class="m-aside-block bg-secondary-light mm-pad">
-                        <header class="m-aside-block--header">
-                            <h3 class="m-aside-block--hed">Ke stažení</h3>
-                        </header>
-                        <div class="m-reference--meta m-properties">
-
-                                <?php
-
-                                foreach ($content['field_segment_soubory']['#items'] AS $soubor) {
-
-                                    $trida = '';
-                                    $typ = end(explode('.', $soubor['filename']));
-
-
-                                    switch ($typ) {
-                                        case "zip":
-                                            $trida = 'fa-file-archive-o';
-                                            break;
-                                        case "xls":
-                                            $trida = 'fa-file-excel-o';
-                                            break;
-                                        case "xlsx":
-                                            $trida = 'fa-file-excel-o';
-                                            break;
-                                        case "doc":
-                                            $trida = 'fa-file-word-o';
-                                            break;
-                                        case "docx":
-                                            $trida = 'fa-file-word-o';
-                                            break;
-                                        case "pdf":
-                                            $trida = 'fa-file-pdf-o';
-                                            break;
-                                        case "txt":
-                                            $trida = 'fa-file-text-o';
-                                            break;
-                                        default:
-                                            $trida = 'fa-file-o';
-                                    }
-
-                                    ?>
-                            <dl class="mm-nolabels mm-noborder">
-                                    <dt><?=$soubor['description']?></dt>
-                                    <dd><a href="<?= $GLOBALS['base_url'] ?>/sites/default/files/segment_trhu/soubory/<?=$soubor['filename']?>" target="_blank" title="<?=$soubor['description']?>">
-                                            <i class="fa <?=$trida?>"></i> <?=$soubor['description']?></a></dd>
-                            </dl>
-                                <?php
-                                }
-
-                                ?>
-
-
-
-                        </div>
-                    </div>
-                </aside>
+                    <?php print render($content['field_segment_soubory']); ?>
                 <?php
                 }
 

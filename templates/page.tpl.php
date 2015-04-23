@@ -31,14 +31,30 @@
                 <li class="m-navbar--menu-dropdown">
                     <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><em class="">Language</em></a>
                     <ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
-                        <li><a href="#">Jazyk1</a></li>
-                        <li><a href="#">Jazyk2</a></li>
-                        <li><a href="#">Jazyk3</a></li>
+<?php        print block_render('locale', 'language'); ?>
                     </ul>
                 </li>
 
 
             </ul>
+
+            <?php
+
+
+
+
+            function block_render($module, $block_id) {
+                $block = block_load($module, $block_id);
+                $block_content = _block_render_blocks(array($block));
+                $build = _block_get_renderable_array($block_content);
+                $block_rendered = drupal_render($build);
+                return $block_rendered;
+            }
+
+
+        //    print render($page['header']); ?>
+
+
 
             <ul class="m-navbar--menu m-navbar--menu-primary">
                 <li class="m-navbar--menu-callout">

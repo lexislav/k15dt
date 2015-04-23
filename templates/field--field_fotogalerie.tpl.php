@@ -7,6 +7,7 @@ foreach ($items AS $pole) {
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
+<!--                jako nazev se vklada jen cast za Fotogalerie, to vzdy zustava-->
                 <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top"><?= $cast->field_basic_title[$element['#language']][0]['value'] ?></h2>
             </div>
         </header>

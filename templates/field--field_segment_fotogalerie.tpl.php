@@ -43,45 +43,14 @@
  *
  * @ingroup themeable
  */
-
-//dsm($element);
-//dsm($items);
-
-
-foreach ($items[0]['entity']['field_collection_item'] AS $pole) {
-
-    ?>
-
-    <div class="m-section l-feed_one bg-secondary-light mm-has-background"
-         style="background-image: url(<?= image_style_url('none', $pole['field_cs_imgb_img']['#items'][0]['uri']) ?>)">
-
-        <header class="m-section--header">
-            <h2 class="m-section--hed mm-medium mm-tiny mm-center mm-border"><?=$pole['field_cs_imgb_nadpis']['#items'][0]['value']?></h2>
-        </header>
-
-        <div class="row">
-            <div class="m-card_centered-text l-single bg-secondary-light">
-
-                <article class="m-story">
-                    <header class="m-item--header">
-                        <div class="m-item--summary">
-                            <div class="m-item--description">
-                                <?=$pole['field_cs_imgb_text']['#items'][0]['value']?>
-                            </div>
-                        </div>
-                    </header>
-
-                    <footer class="m-item--footer">
-                        tady bude fotka, nebo gallerka
-                    </footer>
-                </article>
-
-
-            </div>
-        </div>
-
+?>
+<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
+    <?php if (!$label_hidden): ?>
+        <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
+    <?php endif; ?>
+    <div class="field-items"<?php print $content_attributes; ?>>
+        <?php foreach ($items as $delta => $item): ?>
+            <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></div>
+        <?php endforeach; ?>
     </div>
-    <?php
-
-}
-
+</div>

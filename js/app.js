@@ -95,16 +95,23 @@ jQuery(function () {
         var item = jQuery(this);
         var mega = jQuery("#mega");
 
-        item.click(function (e) {
-            e.preventDefault();
-            if (lastMegaTab) {
-                lastMegaTab.removeClass("is-active");
-                jQuery('body').removeClass("scroll-lock");
+        item.hover(
+            function (e) {
+                //e.preventDefault();
+                if (lastMegaTab) {
+                    lastMegaTab.removeClass("is-active");
+                    jQuery('body').removeClass("scroll-lock");
+                }
+
+                mega.addClass("is-open");
+                tab.addClass("is-active");
+                jQuery('body').addClass("scroll-lock");
+                lastMegaTab = tab;
+            },
+            function(e) {
+                console.log("hover");
             }
-            mega.removeClass("is-open");
-            lastMegaTab.removeClass("is-active");
-            jQuery('body').removeClass("scroll-lock");
-        });
+        );
 
     });
 

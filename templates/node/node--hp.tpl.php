@@ -34,6 +34,8 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                 <?php
             }
         }
+
+
         ?>
     </div>
     <div class="navigation" carouselnav slick-method="mouseenter">
@@ -182,6 +184,11 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
     </div>
 </div>
 <!-- dummy gallery-->
+
+
+
+
+
 
 <!-- dummy bannery-->
 

@@ -52,7 +52,7 @@
                                         </a>
                                     </div>
                                     <h1 class="m-item--hed">
-                                        <a href="<?=$hodnota['field_cs_cs2_odkaz']['#items'][0]['url']?>"><?= $hodnota['field_cs_cs2_popis']['#items'][0]['value'] ?></a>
+                                        <a href="<?=@$hodnota['field_cs_cs2_odkaz']['#items'][0]['url']?>"><?= @$hodnota['field_cs_cs2_popis']['#items'][0]['value'] ?></a>
                                     </h1>
 
                                     <div class="m-item--description">

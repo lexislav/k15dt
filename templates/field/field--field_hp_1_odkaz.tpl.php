@@ -1,6 +1,6 @@
 
 <!--tri odkazy-->
-<div class="m-section l-feed_triple-card">
+<div class="m-section l-feed_<?=(count($items)==3)?'triple-card':'four'?>">
 
     <div class="row">
         <header class="m-section--header">

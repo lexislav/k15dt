@@ -14,6 +14,47 @@
 //function koma_preprocess_page(&$variables) {
 //    echo '<pre>'; var_dump($variables['theme_hook_suggestions']); echo '</pre>';
 //}
+function koma_links__locale_block(&$variables) {
+    // the global $language variable tells you what the current language is
+    global $language;
+
+// an array of list items
+    $items = array();
+    foreach($variables['links'] as $lang => $info) {
+
+        $name     = $info['language']->native;
+        $href     = isset($info['href']) ? $info['href'] : '';
+        $li_classes   = array('list-item-class');
+        // if the global language is that of this item's language, add the active class
+        if($lang === $language->language){
+            $li_classes[] = 'active';
+        }
+        $link_classes = array('link-class1', 'link-class2');
+        $options = array('attributes' => array('class'    => $link_classes),
+            'language' => $info['language'],
+            'html'     => true
+        );
+        $link = l($name, $href, $options);
+
+        // display only translated links
+        if ($href) $items[] = array('data' => $link, 'class' => $li_classes);
+    }
+
+// output
+    $attributes = array('class' => array('my-list'));
+
+$linky = '';
+foreach($items AS $item){
+    $linky.= '<li>';
+    $linky.= $item['data'];
+    $linky.= '</li>';
+}
+
+    return $linky;
+}
+
+
+
 
 function koma_theme() {
     $items = array();

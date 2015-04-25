@@ -18,7 +18,7 @@
 //    ?>
     <article class="m-reference">
         <header>
-            <div class="m-reference--image"
+            <div class="m-reference--image mm-preview-fit"
                  style="background-image: url(<?= image_style_url('x618-0', $content['field_cert_nahled']['#items'][0]['uri']) ?>)">
                 <a href=""><img
                         src="<?= image_style_url('x618-0', $content['field_cert_nahled']['#items'][0]['uri']) ?>"
@@ -26,20 +26,20 @@
             </div>
             <div class="m-reference--summary">
                 <h1 class="m-reference--hed"><a href=""><?php print $title; ?></a></h1>
-
-                <div class="">
-                  <?=$content['field_cert_popis']['#items'][0]['value']?>
+                <div class="m-reference--description">
                 </div>
                 <div class="m-reference--meta m-properties">
                     <dl>
-                        <!--                        @TODO kategorie predelat-->
-                        <dt><?php print t('Zařazení') ?></dt>
+                        <dt><?php print t('Zařazení certifikátu') ?></dt>
                         <dd><?= ($content['field_cert_kategorie'][0]['#title']); ?></dd>
                     </dl>
                     <dl>
-                        <!--                        @TODO kategorie predelat-->
                         <dt><?php print t('Certifikát ke stažení') ?></dt>
                         <dd><a href="<?= (file_create_url($content['field_cert_cert']['#items'][0]['uri'])); ?>"><?=$title?></a> </dd>
+                    </dl>
+                    <dl>
+                        <dt><?php print t('Popis Certifikatu') ?></dt>
+                        <dd><?=$content['field_cert_popis']['#items'][0]['value']?></dd>
                     </dl>
 
                 </div>

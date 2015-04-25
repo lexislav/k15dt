@@ -1,4 +1,5 @@
 <?php
+$polezemi = country_get_list();
 $prev_nid = prev_next_nid($node->nid, 'prev');
 $next_nid = prev_next_nid($node->nid, 'next');
 $next_title = db_query('SELECT title_field_value FROM {field_data_title_field} WHERE entity_id = :nid AND language = :lang', array(':nid' => $next_nid[0]->next_nid, ':lang' => $node->language))->fetchField();
@@ -96,7 +97,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                     <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel.
                         Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
                 </div>
-                <div class="m-reference--meta">
+                <div class="m-reference--meta m-properties">
                     <dl>
                         <!--                        @TODO kategorie predelat-->
                         <dt><?php print t('Zařazení') ?></dt>
@@ -108,8 +109,8 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                         <dd><?= ($content['field_reference_rok'][0]['#markup']); ?></dd>
                     </dl>
                     <dl>
-                        <dt>Místo realizace</dt>
-                        <dd>Vizovice, Česká republika</dd>
+                        <dt>Země realizace: </dt>
+                        <dd><?= $polezemi[$content['field_reference_zeme']['#items'][0]['iso2']] ?></dd>
                     </dl>
                     <?php if (isset($content['field_reference_pomodulu']['#items'][0]['value'])): ?>
                         <dl>
@@ -149,6 +150,12 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                             </div>
                         </div>
                     </header>
+
+
+
+
+
+
                     <div class="m-aside-block--content">
                         <div class="m-gallery">
                             <?php foreach ($node->field_reference_fotogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $obrazek) { ?>
@@ -167,15 +174,18 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                             <?php } ?>
                         </div>
                     </div>
-                    <footer class="m-aside-block--footer">
-                        <div class="l-half">
-                            <div class="m-aside-block--top"><a href="">Block footer&uarr;</a>
-                            </div>
-                        </div>
-                        <div class="l-half">
-                            <div class="m-aside-block--more"><a href="">Block footer2 &rarr;</a></div>
-                        </div>
-                    </footer>
+
+
+
+<!--                    <footer class="m-aside-block--footer">-->
+<!--                        <div class="l-half">-->
+<!--                            <div class="m-aside-block--top"><a href="">Block footer&uarr;</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="l-half">-->
+<!--                            <div class="m-aside-block--more"><a href="">Block footer2 &rarr;</a></div>-->
+<!--                        </div>-->
+<!--                    </footer>-->
                 </div>
             </aside>
         </div>

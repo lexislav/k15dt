@@ -21,8 +21,10 @@
     <?php endif; ?>
 
     <?php if ($exposed): ?>
-        <div class="view-filters">
+    <div class="m-filter">
+        <div class="l-grid">
             <?php print $exposed; ?>
+        </div>
         </div>
     <?php endif; ?>
 

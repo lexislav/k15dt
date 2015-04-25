@@ -1,15 +1,15 @@
 <div class="m-section l-detail-page">
     <div class="row">
         <header class="m-section--header">
-            <div class="l-full">
-                <nav class="breadcrumbs">
-                    <a href="#">Home</a>
-                    <a href="#">Features</a>
-                    <a class="unavailable" href="#">Gene Splicing</a>
-                    <a class="current" href="#">Cloning</a>
-                </nav>
-
-            </div>
+<!--            <div class="l-full">-->
+<!--                <nav class="breadcrumbs">-->
+<!--                    <a href="#">Home</a>-->
+<!--                    <a href="#">Features</a>-->
+<!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
+<!--                    <a class="current" href="#">Cloning</a>-->
+<!--                </nav>-->
+<!---->
+<!--            </div>-->
         </header>
     </div>
 

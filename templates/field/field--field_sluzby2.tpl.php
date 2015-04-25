@@ -1,13 +1,11 @@
-
 <div class="m-section_vertical-tabs">
-
     <div class="m-section--container">
         <div slick>
             <div class="row">
 
                 <header class="m-section--header">
                     <div class="l-full">
-                        <h2 class="m-section--hed mm-big"><?= $items[0]['field_basic_popis']['#items'][0]['value'] ?></h2>
+                        <h2 class="m-section--hed mm-big"><?= $items[0]['field_basic_title']['#items'][0]['value'] ?></h2>
                     </div>
                 </header>
 

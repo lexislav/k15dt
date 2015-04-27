@@ -5,69 +5,7 @@ $next_nid = prev_next_nid($node->nid, 'next');
 $next_title = db_query('SELECT title_field_value FROM {field_data_title_field} WHERE entity_id = :nid AND language = :lang', array(':nid' => $next_nid[0]->next_nid, ':lang' => $node->language))->fetchField();
 $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} WHERE entity_id = :nid AND language = :lang', array(':nid' => $prev_nid[0]->prev_nid, ':lang' => $node->language))->fetchField();
 ?>
-<div class="m-section l-navigation">
-    <div class="row">
-        <?php
-        if ($prev_nid[0]->prev_nid > 0) {
-            ?>
-            <div class="l-prev m-card_nav">
 
-                <article class="m-story">
-                    <header>
-                        <div class="m-item--image"
-                             style="background-image: url(<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>)">
-                            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $prev_nid[0]->prev_nid ?>">
-                                <img src="<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>" alt=""/>
-                            </a>
-                        </div>
-                        <div class="m-item--summary">
-                            <h1 class="m-item--hed">
-                                <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $prev_nid[0]->prev_nid ?>"><?= $prev_title ?></a>
-                            </h1>
-
-                            <div class="m-item--description">
-                                <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris
-                                    rutrum
-                                    vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
-                            </div>
-                        </div>
-                    </header>
-                </article>
-            </div>
-        <?php
-        }
-        ?>
-        <?php
-        if ($next_nid[0]->next_nid > 0) {
-            ?>
-            <div class="l-next m-card_nav">
-                <article class="m-story">
-                    <header>
-                        <div class="m-item--image"
-                             style="background-image: url(<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>)">
-                            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $next_nid[0]->next_nid ?>">
-                                <img src="<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>" alt=""/>
-                            </a>
-                        </div>
-                        <div class="m-item--summary">
-                            <h1 class="m-item--hed">
-                                <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $next_nid[0]->next_nid ?>"><?= $next_title ?></a>
-                            </h1>
-
-                            <div class="m-item--description">
-                                <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris
-                                    rutrum
-                                    vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
-                            </div>
-                        </div>
-                    </header>
-                </article>
-            </div>
-        <?php
-        }
-        ?>
-    </div>
-</div>
 <div class="m-section l-detail-page">
     <div class="row">
         <header class="m-section--header">
@@ -136,6 +74,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                 </div>
             </div>
         </header>
+
         <div class="m-reference--content">
             <div class="m-body--content"><?= ($content['field_reference_text']['#items'][0]['value']); ?></div>
             <aside>
@@ -157,10 +96,10 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
 
 
                     <div class="m-aside-block--content">
-                        <div class="m-gallery">
-                            <?php foreach ($node->field_reference_fotogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $obrazek) { ?>
+                        <div class="m-gallery clearing-thumbs clearing-feature">
+                            <?php foreach ($node->field_reference_fotogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $poradi => $obrazek) { ?>
                                 <div class="m-gallery-item">
-                                    <div class="m-gallery-item--image"
+                                    <div class="m-gallery-item--image <?= ($poradi == 0) ? 'clearing-featured-img' : '' ?>"
                                          style="background-image: url(<?= image_style_url('x186-139', $obrazek['uri']) ?>)">
                                         <a href=""><img src="<?= image_style_url('x186-139', $obrazek['uri']) ?>"
                                                         alt=""/></a>
@@ -199,5 +138,68 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                 <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
             </div>
         </footer>
+    </div>
+</div>
+<div class="m-section l-navigation">
+    <div class="row">
+        <?php
+        if ($prev_nid[0]->prev_nid > 0) {
+            ?>
+            <div class="l-prev m-card_nav">
+
+                <article class="m-story">
+                    <header>
+                        <div class="m-item--image"
+                             style="background-image: url(<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>)">
+                            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $prev_nid[0]->prev_nid ?>">
+                                <img src="<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>" alt=""/>
+                            </a>
+                        </div>
+                        <div class="m-item--summary">
+                            <h1 class="m-item--hed">
+                                <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $prev_nid[0]->prev_nid ?>"><?= $prev_title ?></a>
+                            </h1>
+
+                            <div class="m-item--description">
+                                <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris
+                                    rutrum
+                                    vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                            </div>
+                        </div>
+                    </header>
+                </article>
+            </div>
+        <?php
+        }
+        ?>
+        <?php
+        if ($next_nid[0]->next_nid > 0) {
+            ?>
+            <div class="l-next m-card_nav">
+                <article class="m-story">
+                    <header>
+                        <div class="m-item--image"
+                             style="background-image: url(<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>)">
+                            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $next_nid[0]->next_nid ?>">
+                                <img src="<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>" alt=""/>
+                            </a>
+                        </div>
+                        <div class="m-item--summary">
+                            <h1 class="m-item--hed">
+                                <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $next_nid[0]->next_nid ?>"><?= $next_title ?></a>
+                            </h1>
+
+                            <div class="m-item--description">
+                                <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris
+                                    rutrum
+                                    vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                            </div>
+                        </div>
+                    </header>
+                </article>
+            </div>
+        <?php
+        }
+        ?>
     </div>
 </div>

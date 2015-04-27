@@ -2,15 +2,16 @@
 
     <div class="row">
         <header class="m-section--header">
-            <div class="l-full">
-                <h2 class="m-section--hed">Objekty <span class="color-primary">dle účelu</span></h2>
-            </div>
+<!--            <div class="l-full">-->
+<!--                <h2 class="m-section--hed">Objekty <span class="color-primary">dle účelu</span></h2>-->
+<!--            </div>-->
         </header>
     </div>
     <div class="row">
 
 
         <?php
+
         // @TODO zkontrolovat kategorie a tenhle seznam
         $poleprobarvy = array(
             107 => 1,
@@ -26,15 +27,25 @@
             110 => 10,
             114 => 10
         );
-        foreach ($items AS $pole) {
-            $cast = ($pole['entity']['field_collection_item'][key($pole['entity']['field_collection_item'])]);
+        foreach ($items AS $cast) {
 
 
-            if (isset($cast['field_ereference_segment']['#items'][0]['target_id'])) {
-                $odkaz = $GLOBALS['base_url']."/?q=node/".$cast['field_ereference_segment']['#items'][0]['target_id'];
-            } else {
+
+//            if (isset($cast['field_ereference_segment']['#items'][0]['target_id'])) {
+//                $odkaz = $GLOBALS['base_url']."/?q=node/".$cast['field_ereference_segment']['#items'][0]['target_id'];
+//            } else {
+//                $odkaz = $cast['field_or_link']['#items'][0]['value'];
+//            }
+
+
+            if (isset($cast['field_or_link']['#items'][0]['value'])) {
                 $odkaz = $cast['field_or_link']['#items'][0]['value'];
+
+            } else {
+                $odkaz = $GLOBALS['base_url']."/?q=node/".$cast['field_ereference_segment']['#items'][0]['target_id'];
             }
+
+
 
 
 
@@ -45,10 +56,10 @@
                 <article class="m-story">
                     <header>
                         <div class="m-item--image"
-                             style="background-image: url(<?= image_style_url('x595-0', $cast['field_basic_img']['#items'][0]['uri']) ?>)">
+                             style="background-image: url(<?= image_style_url('x595-0', $cast['field_ereference_segment']['#items'][0]['entity']->field_segment_img['und'][0]['uri']) ?>)">
                             <a href="<?= $odkaz ?>">
                                 <img
-                                    src="<?= image_style_url('x595-0', $cast['field_basic_img']['#items'][0]['uri']) ?>"
+                                    src="<?= image_style_url('x595-0', $cast['field_ereference_segment']['#items'][0]['entity']->field_segment_img['und'][0]['uri']) ?>"
                                     alt=""/>
                             </a>
                         </div>

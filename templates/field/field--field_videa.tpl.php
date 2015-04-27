@@ -1,7 +1,3 @@
-
-<?php
-
-?>
 <div class="m-section l-feed_three">
     <div class="row">
         <header class="m-section--header">
@@ -11,17 +7,21 @@
         </header>
     </div>
     <div class="row">
-        <?php
-        foreach ($element['#items'] AS $poradi => $pole) {
+        <ul class="clearing-thumbs clearing-feature" data-clearing>
+            <?php
+            foreach ($element['#items'] AS $poradi => $pole) {
 
 
+                ?>
+                <li class="<?= ($poradi == 0) ? 'clearing-featured-img' : '' ?>"><a
+                        href="<?= $pole['entity']->field_odkazy_v_link['und'][0]['input'] ?>"><img
+                            src="<?= $GLOBALS['base_url'] ?>/sites/default/files/youtube/<?= $pole['entity']->field_odkazy_v_link['und'][0]['video_id'] ?>.png"></a>
+                </li>
+
+            <?php
+            }
             ?>
-
-
-        <?php
-        }
-        ?>
-
+        </ul>
 
         <div class="row">
             <footer class="m-section--footer">

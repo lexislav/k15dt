@@ -53,7 +53,7 @@
                                 </h1>
 
                                 <div class="m-item--description">
-                                    <?= $pole['field_basic_popis']['#items'][0]['value'] ?>
+                                    <?=@$pole['field_basic_popis']['#items'][0]['value'] ?>
                                 </div>
                             </header>
                         </article>

@@ -8,7 +8,7 @@
         foreach ($items AS $poradi => $pole) {
             if ($poradi == 0) continue;
             ?>
-            <li><a href="<?= $pole['field_page_link']['#items'][0]['display_url'] ?>" class="button"><?= $pole['field_basic_title']['#items'][0]['value'] ?> <span><?= $pole['field_basic_popis']['#items'][0]['value'] ?></span></a></li>
+            <li><a href="<?=@ $pole['field_page_link']['#items'][0]['display_url'] ?>" class="button"><?=@ $pole['field_basic_title']['#items'][0]['value'] ?> <span><?= $pole['field_basic_popis']['#items'][0]['value'] ?></span></a></li>
         <?php
         }
         ?>

@@ -1,7 +1,7 @@
 <!--slider-->
 <?php
 $wrapper = entity_metadata_wrapper('node', $node);
-$pole_slider = $wrapper->field_hp_slider->value();
+$pole_slider = $content['field_hlavni_slider']['#items'];
 $pole_prvnitri = $wrapper->field_hp_1_odkaz->value();
 $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 
@@ -13,25 +13,26 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
 
         <?php
         foreach ($pole_slider as $cislo => $r) {
+
             if ($cislo == 0) {
                 ?>
-                <div class="content-tab mm-center mm-welcome" style="background-image: url(<?= image_style_url('none', $r->field_c_hp_img['und'][0]['uri']) ?>);">
+                <div class="content-tab mm-center mm-welcome" style="background-image: url(<?= image_style_url('none', $r['field_basic_img']['und'][0]['uri']) ?>);">
                     <div class="row">
                         <div class="description">
-                            <p><?= $r->field_c_hp_text['und'][0]['value'] ?></p>
+                            <p><?= $r['field_basic_text']['und'][0]['value'] ?></p>
                             <img src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/square-down.svg" alt="" />
                         </div>
                     </div>
                 </div>
             <?php } else { ?>
-                <div class="content-tab <?php echo ($cislo <= 3) ? '' : 'mm-right'; ?>" style="background-image: url(<?= image_style_url('none', $r->field_c_hp_img['und'][0]['uri']) ?>);">
+                <div class="content-tab <?php echo ($cislo <= 3) ? '' : 'mm-right'; ?>" style="background-image: url(<?= image_style_url('none', $r['field_basic_img']['und'][0]['uri']) ?>);">
                     <div class="row">
                         <div class="description">
-                            <p><?= $r->field_c_hp_text['und'][0]['value'] ?></p>
+                            <p><?= $r['field_basic_text']['und'][0]['value'] ?></p>
                         </div>
                     </div>
                 </div>
-                <?php
+            <?php
             }
         }
 
@@ -45,9 +46,9 @@ $pole_druhetri = $wrapper->field_hp_2_odkaz->value();
                 if ($cislo == 0) continue;
                 ?>
                 <div class="tab color-<?= $cislo ?>" slick-to="<?= $cislo ?>">
-                    <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $r->field_c_hp_odkaz['und'][0]['target_id'] ?>"><?= $r->field_c_hp_popiska['und'][0]['value'] ?></a>
+                    <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $r['field_c_hp_odkaz']['und'][0]['target_id'] ?>"><?= $r['field_basic_title']['und'][0]['value'] ?></a>
                 </div>
-                <?php
+            <?php
             }
             ?>
         </div>

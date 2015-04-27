@@ -1,4 +1,6 @@
-<!--tri odkazy-->
+<?php
+dsm($items);
+?>
 <div class="m-section l-feed_<?= (count($items) == 3) ? 'triple-card' : 'four' ?>">
 
     <div class="row">
@@ -15,7 +17,7 @@
         <?php
         foreach ($items AS $pole) {
             $cast = ($pole['entity']['field_collection_item'][key($pole['entity']['field_collection_item'])]);
-            //  dsm($cast);
+             dsm($cast);
             ?>
             <div class="m-card_standard l-single">
 

@@ -45,9 +45,10 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
             <?php
             }
             ?>
-        </div> 
+        </div>
     </div>
 </div><!--slider-->
+
 <div class="m-section">
 <div class="row">
     <header class="m-section--header">

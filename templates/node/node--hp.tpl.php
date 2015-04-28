@@ -74,7 +74,7 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
     <div class="l-grid">
         <header class="m-section--header">
             <div class="l-third">
-                <h2 class="m-section--hed mm-small"><?php print t('Koma zpravodaj') ?></h2>
+                <h2 class="m-section--hed mm-small color-primary"><?php print t('Koma zpravodaj') ?></h2>
             </div>
             <?php
             $tree = taxonomy_get_tree(5);

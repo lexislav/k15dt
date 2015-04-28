@@ -30,8 +30,6 @@
         foreach ($items AS $cast) {
 
 
-            dsm($cast);
-
 
 
 //            if (isset($cast['field_ereference_segment']['#items'][0]['target_id'])) {

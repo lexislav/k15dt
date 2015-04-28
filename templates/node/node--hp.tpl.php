@@ -45,9 +45,19 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
             <?php
             }
             ?>
-        </div>
+        </div> 
     </div>
 </div><!--slider-->
+<div class="m-section">
+<div class="row">
+    <header class="m-section--header">
+        <div class="l-full">
+            <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top">JSME PŘEDNÍ ČESKÝ VÝROBCE
+                <br/><span class="color-primary">MODULÁRNÍ VÝSTAVBY</span></h2>
+        </div>
+    </header>
+</div>
+</div>
 <?php
 
 print render($content['field_img_text_text']);
@@ -62,6 +72,7 @@ print render($content['field_img_text_text']);
             </div>
             <?php
             $tree = taxonomy_get_tree(5);
+
             ?>
 
             <div class="l-two-thirds">

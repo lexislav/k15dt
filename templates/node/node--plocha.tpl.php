@@ -1,4 +1,10 @@
+<?php
+$tree = taxonomy_get_tree(5);
+$term = taxonomy_term_load(24);
 
+$translated_term = $term->name_field[$language][0]['value'];
+
+?>
 
 <!-- full size breakout -->
 <div class="m-section l-feed_one bg-secondary-light mm-has-background" style="background-image: url(http://lorempixel.com/900/600)">

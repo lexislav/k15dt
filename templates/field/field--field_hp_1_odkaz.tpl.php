@@ -1,6 +1,4 @@
-<?php
-dsm($items);
-?>
+
 <div class="m-section l-feed_<?= (count($items) == 3) ? 'triple-card' : 'four' ?>">
 
     <div class="row">

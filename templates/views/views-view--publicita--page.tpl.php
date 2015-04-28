@@ -2,16 +2,14 @@
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big">Publicita</h2>
+                <h2 class="m-section--hed mm-big"><?=$view->filter['status']->view->display[$view->filter['status']->view->current_display]->display_title;?></h2>
             </div>
         </header>
     </div>
     <div class="row">
 
         <?php print render($title_prefix); ?>
-        <?php if ($title): ?>
-            <?php print $title; ?>
-        <?php endif; ?>
+
         <?php print render($title_suffix); ?>
         <?php if ($header): ?>
             <div class="view-header">
@@ -80,10 +78,7 @@
                 <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
             </div>
             <div class="l-half">
-                <ul class="m-section--nav inline-right">
-                    <li><a href="" title="Novinky">Technická pomoc</a></li>
-                    <li><a href="">informace pro architekty</a></li>
-                </ul>
+
             </div>
         </footer>
     </div>

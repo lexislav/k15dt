@@ -2,7 +2,7 @@
 
 <div class="m-section l-feed_two">
         <header class="m-section--header">
-            <h2 class="m-section--hed mm-medium mm-center"><?php print t('Zpravodaj')?></h2>
+            <h2 class="m-section--hed mm-medium mm-center"><?php print t('Certifikace')?></h2>
         </header>
 
 

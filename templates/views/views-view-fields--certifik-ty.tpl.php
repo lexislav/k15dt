@@ -1,21 +1,31 @@
 <?php
-$uricko = $row->field_field_cert_logo[0]['raw']['uri'];
-?>
-<div class="m-card_certificate l-single">
-    <article class="m-story">
-        <header>
-            <div class="m-item--image" style="background-image: url(<?= image_style_url('x130', $uricko) ?>)">
-                <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>">
-                    <img src="<?= image_style_url('x130', $uricko) ?>" alt=""/>
-                </a>
-            </div>
-            <div class="m-item--summary">
-                <h1 class="m-item--hed">
-                    <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>"><?= $row->node_title ?></a>
-                </h1>
 
-                <div class="m-item--description"><?= $fields['field_cert_popis']->content ?></div>
+
+
+if (isset($row->field_field_cert_nahled[0])) {
+    $uricko = $row->field_field_cert_nahled[0]['raw']['uri'];
+} else {
+    $uricko = $row->field_field_cert_cert[0]['rendered']['#preview'];
+}
+?>
+<article class="m-story">
+    <header>
+        <div class="m-item--image mm-preview-fit" style="background-image: url(<?= image_style_url('x595-0', $uricko) ?>)">
+            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>">
+                <img src="<?= image_style_url('x595-0', $uricko) ?>" alt=""/>
+            </a>
+        </div>
+        <div class="m-item--summary">
+            <h1 class="m-item--hed">
+                <?= $fields['title']->content ?>
+            </h1>
+
+            <div class="m-item--description">
+                <p><?= $fields['field_cert_popis']->content ?>&rarr;</p>
             </div>
-        </header>
-    </article>
-</div>
+            <div class="m-item--meta">
+                <span><?= $row->field_field_cert_kategorie[0]['rendered']['#markup'] ?>
+            </div>
+        </div>
+    </header>
+</article>

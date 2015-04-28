@@ -117,15 +117,15 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
             </div>
             <div class="l-half">
                 <div class="m-section--more"><a
-                        href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj"><?php print t('Zobrazit celý archiv') ?> &rarr;</div>
+                        href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj"><?php print t('Zobrazit celý archiv') ?> &rarr;</a></div>
             </div>
         </footer>
     </div>
 </div>
-<!--koma zpravodaj-->
+<!--koma zpravodaj konec-->
 
 
-<!--cim se lisime-->
+<!--cim se lisime zacatek-->
 <div class="m-section l-section_side-triple bg-white"
      style="background-image: url('/sites/all/themes/koma/assets/images/mozaika-koma.png')">
 
@@ -138,12 +138,10 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
 
     <div class="l-grid">
         <h2 class="m-section--hed mm-big mm-tiny mm-pad-bottom firstline-primary">
-            <?php foreach ($content['field_hp_2_text']['#items'] as $cislo2 => $text) { ?><?= $text['value'] ?>
-                <br/><?php } ?>
+            <?php foreach ($content['field_hp_2_text']['#items'] as $cislo2 => $text) { ?>
+                <?= $text['value'] ?><br/><?php } ?>
         </h2>
-
         <?php
-
         print render($content['field_hp_2_odkazy']);
         ?>
     </div>
@@ -157,7 +155,7 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
             </div>
         </footer>
     </div>
-</div><!--cim se lisime-->
+</div><!--cim se lisime konec-->
 
 <script type="text/javascript"
         src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/components/slick-carousel/slick/slick.min.js"></script>

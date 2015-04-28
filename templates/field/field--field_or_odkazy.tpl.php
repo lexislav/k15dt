@@ -30,6 +30,9 @@
         foreach ($items AS $cast) {
 
 
+            dsm($cast);
+
+
 
 //            if (isset($cast['field_ereference_segment']['#items'][0]['target_id'])) {
 //                $odkaz = $GLOBALS['base_url']."/?q=node/".$cast['field_ereference_segment']['#items'][0]['target_id'];
@@ -38,11 +41,10 @@
 //            }
 
 
-            if (isset($cast['field_or_link']['#items'][0]['value'])) {
-                $odkaz = $cast['field_or_link']['#items'][0]['value'];
-
+            if (isset($cast['field_page_link']['#items'][0]['url'])) {
+                $odkaz = $GLOBALS['base_url'].'/?q='.($cast['field_page_link']['#items'][0]['url']);
             } else {
-                $odkaz = $GLOBALS['base_url']."/?q=node/".$cast['field_ereference_segment']['#items'][0]['target_id'];
+                $odkaz = drupal_get_path_alias('node/'.$cast['field_ereference_segment']['#items'][0]['target_id']);
             }
 
 

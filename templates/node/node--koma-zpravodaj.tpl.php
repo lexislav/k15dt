@@ -107,16 +107,16 @@
                 $tree = taxonomy_get_tree(5);
                 ?>
                 <ul class="m-section--nav inline-right">
-<!--                    --><?php
-//                    foreach ($tree as $term) {
-//                        $term = i18n_taxonomy_localize_terms($term);
-//                        ?>
-<!--                        <li>-->
-<!--<!--                            @TODO UPRAVIT CESTU-->-->
-<!--                            <a href="--><?//= $GLOBALS['base_url'] ?><!--?q=zpravodaj&field_zpravodaj_kategorie_tid=--><?//= $term->tid ?><!--"-->
-<!--                               title="--><?//= $term->name ?><!--">--><?//= $term->name ?><!--</a></li>-->
-<!--                    --><?php
-//                    }
+                    <?php
+                    foreach ($tree as $term) {
+
+                        ?>
+                        <li>
+                            <!--                            @TODO UPRAVIT CESTU-->
+                            <a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj&field_zpravodaj_kategorie_tid=<?= $term->tid ?>"
+                               title="<?= $term->name ?>"><?= $term->name ?></a></li>
+                    <?php
+                    }
                     ?>
                 </ul>
             </div>

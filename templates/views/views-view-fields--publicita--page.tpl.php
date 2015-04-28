@@ -13,7 +13,7 @@ $nid = 'node/'.$row->nid;
 
             <div class="m-item--summary">
                 <div class="m-item--description">
-                    <p><?= $row->field_field_odkazy_p_popisek[0]['rendered']['#markup'] ?></p>
+                    <p><?= $fields['nothing']->content ?></p>
                 </div>
             </div>
         </header>

@@ -1,5 +1,9 @@
 <?php print render($tabs); ?>
+
+
+
 <?php print $messages; ?>
+
 
 <div class="l-navbar">
 
@@ -66,6 +70,9 @@
     </div>
 
     <div class="m-navbar mm-primary" id="navbarPrimary">
+
+       <?php print render($page['navigation']); ?>
+
         <div class="m-navbar--container">
             <a class="m-navbar--logo" href="/">
                 <div class="mm-has-svg" style="background-image: url('/sites/koma/assets/images/logo-koma-modular.svg');"></div>

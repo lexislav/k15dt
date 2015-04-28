@@ -10,7 +10,7 @@ $translated_term = $term->name_field[$language][0]['value'];
 <div class="m-section l-feed_one bg-secondary-light mm-has-background" style="background-image: url(http://lorempixel.com/900/600)">
 
     <header class="m-section--header">
-        <h2 class="m-section--hed mm-medium mm-normal mm-center color-white">Nabídka fasádních systémů</h2>
+        <h2 class="m-section--hed mm-medium mm-normal mm-center color-white">TEST Nabídka fasádních systémů</h2>
     </header>
 
     <div class="row">
@@ -32,6 +32,133 @@ $translated_term = $term->name_field[$language][0]['value'];
 </div>
 <!-- full size breakout -->
 
+
+
+<!--paginace footer-->
+<div class="m-section l-feed_four">
+
+    <div class="row">
+        <header class="m-section--header">
+            <div class="l-full">
+                <h2 class="m-section--hed mm-big">Paginace ve footer + Filter v header</span></h2>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- filter markup-->
+
+    <div class="m-filter">
+        <div class="l-grid">
+            <form action="">
+                <div class="l-left">
+
+                    <ul class="m-filter--items">
+                        <li class="label">
+                            <div>vyber</div>
+                        </li>
+                        <li>
+                            <select name="timepass" class="ch-select">
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                            </select>
+                        </li>
+
+                        <li>
+                            <select name="timepass" class="ch-select">
+                                <option value="A">Option A</option>
+                                <option value="A" class="category">Category A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A" class="category">Category B</option>
+                                <option value="A">Option A</option>
+                            </select>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="l-right">
+                    <ul class=" m-filter--items">
+                        <li>
+                            <select name="timepass" class="ch-select">
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                                <option value="A">Option A</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <?php for($i=0; $i<4; $i++) { ?>
+            <div class="m-card_product mm-color-{{ a }} l-single">
+
+                <article class="m-product">
+                    <header>
+                        <div class="m-item--image" style="background-image: url(http://lorempixel.com/400/600)">
+                            <a href="">
+                                <img src="http://lorempixel.com/400/600" alt="" />
+                            </a>
+                        </div>
+                        <div class="m-item--summary">
+                            <h1 class="m-item--hed">
+                                <a href="">titulek titulek titulek titulek titulek</a>
+                            </h1>
+
+                            <div class="m-item--description">
+                                <p>Morbi vulpctum ex, enim sit amet ult  s hendrerit.</p>
+                            </div>
+
+                        </div>
+                    </header>
+                </article>
+                <div class="m-card--more"><a href="">&rarr;</a></div>
+            </div>
+        <?php } ?>
+    </div>
+
+
+    <div class="row">
+        <footer class="m-section--footer">
+            <footer class="m-section--footer">
+                <div class="l-left">
+                    <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                </div>
+                <div class="l-center">
+
+                    <div class="m-pagination">
+                        <ul class="m-pagination--container">
+                            <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                            <li class="current"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li class="unavailable"><a href="">&hellip;</a></li>
+                            <li><a href="">12</a></li>
+                            <li><a href="">13</a></li>
+                            <li class="arrow"><a href="">&raquo;</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="l-right">
+                    <div class="m-section--more"><a href="">Celý archiv <i class="fa fa-arrow-right"></i></a></div>
+                </div>
+            </footer>
+        </footer>
+    </div>
+
+</div>
+<!--paginace ve footer-->
 
 <!-- produkt -->
 <div class="m-section l-feed_four">

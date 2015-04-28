@@ -3201,12 +3201,16 @@ body {
   border-top: none; }
 
 .m-pagination {
-  text-align: center; }
+  text-align: center;
+  width: auto;
+  display: inline-block; }
 
 .m-pagination--container {
   display: block;
   min-height: 1.5rem;
-  margin-left: -0.3125rem; }
+  margin-left: -0.3125rem;
+  margin-top: 0;
+  margin-bottom: 0; }
   .m-pagination--container li {
     height: 1.5rem;
     color: #222222;
@@ -3659,7 +3663,7 @@ button:focus {
   .m-section--header a,
   .m-section--footer a {
     text-decoration: none;
-    color: #000; }
+    color: #4A4A4A; }
     .m-section--header a:hover,
     .m-section--footer a:hover {
       color: #C20E1A;
@@ -3693,33 +3697,7 @@ button:focus {
   font-size: 1.875rem;
   text-transform: uppercase;
   line-height: 1.2em;
-  font-weight: 800;
-  /*&.mm-small {
-        font-size: rem-calc(16);
-    }
-    &.mm-medium {
-        font-size: rem-calc(36);
-    }
-
-    &.mm-big {
-        font-size: rem-calc(50);
-    }
-
-    &.mm-tiny {
-        font-weight: 200;
-    }
-
-    &.mm-normal {
-        font-weight: 400;
-    }
-
-    &.mm-bold {
-        font-weight: 400;
-    }
-
-    &.mm-center {
-        text-align: center;
-    }*/ }
+  font-weight: 800; }
   .m-section--hed.mm-border {
     border: 2px solid black;
     display: inline-block;

@@ -126,7 +126,7 @@
 <!--certifikace-->
 <div class="m-section l-feed_six">
     <header class="m-section--header">
-        <h2 class="m-section--hed mm-medium mm-center color-secondary"><?php print t('Certifikace') ?></h2>
+        <h2 class="m-section--hed mm-small mm-center color-secondary"><?php print t('Certifikace') ?></h2>
     </header>
     <div class="row">
         <?php

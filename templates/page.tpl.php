@@ -35,7 +35,7 @@
                 <li class="m-navbar--menu-dropdown">
                     <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><em class="">Language</em></a>
                     <ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
-<?php        print block_render('locale', 'language'); ?>
+                        <?php print block_render('locale', 'language'); ?>
                     </ul>
                 </li>
 
@@ -47,7 +47,8 @@
 
 
 
-            function block_render($module, $block_id) {
+            function block_render($module, $block_id)
+            {
                 $block = block_load($module, $block_id);
                 $block_content = _block_render_blocks(array($block));
                 $build = _block_get_renderable_array($block_content);
@@ -56,7 +57,7 @@
             }
 
 
-        //    print render($page['header']); ?>
+            //    print render($page['header']); ?>
 
 
 
@@ -71,52 +72,20 @@
 
     <div class="m-navbar mm-primary" id="navbarPrimary">
 
-       <?php print render($page['navigation']); ?>
+
 
         <div class="m-navbar--container">
+
             <a class="m-navbar--logo" href="/">
                 <div class="mm-has-svg" style="background-image: url('/sites/koma/assets/images/logo-koma-modular.svg');"></div>
             </a>
 
-            <!--            @TODO Upravit podle predlohy, kuli megamenu-->
-            <!--            --><?php //if ($main_menu): ?>
-            <!--                --><?php
-            //                print theme('links__system_main_menu', array(
-            //                    'links' => $main_menu,
-            //                    'attributes' => array(
-            //                        'class' => array('m-navbar--menu', 'm-navbar--menu-secondary'),
-            //                    ),
-            //                )); ?>
-            <!--            --><?php //endif; ?>
-            <!--            @TODO Upravit podle predlohy, kuli megamenu-->
-
-            <ul class="m-navbar--menu m-navbar--menu-secondary">
-                <li class="m-navbar--menu-toc">
-                    <a href="#" title="" mega-open="#megaMobile"><i class="fa fa-bars"></i></a>
-                </li>
-                <li class="m-navbar--menu-search">
-                    <a href="<?= $GLOBALS['base_url'] ?>/?q=search" title=""><i class="fa fa-search"></i></a>
-                </li>
-                <li class="m-navbar--menu-link">
-                    <a href="<?= $GLOBALS['base_url'] ?>/?q=kontakty" target="" title="" mega-open="#megaKontakt"><em class="">Kontakt</em></a>
-                </li>
-                <li class="m-navbar--menu-link">
-                    <a target="" title="" mega-open="#megaFirma"><em class="">Firma a lidé</em></a>
-                </li>
-                <li class="m-navbar--menu-link">
-                    <a target="" title="" mega-open="#megaReference"><em class="">Reference</em></a>
-                </li>
-                <li class="m-navbar--menu-link">
-                    <a target="" title="" mega-open="#megaObjekty"><em class="">Objekty dle účelu</em></a>
-                </li>
-                <li class="m-navbar--menu-link">
-                    <a target="" title="" mega-open="#megaProdukty"><em class="">Produkty a služby</em></a>
-                </li>
-            </ul>
-
+            <div class="xmega">
+                <?php print render($page['navigation']); ?>
+            </div>
+            <?= $zip_code = db_query("SELECT field_megamenu_html_value from {field_data_field_megamenu_html} ")->fetchField(); ?>
         </div>
     </div>
-    <?= $zip_code = db_query("SELECT field_megamenu_html_value from {field_data_field_megamenu_html} ")->fetchField(); ?>
 
 </div>
 <?php print render($page['hledani']); ?>
@@ -137,8 +106,7 @@
     <div class="row">
         <footer class="m-section--footer"></footer>
     </div>
-</div>
-<!--certifikace-->
+</div><!--certifikace-->
 
 
 <!--support-->
@@ -176,8 +144,7 @@
 
         </div>
     </div>
-</div>
-<!--support-->
+</div><!--support-->
 
 <!--paticka-->
 <footer class="m-footer m-section l-footer">

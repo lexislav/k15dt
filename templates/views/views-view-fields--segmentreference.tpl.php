@@ -31,7 +31,7 @@ if ($cislo == 1 OR $cislo == 4 OR $cislo == 7 OR $cislo == 10  OR $cislo == 13 O
                         Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
                 </div>
             </div>
-            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+            <div class="m-card--more">&rarr;</div>
         </header>
     </article>
 </div>

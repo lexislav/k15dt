@@ -6,27 +6,20 @@
             </div>
         </header>
     </div>
-    <div class="row">
+    <div class="row rowfix">
         <ul class="clearing-thumbs clearing-feature" data-clearing>
             <?php
-            foreach ($element['#items'] AS $poradi => $pole) {
-
-
-                ?>
-                <li class="<?= ($poradi == 0) ? 'clearing-featured-img' : '' ?>"><a
-                        href="<?= $pole['entity']->field_odkazy_v_link['und'][0]['input'] ?>"><img
-                            src="<?= $GLOBALS['base_url'] ?>/sites/default/files/youtube/<?= $pole['entity']->field_odkazy_v_link['und'][0]['video_id'] ?>.png"></a>
+            foreach ($element['#items'] AS $poradi => $pole) { ?>
+                <li class="<?= ($poradi == 0) ? 'clearing-featured-img' : '' ?>">
+                    <a href="<?= $pole['entity']->field_odkazy_v_link['und'][0]['input'] ?>"><img src="<?= $GLOBALS['base_url'] ?>/sites/default/files/youtube/<?= $pole['entity']->field_odkazy_v_link['und'][0]['video_id'] ?>.png"></a>
                 </li>
-
-            <?php
-            }
-            ?>
+            <?php } ?>
         </ul>
 
         <div class="row">
             <footer class="m-section--footer">
                 <div class="l-half">
-                    <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                    <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
                 </div>
                 <div class="l-half">
                     <ul class="m-section--nav inline-right">

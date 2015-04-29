@@ -85,7 +85,7 @@
                                 <div class="m-aside-block--top"><a href="">Block footer&uarr;</a></div>
                             </div>
                             <div class="l-half">
-                                <div class="m-aside-block--more"><a href="">Block footer2<i class="fa fa-arrow-right"></i></a></div>
+                                <div class="m-aside-block--more"><a href="">Block footer2&rarr;</a></div>
                             </div>
                         </footer>
                         -->

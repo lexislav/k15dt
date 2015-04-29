@@ -89,7 +89,7 @@ print render($content);
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
             </div>
             <div class="l-half">
                 <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>

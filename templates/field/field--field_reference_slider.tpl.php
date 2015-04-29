@@ -15,7 +15,6 @@
                 <?php
                 foreach ($element['#object']->field_reference_slider['und'] AS $pole) {
 
-
                     $rok = str_replace('-01-01 00:00:00', '', $pole['entity']->field_reference_rok['und'][0]['value']);
                     //  if (isset($pole['entity']->field_field_reference_main_img['und'][0])) {
                     //      $uricko = $pole['entity']->field_field_reference_main_img['und'][0]['uri'];
@@ -25,6 +24,7 @@
                     //     }
                     $uricko = $pole['entity']->field_reference_main_img['und'][0]['uri'];
                     ?>
+
                     <div class="m-card_reference l-single slide">
 
                         <article class="m-story">
@@ -34,11 +34,13 @@
                                         <img src="<?= image_style_url('x1266-0', $uricko) ?>" alt="" />
                                     </a>
                                 </div>
+
                                 <div class="m-item--summary">
-                                    <h1 class="m-item--hed">VYBRANÉ REFERENCE </h1>
+                                    <h1 class="m-item--hed">VYBRANÉ REFERENCE</h1>
 
                                     <div class="m-item--description">
-                                        <p><a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $pole['entity']->nid ?>"><?= $pole['entity']->title ?></a>
+                                        <p>
+                                            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $pole['entity']->nid ?>"><?= $pole['entity']->title ?></a>
                                             <span class="color-body-font">[<?= $rok ?>]</span></p>
                                     </div>
                                 </div>
@@ -48,12 +50,7 @@
                         </article>
 
                     </div>
-
-                    <?php
-
-                }
-                ?>
-
+                <?php } ?>
 
             </div>
         </div>
@@ -63,10 +60,10 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href="">Celý archiv <i class="fa fa-arrow-right"></i></a></div>
+                <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
             </div>
         </footer>
     </div>

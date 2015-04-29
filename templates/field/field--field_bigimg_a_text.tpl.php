@@ -2,7 +2,7 @@
     <header class="m-section--header">
         <h2 class="m-section--hed mm-medium mm-normal mm-center color-white"><?=$items[0]['field_basic_title']['#items'][0]['value']?></h2>
     </header>
-    <div class="row">
+    <div class="row rowfix">
         <div class="m-card_centered-text l-single bg-secondary-light">
 
             <article class="m-story">

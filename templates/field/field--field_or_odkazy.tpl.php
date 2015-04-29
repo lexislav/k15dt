@@ -2,17 +2,16 @@
 
     <div class="row">
         <header class="m-section--header">
-<!--            <div class="l-full">-->
-<!--                <h2 class="m-section--hed">Objekty <span class="color-primary">dle účelu</span></h2>-->
-<!--            </div>-->
+            <!--            <div class="l-full">-->
+            <!--                <h2 class="m-section--hed">Objekty <span class="color-primary">dle účelu</span></h2>-->
+            <!--            </div>-->
         </header>
     </div>
-    <div class="row">
 
-
+    <div class="row rowfix">
         <?php
-
         // @TODO zkontrolovat kategorie a tenhle seznam
+
         $poleprobarvy = array(
             107 => 1,
             92 => 2,
@@ -27,10 +26,8 @@
             110 => 10,
             114 => 10
         );
+
         foreach ($items AS $cast) {
-
-
-
 
 //            if (isset($cast['field_ereference_segment']['#items'][0]['target_id'])) {
 //                $odkaz = $GLOBALS['base_url']."/?q=node/".$cast['field_ereference_segment']['#items'][0]['target_id'];
@@ -38,29 +35,21 @@
 //                $odkaz = $cast['field_or_link']['#items'][0]['value'];
 //            }
 
-
             if (isset($cast['field_page_link']['#items'][0]['url'])) {
-                $odkaz = $GLOBALS['base_url'].'/?q='.($cast['field_page_link']['#items'][0]['url']);
+                $odkaz = $GLOBALS['base_url'] . '/?q=' . ($cast['field_page_link']['#items'][0]['url']);
             } else {
-                $odkaz = drupal_get_path_alias('node/'.$cast['field_ereference_segment']['#items'][0]['target_id']);
+                $odkaz = drupal_get_path_alias('node/' . $cast['field_ereference_segment']['#items'][0]['target_id']);
             }
-
-
-
-
 
             ?>
 
-            <div
-                class="m-card_image mm-color-<?= $poleprobarvy[$cast['field_or_reference']['#items'][0]['tid']] ?> l-single">
+            <div class="m-card_image mm-color-<?= $poleprobarvy[$cast['field_or_reference']['#items'][0]['tid']] ?> l-single">
+
                 <article class="m-story">
                     <header>
-                        <div class="m-item--image"
-                             style="background-image: url(<?= image_style_url('x595-0', $cast['field_ereference_segment']['#items'][0]['entity']->field_segment_img['und'][0]['uri']) ?>)">
+                        <div class="m-item--image" style="background-image: url(<?= image_style_url('x595-0', $cast['field_ereference_segment']['#items'][0]['entity']->field_segment_img['und'][0]['uri']) ?>)">
                             <a href="<?= $odkaz ?>">
-                                <img
-                                    src="<?= image_style_url('x595-0', $cast['field_ereference_segment']['#items'][0]['entity']->field_segment_img['und'][0]['uri']) ?>"
-                                    alt=""/>
+                                <img src="<?= image_style_url('x595-0', $cast['field_ereference_segment']['#items'][0]['entity']->field_segment_img['und'][0]['uri']) ?>" alt="" />
                             </a>
                         </div>
                         <div class="m-item--summary">
@@ -73,21 +62,18 @@
                             </div>
                         </div>
                     </header>
-
-
                 </article>
-                <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+
+                <div class="m-card--more">&rarr; </div>
             </div>
 
-        <?php
-
-        }
-        ?>
+        <?php } ?>
     </div>
+
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
             </div>
             <div class="l-half">
                 <ul class="m-section--nav inline-right">

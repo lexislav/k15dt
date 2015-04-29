@@ -128,7 +128,7 @@
     <header class="m-section--header">
         <h2 class="m-section--hed mm-small mm-center color-secondary"><?php print t('Certifikace') ?></h2>
     </header>
-    <div class="row">
+    <div class="row rowfix">
         <?php
         $block = module_invoke('views', 'block_view', 'certifik_ty-block');
         print render($block);

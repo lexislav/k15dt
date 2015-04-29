@@ -48,61 +48,53 @@
 //dsm($items);
 
 
-foreach ($items[0]['entity']['field_collection_item'] AS $pole) {
-    ?>
+foreach ($items[0]['entity']['field_collection_item'] AS $pole) { ?>
 
     <div class="m-section l-feed_one bg-white">
 
         <header class="m-section--header">
-            <h2 class="m-section--hed mm-medium mm-center"><?=$pole['field_cs_b1_nadpis']['#items'][0]['value']?></h2>
+            <h2 class="m-section--hed mm-medium mm-center"><?= $pole['field_cs_b1_nadpis']['#items'][0]['value'] ?></h2>
         </header>
 
-        <div class="row">
-
+        <div class="row rowfix">
             <div class="m-card_bigteaser l-single bg-secondary-light">
 
                 <article class="m-story">
                     <header>
                         <div class="m-item--image" style="background-image: url(<?= image_style_url('x633-540', $pole['field_cs_b1_img']['#items'][0]['uri']) ?>)">
                             <a href="">
-                                <img src="<?= image_style_url('x633-540', $pole['field_cs_b1_img']['#items'][0]['uri']) ?>" alt=""/>
+                                <img src="<?= image_style_url('x633-540', $pole['field_cs_b1_img']['#items'][0]['uri']) ?>" alt="" />
                             </a>
                         </div>
+
                         <div class="m-item--summary">
                             <h1 class="m-item--hed">
-                                <a href=""><?=$pole['field_cs_b1_nadpis']['#items'][0]['value']?></a>
-                            </h1>
+                                <a href=""><?= $pole['field_cs_b1_nadpis']['#items'][0]['value'] ?></a></h1>
 
-                            <div class="m-item--description">
-                                <?=$pole['field_cs_b1_text']['#items'][0]['value']?>
-                            </div>
+                            <div class="m-item--description"><?= $pole['field_cs_b1_text']['#items'][0]['value'] ?></div>
 
                             <div class="m-card--more bg-8">
-                                <a href="<?=$pole['field_cs_b1_odkaz']['#items'][0]['url']?>" title="<?=$pole['field_cs_b1_odkaz']['#items'][0]['title']?>"><?=$pole['field_cs_b1_odkaz']['#items'][0]['title']?></a>
+                                <a href="<?= $pole['field_cs_b1_odkaz']['#items'][0]['url'] ?>" title="<?= $pole['field_cs_b1_odkaz']['#items'][0]['title'] ?>"><?= $pole['field_cs_b1_odkaz']['#items'][0]['title'] ?></a>
                             </div>
                         </div>
                     </header>
-
                 </article>
 
             </div>
-
         </div>
 
 
         <div class="row">
             <footer class="m-section--footer">
                 <div class="l-half">
-                    <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                    <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
                 </div>
                 <div class="l-half">
-                    <div class="m-section--more"><a href="">Celý archiv <i class="fa fa-arrow-right"></i></a></div>
+                    <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
                 </div>
             </footer>
         </div>
 
     </div>
-    <?php
-
-}
+<?php } ?>
 

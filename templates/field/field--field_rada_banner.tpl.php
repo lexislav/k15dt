@@ -10,7 +10,7 @@ foreach ($items AS $pole) {
         <h2 class="m-section--hed mm-medium mm-normal mm-center color-white"><?= $cast->field_basic_title[$element['#language']][0]['value'] ?></h2>
     </header>
 
-    <div class="row">
+    <div class="row rowfix">
         <div class="m-card_centered-text l-single bg-secondary-light">
 
             <article class="m-story">
@@ -22,6 +22,7 @@ foreach ($items AS $pole) {
                     </div>
                 </header>
             </article>
+
             <div class="m-card--more "><a class="button" href="<?= $cast->field_page_link[$element['#language']][0]['display_url'] ?>"><?= $cast->field_page_link[$element['#language']][0]['title'] ?> &rarr;</a></div>
         </div>
     </div>

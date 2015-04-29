@@ -1,4 +1,5 @@
 <div class="m-section l-feed_three">
+
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
@@ -6,19 +7,15 @@
             </div>
         </header>
     </div>
-    <div class="row">
-        <?php
-        foreach ($element['#object']->field_segment_faq['und'] AS $pole) {
 
-            ?>
+    <div class="row rowfix">
+        <?php foreach ($element['#object']->field_segment_faq['und'] AS $pole) { ?>
             <div class="m-card_faq l-single">
 
                 <article class="m-story">
                     <header>
                         <h1 class="m-item--hed">
-                            <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $pole['entity']->nid ?>">
-                                <?= $pole['entity']->title ?>
-                            </a>
+                            <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $pole['entity']->nid ?>"><?= $pole['entity']->title ?></a>
                         </h1>
 
                         <div class="m-item--summary">
@@ -30,19 +27,14 @@
                 </article>
 
             </div>
-
-
-        <?php
-
-        }
-        ?>
+        <?php } ?>
     </div>
 
 
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru <i class="fa fa-arrow-up"></i></a></div>
+                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
             </div>
             <div class="l-half">
                 <ul class="m-section--nav inline-right">

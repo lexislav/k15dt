@@ -8,7 +8,7 @@
         </header>
     </div>
 
-    <div class="row">
+    <div class="row rowfix">
 
         <?php
         foreach ($items AS $cast) {
@@ -17,19 +17,14 @@
 
                 <article class="m-story">
                     <header>
-                        <div class="m-item--image"
-                             style="background-image: url(<?= image_style_url('x282-181', $cast['field_basic_img']['#items'][0]['uri']) ?>)">
-                            <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>"
-                               title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>">
-                                <img
-                                    src="<?= image_style_url('x282-181', $cast['field_basic_img']['#items'][0]['uri']) ?>"
-                                    alt=""/>
+                        <div class="m-item--image" style="background-image: url(<?= image_style_url('x282-181', $cast['field_basic_img']['#items'][0]['uri']) ?>)">
+                            <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>">
+                                <img src="<?= image_style_url('x282-181', $cast['field_basic_img']['#items'][0]['uri']) ?>" alt="" />
                             </a>
                         </div>
                         <div class="m-item--summary">
                             <h1 class="m-item--hed">
-                                <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>"
-                                   title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>"><?= $cast['field_basic_title']['#items'][0]['value'] ?></a>
+                                <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>"><?= $cast['field_basic_title']['#items'][0]['value'] ?></a>
                             </h1>
 
                             <div class="m-item--description">
@@ -38,18 +33,14 @@
                         </div>
                     </header>
                 </article>
-                <div class="m-card--more">
-                    <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>"
-                       title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>"><i class="fa">&rarr;</i></a>
-                </div>
 
+                <div class="m-card--more">
+                    <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>"><i class="fa">&rarr;</i></a>
+                </div>
             </div>
 
-        <?php
-        }
-        ?>
+        <?php } ?>
     </div>
-    <div class="row">
-        <footer class="m-section--footer"></footer>
-    </div>
+
+    <div class="row"><footer class="m-section--footer"></footer></div>
 </div>

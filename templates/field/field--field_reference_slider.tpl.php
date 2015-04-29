@@ -1,5 +1,3 @@
-
-
 <div class="m-section l-feed_carousel">
 
     <div class="row">
@@ -10,22 +8,21 @@
         </header>
     </div>
 
-    <div class="row">
+    <div class="row rowfix">
         <div class="l-full">
             <div class="slides full-carousel">
-
 
                 <?php
                 foreach ($element['#object']->field_reference_slider['und'] AS $pole) {
 
 
                     $rok = str_replace('-01-01 00:00:00', '', $pole['entity']->field_reference_rok['und'][0]['value']);
-                  //  if (isset($pole['entity']->field_field_reference_main_img['und'][0])) {
-                  //      $uricko = $pole['entity']->field_field_reference_main_img['und'][0]['uri'];
-                  //  } else {
-//                //        @TODO DODELAT
-                       // $uricko = $pole['entity']->field_field_reference_fotogalerie['und'][0]['raw']['target_id'];
-               //     }
+                    //  if (isset($pole['entity']->field_field_reference_main_img['und'][0])) {
+                    //      $uricko = $pole['entity']->field_field_reference_main_img['und'][0]['uri'];
+                    //  } else {
+                    //        @TODO DODELAT
+                    // $uricko = $pole['entity']->field_field_reference_fotogalerie['und'][0]['raw']['target_id'];
+                    //     }
                     $uricko = $pole['entity']->field_reference_main_img['und'][0]['uri'];
                     ?>
                     <div class="m-card_reference l-single slide">
@@ -34,26 +31,25 @@
                             <header>
                                 <div class="m-item--image" style="background-image: url(<?= image_style_url('x1266-0', $uricko) ?>)">
                                     <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $pole['entity']->nid ?>">
-                                        <img src="<?= image_style_url('x1266-0', $uricko) ?>" alt=""/>
+                                        <img src="<?= image_style_url('x1266-0', $uricko) ?>" alt="" />
                                     </a>
                                 </div>
                                 <div class="m-item--summary">
-                                    <h1 class="m-item--hed">
-                                        VYBRANÉ REFERENCE
-                                    </h1>
+                                    <h1 class="m-item--hed">VYBRANÉ REFERENCE </h1>
 
                                     <div class="m-item--description">
-                                        <p><a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $pole['entity']->nid ?>"><?=$pole['entity']->title?></a>
-                                            <span class="color-body-font">[<?=$rok?>]</span></p>
+                                        <p><a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $pole['entity']->nid ?>"><?= $pole['entity']->title ?></a>
+                                            <span class="color-body-font">[<?= $rok ?>]</span></p>
                                     </div>
                                 </div>
                             </header>
-                            <div class="m-card--more"><i class="fa fa-arrow-right"></i></div>
+
+                            <div class="m-card--more">&rarr;</div>
                         </article>
 
                     </div>
 
-                <?php
+                    <?php
 
                 }
                 ?>

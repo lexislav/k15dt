@@ -6,7 +6,7 @@
             </div>
         </header>
     </div>
-    <div class="row">
+    <div class="row rowfix">
         <?php
         foreach ($element['#items'] AS $pole) {
              ?>

@@ -10,8 +10,8 @@
                     </div>
                 </header>
 
-                <div class="m-section--nav" carouselnav>
-                    <nav>
+                <div class="m-section--nav">
+                    <nav slick-method="mouseenter" carouselnav>
                         <ul>
                             <?php
                             foreach ($items AS $pole) {

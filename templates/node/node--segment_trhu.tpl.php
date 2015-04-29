@@ -2,11 +2,8 @@
 //
 //dsm($node);
 //dsm($content);
-
 $polezemi = country_get_list();
 ?>
-
-
 
     <div class="m-section l-detail-page bg-white">
 

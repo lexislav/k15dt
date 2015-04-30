@@ -4941,7 +4941,8 @@ button:focus {
     height: 100%;
     position: relative; }
   .m-card_reference .m-item--image {
-    background-position: 50% 50%; }
+    background-position: 50% 50%;
+    height: 100%; }
     .m-card_reference .m-item--image img {
       visibility: hidden;
       pointer-events: none; }

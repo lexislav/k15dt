@@ -8,10 +8,9 @@
         </header>
     </div>
 
-    <div class="row rowfix">
-        <div class="l-full">
+    <div class="row rowfix" style="overflow: visible">
+        <div class="l-full" style="overflow: visible">
             <div class="slides full-carousel">
-
                 <?php
                 foreach ($element['#object']->field_reference_slider['und'] AS $pole) {
 
@@ -51,6 +50,7 @@
                 <?php } ?>
 
             </div>
+
         </div>
     </div>
 

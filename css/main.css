@@ -6584,7 +6584,13 @@ article header figure {
 
 .tb-megamenu {
   position: inherit !important;
-  background-color: transparent; }
+  background-color: transparent;
+  color: #4A4A4A; }
+  .tb-megamenu a {
+    color: #4A4A4A;
+    text-decoration: none; }
+    .tb-megamenu a:hover {
+      color: #C20E1A; }
   .tb-megamenu .dropup,
   .tb-megamenu .dropdown {
     position: initial !important; }
@@ -6639,6 +6645,43 @@ article header figure {
           margin-left: auto;
           padding-left: 0;
           padding-right: 0; } }
+  .tb-megamenu .tb-block .block-title {
+    font-size: 1.375rem;
+    color: #4A4A4A;
+    display: block;
+    line-height: 20px;
+    margin: 0 0 20px;
+    text-transform: none; }
+  .tb-megamenu .dropdown-menu li > a {
+    border-top: none !important;
+    padding: 5px 20px;
+    text-shadow: none; }
+  .tb-megamenu .nav > li > a {
+    border-right: none;
+    border-top: 0;
+    color: #4A4A4A;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-shadow: none;
+    text-decoration: none; }
+    .tb-megamenu .nav > li > a:hover {
+      color: #C20E1A !important; }
+  .tb-megamenu .nav li.dropdown > .dropdown-toggle .caret {
+    display: none !important; }
+  .tb-megamenu .dropdown-menu .mega-dropdown-inner {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important; }
+  .tb-megamenu .mega-nav .mega-group > .mega-group-title,
+  .tb-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title,
+  .tb-megamenu .dropdown-menu .active .mega-nav .mega-group > .mega-group-title {
+    text-transform: none !important;
+    display: block !important;
+    min-height: 44px !important; }
+  .tb-megamenu .mega > .mega-dropdown-menu {
+    padding-bottom: 30px !important;
+    padding-top: 30px !important; }
+  .tb-megamenu [data-showblocktitle]:nth-of-type(1) p {
+    font-size: 18px; }
 
 .slick-prev, .slick-next {
   height: 40px;

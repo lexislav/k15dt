@@ -21,28 +21,84 @@
  *   - $content['right']: Content in the right column.
  *   - $content['bottom']: Content in the bottom row.
  */
+
+
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="panel-display panel-2col-bricks clearfix" <?php if (!empty($css_id)) {
     print "id=\"$css_id\"";
 } ?>>
 
 
+    <article class="m-basic-page">
+
+
+        <header class="m-basic-page--header">
+
+            <div class="row">
+
+
+                <div class="l-half">
+                    <h1 class="m-basic-page--hed"><a href="">Standard line</a></h1>
+                </div>
+                <?php print $content['top']; ?>
+
+
+            </div>
 
 
 
-    <div class="panel-panel panel-col-top">
-        <?php print $content['top']; ?>
-    </div>
 
-    <div class="center-wrapper">
-        <div class="panel-panel panel-col-first">
-            <?php print $content['left_above']; ?>
+
+        </header>
+
+
+        <div class="row">
+            <div class="m-basic-page--content">
+
+
+
+                    <?php print $content['left_above']; ?>
+
+
+
+                <?php print $content['right_above']; ?>
+
+
+            </div>
         </div>
 
-        <div class="panel-panel panel-col-last">
-            <?php print $content['right_above']; ?>
-        </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+
+
 
 
 
@@ -52,6 +108,21 @@
     <div class="panel-panel panel-col-middle">
         <?php print $content['middle']; ?>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

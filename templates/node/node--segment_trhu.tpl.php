@@ -136,7 +136,7 @@ $polezemi = country_get_list();
                                     <dt class="mm-label">Technické specifikace</dt>
 
                                     <?php if (isset($reference['entity']->field_reference_pomodulu['und'][0]['value'])) { ?>
-                                        <dt class="mm-sub">počet modulů</dt>
+                                        <dt class="mm-sub">Počet modulů</dt>
                                         <dd><?= $reference['entity']->field_reference_pomodulu['und'][0]['value'] ?></dd>
                                     <?php } ?>
 
@@ -151,7 +151,7 @@ $polezemi = country_get_list();
                                     <?php } ?>
 
                                     <?php if (isset($reference['entity']->field_reference_plocha['und'][0]['value'])) { ?>
-                                        <dt class="mm-sub">užitná plocha</dt>
+                                        <dt class="mm-sub">Užitná plocha</dt>
                                         <dd><?= $reference['entity']->field_reference_plocha['und'][0]['value'] ?>
                                             m<sup>2</sup>
                                         </dd>

@@ -76,7 +76,29 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
         </header>
 
         <div class="m-reference--content">
-            <div class="m-body--content"><?= ($content['field_reference_text']['#items'][0]['value']); ?></div>
+            <div class="m-body--content"><?= ($content['field_reference_text']['#items'][0]['value']); ?>
+
+
+                <?php
+
+                if(isset($content['field_reference_video']['#items'])){
+
+                    foreach($content['field_reference_video']['#items'] AS $video){
+
+                        ?>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/<?=$video['video_id']?>?rel=0" frameborder="0" allowfullscreen></iframe><br />
+
+                        <?php
+                    };
+
+
+
+                }
+                ?>
+
+
+
+            </div>
             <aside>
                 <div class="m-aside-block">
                     <header class="m-aside-block--header">

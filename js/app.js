@@ -211,7 +211,7 @@ jQuery('[close-section]').each(function () {
 
 // chosen filters - select boxes
 
-jQuery(".ch-select").chosen({
+jQuery(".form-select").chosen({
     width: "95%",
     create_option: true,
     persistent_create_option: true,

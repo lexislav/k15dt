@@ -21,7 +21,7 @@
 
             <div class="m-story--summary">
 
-                <h1 class="m-story--hed"><a href=""><?php print $title; ?></a></h1>
+                <h1 class="m-story--hed"><a href="">lalalal<?php print $title; ?></a></h1>
 
                 <div class="m-story--description">
                     <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
@@ -99,10 +99,10 @@
     </article>
     <div class="row">
         <footer class="m-section--footer">
-            <div class="l-half">
+            <div class="l-third">
                 <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
             </div>
-            <div class="l-half">
+            <div class="l-two-thirds">
                 <?php
                 $tree = taxonomy_get_tree(5);
                 ?>

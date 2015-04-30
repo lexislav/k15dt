@@ -8,10 +8,9 @@
         </header>
     </div>
 
-    <div class="row rowfix">
-        <div class="l-full">
+    <div class="row rowfix" style="overflow: visible">
+        <div class="l-full" style="overflow: visible">
             <div class="slides full-carousel">
-
                 <?php
                 foreach ($element['#object']->field_reference_slider['und'] AS $pole) {
 
@@ -36,12 +35,10 @@
                                 </div>
 
                                 <div class="m-item--summary">
-                                    <h1 class="m-item--hed">VYBRANÉ REFERENCE</h1>
+                                    <h1 class="m-item--hed"><a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $pole['entity']->nid ?>"><?= $pole['entity']->title ?></a></h1>
 
                                     <div class="m-item--description">
-                                        <p>
-                                            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $pole['entity']->nid ?>"><?= $pole['entity']->title ?></a>
-                                            <span class="color-body-font">[<?= $rok ?>]</span></p>
+                                        <p>VYBRANÉ REFERENCE <span class="color-body-font">[<?= $rok ?>]</span></p>
                                     </div>
                                 </div>
                             </header>
@@ -53,6 +50,7 @@
                 <?php } ?>
 
             </div>
+
         </div>
     </div>
 

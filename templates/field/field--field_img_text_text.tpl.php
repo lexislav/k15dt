@@ -34,5 +34,4 @@
         <?php } ?>
     </div>
 
-    <div class="row"><footer class="m-section--footer"></footer></div>
 </div>

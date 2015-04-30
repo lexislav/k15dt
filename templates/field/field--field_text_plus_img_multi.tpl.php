@@ -7,6 +7,7 @@
     <div class="row rowfix">
         <?php
         foreach ($items AS $poradi => $pole) {
+
             if ($poradi == 0) continue;
             ?>
             <div class="m-card_centered-text l-single bg-secondary-light">
@@ -30,9 +31,6 @@
                         <!-- dummy gallery-->
 
                         <div class="m-section">
-                            <div class="row">
-                                <header class="m-section--header"></header>
-                            </div>
 
                             <div class="row">
                                 <!-- obsah gallerie -->
@@ -65,7 +63,11 @@
                             </div>
 
                             <div class="row">
-                                <footer class="m-section--footer"></footer>
+                                <footer class="m-section--footer">
+                                    <?php if(isset($pole['field_page_link']['#items'][0])){?>
+                                    <a href="<?=$pole['field_page_link']['#items'][0]['display_url']?>"><?=$pole['field_page_link']['#items'][0]['title']?></a>
+                                <?php } ?>
+                                </footer>
                             </div>
                         </div>
                         <!-- dummy gallery-->

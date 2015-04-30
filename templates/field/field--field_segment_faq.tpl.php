@@ -1,4 +1,4 @@
-<div class="m-section l-feed_three">
+<div class="m-section l-feed_three bg-white">
 
     <div class="row">
         <header class="m-section--header">
@@ -20,7 +20,7 @@
 
                         <div class="m-item--summary">
                             <div class="m-item--description">
-                                <p><?= $pole['entity']->field_knowledgebase_perex[$pole['entity']->language][0]['value'] ?></p>
+
                             </div>
                         </div>
                     </header>

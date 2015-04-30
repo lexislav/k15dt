@@ -62,9 +62,9 @@
                             </div>
                         </div>
                     </header>
+                    <div class="m-card--more">&rarr; </div>
                 </article>
 
-                <div class="m-card--more">&rarr; </div>
             </div>
 
         <?php } ?>

@@ -27,7 +27,7 @@
                 </article>
 
                 <div class="m-card--more">
-                    <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>"><i class="fa">&rarr;</i></a>
+                    <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>">&rarr;</a>
                 </div>
             </div>
 

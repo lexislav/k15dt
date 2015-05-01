@@ -4711,6 +4711,8 @@ button:focus {
         height: 100%;
         background-color: transparent;
         opacity: 0.2; }
+    .m-card_image .m-item--image img {
+      display: none; }
   .m-card_image .m-item--summary {
     height: 100%; }
   .m-card_image .m-item--hed {
@@ -4845,6 +4847,8 @@ button:focus {
         height: 100%;
         background-color: transparent;
         opacity: 0.2; }
+    .m-card_thumb .m-item--image img {
+      display: none; }
   .m-card_thumb .m-item--summary {
     height: 100%; }
   .m-card_thumb .m-item--hed {

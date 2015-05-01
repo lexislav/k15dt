@@ -51,7 +51,7 @@
                     $widget->widget = str_replace('<select id="edit-term-node-tid-depth" name="term_node_tid_depth" class="form-select">', 'bbb', $widget->widget);
 
 
-                    $widget->widget = str_replace('">', '" classs="category">', $widget->widget);
+                    $widget->widget = str_replace('">', '" class="category">', $widget->widget);
 
 
                     $widget->widget = str_replace('aaa', '">', $widget->widget);

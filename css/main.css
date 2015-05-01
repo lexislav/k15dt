@@ -6590,6 +6590,10 @@ article header figure {
     -o-transform: translateY(128px);
     transform: translateY(128px); }
 
+.xmega {
+  width: 70%;
+  float: right; }
+
 .tb-megamenu {
   position: inherit !important;
   background-color: transparent;
@@ -6599,6 +6603,9 @@ article header figure {
     text-decoration: none; }
     .tb-megamenu a:hover {
       color: #C20E1A; }
+  .tb-megamenu .nav > li {
+    float: right;
+    margin-right: 0; }
   .tb-megamenu .dropup,
   .tb-megamenu .dropdown {
     position: initial !important; }
@@ -6663,7 +6670,8 @@ article header figure {
   .tb-megamenu .dropdown-menu li > a {
     border-top: none !important;
     padding: 5px 20px;
-    text-shadow: none; }
+    text-shadow: none;
+    font-weight: 400 !important; }
   .tb-megamenu .nav > li > a {
     border-right: none;
     border-top: 0;

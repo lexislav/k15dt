@@ -4729,6 +4729,9 @@ button:focus {
     top: 20px;
     left: 30px;
     color: white; }
+  .m-card_image .m-item--image a:before {
+    background-color: #C20E1A;
+    opacity: 0; }
   .m-card_image.mm-color-1 .m-item--image a {
     border-top: 4px solid transparent;
     border-top-color: #7AB929; }
@@ -4941,7 +4944,8 @@ button:focus {
     height: 100%;
     position: relative; }
   .m-card_reference .m-item--image {
-    background-position: 50% 50%; }
+    background-position: 50% 50%;
+    height: 100%; }
     .m-card_reference .m-item--image img {
       visibility: hidden;
       pointer-events: none; }

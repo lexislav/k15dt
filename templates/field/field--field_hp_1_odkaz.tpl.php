@@ -39,7 +39,7 @@
                 </article>
 
                 <div class="m-card--more">
-                    <a href="<?= $cast['field_hpc_1_odkaz']['#items'][0]['value'] ?>" title="<?= $cast['field_hpc_1_nadpis']['#items'][0]['value'] ?>"><i class="fa">&rarr;</i></a>
+                    <a href="<?= $cast['field_hpc_1_odkaz']['#items'][0]['value'] ?>" title="<?= $cast['field_hpc_1_nadpis']['#items'][0]['value'] ?>">&rarr;</a>
                 </div>
 
             </div>

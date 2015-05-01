@@ -37,17 +37,40 @@
 
 
                 <?php
-//dsm($widget);
-                $widget->widget = str_replace('">-','aaa',$widget->widget);
 
-                $widget->widget = str_replace('<div class="form-item form-type-select form-item-term-node-tid-depth">','',$widget->widget);
-                $widget->widget = str_replace('</div>','',$widget->widget);
-                $widget->widget = str_replace('<select id="edit-term-node-tid-depth" name="term_node_tid_depth" class="form-select">','bbb',$widget->widget);
-                $widget->widget = str_replace('">','" classs="category">',$widget->widget);
-                $widget->widget = str_replace('aaa','">-',$widget->widget);
-                $widget->widget = str_replace('ccc','form-item-term-node-tid-depth">',$widget->widget);
-                 $widget->widget = str_replace('bbb','<select id="edit-term-node-tid-depth" name="term_node_tid_depth" class="form-select">',$widget->widget);
-                print $widget->widget; ?>
+                if($widget->id == 'edit-term-node-tid-depth'){
+
+
+                    $widget->widget = str_replace('<div class="form-item form-type-select form-item-term-node-tid-depth">','',$widget->widget);
+                    $widget->widget = str_replace('</div>','',$widget->widget);
+
+
+
+                    $widget->widget = str_replace('">-','aaa',$widget->widget);
+
+
+                    $widget->widget = str_replace('<select id="edit-term-node-tid-depth" name="term_node_tid_depth" class="form-select">','bbb',$widget->widget);
+
+
+                    $widget->widget = str_replace('">','" classs="category">',$widget->widget);
+
+
+                    $widget->widget = str_replace('aaa','">',$widget->widget);
+
+
+
+                //    $widget->widget = str_replace('ccc','form-item-term-node-tid-depth">',$widget->widget);
+                    $widget->widget = str_replace('bbb','<select id="edit-term-node-tid-depth" name="term_node_tid_depth" class="form-select">',$widget->widget);
+
+
+
+
+
+                }
+
+                print $widget->widget;
+
+                ?>
 
 
             </li>

@@ -1,28 +1,25 @@
 <?php
-
 //dsm($node);
 //dsm($content);
 ?>
 
+<?php print render($content['field_fotogalerie']); ?>
 
-<?php
-print render($content['field_fotogalerie']);
-?>
 <div class="m-section l-detail-page bg-white">
 
     <header class="m-section--header bg-secondary-light">
-<!--        <div class="row ">-->
-<!--            <div class="l-full">-->
-<!---->
-<!--                <nav class="breadcrumbs">-->
-<!--                    <a href="#">Home</a>-->
-<!--                    <a href="#">Features</a>-->
-<!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
-<!--                    <a class="current" href="#">Cloning</a>-->
-<!--                </nav>-->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row ">-->
+        <!--            <div class="l-full">-->
+        <!---->
+        <!--                <nav class="breadcrumbs">-->
+        <!--                    <a href="#">Home</a>-->
+        <!--                    <a href="#">Features</a>-->
+        <!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
+        <!--                    <a class="current" href="#">Cloning</a>-->
+        <!--                </nav>-->
+        <!---->
+        <!--            </div>-->
+        <!--        </div>-->
     </header>
 
     <article class="m-basic-page">
@@ -35,11 +32,9 @@ print render($content['field_fotogalerie']);
 
                 <div class="l-full">
 
-                    <figure class="m-basic-page--image"
-                            style="background-image: url(<?= image_style_url('x1266-0', $node->field_hlavni_obrazek['und'][0]['uri']) ?>)">
-                        <a href=""><img
-                                src="<?= image_style_url('x1266-0', $node->field_hlavni_obrazek['und'][0]['uri']) ?>"
-                                alt=""/></a>
+                    <figure class="m-basic-page--image" style="background-image: url(<?= image_style_url('x1266-0', $node->field_hlavni_obrazek['und'][0]['uri']) ?>)">
+                        <a href=""><img src="<?= image_style_url('x1266-0', $node->field_hlavni_obrazek['und'][0]['uri']) ?>" alt="" /></a>
+
                         <figcaption>
                             <?= $node->field_hlavni_obrazek_text[$node->language][0]['value'] ?>
                         </figcaption>
@@ -67,17 +62,10 @@ print render($content['field_fotogalerie']);
         </div>
 
     </article>
-
-
-
-
 </div>
 
 
-<?php
-
-    print render($content['field_blok_1img']);
-?>
+<?php print render($content['field_blok_1img']); ?>
 
 <div class="m-section l-feed_two bg-secondary-light">
 
@@ -94,16 +82,11 @@ print render($content['field_fotogalerie']);
 </div>
 
 
-
-<?php
-print render($content['field_obrazek_s_textem']);
-?>
+<?php print render($content['field_obrazek_s_textem']); ?>
 
 <div class="m-section l-feed_block-carousel">
 
     <div class="m-section--underlay"></div>
-
-
 
     <div class="row">
         <div class="l-section--content slider block-feed-slider">
@@ -126,7 +109,6 @@ print render($content['field_obrazek_s_textem']);
     </div>
 
 </div>
-
 
 <?php
 print render($content['field_segment_faq']);

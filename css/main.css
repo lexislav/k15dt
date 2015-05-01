@@ -6603,6 +6603,19 @@ article header figure {
     -o-transform: translateY(128px);
     transform: translateY(128px); }
 
+.m-bulletin input {
+  border-color: #C20E1A !important;
+  border-right: none; }
+
+.m-bulletin .button {
+  background-color: white;
+  color: #B5BBB4;
+  width: 30px;
+  border: 1px solid #C20E1A;
+  border-left: none; }
+  .m-bulletin .button:hover {
+    color: #C20E1A; }
+
 .xmega {
   float: left;
   width: calc(100% * 0.8 - 30px);

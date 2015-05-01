@@ -139,6 +139,7 @@
                 </header>
 
                 <?php print render($page['form_email']); ?>
+
                 <div class="m-item--description"><?php print t('Odběrem našeho měsíčního ebulletinu získáte přehled o dění ve světě modulární architektury i o novinkách systému modulární výstavby KOMA.') ?></div>
 
             </article>

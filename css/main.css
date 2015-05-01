@@ -3925,11 +3925,21 @@ button:focus {
     padding: 0; }
   .m-section_support .m-item--hed {
     margin-bottom: 30px;
-    line-height: 1.2em; }
+    line-height: 1.2em;
+    position: relative; }
+  .m-section_support header {
+    position: relative; }
+  .m-section_support .m-item--hed-icon {
+    width: 49px;
+    height: 45px;
+    position: absolute;
+    left: -70px;
+    top: -10px;
+    background-repeat: no-repeat;
+    background-position: center; }
   .m-section_support .m-item--description {
     margin-bottom: 30px; }
   .m-section_support .m-section--item {
-    overflow: hidden;
     padding-top: 70px; }
     .m-section_support .m-section--item:nth-of-type(1) {
       float: left;

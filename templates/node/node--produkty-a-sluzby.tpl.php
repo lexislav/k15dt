@@ -56,26 +56,23 @@ if (isset($content['field_bigimg_a_text'][0])) {
         <div class="row">
             <header class="m-section--header">
                 <div class="l-full">
-                    <h2 class="m-section--hed mm-big">KE STAŽENÍ</h2>
+                    <h2 class="m-section--hed mm-big"><span class="color-primary">AKTUÁLNÍ</span> NABÍDKA</h2>
                 </div>
             </header>
         </div>
         <div class="row">
             <div class="m-basic-page--content">
                 <?php
-                if (isset($content['field_brozury'][0])) {
-                    print render($content['field_brozury']);
-                }
-                ?>
-                <?php
-                $block = module_invoke('views', 'block_view', 'buletin-block');
+                $block = module_invoke('views', 'block_view', 'nabidka-block');
                 print render($block);
                 ?>
+
+
                 <?php
-                if (isset($content['field_ceniky'][0])) {
-                    print render($content['field_ceniky']);
-                }
+                $block = module_invoke('views', 'block_view', 'nabidka-block_1');
+                print render($block);
                 ?>
+
             </div>
         </div>
 

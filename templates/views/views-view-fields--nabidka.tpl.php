@@ -1,6 +1,7 @@
 <?php
 
 $nid = 'node/'.$row->nid;
+
 ?>
 
 <dl class="mm-nolabels mm-noborder">

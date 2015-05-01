@@ -6698,6 +6698,12 @@ article header figure {
     padding-top: 30px !important; }
   .tb-megamenu [data-showblocktitle]:nth-of-type(1) p {
     font-size: 18px; }
+  .tb-megamenu .mm-link-search:after {
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    content: "x"; }
 
 .slick-prev, .slick-next {
   height: 40px;

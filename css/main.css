@@ -6618,6 +6618,35 @@ article header figure {
   .m-bulletin .button:hover {
     color: #C20E1A; }
 
+.button-group .text-label-button,
+.button-group .text-double-button {
+  border-left: 1px solid white;
+  font-weight: 600;
+  text-align: center;
+  max-width: 148px;
+  padding: 0 10px; }
+  .button-group .text-label-button span,
+  .button-group .text-double-button span {
+    display: block;
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.75rem; }
+  .button-group .text-label-button a,
+  .button-group .text-double-button a {
+    color: #000;
+    text-decoration: none; }
+    .button-group .text-label-button a:hover,
+    .button-group .text-double-button a:hover {
+      color: #C20E1A; }
+
+.button-group .text-label-button {
+  font-weight: 400;
+  text-align: right;
+  font-size: 0.75rem; }
+
+.l-two-thirds .button-group {
+  float: right; }
+
 .xmega {
   float: left;
   width: calc(100% * 0.8 - 30px);

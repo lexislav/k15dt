@@ -21,51 +21,77 @@
  *   - $content['right']: Content in the right column.
  *   - $content['bottom']: Content in the bottom row.
  */
+
+
 ?>
-<div class="panel-display panel-2col-bricks clearfix" <?php if (!empty($css_id)) {
-    print "id=\"$css_id\"";
-} ?>>
 
 
 
 
 
-    <div class="panel-panel panel-col-top">
-        <?php print $content['top']; ?>
-    </div>
 
-    <div class="center-wrapper">
-        <div class="panel-panel panel-col-first">
-            <?php print $content['left_above']; ?>
+<div class="m-section l-detail-page bg-white">
+
+    <header class="m-section--header bg-secondary-light">
+        <div class="row ">
+            <div class="l-full">
+<!--                <nav class="breadcrumbs">-->
+<!--                    <a href="#">Home</a>-->
+<!--                    <a href="#">Features</a>-->
+<!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
+<!--                    <a class="current" href="#">Cloning</a>-->
+<!--                </nav>-->
+
+            </div>
+        </div>
+    </header>
+
+    <article class="m-basic-page">
+        <header class="m-basic-page--header">
+
+            <div class="row">
+                <div class="l-half">
+                    <h1 class="m-basic-page--hed"><?php print $content['left_above']; ?></h1>
+                </div>
+                <?php print $content['right_above']; ?>
+                <div class="l-full">
+                                     <?php print $content['middle']; ?>
+                </div>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="m-basic-page--content">
+
+
+                <div class="m-body--content">
+
+
+<!--                    <div class="m-layout-object mm-small mm-left">-->
+<!--                        <figure>-->
+<!--                            <img src="http://lorempixel.com/300/300" alt="" />-->
+<!--                            <figcaption>m-layout-object pro vkladani objektu mezi content</figcaption>-->
+<!--                        </figure>-->
+<!--                    </div>-->
+
+                    <?php print $content['left_below']; ?>
+
+                </div>
+
+
+                <?php print $content['right_below']; ?>
+
+            </div>
         </div>
 
-        <div class="panel-panel panel-col-last">
-            <?php print $content['right_above']; ?>
-        </div>
-    </div>
+    </article>
 
 
 
 
-
-
-    <div class="panel-panel panel-col-middle">
-        <?php print $content['middle']; ?>
-    </div>
-
-
-
-
-    <div class="center-wrapper">
-        <div class="panel-panel panel-col-first">
-            <?php print $content['left_below']; ?>
-        </div>
-
-        <div class="panel-panel panel-col-last">
-            <?php print $content['right_below']; ?>
-        </div>
-    </div>
-    <div class="panel-panel panel-col-bottom">
-        <?php print $content['bottom']; ?>
-    </div>
 </div>
+
+<div class="panel-panel panel-col-bottom">
+    <?php print $content['bottom']; ?>
+</div>
+

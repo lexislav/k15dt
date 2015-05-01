@@ -5,9 +5,9 @@ foreach ($items AS $druhetri) {
     <div class="l-section--item m-card_image">
         <article class="m-story">
             <header>
-                <div class="m-item--image" style="background-image: url(<?= image_style_url('x294-430', $druhetri['field_basic_img']['#items'][0]['uri']) ?>)">
+                <div class="m-item--image" style="background-image: url(<?= image_style_url('zadny', $druhetri['field_basic_img']['#items'][0]['uri']) ?>)">
                     <a href="<?=@ $druhetri['field_page_link']['#items'][0]['title'] ?>">
-                        <img src="<?= image_style_url('x294-430', $druhetri['field_basic_img']['#items'][0]['uri']) ?>" alt="" />
+                        <img src="<?= image_style_url('zadny', $druhetri['field_basic_img']['#items'][0]['uri']) ?>" alt="" />
                     </a>
                 </div>
                 <div class="m-item--summary">

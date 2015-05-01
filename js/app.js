@@ -219,3 +219,12 @@ jQuery(".form-select").chosen({
     disable_search_threshold: 40,
     //allow_single_deselect: true
 });
+
+//jQuery(".form-select").chosen({
+//    width: "95%",
+//    create_option: true,
+//    persistent_create_option: true,
+//    create_option_text: 'add',
+//    disable_search_threshold: 40
+//    //allow_single_deselect: true
+//});

@@ -5332,10 +5332,17 @@ button:focus {
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 50px; }
+  .m-card_centered-text .header {
+    margin-bottom: 15px; }
   .m-card_centered-text .m-item--hed {
     margin-bottom: 50px;
     font-size: 1.875rem;
     font-weight: 400; }
+    .m-card_centered-text .m-item--hed a {
+      color: #4A4A4A;
+      text-decoration: none; }
+      .m-card_centered-text .m-item--hed a:hover {
+        color: #C20E1A; }
   .m-card_centered-text .m-item--description {
     font-size: 1rem; }
     .m-card_centered-text .m-item--description p {
@@ -5343,6 +5350,9 @@ button:focus {
       margin-bottom: 1.4em; }
   .m-card_centered-text .m-card--more {
     text-align: center; }
+  .m-card_centered-text .m-gallery {
+    width: 80%;
+    margin: 0 auto; }
 
 .m-card_faq {
   background-color: #B5BBB4;

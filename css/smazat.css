@@ -68,3 +68,8 @@
     right: 0;
     overflow: hidden;
 }
+
+/*front*/
+.zmiz{
+    display: none;
+}

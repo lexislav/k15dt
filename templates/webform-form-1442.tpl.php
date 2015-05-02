@@ -44,26 +44,32 @@ if (isset($form['preview_message'])) {
 
 
 
-
-
-
 <form class="webform-client-form webform-client-form-1442" enctype="multipart/form-data" action="/" method="post"
       id="webform-client-form-1442" accept-charset="UTF-8">
     <div class="input-group">
 
-        <input class="email form-text form-email required"
-               placeholder="<?php print t('Zadejte svou e-mailovou adresu') ?>..." type="email"
+        <input class="email form-text form-email required" placeholder="Zadejte svou e-mailovou adresu" type="email"
                id="edit-submitted-email-e-mail" name="submitted[email_e_mail]" size="60">
+
         <input type="hidden" name="details[sid]">
         <input type="hidden" name="details[page_num]" value="1">
         <input type="hidden" name="details[page_count]" value="1">
         <input type="hidden" name="details[finished]" value="0">
-<!--        <input type="hidden" name="form_build_id" value="--><?//= $form['#build_id'] ?><!--">-->
-<!--        <input type="hidden" name="form_token" value="--><?//= $form['form_token']['#default_value'] ?><!--">-->
+        <input type="hidden" name="form_build_id" value="<?= $form['#build_id'] ?>">
+        <input type="hidden" name="form_token" value="<?= $form['form_token']['#default_value'] ?>">
         <input type="hidden" name="form_id" value="webform_client_form_1442">
 
-        <div class=""><button class="button postfix" type="submit" name="op" value="Odeslat"><i class="fa fa-envelope"></i></button></div>
+        <button class="button postfix" type="submit" name="op" value="Odeslat"><i class="fa fa-envelope"></i>
+        </button>
+
+
+        <input class="zmiz" type="submit" name="op"
+               value="Submit">
 
 
     </div>
 </form>
+
+
+
+

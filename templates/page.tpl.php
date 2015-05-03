@@ -117,7 +117,8 @@
 
             <article class="m-newsletter">
                 <header>
-                    <h1 class="m-item--hed"><?php print t('Podpora pro zákazníky') ?></h1>
+                    <div class="m-item--hed-icon" style="background-image: url(<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/votaznik.png)"></div>
+                    <h1 class="m-item--hed mm-small color-primary"><?php print t('Podpora pro zákazníky') ?></h1>
                 </header>
 
                 <div class="m-item--description"><?php print t('Nenašli jste zde odpověď na Vaše otázky? Zeptejte se nás přímo!') ?></div>
@@ -134,10 +135,11 @@
 
             <article class="m-bulletin">
                 <header>
-                    <h1 class="m-item--hed"><?php print t('Podpora pro zákazníky') ?></h1>
+                    <h1 class="m-item--hed mm-small color-primary"><?php print t('Podpora pro zákazníky') ?></h1>
                 </header>
 
                 <?php print render($page['form_email']); ?>
+
                 <div class="m-item--description"><?php print t('Odběrem našeho měsíčního ebulletinu získáte přehled o dění ve světě modulární architektury i o novinkách systému modulární výstavby KOMA.') ?></div>
 
             </article>

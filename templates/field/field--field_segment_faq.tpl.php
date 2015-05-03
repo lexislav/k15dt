@@ -20,7 +20,7 @@
 
                         <div class="m-item--summary">
                             <div class="m-item--description">
-
+<!--                                <p>--><?//= $pole['entity']->field_knowledgebase_perex[$pole['entity']->language][0]['value'] ?><!--</p>-->
                             </div>
                         </div>
                     </header>

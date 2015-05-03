@@ -27,6 +27,22 @@
  * @ingroup views_templates
  */
 
+// dsm($view->display['default']);
+//dpm($view->field);
+//dsm($view->query['view']);
+
+
+//foreach($view->result AS $clovek){
+//
+////    dsm($clovek->_field_data['taxonomy_term_data_node_tid']['entity']->name);
+//   // dsm($clovek);
+//
+//    echo $clovek->taxonomy_term_data_node_tid.' - '.$clovek->_field_data['taxonomy_term_data_node_tid']['entity']->name.'<br />';
+//}
+
+
+
+
 ?>
 <div class="m-contact-list">
     <div class="row">

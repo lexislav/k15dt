@@ -35,12 +35,12 @@
     <header class="m-section--header bg-secondary-light">
         <div class="row ">
             <div class="l-full">
-<!--                <nav class="breadcrumbs">-->
-<!--                    <a href="#">Home</a>-->
-<!--                    <a href="#">Features</a>-->
-<!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
-<!--                    <a class="current" href="#">Cloning</a>-->
-<!--                </nav>-->
+                <!--                <nav class="breadcrumbs">-->
+                <!--                    <a href="#">Home</a>-->
+                <!--                    <a href="#">Features</a>-->
+                <!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
+                <!--                    <a class="current" href="#">Cloning</a>-->
+                <!--                </nav>-->
 
             </div>
         </div>
@@ -50,12 +50,14 @@
         <header class="m-basic-page--header">
 
             <div class="row">
-                <div class="l-half">
+                <div class="l-third">
                     <h1 class="m-basic-page--hed"><?php print $content['left_above']; ?></h1>
                 </div>
-                <?php print $content['right_above']; ?>
+                <div class="l-two-thirds">
+                    <?php print $content['right_above']; ?>
+                </div>
                 <div class="l-full">
-                                     <?php print $content['middle']; ?>
+                    <?php print $content['middle']; ?>
                 </div>
             </div>
         </header>
@@ -67,12 +69,12 @@
                 <div class="m-body--content">
 
 
-<!--                    <div class="m-layout-object mm-small mm-left">-->
-<!--                        <figure>-->
-<!--                            <img src="http://lorempixel.com/300/300" alt="" />-->
-<!--                            <figcaption>m-layout-object pro vkladani objektu mezi content</figcaption>-->
-<!--                        </figure>-->
-<!--                    </div>-->
+                    <!--                    <div class="m-layout-object mm-small mm-left">-->
+                    <!--                        <figure>-->
+                    <!--                            <img src="http://lorempixel.com/300/300" alt="" />-->
+                    <!--                            <figcaption>m-layout-object pro vkladani objektu mezi content</figcaption>-->
+                    <!--                        </figure>-->
+                    <!--                    </div>-->
 
                     <?php print $content['left_below']; ?>
 
@@ -85,8 +87,6 @@
         </div>
 
     </article>
-
-
 
 
 </div>

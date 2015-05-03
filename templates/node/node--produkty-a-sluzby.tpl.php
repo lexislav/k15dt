@@ -8,14 +8,18 @@ dsm($content);
 <div class="m-section l-detail-page bg-white">
     <header class="m-section--header bg-secondary-light">
     </header>
+
     <article class="m-basic-page">
+
         <header class="m-basic-page--header">
             <div class="row">
                 <div class="l-half">
                     <h1 class="m-basic-page--hed">PRODUKTY <span class="color-primary">A SLUŽBY</span></h1>
                 </div>
+
                 <div class="l-half">
                 </div>
+
                 <div class="l-full">
                     <div class="row">
                         <header class="m-section--header">

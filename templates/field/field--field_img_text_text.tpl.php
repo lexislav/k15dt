@@ -1,4 +1,4 @@
-<div class="m-section l-feed_<?= (count($items) == 3) ? 'triple-card' : 'four' ?>">
+<!--<div class="m-section l-feed_--><?//= (count($items) == 3) ? 'triple-card' : 'four' ?><!--">-->
 
     <div class="row rowfix">
 
@@ -34,4 +34,4 @@
         <?php } ?>
     </div>
 
-</div>
+<!--</div>-->

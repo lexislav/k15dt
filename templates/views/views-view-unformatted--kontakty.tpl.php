@@ -6,6 +6,10 @@
  *
  * @ingroup views_templates
  */
+//dpm(get_defined_vars());
+//dpm($static);
+//dpm($view);
+
 
 ?>
 <div class="m-contact-list--column">

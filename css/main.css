@@ -4073,6 +4073,8 @@ button:focus {
   padding: 16px 20px; }
 
 .m-gallery {
+  margin: 0;
+  padding: 0;
   *zoom: 1;
   margin-left: -15px;
   margin-right: -15px; }
@@ -4081,53 +4083,71 @@ button:focus {
     display: table; }
   .m-gallery:after {
     clear: both; }
-  .m-gallery .m-gallery-item {
+  .m-gallery .m-gallery--item {
     float: left;
     width: calc(100% * 0.3333333333 - 30px);
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px; }
-  .m-gallery.mm-medium .m-gallery-item {
+  .m-gallery.mm-medium .m-gallery--item {
     float: left;
     width: calc(100% * 0.25 - 30px);
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px; }
-  .m-gallery.mm-tiny .m-gallery-item {
+  .m-gallery.mm-tiny .m-gallery--item {
     float: left;
     width: calc(100% * 0.1666666667 - 30px);
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px; }
 
-.m-gallery-item .m-gallery-item--image {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  overflow: hidden;
-  position: relative; }
-  .m-gallery-item .m-gallery-item--image img {
-    visibility: hidden;
-    pointer-events: none; }
-  .m-gallery-item .m-gallery-item--image:after {
-    display: block;
-    content: " ";
-    position: absolute;
-    background-color: black;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0; }
+/*
+.m-gallery-item {
 
-.m-gallery-item .m-gallery-item--summary {
-  display: none; }
+    .m-gallery-item--image {
+        width: 100%;
+        height: 100%;
 
-.m-gallery-item:hover .m-gallery-item--image:after {
-  opacity: .2; }
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        overflow: hidden;
+        position: relative;
 
+        img {
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        &:after {
+            display: block;
+            content: " ";
+            position: absolute;
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            opacity: 0;
+        }
+    }
+
+    .m-gallery-item--summary {
+        display: none;
+    }
+
+
+    &:hover {
+        .m-gallery-item--image {
+            &:after {
+                opacity: .2;
+            }
+        }
+    }
+}
+*/
 .m-item--image {
   background-size: cover;
   background-repeat: no-repeat;

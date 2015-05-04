@@ -5819,6 +5819,9 @@ article header figure {
     padding: 0 20px;
     width: 30%; }
 
+.m-body--content iframe {
+  width: 100%; }
+
 .m-basic-page {
   position: relative; }
   .m-basic-page .m-basic-page--header {

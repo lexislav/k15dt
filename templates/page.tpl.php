@@ -38,14 +38,9 @@
                         <?php print block_render('locale', 'language'); ?>
                     </ul>
                 </li>
-
-
             </ul>
 
             <?php
-
-
-
 
             function block_render($module, $block_id)
             {

@@ -16,7 +16,7 @@
 
                         <div class="m-item--description"><?= $items[0]['field_basic_text']['#items'][0]['value'] ?></div>
 
-                        <div class="m-card--more bg-8">
+                        <div class="m-card--more <?=$items[0]['field_barva_odkazu']['#items'][0]['value']?>">
                             <a href="<?= $items[0]['field_page_link']['#items'][0]['url'] ?>" title="<?= $items[0]['field_page_link']['#items'][0]['title'] ?>"><?= $items[0]['field_page_link']['#items'][0]['title'] ?></a>
                         </div>
                     </div>

@@ -45,22 +45,15 @@
                 <?= ($content['field_zpravodaj_text']['#items'][0]['value']); ?>
 
                 <?php
-
                 if (isset($content['field_zpravodaj_video']['#items'])) {
 
-                    foreach ($content['field_zpravodaj_video']['#items'] AS $video) {
-
-                        ?>
+                    foreach ($content['field_zpravodaj_video']['#items'] AS $video) { ?>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/<?= $video['video_id'] ?>?rel=0" frameborder="0" allowfullscreen></iframe>
                         <br />
-
-                        <?php
-                    };
-
-
-                }
-                ?>
+                    <?php };
+                } ?>
             </div>
+
             <?php
             if (isset($node->field_zpravodaj_foogalerie['und'])):
                 ?>
@@ -68,8 +61,7 @@
                     <div class="m-aside-block">
                         <header class="m-aside-block--header">
                             <div class="m-aside-block--summary">
-                                <h2 class="m-aside-block--hed">
-                                    &rarr; <?php print t('Fotogalerie') ?></h2>
+                                <h2 class="m-aside-block--hed">&rarr; <?php print t('Fotogalerie') ?></h2>
 
                                 <div class="m-aside-block--meta">
                                     (<?= count($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und']) ?> <?php print t('fotografií') ?>)
@@ -79,13 +71,12 @@
                         <div class="m-aside-block--content">
                             <ul class="m-gallery mm-medium" class="clearing-thumbs" data-clearing>
                                 <?php foreach ($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $obrazek) { ?>
-                                <li class="m-gallery--item">
-                                    <a href="<?= image_style_url('x186-139', $obrazek['uri']) ?>"><img src="<?= image_style_url('x412-300', $obrazek['uri']) ?>"></a>
-                                </li>
-                            <?php } ?>
+                                    <li class="m-gallery--item">
+                                        <a href="<?= image_style_url('x186-139', $obrazek['uri']) ?>"><img src="<?= image_style_url('x412-300', $obrazek['uri']) ?>"></a>
+                                    </li>
+                                <?php } ?>
                             </ul>
                         </div>
-
 
 
                     </div>

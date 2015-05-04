@@ -3,7 +3,7 @@
     <div class="m-section l-feed_four">
 
         <div class="row">
-            <header class="m-section--header mm-center">Fotogalerie</header>
+            <header class="m-section--header mm-center">Fotogalerie - rez: to tu nema co delat</header>
         </div>
 
         <div class="row rowfix">
@@ -17,7 +17,7 @@
                             <li class="m-gallery--item <?= ($poradi == 0) ? 'clearing-featured-img' : '' ?>">
                                 <article>
                                     <a href="<?= image_style_url('none', $img['uri']) ?>"><img src="<?= image_style_url('x323-268', $img['uri']) ?>">
-                                        <h1 class="m-item--hed"><div class="wrapper">titulekgalerie</div></h1></a>
+                                        <h1 class="m-item--hed"><div class="wrapper"><?=$pole['node'][key($pole['node'])]['#node']->title?></div></h1></a>
                                 </article>
                             </li>
                         <?php } ?>

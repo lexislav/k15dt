@@ -1,4 +1,4 @@
-<div class="m-section">
+<div class="m-section l-feed_one">
 
     <div class="row">
         <header class="m-section--header">
@@ -12,6 +12,7 @@
 
 
     <div class="row">
+
 
             <?php print render($title_prefix); ?>
             <?php if ($title): ?>
@@ -38,7 +39,9 @@
 
             <?php if ($rows): ?>
 
-                <?php print $rows; ?>
+                <?php
+                    print "dodělat šablonu pro jednotlivou řádku!";
+                print $rows; ?>
 
             <?php elseif ($empty): ?>
                 <div class="view-empty">

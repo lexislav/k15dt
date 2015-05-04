@@ -15,7 +15,10 @@
                     <ul class="m-gallery clearing-feature clearing-thumbs" data-clearing>
                         <?php foreach ($cast AS $poradi => $img) {// prochazi jednotlive obrazky ?>
                             <li class="m-gallery--item <?= ($poradi == 0) ? 'clearing-featured-img' : '' ?>">
-                                <a href="<?= image_style_url('none', $img['uri']) ?>"><img src="<?= image_style_url('x323-268', $img['uri']) ?>"></a>
+                                <article>
+                                    <a href="<?= image_style_url('none', $img['uri']) ?>"><img src="<?= image_style_url('x323-268', $img['uri']) ?>">
+                                        <h1 class="m-item--hed"><div class="wrapper">titulekgalerie</div></h1></a>
+                                </article>
                             </li>
                         <?php } ?>
                     </ul>

@@ -30,6 +30,7 @@
                         <div class="m-item--content">
                             <!-- obsah gallerie -->
                             <!-- zobrazení přes featured image-->
+                            gal
                             <div class="m-gallery">
                                 <ul class="clearing-thumbs clearing-feature" data-clearing>
                                     <?php
@@ -49,6 +50,7 @@
                                     } ?>
                                 </ul>
                             </div>
+
                             <!-- konec obsahu galerie-->
 
                         </div>

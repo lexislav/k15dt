@@ -141,6 +141,68 @@ jQuery(function () {
         }
     });
 
+
+
+// hack megamenu, prehazení DOM kuli Safari
+    var submenucounter = 0;
+    var tabs = Array();
+    var menuroot = jQuery("#mega");
+
+    function closeTabs() {
+        for(var i=0; i<tabs.length; i++) {
+            tabs[i].removeClass("is-opened");
+        }
+    }
+    function closeMega() {
+        closeTabs();
+        menuroot.removeClass('is-opened');
+    }
+
+    jQuery(".megacleaned > .nav > .item > .item-submenu").each(function () {
+        var idGen = "mega-id-"+ submenucounter;
+
+        var sub = jQuery(this);
+        var par = sub.parent();
+
+        sub.attr("id",idGen);
+        par.attr("open-mega",idGen);
+
+        jQuery(".m-mega--sub").append(sub);
+        tabs.push(sub);
+
+        submenucounter++;
+
+        par.hover(
+            function() {
+                console.log("openMega" + idGen );
+                closeTabs();
+                sub.addClass("is-opened");
+                menuroot.addClass("is-opened");
+            },
+            function() {
+            }
+        );
+    });
+
+    menuroot.hover(
+        function(){},
+        function(){
+            closeMega();
+        }
+    );
+
+// pocita sloupce na mega
+    jQuery(".m-mega .columns").each(function () {
+        var el = jQuery(this);
+        var cols = el.find("> .column");
+        console.log(cols.length);
+        el.attr("cols",cols.length);
+    });
+
+
+
+
+
 });
 
 

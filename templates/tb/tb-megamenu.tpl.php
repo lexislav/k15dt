@@ -1,12 +1,70 @@
-<div <?php print $attributes;?> class="<?php print $classes;?>">
-  <?php if($section == 'frontend') :?>
-    <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar tb-megamenu-button" type="button">
-      <i class="fa fa-reorder"></i>
-    </button>
-    <div class="nav-collapse <?php print $block_config['always-show-submenu'] ? ' always-show' : '';?>">
-  <?php endif;?>
-  <?php print $content;?>
-  <?php if($section == 'frontend') :?>
-    </div>
-  <?php endif;?>
+<div class="megacleaned">
+    <?php print $content; ?>
 </div>
+<div class="megasub"></div>
+
+
+<style>
+
+    .megacleaned {
+        position: relative;
+    }
+
+    .megacleaned .nav {
+        display: block;
+        position: relative;
+    }
+
+    .megacleaned .nav .item {
+        float: right;
+        padding-left: 20px;
+    }
+
+
+    .megasub {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top:100%;
+        background-color: black;
+    }
+
+    .megasub > .item-submenu {
+        background-color: gray;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: auto;
+        margin: auto;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .megasub .column {
+        width: 20%;
+        float: left;
+    }
+
+
+    .megasub .column .column{
+        width: 100%;
+        float: none;
+    }
+
+    .row {
+        margin-top: 30px;
+    }
+
+
+</style>
+
+<script>
+    jQuery(".megacleaned > .nav > .item-submenu").each(function() {
+        var sub = jQuery(this);
+        jQuery(".megasub").append(sub);
+
+        //.insertAfter(sub);
+
+    });
+</script>

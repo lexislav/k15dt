@@ -1,3 +1,3 @@
-<ul <?php print $attributes;?> class="<?php print $classes;?>">
+<div class="nav">
   <?php print $lis;?>
-</ul>
+</div>

@@ -6749,7 +6749,6 @@ article header figure {
   .tb-megamenu .dropdown {
     position: initial !important; }
   .tb-megamenu .dropdown-menu {
-    display: block !important;
     border: none !important;
     box-shadow: none !important;
     background-color: #B5BBB4 !important;

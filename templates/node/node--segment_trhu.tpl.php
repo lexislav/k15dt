@@ -174,7 +174,11 @@ $block = module_invoke('views', 'block_view', 'segmentreference-block');
 print render($block);
 ?>
 
-<?php if (isset($node->field_segment_reference['und'])) { ?>
+<?php if (FALSE) {
+    //// to dole vzniklo chybou s gitem, nechci to radsi zatim mazat, tak je to jen zakazany
+    ?>
+
+<?php //if (isset($node->field_segment_reference['und'])) { ?>
     <div class="m-section l-feed_list bg-white">
         <div class="row">
             <?php
@@ -250,7 +254,7 @@ print render($block);
 
 
 <?php
-// @todo asi by bylo fajn mít tohle někde pro globální použití?
+// @todo asi by bylo fajn mít tohle někde pro globální použití? - MR: drupal to umi sam, jen obcas to potrebuju osekat ja sam a to je zatim  jen tady.
 
 function truncate($string, $length = 250, $append = "&hellip;")
 {

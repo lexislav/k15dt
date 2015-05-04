@@ -69,6 +69,7 @@ if (isset($content['field_img_text_text'][0])) {
 $block = module_invoke('views', 'block_view', 'publicita-block');
 print render($block);
 ?>
+
 <?php
 if (isset($content['field_text_text_link'][0])) {
     print render($content['field_text_text_link']);

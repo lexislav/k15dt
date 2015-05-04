@@ -6749,6 +6749,7 @@ article header figure {
   .tb-megamenu .dropdown {
     position: initial !important; }
   .tb-megamenu .dropdown-menu {
+    display: block !important;
     border: none !important;
     box-shadow: none !important;
     background-color: #B5BBB4 !important;
@@ -6837,6 +6838,32 @@ article header figure {
     padding-top: 30px !important; }
   .tb-megamenu [data-showblocktitle]:nth-of-type(1) p {
     font-size: 18px; }
+  .tb-megamenu .nav li.dropdown.active > .dropdown-toggle,
+  .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle,
+  .tb-megamenu .nav > li.dropdown.open.active > a:hover {
+    background-color: transparent;
+    border: none;
+    color: #C20E1A; }
+  .tb-megamenu .dropdown-menu .active > a,
+  .tb-megamenu .dropdown-menu .active > a:hover {
+    text-decoration: none;
+    color: #C20E1A !important;
+    outline: 0;
+    background-image: none !important;
+    background-color: transparent; }
+  .tb-megamenu .dropdown-menu .active .mega-group-title,
+  .tb-megamenu .dropdown-menu .active .mega-group-title:hover {
+    text-decoration: none;
+    color: #000 !important;
+    font-weight: bold !important;
+    outline: 0;
+    background-image: none !important;
+    background-color: transparent; }
+  .tb-megamenu .dropdown-menu .active .mega-group-title:hover {
+    color: #C20E1A !important; }
+  .tb-megamenu .dropdown-menu .mega-group-title,
+  .tb-megamenu .dropdown-menu .mega-group-title:hover {
+    font-weight: bold !important; }
 
 .slick-prev, .slick-next {
   height: 40px;

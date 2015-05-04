@@ -29,26 +29,25 @@
                     <div class="row">
                         <div class="m-item--content">
                             <!-- obsah gallerie -->
-                            <!-- zobrazení přes featured image-->
-                            <div class="m-gallery">
-                                <ul class="clearing-thumbs clearing-feature" data-clearing>
+
+                                <ul class="m-gallery  clearing-thumbs clearing-feature" data-clearing>
                                     <?php
                                     if (isset($pole['field_segment_fotogalerie']['#items'])) {
                                         foreach ($pole['field_segment_fotogalerie']['#object']->field_segment_fotogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $poradi => $img) { ?>
-                                            <li class="<?= ($poradi == 0) ? 'clearing-featured-img' : '' ?>">
+                                            <li class="<?= ($poradi == 0) ? 'clearing-featured-img' : '' ?> cB">
                                                 <a href="<?= image_style_url('none', $img['uri']) ?>"><img src="<?= image_style_url('x182-132', $img['uri']) ?>"></a>
                                             </li>
 
                                         <?php }
                                     } else {
                                         if (isset($pole['field_basic_img']['#items'])) { ?>
-                                            <li class="clearing-featured-img">
+                                            <li class="clearing-featured-img cA">
                                                 <a href="<?= image_style_url('none', $pole['field_basic_img']['#items'][0]['uri']) ?>"><img src="<?= image_style_url('x182-132', $pole['field_basic_img']['#items'][0]['uri']) ?>"></a>
                                             </li>
                                         <?php }
                                     } ?>
                                 </ul>
-                            </div>
+
                             <!-- konec obsahu galerie-->
 
                         </div>

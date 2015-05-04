@@ -8,18 +8,18 @@
 <div class="m-section l-detail-page bg-white">
 
     <header class="m-section--header bg-secondary-light">
-<!--        <div class="row ">-->
-<!--            <div class="l-full">-->
-<!---->
-<!--                <nav class="breadcrumbs">-->
-<!--                    <a href="#">Home</a>-->
-<!--                    <a href="#">Features</a>-->
-<!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
-<!--                    <a class="current" href="#">Cloning</a>-->
-<!--                </nav>-->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row ">-->
+        <!--            <div class="l-full">-->
+        <!---->
+        <!--                <nav class="breadcrumbs">-->
+        <!--                    <a href="#">Home</a>-->
+        <!--                    <a href="#">Features</a>-->
+        <!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
+        <!--                    <a class="current" href="#">Cloning</a>-->
+        <!--                </nav>-->
+        <!---->
+        <!--            </div>-->
+        <!--        </div>-->
     </header>
 
     <article class="m-basic-page">
@@ -32,11 +32,8 @@
 
                 <div class="l-full">
 
-                    <figure class="m-basic-page--image"
-                            style="background-image: url(<?= image_style_url('x1266-0', $node->field_stranka_mainimg['und'][0]['uri']) ?>)">
-                        <a href=""><img
-                                src="<?= image_style_url('x1266-0', $node->field_stranka_mainimg['und'][0]['uri']) ?>"
-                                alt=""/></a>
+                    <figure class="m-basic-page--image" style="background-image: url(<?= image_style_url('x1266-0', $node->field_stranka_mainimg['und'][0]['uri']) ?>)">
+                        <a href=""><img src="<?= image_style_url('x1266-0', $node->field_stranka_mainimg['und'][0]['uri']) ?>" alt="" /></a>
                         <figcaption>
                             <?= $node->field_stranka_imgtext[$node->language][0]['value'] ?>
                         </figcaption>
@@ -47,12 +44,9 @@
 
         <div class="row">
             <div class="m-basic-page--content">
-
-
                 <div class="m-body--content">
                     <?= $node->field_stranka_text[$node->language][0]['value'] ?>
                 </div>
-
 
                 <?php
                 if (isset($content['field_stranka_soubory'][0])) {
@@ -76,7 +70,6 @@ print render($content);
     <div class="m-section--underlay"></div>
 
 
-
     <div class="row">
         <div class="l-section--content slider block-feed-slider">
             <?php
@@ -98,13 +91,6 @@ print render($content);
     </div>
 
 </div>
-
-
-
-
-
-
-
 
 
 {% include "subtemplates/feed-block-carousel.twig" %} {# @todo musi byt bez hlavičky a patičky#}

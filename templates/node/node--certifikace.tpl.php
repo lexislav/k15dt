@@ -1,33 +1,22 @@
 <div class="m-section l-detail-page">
     <div class="row">
-        <header class="m-section--header">
-<!--            <div class="l-full">-->
-<!--                <nav class="breadcrumbs">-->
-<!--                    <a href="#">Home</a>-->
-<!--                    <a href="#">Features</a>-->
-<!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
-<!--                    <a class="current" href="#">Cloning</a>-->
-<!--                </nav>-->
-<!---->
-<!--            </div>-->
-        </header>
+        <header class="m-section--header"></header>
     </div>
-<!--    --><?php
-//    dsm($content);
-//    dsm($node);
-//    ?>
+
+    <?php
+    //    dsm($content);
+    //    dsm($node);
+    //    ?>
+
     <article class="m-reference">
         <header>
-            <div class="m-reference--image mm-preview-fit"
-                 style="background-image: url(<?= image_style_url('x618-0', $content['field_cert_nahled']['#items'][0]['uri']) ?>)">
-                <a href=""><img
-                        src="<?= image_style_url('x618-0', $content['field_cert_nahled']['#items'][0]['uri']) ?>"
-                        alt=""/></a>
+            <div class="m-reference--image mm-preview-fit" style="background-image: url(<?= image_style_url('x618-0', $content['field_cert_nahled']['#items'][0]['uri']) ?>)">
+                <a href=""><img src="<?= image_style_url('x618-0', $content['field_cert_nahled']['#items'][0]['uri']) ?>" alt="" /></a>
             </div>
             <div class="m-reference--summary">
                 <h1 class="m-reference--hed"><a href=""><?php print $title; ?></a></h1>
-                <div class="m-reference--description">
-                </div>
+
+                <div class="m-reference--description"></div>
                 <div class="m-reference--meta m-properties">
                     <dl>
                         <dt><?php print t('Zařazení certifikátu') ?></dt>
@@ -35,11 +24,12 @@
                     </dl>
                     <dl>
                         <dt><?php print t('Certifikát ke stažení') ?></dt>
-                        <dd><a href="<?= (file_create_url($content['field_cert_cert']['#items'][0]['uri'])); ?>"><?=$title?></a> </dd>
+                        <dd><a href="<?= (file_create_url($content['field_cert_cert']['#items'][0]['uri'])); ?>"><?= $title ?></a>
+                        </dd>
                     </dl>
                     <dl>
                         <dt><?php print t('Popis Certifikatu') ?></dt>
-                        <dd><?=$content['field_cert_popis']['#items'][0]['value']?></dd>
+                        <dd><?= $content['field_cert_popis']['#items'][0]['value'] ?></dd>
                     </dl>
 
                 </div>

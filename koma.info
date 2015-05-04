@@ -50,10 +50,10 @@ stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
 
 ; Then we add our own stylesheet.
-stylesheets[all][] = css/tb_megamenu/base.css
-stylesheets[all][] = css/tb_megamenu/bootstrap.css
-stylesheets[all][] = css/tb_megamenu/compatibility.css
-stylesheets[all][] = css/tb_megamenu/default.css
+ stylesheets[all][] = css/tb_megamenu/base.css
+ stylesheets[all][] = css/tb_megamenu/bootstrap.css
+ stylesheets[all][] = css/tb_megamenu/compatibility.css
+ stylesheets[all][] = css/tb_megamenu/default.css
 
 stylesheets[all][] = css/smazat.css
 stylesheets[all][] = components/chosen/chosen.min.css

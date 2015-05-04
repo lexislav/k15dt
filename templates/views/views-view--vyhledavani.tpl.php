@@ -40,7 +40,7 @@
             <?php if ($rows): ?>
 
                 <?php
-                    print "dodělat šablonu pro jednotlivou řádku!";
+
                 print $rows; ?>
 
             <?php elseif ($empty): ?>

@@ -21,17 +21,8 @@
  *   - $content['right']: Content in the right column.
  *   - $content['bottom']: Content in the bottom row.
  */
-
-
 ?>
-
-
-
-
-
-
 <div class="m-section l-detail-page bg-white">
-
     <header class="m-section--header bg-secondary-light">
         <div class="row ">
             <div class="l-full">
@@ -45,12 +36,10 @@
             </div>
         </div>
     </header>
-
     <article class="m-basic-page">
         <header class="m-basic-page--header">
-
             <div class="row">
-                <div class="l-third">
+                <div class="<?=(strlen($content['right_above'])>0)?'l-third':'l-half'; ?> ">
                     <h1 class="m-basic-page--hed"><?php print $content['left_above']; ?></h1>
                 </div>
                 <div class="l-two-thirds">
@@ -61,7 +50,6 @@
                 </div>
             </div>
         </header>
-
         <div class="row">
             <div class="m-basic-page--content">
 

@@ -4014,10 +4014,16 @@ button:focus {
       display: none; }
     .m-section_support .input-group input {
       float: left;
-      width: calc(100% * 0.8333333333); }
+      width: calc(100% * 0.8333333333);
+      padding-left: 18px; }
     .m-section_support .input-group .postfix {
       float: left;
       width: calc(100% * 0.1666666667); }
+      .m-section_support .input-group .postfix .fa {
+        font-size: 26px;
+        line-height: 59px; }
+    .m-section_support .input-group input, .m-section_support .input-group button {
+      height: 59px; }
 
 .m-section.l-login {
   position: absolute;

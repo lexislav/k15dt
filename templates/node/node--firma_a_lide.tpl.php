@@ -5,7 +5,7 @@
 //
 //?>
 
-<div class="m-section l-detail-page bg-white">
+<div class="m-section l-detail-page l-feed_four">
     <header class="m-section--header bg-secondary-light">
     </header>
     <article class="m-basic-page">
@@ -26,16 +26,13 @@
         </header>
     </article>
 
-
     <?php
     if (isset($content['field_img_text_text'][0])) {
         print render($content['field_img_text_text']);
     }
     ?>
 
-
 </div>
-
 
 
 

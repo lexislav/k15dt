@@ -48,7 +48,6 @@
                                     } ?>
                                 </ul>
 
-
                             <!-- konec obsahu galerie-->
 
                         </div>

@@ -4095,6 +4095,12 @@ button:focus {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px; }
+  .m-gallery.mm-wide .m-gallery--item {
+    float: left;
+    width: calc(100% * 0.1666666667 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px; }
   .m-gallery.mm-tiny .m-gallery--item {
     float: left;
     width: calc(100% * 0.1666666667 - 30px);

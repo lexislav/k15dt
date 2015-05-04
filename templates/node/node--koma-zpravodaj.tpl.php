@@ -1,15 +1,15 @@
 <div class="m-section l-detail-page">
     <div class="row">
         <header class="m-section--header">
-<!--            <div class="l-full">-->
-<!--                <nav class="breadcrumbs">-->
-<!--                    <a href="#">Home</a>-->
-<!--                    <a href="#">Features</a>-->
-<!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
-<!--                    <a class="current" href="#">Cloning</a>-->
-<!--                </nav>-->
-<!---->
-<!--            </div>-->
+            <!--            <div class="l-full">-->
+            <!--                <nav class="breadcrumbs">-->
+            <!--                    <a href="#">Home</a>-->
+            <!--                    <a href="#">Features</a>-->
+            <!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
+            <!--                    <a class="current" href="#">Cloning</a>-->
+            <!--                </nav>-->
+            <!---->
+            <!--            </div>-->
         </header>
     </div>
 
@@ -46,16 +46,16 @@
 
                 <?php
 
-                if(isset($content['field_zpravodaj_video']['#items'])){
+                if (isset($content['field_zpravodaj_video']['#items'])) {
 
-                    foreach($content['field_zpravodaj_video']['#items'] AS $video){
+                    foreach ($content['field_zpravodaj_video']['#items'] AS $video) {
 
                         ?>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/<?=$video['video_id']?>?rel=0" frameborder="0" allowfullscreen></iframe><br />
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/<?= $video['video_id'] ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <br />
 
-                    <?php
+                        <?php
                     };
-
 
 
                 }
@@ -77,35 +77,16 @@
                             </div>
                         </header>
                         <div class="m-aside-block--content">
-                            <div class="m-gallery mm-medium">
+                            <ul class="m-gallery mm-medium" class="clearing-thumbs" data-clearing>
                                 <?php foreach ($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $obrazek) { ?>
-
-                                    <div class="m-gallery-item">
-                                        <div class="m-gallery-item--image" style="background-image: url(<?= image_style_url('x412-300', $obrazek['uri']) ?>)">
-                                            <a href=""><img src="<?= image_style_url('x412-300', $obrazek['uri']) ?>" alt="" /></a>
-                                        </div>
-                                        <div class="m-gallery-item--summary">
-                                            <h2 class="m-gallery-item--hed">Item header</h2>
-
-                                            <div class="m-gallery-item--description">Description</div>
-                                        </div>
-                                    </div>
-
-                                <?php } ?>
-                            </div>
+                                <li class="m-gallery--item">
+                                    <a href="<?= image_style_url('x186-139', $obrazek['uri']) ?>"><img src="<?= image_style_url('x412-300', $obrazek['uri']) ?>"></a>
+                                </li>
+                            <?php } ?>
+                            </ul>
                         </div>
 
-                        <!--
-                            not used here
-                        <footer class="m-aside-block--footer">
-                            <div class="l-half">
-                                <div class="m-aside-block--top"><a href="">Block footer&uarr;</a></div>
-                            </div>
-                            <div class="l-half">
-                                <div class="m-aside-block--more"><a href="">Block footer2&rarr;</a></div>
-                            </div>
-                        </footer>
-                        -->
+
 
                     </div>
                 </aside>
@@ -130,9 +111,9 @@
                         ?>
                         <li>
                             <!--                            @TODO UPRAVIT CESTU-->
-                            <a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj&field_zpravodaj_kategorie_tid=<?= $term->tid ?>"
-                               title="<?= $term->name ?>"><?= $term->name ?></a></li>
-                    <?php
+                            <a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj&field_zpravodaj_kategorie_tid=<?= $term->tid ?>" title="<?= $term->name ?>"><?= $term->name ?></a>
+                        </li>
+                        <?php
                     }
                     ?>
                 </ul>

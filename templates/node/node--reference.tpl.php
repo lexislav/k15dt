@@ -9,31 +9,28 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
 <div class="m-section l-detail-page">
     <div class="row">
         <header class="m-section--header">
-<!--            <div class="l-full">-->
-<!--                <nav class="breadcrumbs">-->
-<!--                    <a href="#">Home</a>-->
-<!--                    <a href="#">Features</a>-->
-<!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
-<!--                    <a class="current" href="#">Cloning</a>-->
-<!--                </nav>-->
-<!---->
-<!--            </div>-->
+            <!--            <div class="l-full">-->
+            <!--                <nav class="breadcrumbs">-->
+            <!--                    <a href="#">Home</a>-->
+            <!--                    <a href="#">Features</a>-->
+            <!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
+            <!--                    <a class="current" href="#">Cloning</a>-->
+            <!--                </nav>-->
+            <!---->
+            <!--            </div>-->
         </header>
     </div>
     <article class="m-reference">
         <header>
-            <div class="m-reference--image"
-                 style="background-image: url(<?= image_style_url('x618-480', $node->field_reference_main_img['und'][0]['uri']) ?>)">
-                <a href=""><img
-                        src="<?= image_style_url('x618-480', $node->field_reference_main_img['und'][0]['uri']) ?>"
-                        alt=""/></a>
+            <div class="m-reference--image" style="background-image: url(<?= image_style_url('x618-480', $node->field_reference_main_img['und'][0]['uri']) ?>)">
+                <a href=""><img src="<?= image_style_url('x618-480', $node->field_reference_main_img['und'][0]['uri']) ?>" alt="" /></a>
             </div>
             <div class="m-reference--summary">
                 <h1 class="m-reference--hed"><a href=""><?php print $title; ?></a></h1>
 
                 <div class="m-reference--description">
                     <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel.
-                        Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                       Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
                 </div>
                 <div class="m-reference--meta m-properties">
                     <dl>
@@ -81,21 +78,20 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
 
                 <?php
 
-                if(isset($content['field_reference_video']['#items'])){
+                if (isset($content['field_reference_video']['#items'])) {
 
-                    foreach($content['field_reference_video']['#items'] AS $video){
+                    foreach ($content['field_reference_video']['#items'] AS $video) {
 
                         ?>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/<?=$video['video_id']?>?rel=0" frameborder="0" allowfullscreen></iframe><br />
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/<?= $video['video_id'] ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <br />
 
                         <?php
                     };
 
 
-
                 }
                 ?>
-
 
 
             </div>
@@ -113,40 +109,16 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                     </header>
 
 
-
-
-
-
                     <div class="m-aside-block--content">
-                        <div class="m-gallery clearing-thumbs clearing-feature">
+                        <ul class="m-gallery" class="clearing-thumbs" data-clearing>
                             <?php foreach ($node->field_reference_fotogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $poradi => $obrazek) { ?>
-                                <div class="m-gallery-item">
-                                    <div class="m-gallery-item--image <?= ($poradi == 0) ? 'clearing-featured-img' : '' ?>"
-                                         style="background-image: url(<?= image_style_url('x186-139', $obrazek['uri']) ?>)">
-                                        <a href=""><img src="<?= image_style_url('x186-139', $obrazek['uri']) ?>"
-                                                        alt=""/></a>
-                                    </div>
-                                    <div class="m-gallery-item--summary">
-                                        <h2 class="m-gallery-item--hed"><?= $obrazek['title'] ?></h2>
-
-                                        <div class="m-gallery-item--description"></div>
-                                    </div>
-                                </div>
+                                <li class="m-gallery--item">
+                                    <a href="<?= image_style_url('x186-139', $obrazek['uri']) ?>"><img src="<?= image_style_url('x186-139', $obrazek['uri']) ?>"></a>
+                                </li>
                             <?php } ?>
-                        </div>
+                        </ul>
                     </div>
 
-
-
-<!--                    <footer class="m-aside-block--footer">-->
-<!--                        <div class="l-half">-->
-<!--                            <div class="m-aside-block--top"><a href="">Block footer&uarr;</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="l-half">-->
-<!--                            <div class="m-aside-block--more"><a href="">Block footer2 &rarr;</a></div>-->
-<!--                        </div>-->
-<!--                    </footer>-->
                 </div>
             </aside>
         </div>
@@ -171,10 +143,9 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
 
                 <article class="m-story">
                     <header>
-                        <div class="m-item--image"
-                             style="background-image: url(<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>)">
+                        <div class="m-item--image" style="background-image: url(<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>)">
                             <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $prev_nid[0]->prev_nid ?>">
-                                <img src="<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>" alt=""/>
+                                <img src="<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>" alt="" />
                             </a>
                         </div>
                         <div class="m-item--summary">
@@ -184,14 +155,14 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
 
                             <div class="m-item--description">
                                 <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris
-                                    rutrum
-                                    vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                                   rutrum
+                                   vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
                             </div>
                         </div>
                     </header>
                 </article>
             </div>
-        <?php
+            <?php
         }
         ?>
         <?php
@@ -200,10 +171,9 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
             <div class="l-next m-card_nav">
                 <article class="m-story">
                     <header>
-                        <div class="m-item--image"
-                             style="background-image: url(<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>)">
+                        <div class="m-item--image" style="background-image: url(<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>)">
                             <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $next_nid[0]->next_nid ?>">
-                                <img src="<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>" alt=""/>
+                                <img src="<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>" alt="" />
                             </a>
                         </div>
                         <div class="m-item--summary">
@@ -213,14 +183,14 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
 
                             <div class="m-item--description">
                                 <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris
-                                    rutrum
-                                    vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                                   rutrum
+                                   vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
                             </div>
                         </div>
                     </header>
                 </article>
             </div>
-        <?php
+            <?php
         }
         ?>
     </div>

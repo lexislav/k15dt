@@ -28,7 +28,7 @@
 <?php endif; ?>
 
 <div class="l-left">
-    <ul class="m-filter--items">
+    <ul class="m-filter--items chosen-yes">
         <li class="label">
             <div>Filtr zobrazení</div>
         </li>

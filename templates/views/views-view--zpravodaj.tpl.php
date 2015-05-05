@@ -1,10 +1,13 @@
 
 
 <div class="m-section l-feed_two">
+    <div class="row">
         <header class="m-section--header">
-            <h2 class="m-section--hed mm-medium mm-center"><?php print t('Zpravodaj')?></h2>
+            <div class="l-full">
+                <h2 class="m-section--hed mm-big"><?php print t('Zpravodaj')?></h2>
+            </div>
         </header>
-
+    </div>
 
 
     <?php print render($title_prefix); ?>
@@ -19,8 +22,10 @@
     <?php endif; ?>
 
     <?php if ($exposed): ?>
-        <div class="view-filters">
-            <?php print $exposed; ?>
+        <div class="m-filter">
+            <div class="l-grid">
+                <?php print $exposed; ?>
+            </div>
         </div>
     <?php endif; ?>
 
@@ -38,10 +43,6 @@
         <div class="view-empty">
             <?php print $empty; ?>
         </div>
-    <?php endif; ?>
-
-    <?php if ($pager): ?>
-        <?php print $pager; ?>
     <?php endif; ?>
 
 
@@ -68,4 +69,29 @@
         </div>
     <?php endif; ?>
 
+</div>
+<div class="m-section bg-white">
+    <div class="row">
+
+        <footer class="m-section--footer">
+            <div class="l-left">
+                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+            </div>
+            <div class="l-center">
+                <?php if ($pager):
+                    $pager = str_replace('class="item-list"', 'class="m-pagination"', $pager);
+                    $pager = str_replace('class="pager"', 'class="m-pagination--container"', $pager);
+                    $pager = str_replace('pager-current', 'class="current"', $pager);
+                    $pager = str_replace('pager-next', 'pager-next arrow', $pager);
+                    ?>
+                    <?php print $pager; ?>
+                <?php endif; ?>
+
+            </div>
+            <div class="l-right">
+                <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
+            </div>
+        </footer>
+
+    </div>
 </div>

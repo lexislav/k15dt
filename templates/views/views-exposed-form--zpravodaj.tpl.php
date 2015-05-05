@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * @file
  * This template handles the layout of the views exposed filter form.
@@ -50,31 +52,46 @@
 
 </div>
 <div class="l-right">
-    <?php if (!empty($sort_by)): ?>
-        <div class="views-exposed-widget views-widget-sort-by">
-            <?php print $sort_by; ?>
-        </div>
-        <div class="views-exposed-widget views-widget-sort-order">
-            <?php print $sort_order; ?>
-        </div>
-    <?php endif; ?>
-    <?php if (!empty($items_per_page)): ?>
-        <div class="views-exposed-widget views-widget-per-page">
-            <?php print $items_per_page; ?>
-        </div>
-    <?php endif; ?>
-    <?php if (!empty($offset)): ?>
-        <div class="views-exposed-widget views-widget-offset">
-            <?php print $offset; ?>
-        </div>
-    <?php endif; ?>
-    <div class="views-exposed-widget views-submit-button">
-        <?php print $button; ?>
-    </div>
-    <?php if (!empty($reset_button)): ?>
+    <ul class="m-filter--items">
 
-            <?php print $reset_button; ?>
+        <?php if (!empty($sort_by)): ?>
+            <li>
+                <div class="views-exposed-widget views-widget-sort-by">
+                    <?php print $sort_by; ?>
+                </div>
+            </li>
+            <li>
+                <div class="views-exposed-widget views-widget-sort-order">
+                    <?php print $sort_order; ?>
+                </div>
+            </li>
+        <?php endif; ?>
 
-    <?php endif; ?>
+
+        <?php if (!empty($items_per_page)): ?>
+            <li>
+                <div class="views-exposed-widget views-widget-per-page">
+                    <?php print $items_per_page; ?>
+                </div>
+            </li>
+        <?php endif; ?>
+        <?php if (!empty($offset)): ?>
+            <li>
+                <div class="views-exposed-widget views-widget-offset">
+                    <?php print $offset; ?>
+                </div>
+            </li>
+        <?php endif; ?>
+        <li>
+            <div class="views-exposed-widget views-submit-button">
+                <?php print $button; ?>
+            </div>
+        </li>
+        <?php if (!empty($reset_button)): ?>
+            <li>
+                <?php print $reset_button; ?>
+            </li>
+        <?php endif; ?>
+    </ul>
 
 </div>

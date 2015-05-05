@@ -23,12 +23,6 @@
                 <div class="l-third">
                     <h2 class="mm-small color-primary"><?php print t('Produktové řady') ?></h2>
                 </div>
-
-                <?php
-                // @todo: to dělá co?
-                $tree = taxonomy_get_tree(5);
-                ?>
-
                 <div class="l-two-thirds">
                     <ul class="m-section--nav inline-right">
                         <li><a href=""  title="">menu</a></li>
@@ -36,15 +30,6 @@
                         <li><a href=""  title="">dát</a></li>
                         <li><a href=""  title="">sem</a></li>
                     </ul>
-                                </ul>
-                            </div>
-                        </header>
-                    </div>
-                    <?php
-                    if (isset($content['field_produktove_rady'][0])) {
-                        print render($content['field_produktove_rady']);
-                    }
-                    ?>
                 </div>
             </header>
         </div>
@@ -82,10 +67,20 @@ if (isset($content['field_bigimg_a_text'][0])) {
 
     <div class="row">
         <div class="l-single">
-            <?php
-            $block = module_invoke('views', 'block_view', 'nabidka-block');
-            print render($block);
-            ?>
+            <aside>
+                <div class="m-aside-block bg-secondary-light mm-pad">
+                    <header class="m-aside-block--header">
+                        <h3 class="m-aside-block--hed">
+                            BAZAR
+                        </h3>
+                    </header>
+                    <?php
+                    $block = module_invoke('views', 'block_view', 'nabidka-block');
+                    print render($block);
+                    ?>
+                </div>
+            </aside>
+
 
             <!--
             @todo: rez: davas tam kod z detailu stránky, ktery tam nema co dělat
@@ -107,28 +102,19 @@ if (isset($content['field_bigimg_a_text'][0])) {
         </div>
 
         <div class="l-single">
-            <?php
-            $block = module_invoke('views', 'block_view', 'nabidka-block_1');
-            print render($block);
-            ?>
-
-            <!--
-           @todo: rez: davas tam kod z detailu stránky, ktery tam nema co dělat
-           ten blok by měl generovat pouze tabulku s daty
-           vnitřek tohoto bloku by měl vypada následně:
-
-           <div class="m-reference--meta m-properties">
-               <dl class="mm-nolabels mm-noborder">
-               <dt>Modulární prodejna</dt>
-               <dd><a href="nabidka/modularni-prodejna" title="Modulární prodejna">
-               <i class="fa fa-file-pdf-o"></i> Modulární prodejna</a></dd>
-               </dl>
-           </div>
-
-           nic víc žádné aside, žádné basic page atd...
-
-           -->
-
+            <aside>
+                <div class="m-aside-block bg-secondary-light mm-pad">
+                    <header class="m-aside-block--header">
+                        <h3 class="m-aside-block--hed">
+                            MODULY IHNED K ODBĚRU
+                        </h3>
+                    </header>
+                    <?php
+                    $block = module_invoke('views', 'block_view', 'nabidka-block_1');
+                    print render($block);
+                    ?>
+                </div>
+            </aside>
         </div>
     </div>
 </div>
@@ -147,7 +133,7 @@ if (isset($content['field_segment_faq'][0])) {
         <header class="m-section--header">
             <div class="l-full">
                 <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top">JSME PŘEDNÍ ČESKÝ VÝROBCE
-                    <br/><span class="color-primary">MODULÁRNÍ VÝSTAVBY</span></h2>
+                    <br /><span class="color-primary">MODULÁRNÍ VÝSTAVBY</span></h2>
             </div>
         </header>
     </div>

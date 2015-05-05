@@ -235,3 +235,21 @@ jQuery("#edit-field-zpravodaj-publikace-value-value-year, .chosen-yes .form-sele
     //allow_single_deselect: true
 });
 
+
+// extract links
+
+jQuery(".form-type-bef-link").each(function() {
+    var link = jQuery(this);
+    var filterElement = jQuery("<li class='m-filter--item'>"+ link.html() +"</li>");
+    jQuery("#extractLinkTarget").append(filterElement);
+    console.log(link);
+});
+
+jQuery(".form-type-date-select").each(function() {
+    var link = jQuery(this);
+    var filterElement = jQuery("<li class='m-filter--item'>"+ link.html() +"</li>");
+    jQuery("#extractLinkTarget").append(filterElement);
+    console.log(link);
+});
+
+

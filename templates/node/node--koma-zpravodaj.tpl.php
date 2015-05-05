@@ -1,20 +1,11 @@
 <div class="m-section l-detail-page">
     <div class="row">
-        <header class="m-section--header">
-            <!--            <div class="l-full">-->
-            <!--                <nav class="breadcrumbs">-->
-            <!--                    <a href="#">Home</a>-->
-            <!--                    <a href="#">Features</a>-->
-            <!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
-            <!--                    <a class="current" href="#">Cloning</a>-->
-            <!--                </nav>-->
-            <!---->
-            <!--            </div>-->
-        </header>
+        <header class="m-section--header"></header>
     </div>
 
     <article class="m-story">
         <header>
+
             <div class="m-story--image" style="background-image: url(http://lorempixel.com/650/500)">
                 <a href=""><img src="http://lorempixel.com/650/500" alt="" /></a>
             </div>
@@ -43,7 +34,6 @@
         <div class="m-story--content">
             <div class="m-body--content">
                 <?= ($content['field_zpravodaj_text']['#items'][0]['value']); ?>
-
                 <?php
                 if (isset($content['field_zpravodaj_video']['#items'])) {
 

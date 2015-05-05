@@ -5316,6 +5316,7 @@ body {
     color: #000;
     height: 48px;
     display: block; }
+    .m-filter .m-filter--items > li .form-type-bef-link,
     .m-filter .m-filter--items > li .form-submit, .m-filter .m-filter--items > li.label {
       padding: 0 14px;
       color: #B5BBB4;

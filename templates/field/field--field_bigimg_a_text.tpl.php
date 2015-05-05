@@ -17,4 +17,8 @@
             <div class="m-card--more "><a class="button" href="<?=drupal_get_path_alias($items[0]['field_page_link']['#items'][0]['url'])?>"><?=$items[0]['field_page_link']['#items'][0]['title']?> &rarr;</a></div>
         </div>
     </div>
+    <footer class="m-section--footer">
+        <h2 class="m-section--hed mm-medium mm-normal mm-center color-white"></h2>
+    </footer>
+
 </div>

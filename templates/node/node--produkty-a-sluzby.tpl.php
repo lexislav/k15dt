@@ -65,10 +65,20 @@ if (isset($content['field_bigimg_a_text'][0])) {
 
     <div class="row">
         <div class="l-single">
-            <?php
-            $block = module_invoke('views', 'block_view', 'nabidka-block');
-            print render($block);
-            ?>
+            <aside>
+                <div class="m-aside-block bg-secondary-light mm-pad">
+                    <header class="m-aside-block--header">
+                        <h3 class="m-aside-block--hed">
+                            BAZAR
+                        </h3>
+                    </header>
+                    <?php
+                    $block = module_invoke('views', 'block_view', 'nabidka-block');
+                    print render($block);
+                    ?>
+                </div>
+            </aside>
+
 
             <!--
             @todo: rez: davas tam kod z detailu stránky, ktery tam nema co dělat
@@ -90,29 +100,20 @@ if (isset($content['field_bigimg_a_text'][0])) {
         </div>
 
         <div class="l-single">
-            <?php
-            $block = module_invoke('views', 'block_view', 'nabidka-block_1');
-            print render($block);
-            ?>
-
-            <!--
-           @todo: rez: davas tam kod z detailu stránky, ktery tam nema co dělat
-           ten blok by měl generovat pouze tabulku s daty
-           vnitřek tohoto bloku by měl vypada následně:
-
-           <div class="m-reference--meta m-properties">
-               <dl class="mm-nolabels mm-noborder">
-               <dt>Modulární prodejna</dt>
-               <dd><a href="nabidka/modularni-prodejna" title="Modulární prodejna">
-               <i class="fa fa-file-pdf-o"></i> Modulární prodejna</a></dd>
-               </dl>
-           </div>
-
-           nic víc žádné aside, žádné basic page atd...
-
-           -->
-
-        </div>
+            <aside>
+                <div class="m-aside-block bg-secondary-light mm-pad">
+                    <header class="m-aside-block--header">
+                        <h3 class="m-aside-block--hed">
+                            MODULY IHNED K ODBĚRU
+                        </h3>
+                    </header>
+                    <?php
+                    $block = module_invoke('views', 'block_view', 'nabidka-block_1');
+                    print render($block);
+                    ?>
+                </div>
+            </aside>
+         </div>
     </div>
 </div>
 
@@ -124,13 +125,14 @@ if (isset($content['field_segment_faq'][0])) {
     print render($content['field_segment_faq']);
 }
 ?>
-<div class="m-section l-feed_four" style="background-image: url('/sites/all/themes/koma/assets/images/mozaika-koma.png')">
+<div class="m-section l-feed_four"
+     style="background-image: url('/sites/all/themes/koma/assets/images/mozaika-koma.png')">
 
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
                 <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top">JSME PŘEDNÍ ČESKÝ VÝROBCE
-                    <br /><span class="color-primary">MODULÁRNÍ VÝSTAVBY</span></h2>
+                    <br/><span class="color-primary">MODULÁRNÍ VÝSTAVBY</span></h2>
             </div>
         </header>
     </div>

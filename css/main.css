@@ -5599,7 +5599,6 @@ button:focus {
           display: inline-block; }
   .m-filter .m-filter--items > li {
     width: auto;
-    max-width: 140px;
     color: #000;
     height: 48px;
     display: block; }

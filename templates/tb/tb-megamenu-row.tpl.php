@@ -1,3 +1,4 @@
-<div <?php print $attributes;?> class="<?php print $classes;?>">
+<div class="columns">
   <?php print $columns;?>
 </div>
+

@@ -3274,6 +3274,10 @@ button:focus {
       color: #000; }
       .megacleaned > .nav > .item a:hover {
         color: #C20E1A; }
+  .megacleaned > .nav .item.active {
+    color: #C20E1A; }
+    .megacleaned > .nav .item.active a {
+      color: #C20E1A; }
 
 .megacleaned .item-submenu {
   display: none !important; }
@@ -3379,6 +3383,8 @@ button:focus {
     display: block; }
     .m-mega.is-opened .m-mega--sub > .item-submenu.is-opened {
       display: block; }
+  .m-mega .item:not(.mega-group).active > a {
+    color: #C20E1A; }
   @media only screen and (min-width: 961px) {
     .m-mega {
       top: 128px;

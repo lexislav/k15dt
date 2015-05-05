@@ -3,7 +3,7 @@
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-small mm-left"><?php print t('Reference') ?> / <span
+                <h2 class="m-section--hed mm-big"><?php print t('Reference') ?> / <span
                         class="color-primary"><?php print t('archiv referencí') ?></span></h2>
             </div>
         </header>

@@ -225,7 +225,7 @@ jQuery('[close-section]').each(function () {
 // chosen filters - select boxes
 
 
-jQuery("#edit-field-zpravodaj-publikace-value-value-year, .chosen-yes .form-select").chosen({
+jQuery(".form-select").chosen({
     width: "95%",
     inherit_select_classes:true,
     create_option: true,
@@ -236,20 +236,20 @@ jQuery("#edit-field-zpravodaj-publikace-value-value-year, .chosen-yes .form-sele
 });
 
 
-// extract links
-
-jQuery(".form-type-bef-link").each(function() {
-    var link = jQuery(this);
-    var filterElement = jQuery("<li class='m-filter--item'>"+ link.html() +"</li>");
-    jQuery("#extractLinkTarget").append(filterElement);
-    console.log(link);
-});
-
-jQuery(".form-type-date-select").each(function() {
-    var link = jQuery(this);
-    var filterElement = jQuery("<li class='m-filter--item'>"+ link.html() +"</li>");
-    jQuery("#extractLinkTarget").append(filterElement);
-    console.log(link);
-});
-
+//// extract links
+//
+//jQuery(".form-type-bef-link").each(function() {
+//    var link = jQuery(this);
+//    var filterElement = jQuery("<li class='m-filter--item'>"+ link.html() +"</li>");
+//    jQuery("#extractLinkTarget").append(filterElement);
+//    console.log(link);
+//});
+//
+//jQuery(".form-type-date-select").each(function() {
+//    var link = jQuery(this);
+//    var filterElement = jQuery("<li class='m-filter--item'>"+ link.html() +"</li>");
+//    jQuery("#extractLinkTarget").append(filterElement);
+//    console.log(link);
+//});
+//
 

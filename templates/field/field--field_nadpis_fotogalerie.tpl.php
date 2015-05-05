@@ -13,7 +13,6 @@ if (count($items) > 0) {
             </header>
         </div>
 
-            <footer class="m-section--footer"></footer>
 
     </div>
 <?php

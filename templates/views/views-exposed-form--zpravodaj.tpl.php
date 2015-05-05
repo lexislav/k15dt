@@ -34,15 +34,25 @@
         <li class="label">
             <div>Filtr zobrazení</div>
         </li>
+        <?php foreach ($widgets as $id => $widget):
 
+
+            ?>
+            <li>
+
+
+                <?php
+
+
+                print $widget->widget;
+
+                ?>
+
+
+            </li>
+        <?php endforeach; ?>
     </ul>
 
-    <div class="dummy" id="extractFilters" style="display: none">
-        <?php foreach ($widgets as $id => $widget): ?>
-            <?php dsm($widget); ?>
-        <?php print $widget->widget; ?> ?>
-        <?php endforeach; ?>
-    </div>
 
 </div>
 <div class="l-right">

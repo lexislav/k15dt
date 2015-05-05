@@ -46,16 +46,16 @@ echo '<br />-----<br />';*/
 <div class="m-card_list l-single">
     <article class="m-story">
         <header class="m-item--header">
-            <?php if ($src_img) { ?>
-                <div class="m-item--image" style="background-image: url(<?php echo $src_img ?>)">
-                    <a href="<?php echo $link ?>"><img src="<?php echo $src_img ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>" /></a>
+            <?php if (isset($src_img)) { ?>
+                <div class="m-item--image" style="background-image: url(<?=$src_img ?>)">
+                    <a href="<?=$link ?>"><img src="<?=$src_img ?>" alt="<?=$title; ?>" title="<?=$title; ?>" /></a>
                 </div>
             <?php } ?>
-            <h1 class="m-item--hed"><a href="<?php echo $link; ?>"><?php echo $title; ?></a></h1>
+            <h1 class="m-item--hed"><a href="<?=$link; ?>"><?=$title; ?></a></h1>
 
             <div class="m-item--summary">
                 <div class="m-item--description">
-                    <?php echo $horni_popis; ?>
+                    <?=$horni_popis; ?>
                 </div>
             </div>
         </header>

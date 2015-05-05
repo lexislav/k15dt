@@ -8,7 +8,9 @@
         </header>
     </div>
 
-    <?php if ($exposed): ?>
+    <?php
+
+    if ($exposed): ?>
         <div class="row">
 
             <div class="l-full">
@@ -23,7 +25,7 @@
     <?php if ($rows): ?>
         <div class="row">
             <div class="l-full">
-                <h2 class="m-search--hed">výsledky vyhledávání: $hledaný výraz</h2>
+                <h2 class="m-search--hed">výsledky vyhledávání: <?=$view->exposed_raw_input['keys']?></h2>
             </div>
 
             <div class="m-search--results l-feed_list">

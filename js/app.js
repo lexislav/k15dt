@@ -274,7 +274,7 @@ jQuery('[close-section]').each(function () {
 // chosen filters - select boxes
 
 
-jQuery(".form-select").chosen({
+jQuery("#edit-field-zpravodaj-publikace-value-value-year, .chosen-yes .form-select").chosen({
     width: "95%",
     inherit_select_classes:true,
     create_option: true,

@@ -113,7 +113,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                         <ul class="m-gallery" class="clearing-thumbs" data-clearing>
                             <?php foreach ($node->field_reference_fotogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $poradi => $obrazek) { ?>
                                 <li class="m-gallery--item">
-                                    <a href="<?= image_style_url('x186-139', $obrazek['uri']) ?>"><img src="<?= image_style_url('x186-139', $obrazek['uri']) ?>"></a>
+                                    <a href="<?= image_style_url('zadny', $obrazek['uri']) ?>"><img src="<?= image_style_url('x186-139', $obrazek['uri']) ?>"></a>
                                 </li>
                             <?php } ?>
                         </ul>

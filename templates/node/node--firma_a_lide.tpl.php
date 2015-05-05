@@ -39,6 +39,10 @@
 
         <?php
         if (isset($content['field_img_text_text'][0])) {
+
+            $content['field_img_text_text'][0]['myclass'] = "mm-promo";
+
+            // @todo: potrebuji pridat do tehle sablony classu, tak aby to neovlivnilo jina zobrazeni
             print render($content['field_img_text_text']);
         }
         ?>

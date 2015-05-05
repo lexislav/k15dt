@@ -1,10 +1,14 @@
 <!--<div class="m-section l-feed_--><?//= (count($items) == 3) ? 'triple-card' : 'four' ?><!--">-->
 
     <div class="row rowfix">
+        <?php
+            $modificatiorClass = '';
+            if($items[0]['myclass']) $modificatiorClass = $items[0]['myclass'];
+        ?>
 
         <?php foreach ($items AS $cast) { ?>
 
-            <div class="m-card_standard l-single">
+            <div class="m-card_standard <?php echo $modificatiorClass; ?> l-single">
 
                 <article class="m-story">
                     <header>

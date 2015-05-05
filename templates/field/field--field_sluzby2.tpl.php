@@ -8,7 +8,6 @@
                         <h2 class="m-section--hed mm-big"><?= $items[0]['field_basic_title']['#items'][0]['value'] ?></h2>
                     </div>
                 </header>
-
                 <div class="m-section--nav">
                     <nav slick-method="mouseenter" carouselnav>
                         <ul>
@@ -17,21 +16,16 @@
                                 if ($poradi == 0) continue;
                                 ?>
                                 <li slick-to="<?= ($poradi) ?>"><a
-                                        href=""><?= $pole['field_basic_title']['#items'][0]['value'] ?></a>
+                                        href="<?= @$pole['field_page_link']['#items'][0]['url'] ?>"><?= $pole['field_basic_title']['#items'][0]['value'] ?></a>
                                 </li>
-
                             <?php
                             }
                             ?>
-
-
                         </ul>
                     </nav>
                 </div>
             </div>
-
             <div class="m-section--carousel" carousel>
-
                 <?php
                 unset($pole);
                 foreach ($items AS $poradi2 => $pole) {

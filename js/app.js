@@ -65,57 +65,6 @@ jQuery(function () {
 
     });
 
-    // mega menu
-
-    var lastMegaTab = null;
-
-    jQuery('[mega-open]').each(function () {
-        var item = jQuery(this);
-        var mega = jQuery("#mega");
-        var tabName = item.attr("mega-open");
-        var tab = jQuery(tabName);
-
-        item.click(function (e) {
-            e.preventDefault();
-
-            if (lastMegaTab) {
-                lastMegaTab.removeClass("is-active");
-                jQuery('body').removeClass("scroll-lock");
-            }
-
-            mega.addClass("is-open");
-            tab.addClass("is-active");
-            jQuery('body').addClass("scroll-lock");
-            lastMegaTab = tab;
-        });
-
-    });
-
-    jQuery('[mega-close]').each(function () {
-        var item = jQuery(this);
-        var mega = jQuery("#mega");
-
-        item.hover(
-            function (e) {
-                //e.preventDefault();
-                if (lastMegaTab) {
-                    lastMegaTab.removeClass("is-active");
-                    jQuery('body').removeClass("scroll-lock");
-                }
-
-                mega.addClass("is-open");
-                tab.addClass("is-active");
-                jQuery('body').addClass("scroll-lock");
-                lastMegaTab = tab;
-            },
-            function(e) {
-                console.log("hover");
-            }
-        );
-
-    });
-
-    // end mega menu
 
     // resize Navbar
 
@@ -183,6 +132,8 @@ jQuery(function () {
             }
         );
     });
+
+    jQuery(".xmega").append(menuroot);
 
     menuroot.hover(
         function(){},

@@ -17,7 +17,7 @@
                             <li class="m-gallery--item <?= ($poradi == 0) ? 'clearing-featured-img' : '' ?>">
                                 <article>
                                     <a href="<?= image_style_url('none', $img['uri']) ?>"><img src="<?= image_style_url('x323-268', $img['uri']) ?>">
-                                        <h1 class="m-item--hed"><div class="wrapper"><?=$pole['node'][key($pole['node'])]['#node']->title?></div></h1></a>
+                                        <h1 class="m-item--hed"><div class="wrapper"><i class="fa fa-picture-o"></i> <?=$pole['node'][key($pole['node'])]['#node']->title?></div></h1></a>
                                 </article>
                             </li>
                         <?php } ?>

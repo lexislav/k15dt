@@ -11,7 +11,7 @@ if (isset($row->field_field_cert_nahled[0])) {
 <article class="m-story">
     <header>
         <div class="m-item--image mm-preview-fit" style="background-image: url(<?= image_style_url('x595-0', $uricko) ?>)">
-            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>">
+            <a href="<?=drupal_get_path_alias('node/'.$row->nid)?>">
                 <img src="<?= image_style_url('x595-0', $uricko) ?>" alt=""/>
             </a>
         </div>
@@ -21,7 +21,8 @@ if (isset($row->field_field_cert_nahled[0])) {
             </h1>
 
             <div class="m-item--description">
-                <p><?= $fields['field_cert_popis']->content ?>&rarr;</p>
+                <p><?= $fields['field_cert_popis']->content ?></p>
+                <a href="<?=drupal_get_path_alias('node/'.$row->nid)?>">&rarr;</a>
             </div>
             <div class="m-item--meta">
                 <span><?= $row->field_field_cert_kategorie[0]['rendered']['#markup'] ?>

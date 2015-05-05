@@ -5,46 +5,55 @@
 //
 //?>
 
-<div class="m-section l-detail-page bg-white l-feed_four">
-    <header class="m-section--header bg-secondary-light"></header>
-
-    <article class="m-basic-page">
-
-        <header class="m-basic-page--header">
-            <div class="row">
+<article>
+    <div class="m-section">
+        <div class="row">
+            <header class="m-section--header">
                 <div class="l-half">
-                    <h1 class="m-basic-page--hed">PRODUKTY <span class="color-primary">A SLUŽBY</span></h1>
+                    <h1 class="m-basic-page--hed mm-big">PRODUKTY <span class="color-primary">A SLUŽBY</span></h1>
                 </div>
-
                 <div class="l-half"></div>
+            </header>
+        </div>
+    </div>
 
-                <div class="l-full">
-                    <div class="row">
-                        <header class="m-section--header">
-                            <div class="l-third">
-                                <h2 class="mm-small color-primary"><?php print t('Produktové řady') ?></h2>
-                            </div>
-                            <?php
-                            $tree = taxonomy_get_tree(5);
-                            ?>
-
-                            <div class="l-two-thirds">
-                                <ul class="m-section--nav inline-right">
-
-                                </ul>
-                            </div>
-                        </header>
-                    </div>
-                    <?php
-                    if (isset($content['field_img_text_text'][0])) {
-                        print render($content['field_img_text_text']);
-                    }
-                    ?>
+    <div class="m-section l-feed_four">
+        <div class="row">
+            <header class="m-section--header">
+                <div class="l-third">
+                    <h2 class="mm-small color-primary"><?php print t('Produktové řady') ?></h2>
                 </div>
-            </div>
-        </header>
-    </article>
-</div>
+                <?php
+                $tree = taxonomy_get_tree(5);
+                ?>
+
+                <div class="l-two-thirds">
+                    <ul class="m-section--nav inline-right">
+                        sem prosím dogenerovat správné menu
+                    </ul>
+                </div>
+            </header>
+        </div>
+
+        <?php
+        // @todo: REZ vyměnit za správnou šablonu!
+
+        if (isset($content['field_img_text_text'][0])) {
+            print render($content['field_img_text_text']);
+        }
+        ?>
+
+        <div class="row">
+            <footer class="m-section--footer">
+                <div class="l-half">
+                    <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                </div>
+                <div class="l-half"></div>
+            </footer>
+        </div>
+    </div>
+</article>
+
 
 <?php
 if (isset($content['field_bigimg_a_text'][0])) {

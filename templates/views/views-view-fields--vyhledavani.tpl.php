@@ -31,19 +31,34 @@ if ($row->_field_data['nid']['entity']->type == 'koma_zpravodaj') {
     $popis = 'Stránka';
 }
 
-$title = $fields['title']->content;
+$title = strip_tags($fields['title']->content);
 $horni_popis = $popis;
 $link = drupal_get_path_alias('node/' . $row->nid);
 
 
-echo $title . '<br />';
+/*echo $title . '<br />';
 echo $src_img . '<br />';//obrazek neni vsude
 echo $horni_popis . '<br />';
 echo $link . '<br />';
-echo '<br />-----<br />';
-
+echo '<br />-----<br />';*/
 
 ?>
+<div class="m-card_list l-single">
+    <article class="m-story">
+        <header class="m-item--header">
+            <?php if ($src_img) { ?>
+                <div class="m-item--image" style="background-image: url(<?php echo $src_img ?>)">
+                    <a href="<?php echo $link ?>"><img src="<?php echo $src_img ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>" /></a>
+                </div>
+            <?php } ?>
+            <h1 class="m-item--hed"><a href="<?php echo $link; ?>"><?php echo $title; ?></a></h1>
 
-
+            <div class="m-item--summary">
+                <div class="m-item--description">
+                    <?php echo $horni_popis; ?>
+                </div>
+            </div>
+        </header>
+    </article>
+</div>
 

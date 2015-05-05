@@ -6,8 +6,7 @@
 //?>
 
 <div class="m-section l-detail-page bg-white l-feed_four">
-    <header class="m-section--header bg-secondary-light">
-    </header>
+    <header class="m-section--header bg-secondary-light"></header>
 
     <article class="m-basic-page">
 
@@ -17,8 +16,7 @@
                     <h1 class="m-basic-page--hed">PRODUKTY <span class="color-primary">A SLUŽBY</span></h1>
                 </div>
 
-                <div class="l-half">
-                </div>
+                <div class="l-half"></div>
 
                 <div class="l-full">
                     <div class="row">
@@ -55,7 +53,7 @@ if (isset($content['field_bigimg_a_text'][0])) {
 ?>
 
 
-<div class="m-section l-feed_three bg-white">
+<div class="m-section l-feed_two bg-white">
 
     <div class="row">
         <header class="m-section--header">
@@ -64,23 +62,60 @@ if (isset($content['field_bigimg_a_text'][0])) {
             </div>
         </header>
     </div>
+
     <div class="row">
-        <div class="m-basic-page--content">
+        <div class="l-single">
             <?php
             $block = module_invoke('views', 'block_view', 'nabidka-block');
             print render($block);
             ?>
 
+            <!--
+            @todo: rez: davas tam kod z detailu stránky, ktery tam nema co dělat
+            ten blok by měl generovat pouze tabulku s daty
+            vnitřek tohoto bloku by měl vypada následně:
 
+            <div class="m-reference--meta m-properties">
+                <dl class="mm-nolabels mm-noborder">
+                <dt>Modulární prodejna</dt>
+                <dd><a href="nabidka/modularni-prodejna" title="Modulární prodejna">
+                <i class="fa fa-file-pdf-o"></i> Modulární prodejna</a></dd>
+                </dl>
+            </div>
+
+            nic víc žádné aside, žádné basic page atd...
+
+            -->
+
+        </div>
+
+        <div class="l-single">
             <?php
             $block = module_invoke('views', 'block_view', 'nabidka-block_1');
             print render($block);
             ?>
 
+            <!--
+           @todo: rez: davas tam kod z detailu stránky, ktery tam nema co dělat
+           ten blok by měl generovat pouze tabulku s daty
+           vnitřek tohoto bloku by měl vypada následně:
+
+           <div class="m-reference--meta m-properties">
+               <dl class="mm-nolabels mm-noborder">
+               <dt>Modulární prodejna</dt>
+               <dd><a href="nabidka/modularni-prodejna" title="Modulární prodejna">
+               <i class="fa fa-file-pdf-o"></i> Modulární prodejna</a></dd>
+               </dl>
+           </div>
+
+           nic víc žádné aside, žádné basic page atd...
+
+           -->
+
         </div>
     </div>
-
 </div>
+
 <?php
 if (isset($content['field_sluzby2'][0])) {
     print render($content['field_sluzby2']);
@@ -89,13 +124,13 @@ if (isset($content['field_segment_faq'][0])) {
     print render($content['field_segment_faq']);
 }
 ?>
-<div class="m-section l-feed_four" style="background-image: url('/sites/all/themes/koma/assets/images/mozaika-koma.png')" >
+<div class="m-section l-feed_four" style="background-image: url('/sites/all/themes/koma/assets/images/mozaika-koma.png')">
 
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
                 <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top">JSME PŘEDNÍ ČESKÝ VÝROBCE
-                    <br/><span class="color-primary">MODULÁRNÍ VÝSTAVBY</span></h2>
+                    <br /><span class="color-primary">MODULÁRNÍ VÝSTAVBY</span></h2>
             </div>
         </header>
     </div>

@@ -1,4 +1,4 @@
-<div class="item">
+<div class="item <?php print $classes;?>">
     <a href="<?php print in_array($item['link']['href'], array('<nolink>')) ? "#" : url($item['link']['href'], $item['link']['options']); ?>" <?php echo drupal_attributes($item['link']['#attributes']); ?>>
         <?php print t($item['link']['title']); ?>
     </a>

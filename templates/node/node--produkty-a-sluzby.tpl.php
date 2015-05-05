@@ -38,8 +38,8 @@
                         </header>
                     </div>
                     <?php
-                    if (isset($content['field_img_text_text'][0])) {
-                        print render($content['field_img_text_text']);
+                    if (isset($content['field_produktove_rady'][0])) {
+                        print render($content['field_produktove_rady']);
                     }
                     ?>
                 </div>

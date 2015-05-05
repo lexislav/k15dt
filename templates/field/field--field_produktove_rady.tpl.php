@@ -1,11 +1,5 @@
 <!-- produkt -->
-<div class="m-section l-feed_four">
-    <div class="row">
-        <header class="m-section--header">
-            <div class="l-full">
-            </div>
-        </header>
-    </div>
+
     <div class="row rowfix">
         <?php
         foreach ($element['#items'] AS $pole) {
@@ -35,10 +29,3 @@
         }
         ?>
     </div>
-    <div class="row">
-        <footer class="m-section--footer">
-
-        </footer>
-    </div>
-
-</div>

@@ -9,7 +9,7 @@ $jmeno = taxonomy_term_load($pole[0])->name;
         <header class="m-section--header">
             <div class="l-full">
 
-                <h2 class="m-section--hed mm-big mm-tiny mm-left"><span class="color-primary" ><?=$jmeno?></span> / VYBRANÉ REFERENCE</h2>
+                <h2 class="m-section--hed mm-small mm-left"><span class="color-primary" ><?=$jmeno?></span> / VYBRANÉ REFERENCE</h2>
             </div>
         </header>
     </div>

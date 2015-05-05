@@ -1,12 +1,8 @@
-<?php
-$nid = 'node/'.$row->nid;
-?>
 <div class="m-card_faq l-single">
-
     <article class="m-story">
         <header>
             <h1 class="m-item--hed">
-                <a href="<?=drupal_get_path_alias($nid)?>">
+                <a target="_blank" href="<?=$row->field_field_odkazy_p_link[0]['raw']['display_url']?>">
                     <?= $row->node_title ?>
                 </a>
             </h1>
@@ -18,5 +14,4 @@ $nid = 'node/'.$row->nid;
             </div>
         </header>
     </article>
-
 </div>

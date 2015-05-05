@@ -27,7 +27,7 @@ jQuery(function () {
         }
 
         if (nav) {
-            console.log("nav");
+          //  console.log("nav");
             var count = 0;
             var items = nav.find('[slick-to]');
             for (var i = 0; i < items.length; i++) {
@@ -123,7 +123,7 @@ jQuery(function () {
 
         par.hover(
             function() {
-                console.log("openMega" + idGen );
+              //  console.log("openMega" + idGen );
                 closeTabs();
                 sub.addClass("is-opened");
                 menuroot.addClass("is-opened");
@@ -146,7 +146,7 @@ jQuery(function () {
     jQuery(".m-mega .columns").each(function () {
         var el = jQuery(this);
         var cols = el.find("> .column");
-        console.log(cols.length);
+        //console.log(cols.length);
         el.attr("cols",cols.length);
     });
 

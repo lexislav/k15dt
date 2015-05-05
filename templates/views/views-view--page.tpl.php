@@ -1,7 +1,7 @@
 <?php
-dpm($view);
+
 $trida = 'l-feed_four';
-if($view->name=='certifik_ty'){
+if($view->name=='certifik_ty' OR $view->name=='zpravodaj'){
    $trida = 'l-feed_two';
 }
 ?>

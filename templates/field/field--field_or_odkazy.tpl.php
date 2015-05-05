@@ -29,6 +29,7 @@
 
         foreach ($items AS $cast) {
 
+
 //            if (isset($cast['field_ereference_segment']['#items'][0]['target_id'])) {
 //                $odkaz = $GLOBALS['base_url']."/?q=node/".$cast['field_ereference_segment']['#items'][0]['target_id'];
 //            } else {
@@ -54,7 +55,7 @@
                         </div>
                         <div class="m-item--summary">
                             <h1 class="m-item--hed">
-                                <a href="<?= $odkaz ?>"><?= $cast['field_or_reference'][0]['#title'] ?></a>
+                                <a href="<?= $odkaz ?>"><?= $cast['field_ereference_segment'][0]['#markup'] ?></a>
                             </h1>
 
                             <div class="m-item--description">

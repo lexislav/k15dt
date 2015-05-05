@@ -22,7 +22,7 @@
                                     <h1 class="m-item--hed"><?=$pole['field_basic_title']['#items'][0]['value']?></h1>
 
                                     <div class="m-item--description">
-                                        <?=$pole['field_basic_text']['#items'][0]['value']?>
+                                        <?=@$pole['field_basic_text']['#items'][0]['value']?>
                                     </div>
                                 </div>
                             </header>

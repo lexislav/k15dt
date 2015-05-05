@@ -40,7 +40,7 @@
         <header class="m-basic-page--header">
             <div class="row">
                 <div class="<?=(strlen($content['right_above'])>0)?'l-third':'l-half'; ?> ">
-                    <h1 class="m-basic-page--hed"><?php print $content['left_above']; ?></h1>
+                    <h1 class="m-basic-page--hed"><?php echo str_replace('< class="">','',$content['left_above']); ?></h1>
                 </div>
                 <div class="l-two-thirds">
                     <?php print $content['right_above']; ?>

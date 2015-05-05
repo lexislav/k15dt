@@ -5,16 +5,20 @@
 //
 //?>
 
-<div class="m-section l-detail-page l-feed_four">
-    <header class="m-section--header bg-secondary-light">
-    </header>
-    <article class="m-basic-page">
-        <header class="m-basic-page--header">
-            <div class="row">
+<article>
+
+    <div class="m-section l-feed_carousel">
+        <div class="row">
+            <header class="m-section--header">
                 <div class="l-half">
                     <h1 class="m-basic-page--hed">FIRMA <span class="color-primary">& LIDÉ</span></h1>
                 </div>
-                <div class="l-half"></div>
+            </header>
+        </div>
+
+        <div class="row rowfix">
+            <div class="m-section--content">
+
                 <div class="l-full">
                     <?php
                     if (isset($content['field_slider_2'][0])) {
@@ -22,18 +26,29 @@
                     }
                     ?>
                 </div>
+
             </div>
-        </header>
-    </article>
+        </div>
+    </div>
 
-    <?php
-    if (isset($content['field_img_text_text'][0])) {
-        print render($content['field_img_text_text']);
-    }
-    ?>
+    <!-- sekce se 4 kartami-->
+    <div class="m-section l-feed_four">
+        <div class="row">
+            <header class="m-section--header"></header>
+        </div>
 
-</div>
+        <?php
+        if (isset($content['field_img_text_text'][0])) {
+            print render($content['field_img_text_text']);
+        }
+        ?>
 
+        <div class="row">
+            <footer class="m-section--footer"></footer>
+        </div>
+    </div>
+
+</article>
 
 
 <div class="m-section l-feed_three bg-white">

@@ -23,13 +23,18 @@
                 <div class="l-third">
                     <h2 class="mm-small color-primary"><?php print t('Produktové řady') ?></h2>
                 </div>
+
                 <?php
+                // @todo: to dělá co?
                 $tree = taxonomy_get_tree(5);
                 ?>
 
                 <div class="l-two-thirds">
                     <ul class="m-section--nav inline-right">
-                        sem prosím dogenerovat správné menu
+                        <li><a href=""  title="">menu</a></li>
+                        <li><a href=""  title="">správné</a></li>
+                        <li><a href=""  title="">dát</a></li>
+                        <li><a href=""  title="">sem</a></li>
                     </ul>
                 </div>
             </header>
@@ -45,10 +50,6 @@
 
         <div class="row">
             <footer class="m-section--footer">
-                <div class="l-half">
-                    <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
-                </div>
-                <div class="l-half"></div>
             </footer>
         </div>
     </div>

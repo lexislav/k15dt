@@ -35,7 +35,7 @@
                 <?php
                 unset($pole);
                 foreach ($items AS $poradi2 => $pole) {
-                    if ($poradi2 == 0) continue;
+                   // if ($poradi2 == 0) continue;
                     ?>
                     <div class="slide m-card_thumb">
                         <article class="m-story">

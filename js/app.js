@@ -27,7 +27,7 @@ jQuery(function () {
         }
 
         if (nav) {
-            console.log("nav");
+          //  console.log("nav");
             var count = 0;
             var items = nav.find('[slick-to]');
             for (var i = 0; i < items.length; i++) {
@@ -65,57 +65,6 @@ jQuery(function () {
 
     });
 
-    // mega menu
-
-    var lastMegaTab = null;
-
-    jQuery('[mega-open]').each(function () {
-        var item = jQuery(this);
-        var mega = jQuery("#mega");
-        var tabName = item.attr("mega-open");
-        var tab = jQuery(tabName);
-
-        item.click(function (e) {
-            e.preventDefault();
-
-            if (lastMegaTab) {
-                lastMegaTab.removeClass("is-active");
-                jQuery('body').removeClass("scroll-lock");
-            }
-
-            mega.addClass("is-open");
-            tab.addClass("is-active");
-            jQuery('body').addClass("scroll-lock");
-            lastMegaTab = tab;
-        });
-
-    });
-
-    jQuery('[mega-close]').each(function () {
-        var item = jQuery(this);
-        var mega = jQuery("#mega");
-
-        item.hover(
-            function (e) {
-                //e.preventDefault();
-                if (lastMegaTab) {
-                    lastMegaTab.removeClass("is-active");
-                    jQuery('body').removeClass("scroll-lock");
-                }
-
-                mega.addClass("is-open");
-                tab.addClass("is-active");
-                jQuery('body').addClass("scroll-lock");
-                lastMegaTab = tab;
-            },
-            function(e) {
-                console.log("hover");
-            }
-        );
-
-    });
-
-    // end mega menu
 
     // resize Navbar
 
@@ -174,7 +123,7 @@ jQuery(function () {
 
         par.hover(
             function() {
-                console.log("openMega" + idGen );
+              //  console.log("openMega" + idGen );
                 closeTabs();
                 sub.addClass("is-opened");
                 menuroot.addClass("is-opened");
@@ -183,6 +132,8 @@ jQuery(function () {
             }
         );
     });
+
+    jQuery(".xmega").append(menuroot);
 
     menuroot.hover(
         function(){},
@@ -195,7 +146,7 @@ jQuery(function () {
     jQuery(".m-mega .columns").each(function () {
         var el = jQuery(this);
         var cols = el.find("> .column");
-        console.log(cols.length);
+        //console.log(cols.length);
         el.attr("cols",cols.length);
     });
 

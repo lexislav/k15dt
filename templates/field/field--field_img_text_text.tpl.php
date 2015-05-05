@@ -2,9 +2,8 @@
 
     <div class="row rowfix">
 
-        <?php
-        foreach ($items AS $cast) {
-            ?>
+        <?php foreach ($items AS $cast) { ?>
+
             <div class="m-card_standard l-single">
 
                 <article class="m-story">
@@ -24,14 +23,11 @@
                             </div>
                         </div>
                     </header>
+                    <div class="m-card--more"><a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>">&rarr;</a></div>
                 </article>
-
-                <div class="m-card--more">
-                    <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>">&rarr;</a>
-                </div>
             </div>
-
         <?php } ?>
+
     </div>
 
 <!--</div>-->

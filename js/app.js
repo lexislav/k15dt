@@ -102,9 +102,22 @@ jQuery(function () {
             tabs[i].removeClass("is-opened");
         }
     }
+
+    function openTabs() {
+        for(var i=0; i<tabs.length; i++) {
+            tabs[i].addClass("is-opened");
+        }
+    }
+
     function closeMega() {
         closeTabs();
         menuroot.removeClass('is-opened');
+    }
+    function openAllTabs() {
+        openTabs();
+        menuroot.addClass('is-opened');
+        //menuroot.css('height', jQuery(window).height());
+        menuroot.find(".m-mega--sub").css('height', jQuery(window).height());
     }
 
     jQuery(".megacleaned > .nav > .item > .item-submenu").each(function () {
@@ -131,6 +144,7 @@ jQuery(function () {
                 closeTabs();
                 sub.addClass("is-opened");
                 menuroot.addClass("is-opened");
+                jQuery('body').addClass("scroll-lock");
             },
             function() {
                 //par.removeClass("is-hovered");
@@ -140,6 +154,12 @@ jQuery(function () {
 
     jQuery(".xmega").append(menuroot);
 
+    jQuery("[open-mega-mobile]").click(function () {
+       console.log("open hamburger");
+        openAllTabs();
+        jQuery('body').addClass("scroll-lock");
+    });
+
     menuroot.hover(
         function(){},
         function(){
@@ -147,6 +167,7 @@ jQuery(function () {
                 jQuery(this).removeClass("is-hovered");
             });
             closeMega();
+            jQuery('body').removeClass("scroll-lock");
         }
     );
 

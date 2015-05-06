@@ -1,17 +1,18 @@
-<!--<div class="m-section l-feed_--><?//= (count($items) == 3) ? 'triple-card' : 'four' ?><!--">-->
+<!--<div class="m-section l-feed_--><? //= (count($items) == 3) ? 'triple-card' : 'four' ?><!--">-->
 
-    <div class="row rowfix">
-        <?php
-            $modificatiorClass = '';
-            if($items[0]['myclass']) $modificatiorClass = $items[0]['myclass'];
-        ?>
+<div class="row rowfix">
+    <?php
+    $modificatiorClass = '';
+    if ($items[0]['myclass']) $modificatiorClass = $items[0]['myclass'];
+    ?>
 
-        <?php foreach ($items AS $cast) { ?>
+    <?php foreach ($items AS $cast) { ?>
 
-            <div class="m-card_standard <?php echo $modificatiorClass; ?> l-single">
+        <div class="m-card_standard <?php echo $modificatiorClass; ?> l-single">
 
-                <article class="m-story">
-                    <header>
+            <article class="m-story">
+                <header>
+                    <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>" style="display: block; height: 100%;">
                         <div class="m-item--image" style="background-image: url(<?= image_style_url('none', $cast['field_basic_img']['#items'][0]['uri']) ?>)">
                             <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>">
                                 <img src="<?= image_style_url('none', $cast['field_basic_img']['#items'][0]['uri']) ?>" alt="" />
@@ -26,12 +27,15 @@
                                 <p><?= @$cast['field_basic_text']['#items'][0]['value'] ?></p>
                             </div>
                         </div>
-                    </header>
-                </article>
-                <div class="m-card--more"><a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>">&rarr;</a></div>
+                    </a>
+                </header>
+            </article>
+            <div class="m-card--more">
+                <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>">&rarr;</a>
             </div>
-        <?php } ?>
+        </div>
+    <?php } ?>
 
-    </div>
+</div>
 
 <!--</div>-->

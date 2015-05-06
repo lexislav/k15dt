@@ -4079,6 +4079,8 @@ button:focus {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px; }
+    .m-gallery .m-gallery--item img {
+      width: 100%; }
   .m-gallery.mm-medium .m-gallery--item {
     float: left;
     width: calc(100% * 0.25 - 30px);

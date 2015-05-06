@@ -23,21 +23,21 @@
  */
 ?>
 <div class="m-section l-detail-page bg-white">
-<!--    <header class="m-section--header bg-secondary-light">-->
-<!--        <div class="row ">-->
-<!--            <div class="l-full">-->
-<!--                <!--                <nav class="breadcrumbs">-->
-<!--                <!--                    <a href="#">Home</a>-->
-<!--                <!--                    <a href="#">Features</a>-->
-<!--                <!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
-<!--                <!--                    <a class="current" href="#">Cloning</a>-->
-<!--                <!--                </nav>-->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </header>-->
+    <header class="m-section--header bg-secondary-light">
+        <div class="row ">
+            <div class="l-full">
+                <!--                <nav class="breadcrumbs">-->
+                <!--                    <a href="#">Home</a>-->
+                <!--                    <a href="#">Features</a>-->
+                <!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
+                <!--                    <a class="current" href="#">Cloning</a>-->
+                <!--                </nav>-->
+
+            </div>
+        </div>
+    </header>
     <article class="m-basic-page">
-        <header class="m-basic-page--header">
+        <header class="m-basic-page--header mm-pad-top">
             <div class="row">
                 <div class="<?=(strlen($content['right_above'])>0)?'l-third':'l-half'; ?> ">
                     <h1 class="m-basic-page--hed"><?php echo str_replace('< class="">','',$content['left_above']); ?></h1>

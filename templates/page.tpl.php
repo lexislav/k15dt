@@ -2,7 +2,11 @@
 
 
 
-<?php print $messages; ?>
+<?php
+if($user->uid==1){
+    print $messages;
+}
+ ?>
 
 
 <div class="l-navbar">

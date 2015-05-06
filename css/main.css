@@ -3881,6 +3881,9 @@ button:focus {
       height: 100% !important; }
     .m-section_vertical-tabs .m-section--carousel .slick-track {
       height: 100%; }
+    .m-section_vertical-tabs .m-section--carousel .slick-next,
+    .m-section_vertical-tabs .m-section--carousel .slick-prev {
+      display: none !important; }
     @media only screen and (min-width: 961px) {
       .m-section_vertical-tabs .m-section--carousel {
         overflow: hidden;

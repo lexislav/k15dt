@@ -3,12 +3,10 @@
 
 
 <?php
-global $language;
-if ($user->uid == 1) {
+if($user->uid==1){
     print $messages;
-
 }
-?>
+ ?>
 
 
 <div class="l-navbar">
@@ -94,8 +92,10 @@ if ($user->uid == 1) {
         </div>
 
     </div>
-    <?php print render($page['hledani']); ?>
-    <?php print render($page['content']); ?>
+</div>
+
+<?php print render($page['hledani']); ?>
+<?php print render($page['content']); ?>
 
 
     <!--certifikace-->

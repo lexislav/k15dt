@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -3278,6 +3279,14 @@ button:focus {
     color: #C20E1A; }
     .megacleaned > .nav .item.active a {
       color: #C20E1A; }
+  .megacleaned > .nav .item:first-of-type span {
+    display: none; }
+  .megacleaned > .nav .item:first-of-type a:after {
+    font-family: FontAwesome;
+    display: inline-block;
+    height: 20px;
+    width: 10px;
+    content: ""; }
 
 .megacleaned .item-submenu {
   display: none !important; }

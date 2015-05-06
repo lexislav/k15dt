@@ -3256,6 +3256,9 @@ button:focus {
     float: left;
     display: block; }
 
+.xmega {
+  margin-left: 170px; }
+
 .megacleaned > .nav {
   *zoom: 1;
   padding-top: 12px;

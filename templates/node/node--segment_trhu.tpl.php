@@ -61,7 +61,7 @@ $polezemi = country_get_list();
 
 
     <div class="m-section l-feed_list bg-white">
-        <div class="row">
+        <div class="row rowfix">
             <?php
             $poletid = array();
             foreach ($node->field_segment_reference['und'] AS $referencetemp) {
@@ -218,10 +218,6 @@ print render($block);
                                 </h1>
 
                                 <div class="m-item--description">
-                                    <?php
-
-                                    ?>
-
 
                                     <p><?php if (isset($reference['entity']->field_reference_perex[$node->language][0]['value'])) {
                                             echo $reference['entity']->field_reference_perex[$node->language][0]['value'];

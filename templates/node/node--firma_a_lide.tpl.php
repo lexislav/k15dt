@@ -7,7 +7,7 @@
 
 <article>
 
-    <div class="m-section l-feed_carousel">
+    <div class="m-section l-feed_carousel bg-secondary-light">
         <div class="row">
             <header class="m-section--header">
                 <div class="l-half">
@@ -32,7 +32,7 @@
     </div>
 
     <!-- sekce se 4 kartami-->
-    <div class="m-section l-feed_four">
+    <div class="m-section l-feed_four bg-secondary-light">
         <div class="row">
             <header class="m-section--header"></header>
         </div>
@@ -60,7 +60,7 @@
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big">KE STAŽENÍ</h2>
+                <h2 class="m-section--hed mm-big ">KE STAŽENÍ</h2>
             </div>
         </header>
     </div>

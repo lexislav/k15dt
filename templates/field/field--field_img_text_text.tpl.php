@@ -3,7 +3,7 @@
 <div class="row rowfix">
     <?php
     $modificatiorClass = '';
-    if ($items[0]['myclass']) $modificatiorClass = $items[0]['myclass'];
+    if (isset($items[0]['myclass'])) $modificatiorClass = $items[0]['myclass'];
     ?>
 
     <?php foreach ($items AS $cast) { ?>

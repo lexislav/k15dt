@@ -23,9 +23,9 @@
  */
 ?>
 <div class="m-section l-detail-page bg-white">
-    <header class="m-section--header bg-secondary-light">
-        <div class="row ">
-            <div class="l-full">
+<!--    <header class="m-section--header bg-secondary-light">-->
+<!--        <div class="row ">-->
+<!--            <div class="l-full">-->
                 <!--                <nav class="breadcrumbs">-->
                 <!--                    <a href="#">Home</a>-->
                 <!--                    <a href="#">Features</a>-->
@@ -33,9 +33,9 @@
                 <!--                    <a class="current" href="#">Cloning</a>-->
                 <!--                </nav>-->
 
-            </div>
-        </div>
-    </header>
+<!--            </div>-->
+<!--        </div>-->
+<!--    </header>-->
     <article class="m-basic-page">
         <header class="m-basic-page--header mm-pad-top">
             <div class="row">

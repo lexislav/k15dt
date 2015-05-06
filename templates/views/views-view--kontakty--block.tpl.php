@@ -44,6 +44,7 @@
 
 
 ?>
+
 <div class="m-contact-list">
     <div class="row">
         <?php print render($title_prefix); ?>
@@ -72,7 +73,9 @@
         <?php if ($rows): ?>
 
             <?php
-            print $rows; ?>
+            print $rows;
+
+            ?>
 
         <?php elseif ($empty): ?>
             <div class="view-empty">

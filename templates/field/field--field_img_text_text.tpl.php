@@ -12,9 +12,9 @@
 
                 <article class="m-story">
                     <header>
-                        <div class="m-item--image" style="background-image: url(<?= image_style_url('x282-181', $cast['field_basic_img']['#items'][0]['uri']) ?>)">
+                        <div class="m-item--image" style="background-image: url(<?= image_style_url('none', $cast['field_basic_img']['#items'][0]['uri']) ?>)">
                             <a href="<?= $cast['field_page_link']['#items'][0]['display_url'] ?>" title="<?= $cast['field_basic_title']['#items'][0]['value'] ?>">
-                                <img src="<?= image_style_url('x282-181', $cast['field_basic_img']['#items'][0]['uri']) ?>" alt="" />
+                                <img src="<?= image_style_url('none', $cast['field_basic_img']['#items'][0]['uri']) ?>" alt="" />
                             </a>
                         </div>
                         <div class="m-item--summary">

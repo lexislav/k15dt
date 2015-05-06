@@ -6445,10 +6445,17 @@ article header figure {
   height: 40px;
   margin-top: -38px; }
 
+.slick-next {
+  right: 30px; }
+
+.slick-prev {
+  left: 30px; }
+
 .slick-prev:before, .slick-next:before {
   font-family: 'FontAwesome';
   font-size: 2.625rem;
-  color: #4A4A4A; }
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8); }
 
 .slick-prev:before {
   content: "\f104"; }

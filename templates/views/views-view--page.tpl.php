@@ -88,7 +88,7 @@ if($view->name=='certifik_ty' OR $view->name=='zpravodaj'){
                 <?php if ($pager):
                     $pager = str_replace('class="item-list"', 'class="m-pagination"', $pager);
                     $pager = str_replace('class="pager"', 'class="m-pagination--container"', $pager);
-                    $pager = str_replace('pager-current', 'class="current"', $pager);
+                    $pager = str_replace('pager-current', 'current', $pager);
                     $pager = str_replace('pager-next', 'pager-next arrow', $pager);
                     ?>
                     <?php print $pager; ?>

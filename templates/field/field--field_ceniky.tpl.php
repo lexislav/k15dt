@@ -7,7 +7,7 @@
             <?php
             foreach ($element['#items'] AS $soubor) {
                 $trida = '';
-                $typ = end(explode('.', $soubor['entity']->field_kestazeni_link['und'][0]['filename']));
+                $typ = end(explode('.', $soubor['entity']->field_kestazeni_link[$soubor['entity']->language][0]['filename']));
                 switch ($typ) {
                     case "zip":
                         $trida = 'fa-file-archive-o';
@@ -35,9 +35,9 @@
                 }
                 ?>
                 <dl class="mm-nolabels mm-noborder">
-                    <dt><?=$soubor['entity']->field_kestazeni_link['und'][0]['description']?></dt>
-                    <dd><a href="<?= file_create_url($soubor['entity']->field_kestazeni_link['und'][0]['uri'])?>" target="_blank" title="<?=$soubor['entity']->field_kestazeni_link['und'][0]['description']?>">
-                            <i class="fa <?=$trida?>"></i> <?=$soubor['entity']->field_kestazeni_link['und'][0]['description']?></a></dd>
+                    <dt><?=$soubor['entity']->title?></dt>
+                    <dd><a href="<?= file_create_url($soubor['entity']->field_kestazeni_link[$soubor['entity']->language][0]['uri'])?>" target="_blank" title="<?=$soubor['entity']->title?>">
+                            <i class="fa <?=$trida?>"></i> <?=$soubor['entity']->title?></a></dd>
                 </dl>
             <?php
             }

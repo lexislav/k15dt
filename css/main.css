@@ -3753,6 +3753,10 @@ button:focus {
     line-height: 26px;
     text-align: center;
     cursor: pointer; }
+  .m-section .mm-pad-double,
+  .m-section.mm-pad-double {
+    padding-top: 75px;
+    padding-bottom: 75px; }
   .m-section .row.rowfix {
     margin-bottom: -31px;
     overflow: hidden; }

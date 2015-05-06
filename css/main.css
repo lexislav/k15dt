@@ -4079,11 +4079,11 @@ button:focus {
   padding: 16px 20px; }
 
 .m-gallery {
-  margin: 0;
-  padding: 0;
   *zoom: 1;
   margin-left: -15px;
-  margin-right: -15px; }
+  margin-right: -15px;
+  padding: 0;
+  margin: 0; }
   .m-gallery:before, .m-gallery:after {
     content: '';
     display: table; }
@@ -4117,7 +4117,8 @@ button:focus {
     margin-bottom: 30px; }
 
 .m-gallery li.clearing-featured-img {
-  width: auto; }
+  width: 100%;
+  margin: 0; }
 
 .m-gallery--item.clearing-featured-img {
   position: relative; }

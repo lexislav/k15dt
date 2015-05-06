@@ -3335,6 +3335,18 @@ button:focus {
     width: 10px;
     content: ""; }
 
+.megacleaned > .nav.mobile {
+  display: block; }
+  @media only screen and (min-width: 961px) {
+    .megacleaned > .nav.mobile {
+      display: none; } }
+
+.megacleaned > .nav.desktop {
+  display: none; }
+  @media only screen and (min-width: 961px) {
+    .megacleaned > .nav.desktop {
+      display: block; } }
+
 .megacleaned .item-submenu {
   display: none !important; }
 

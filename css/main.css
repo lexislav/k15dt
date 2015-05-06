@@ -3767,18 +3767,21 @@ body {
     position: relative;
     height: 100%;
     width: 100%; }
-    .m-section.l-login .m-section--container .row {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
+    .m-section.l-login .m-section--container > .row {
+      padding-top: 200px; }
   .m-section.l-login .m-section--footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     font-weight: 400;
     font-size: 0.875rem;
     text-transform: none; }
     .m-section.l-login .m-section--footer a {
       color: #4A4A4A; }
+  .m-section.l-login .messages {
+    text-align: center;
+    max-width: 600px; }
 
 .m-aside-block--header {
   *zoom: 1;

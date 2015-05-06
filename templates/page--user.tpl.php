@@ -1,4 +1,3 @@
-<?php print $messages; ?>
 <div class="l-navbar">
     <div class="m-navbar mm-primary mm-admin">
         <div class="m-navbar--container">
@@ -6,8 +5,6 @@
                 <div class="mm-has-svg" style="background-image: url('<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/logo-koma-administrace.svg');"></div>
             </a>
             <ul class="m-navbar--menu m-navbar--menu-secondary">
-
-
 
 
                 <li class="m-navbar--menu-link">
@@ -31,20 +28,17 @@
     </div>
 </div>
 <div class="m-section l-login">
-    <div class="m-section--container">
+    <?php print render($page['content']); ?>
+    <?php print $messages; ?>
+    <footer class="m-section--footer">
         <div class="row">
-            <?php print render($page['content']); ?>
-        </div>
-    </div>
-    <div class="row">
-        <footer class="m-section--footer">
             <div class="l-half">
                 <div class="m-section--top"><a href="">© KOMA MODULAR 2015</a></div>
             </div>
             <div class="l-half">
                 <div class="m-section--more"><a href="http://www.odoka.cz">web design&code OdOka</a></div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
 </div>

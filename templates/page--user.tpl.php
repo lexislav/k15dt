@@ -27,6 +27,7 @@
         </div>
     </div>
 </div>
+
 <div class="m-section l-login">
     <?php print render($page['content']); ?>
     <?php print $messages; ?>

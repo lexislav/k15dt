@@ -3342,12 +3342,14 @@ button:focus {
   width: 100%;
   height: auto;
   overflow-y: scroll;
-  background-color: #B5BBB4; }
+  background-color: #B5BBB4;
+  display: none; }
   .m-mega .m-mega--sub {
     height: auto; }
     .m-mega .m-mega--sub > .item-submenu {
       padding-top: 40px;
-      padding-bottom: 40px; }
+      padding-bottom: 40px;
+      display: none; }
       .m-mega .m-mega--sub > .item-submenu > .row {
         box-sizing: border-box;
         *zoom: 1;

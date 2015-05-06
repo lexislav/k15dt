@@ -124,11 +124,16 @@ jQuery(function () {
         par.hover(
             function() {
               //  console.log("openMega" + idGen );
+                jQuery(".megacleaned .is-hovered").each(function(){
+                    jQuery(this).removeClass("is-hovered");
+                });
+                par.addClass("is-hovered");
                 closeTabs();
                 sub.addClass("is-opened");
                 menuroot.addClass("is-opened");
             },
             function() {
+                //par.removeClass("is-hovered");
             }
         );
     });
@@ -138,6 +143,9 @@ jQuery(function () {
     menuroot.hover(
         function(){},
         function(){
+            jQuery(".megacleaned .is-hovered").each(function(){
+                jQuery(this).removeClass("is-hovered");
+            });
             closeMega();
         }
     );

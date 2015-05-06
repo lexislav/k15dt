@@ -3261,7 +3261,7 @@ button:focus {
 
 .megacleaned > .nav {
   *zoom: 1;
-  padding-top: 12px;
+  padding-top: 6px;
   padding-right: 15px; }
   .megacleaned > .nav:before, .megacleaned > .nav:after {
     content: '';
@@ -3272,14 +3272,42 @@ button:focus {
     display: inline-block;
     float: right;
     margin-left: 20px;
-    font-weight: 400; }
+    font-weight: 400;
+    padding-top: 6px;
+    padding-bottom: 6px; }
     .megacleaned > .nav > .item a {
       text-decoration: none;
-      color: #000; }
+      color: #000;
+      position: relative; }
+      .megacleaned > .nav > .item a:before {
+        display: none;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #B5BBB4;
+        content: "";
+        bottom: -74px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s; }
       .megacleaned > .nav > .item a:hover {
-        color: #C20E1A; }
+        color: #C20E1A;
+        /* &:before {
+                        display: block;
+                    }*/ }
+    .megacleaned > .nav > .item.is-hovered a:before {
+      display: block; }
   .megacleaned > .nav .item.active {
-    color: #C20E1A; }
+    color: #C20E1A;
+    border-bottom: 1px solid #C20E1A; }
     .megacleaned > .nav .item.active a {
       color: #C20E1A; }
   .megacleaned > .nav .item:first-of-type span {
@@ -3293,6 +3321,12 @@ button:focus {
 
 .megacleaned .item-submenu {
   display: none !important; }
+
+.is-collapsed .megacleaned > .nav > .item a:before {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  bottom: -42px; }
 
 .m-mega {
   position: fixed;

@@ -78,6 +78,19 @@
                 <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
             </div>
             <div class="l-half">
+                <?php
+                $tree = taxonomy_get_tree(16);
+                ?>
+
+
+                    <ul class="m-section--nav inline-right">
+                        <?php foreach ($tree as $term) { ?>
+                            <!-- @TODO UPRAVIT CESTU -->
+                            <li>
+                                <a href="<?= $GLOBALS['base_url'] ?>publicita&field_kategorie_publicity_tid=<?= $term->tid ?>" title="<?= $term->name ?>"><?= $term->name ?></a>
+                            </li>
+                        <?php } ?>
+                    </ul>
 
             </div>
         </footer>

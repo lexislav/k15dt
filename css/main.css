@@ -2772,15 +2772,19 @@ body {
       transition: opacity 0.3s;
       opacity: 1; }
 
+.m-basic-page--header .slide,
 .l-feed_carousel .slide {
   height: 300px; }
   @media only screen and (min-width: 961px) {
+    .m-basic-page--header .slide,
     .l-feed_carousel .slide {
       height: 500px; } }
   @media only screen and (min-width: 961px) {
+    .m-basic-page--header .slide,
     .l-feed_carousel .slide {
       height: 600px; } }
 
+.m-basic-page--header .slick-dots,
 .l-feed_carousel .slick-dots {
   position: absolute;
   margin: 0;

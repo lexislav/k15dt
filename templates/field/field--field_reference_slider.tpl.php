@@ -1,3 +1,4 @@
+<!-- field--field_reference_slider.tpl -->
 <div class="m-section l-feed_carousel">
 
     <div class="row">
@@ -67,5 +68,4 @@
     </div>
 
 </div>
-
-
+<!-- end: field--field_reference_slider.tpl -->

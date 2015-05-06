@@ -1,7 +1,7 @@
 
 
 
-        <div class="slides full-carousel fixheight">
+        <div class="slides full-carousel">
 
                 <?php
                 foreach ($items AS $pole) {

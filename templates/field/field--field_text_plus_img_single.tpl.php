@@ -16,7 +16,13 @@
 
                         <div class="m-item--description"><?= $items[0]['field_basic_text']['#items'][0]['value'] ?></div>
 
-                        <div class="m-card--more <?=$items[0]['field_barva_odkazu']['#items'][0]['value']?>">
+                        <?php
+                        // @todo: tady se parsuje barevny kod a beru z nej jen cislo, zde by se měla používat classa bg-cisloBarvy, nikoli color-CisloBarvy
+                        $barva = explode("-",$items[0]['field_barva_odkazu']['#items'][0]['value']);
+                        $barvaClass = 'bg-'.$barva[1];
+                        ?>
+
+                        <div class="m-card--more <?php echo $barvaClass; ?>">
                             <a href="<?= $items[0]['field_page_link']['#items'][0]['url'] ?>" title="<?= $items[0]['field_page_link']['#items'][0]['title'] ?>"><?= $items[0]['field_page_link']['#items'][0]['title'] ?></a>
                         </div>
                     </div>

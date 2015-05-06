@@ -12,9 +12,9 @@
 
                         <article class="m-story">
                             <header>
-                                <div class="m-item--image" style="background-image: url(<?= image_style_url('x1266-0', $uricko) ?>)">
+                                <div class="m-item--image" style="background-image: url(<?= image_style_url('none', $uricko) ?>)">
 <!--                                    <a href="--><?//=drupal_get_path_alias() ?><!--">-->
-                                        <img src="<?= image_style_url('x1266-0', $uricko) ?>" alt="" />
+                                        <img src="<?= image_style_url('none', $uricko) ?>" alt="" />
 <!--                                    </a>-->
                                 </div>
 

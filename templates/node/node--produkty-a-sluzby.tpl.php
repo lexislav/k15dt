@@ -6,29 +6,21 @@
 //?>
 
 <article>
-    <div class="m-section">
-        <div class="row">
-            <header class="m-section--header">
-                <div class="l-half">
-                    <h1 class="m-basic-page--hed mm-big">PRODUKTY <span class="color-primary">A SLUŽBY</span></h1>
-                </div>
-                <div class="l-half"></div>
-            </header>
-        </div>
-    </div>
-
     <div class="m-section l-feed_four">
         <div class="row">
             <header class="m-section--header">
+                <div class="l-full">
+                    <h1 class="m-basic-page--hed mm-big mm-pad-bottom">PRODUKTY <span class="color-primary">A SLUŽBY</span></h1>
+                </div>
                 <div class="l-third">
                     <h2 class="mm-small color-primary"><?php print t('Produktové řady') ?></h2>
                 </div>
                 <div class="l-two-thirds">
                     <ul class="m-section--nav inline-right">
-                        <li><a href=""  title="">menu</a></li>
-                        <li><a href=""  title="">správné</a></li>
-                        <li><a href=""  title="">dát</a></li>
-                        <li><a href=""  title="">sem</a></li>
+                        <li><a href="" title="">menu</a></li>
+                        <li><a href="" title="">správné</a></li>
+                        <li><a href="" title="">dát</a></li>
+                        <li><a href="" title="">sem</a></li>
                     </ul>
                 </div>
             </header>
@@ -41,10 +33,11 @@
         ?>
 
         <div class="row">
-            <footer class="m-section--footer">
-            </footer>
+            <footer class="m-section--footer"></footer>
         </div>
     </div>
+
+
 </article>
 
 
@@ -71,8 +64,7 @@ if (isset($content['field_bigimg_a_text'][0])) {
                 <div class="m-aside-block bg-secondary-light mm-pad">
                     <header class="m-aside-block--header">
                         <h3 class="m-aside-block--hed">
-                            BAZAR
-                        </h3>
+                            BAZAR </h3>
                     </header>
                     <?php
                     $block = module_invoke('views', 'block_view', 'nabidka-block');
@@ -106,8 +98,7 @@ if (isset($content['field_bigimg_a_text'][0])) {
                 <div class="m-aside-block bg-secondary-light mm-pad">
                     <header class="m-aside-block--header">
                         <h3 class="m-aside-block--hed">
-                            MODULY IHNED K ODBĚRU
-                        </h3>
+                            MODULY IHNED K ODBĚRU </h3>
                     </header>
                     <?php
                     $block = module_invoke('views', 'block_view', 'nabidka-block_1');

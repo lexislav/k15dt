@@ -62,7 +62,7 @@
                             <ul class="m-gallery mm-medium" class="clearing-thumbs" data-clearing>
                                 <?php foreach ($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $obrazek) { ?>
                                     <li class="m-gallery--item">
-                                        <a href="<?= image_style_url('x186-139', $obrazek['uri']) ?>"><img src="<?= image_style_url('x412-300', $obrazek['uri']) ?>"></a>
+                                        <a href="<?= image_style_url('zadny', $obrazek['uri']) ?>"><img src="<?= image_style_url('x412-300', $obrazek['uri']) ?>"></a>
                                     </li>
                                 <?php } ?>
                             </ul>

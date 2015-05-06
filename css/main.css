@@ -3410,8 +3410,13 @@ button:focus {
         .m-mega .m-mega--sub > .item-submenu > .row > .submenu {
           padding: 15px; }
           .m-mega .m-mega--sub > .item-submenu > .row > .submenu > .columns > .column:first-child {
-            width: 360px;
-            padding-right: 5%; }
+            padding-right: 5%;
+            width: 100%;
+            margin-bottom: 30px; }
+            @media only screen and (min-width: 961px) {
+              .m-mega .m-mega--sub > .item-submenu > .row > .submenu > .columns > .column:first-child {
+                width: 360px;
+                margin-bottom: 0; } }
         .m-mega .m-mega--sub > .item-submenu > .row .columns {
           *zoom: 1; }
           .m-mega .m-mega--sub > .item-submenu > .row .columns:before, .m-mega .m-mega--sub > .item-submenu > .row .columns:after {
@@ -3424,6 +3429,15 @@ button:focus {
           .m-mega .m-mega--sub > .item-submenu > .row .column .column {
             width: 100%;
             padding-right: 20%; }
+    .m-mega .m-mega--sub [cols="5"] .column {
+      width: 100% / 4; }
+    .m-mega .m-mega--sub [cols="3"] .column {
+      width: 50%; }
+    .m-mega .m-mega--sub [cols="2"] .column {
+      width: 100%; }
+    .m-mega .m-mega--sub .submenu [cols="2"] .column {
+      width: 50% !important;
+      float: left; }
     @media only screen and (min-width: 961px) {
       .m-mega .m-mega--sub [cols="5"] .column {
         width: calc((100% - 360px) / 4); }

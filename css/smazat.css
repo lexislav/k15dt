@@ -3,13 +3,15 @@
     top: 50%;
     z-index: 9999;
     background: #c20e1a;
+
     padding: 0;
     left: -114px;
     color: white;
     height: 146px;
-    cursor: hand;
     cursor: pointer;
     width: 170px;
+
+    box-shadow: 2px 6px 15px rgba(0,0,0,.2);
 
 }
 .tabs_wrap span {

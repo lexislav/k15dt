@@ -7015,4 +7015,10 @@ article header figure {
 .clearing-blackout {
   z-index: 10000; }
 
+.m-filter .container-inline-date .date-padding {
+  padding: 0; }
+
+.l-detail-page > .m-section--header {
+  padding-bottom: 0; }
+
 /*# sourceMappingURL=main.css.map */

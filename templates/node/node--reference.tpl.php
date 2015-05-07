@@ -134,7 +134,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
         </footer>
     </div>
 </div>
-<div class="m-section l-navigation">
+<div class="m-section l-navigation bg-white">
     <div class="row">
         <?php
         if ($prev_nid[0]->prev_nid > 0) {

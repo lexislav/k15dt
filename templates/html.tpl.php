@@ -20,30 +20,6 @@
     <meta name="HandheldFriendly" content="True"/>
     <meta name="MobileOptimized" content="320"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <meta name="robots" content="noindex,nofollow"/>
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-    <!--PRYYYYYYCCCCC-->
-
-
     <meta http-equiv="cleartype" content="on">
 
     <meta name="format-detection" content="telephone=no"/>
@@ -74,7 +50,7 @@
 <?php endif; ?>
 
 
-<!--@TODO megatodo: domenu kde je fixne nahradit promennou -->
+
 
 
 <?php print $page_top; ?>

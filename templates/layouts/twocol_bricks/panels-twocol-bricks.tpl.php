@@ -23,19 +23,29 @@
  */
 ?>
 <div class="m-section l-detail-page bg-white">
-<!--    <header class="m-section--header bg-secondary-light">-->
-<!--        <div class="row ">-->
-<!--            <div class="l-full">-->
-                <!--                <nav class="breadcrumbs">-->
-                <!--                    <a href="#">Home</a>-->
-                <!--                    <a href="#">Features</a>-->
-                <!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
-                <!--                    <a class="current" href="#">Cloning</a>-->
-                <!--                </nav>-->
+    <header class="m-section--header bg-secondary-light">
+        <div class="row ">
+            <div class="l-full">
+<!--                                <nav class="breadcrumbs">-->
+<!--                                    <a href="#">Home</a>-->
+<!--                                    <a href="#">Features</a>-->
+<!--                                    <a class="unavailable" href="#">Gene Splicing</a>-->
+<!--                                    <a class="current" href="#">Cloning</a>-->
+<!--                                </nav>-->
+                <?php
 
-<!--            </div>-->
-<!--        </div>-->
-<!--    </header>-->
+                $drobek =  $content['top'];
+                $drobek = str_replace('breadcrumb','breadcrumbs',$drobek);
+                $drobek = str_replace('</ol>','',$drobek);
+                $drobek = str_replace('</li>','',$drobek);
+                $drobek = str_replace('<li>','',$drobek);
+                $drobek = str_replace('<ol>','',$drobek);
+                $drobek = str_replace(' / ','',$drobek);
+                print $drobek ?>
+
+            </div>
+        </div>
+    </header>
     <article class="m-basic-page">
         <header class="m-basic-page--header mm-pad-top">
             <div class="row">

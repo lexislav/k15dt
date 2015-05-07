@@ -17,8 +17,7 @@ jQuery('[fillform]').each(function () {
         targetInfoElement.text(injectEmail);
 
         var scrollTo = jQuery('#formSection').position().top - 100;
-
-        jQuery('body').animate({scrollTop:scrollTo}, '500', 'swing', function() {
+        jQuery('body,html').animate({scrollTop:scrollTo}, '500', 'swing', function() {
             console.log('Fill form with: ' + injectName, injectEmail, injectSubject);
         });
     });

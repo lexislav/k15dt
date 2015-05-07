@@ -2,7 +2,7 @@
     <article class="m-story">
         <header>
             <h1 class="m-item--hed">
-                <a target="_blank" href="<?=@$row->field_field_odkazy_p_link[0]['raw']['display_url']?>">
+                <a target="_blank" href="<?=@$row->field_field_odkazy_p_link[0]['raw']['url']?>">
                     <?= $row->node_title ?>
                 </a>
             </h1>

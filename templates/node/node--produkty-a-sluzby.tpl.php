@@ -16,12 +16,12 @@
                     <h2 class="mm-small color-primary"><?php print t('Produktové řady') ?></h2>
                 </div>
                 <div class="l-two-thirds">
-                    <ul class="m-section--nav inline-right">
-                        <li><a href="" title="">menu</a></li>
-                        <li><a href="" title="">správné</a></li>
-                        <li><a href="" title="">dát</a></li>
-                        <li><a href="" title="">sem</a></li>
-                    </ul>
+<!--                    <ul class="m-section--nav inline-right">-->
+<!--                        <li><a href="" title="">--><?php //print t('služby') ?><!--</a></li>-->
+<!--                        <li><a href="" title="">--><?php //print t('fasády') ?><!--</a></li>-->
+<!--                        <li><a href="" title="">--><?php //print t('bazar') ?><!--</a></li>-->
+<!---->
+<!--                    </ul>-->
                 </div>
             </header>
         </div>

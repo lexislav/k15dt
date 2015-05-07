@@ -3,9 +3,12 @@
     <?php
     foreach ($items AS $poradi => $pole) {
         if ($poradi == 0) continue;
+//        dpm($pole);
+//        dpm($pole['field_page_link']['#object']);
+
         ?>
         <li class="text-double-button">
-            <a href="<?= @ $pole['field_page_link']['#items'][0]['display_url'] ?>"><?= @ $pole['field_basic_title']['#items'][0]['value'] ?>
+            <a href="<?= @ $pole['field_page_link']['#items'][0]['url'] ?>"><?= @ $pole['field_basic_title']['#items'][0]['value'] ?>
                 <span><?= $pole['field_basic_popis']['#items'][0]['value'] ?></span></a></li>
     <?php } ?>
 </ul>

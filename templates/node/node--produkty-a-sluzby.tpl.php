@@ -13,7 +13,7 @@
                     <h1 class="m-basic-page--hed mm-big mm-pad-bottom">PRODUKTY <span class="color-primary">A SLUŽBY</span></h1>
                 </div>
                 <div class="l-third">
-                    <h2 class="mm-small color-primary"><?php print t('Produktové řady') ?></h2>
+                    <h2 class="mm-small color-primary"><?php print t('Výrobkové řady') ?></h2>
                 </div>
                 <div class="l-two-thirds">
 <!--                    <ul class="m-section--nav inline-right">-->

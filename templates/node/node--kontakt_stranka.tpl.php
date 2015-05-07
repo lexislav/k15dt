@@ -116,7 +116,7 @@ if (isset($_POST['mailto'])) {
                         <i class="fa fa-paper-plane-o"></i> Formulář byl úspěšně odeslán na adresu: <span><?=$mailto?></span>
                         <br/>a na vámi zadanou adresu <span><?=$mailfrom?></span>
                     </p>
-                    <button class="button">Odeslat novou zprávu <i class="fa fa-paper-plane-o"></i></button>
+<!--                    <button class="button">Odeslat novou zprávu <i class="fa fa-paper-plane-o"></i></button>-->
                 </div>
             </div>
         </div>

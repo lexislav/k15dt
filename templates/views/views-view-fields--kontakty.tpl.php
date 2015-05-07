@@ -28,12 +28,12 @@
             <div class="m-address--mail"><span>E</span> <?= trim($mail) ?></div>
         <?php } ?>
 
-        <!--        <div class="m-address--action">-->
-        <!--          -->
-        <!--            <a href="" title="" fillform data-subject="Pro vedoucí útvaru" data-name="Hana Babjarová" data-email="--><? //=$fields['kontakt_email']->content ?><!--" >Odeslat-->
-        <!--                zprávu-->
-        <!--                <i class="fa fa-envelope"></i></a>-->
-        <!--        </div>-->
+                <div class="m-address--action">
+
+                    <a href="" title="" fillform data-subject="Pro vedoucí útvaru" data-name="<?=$fields['title']->raw?>" data-email="<?=$mail ?>" >Odeslat
+                        zprávu
+                        <i class="fa fa-envelope"></i></a>
+                </div>
     </div>
 
 </div>

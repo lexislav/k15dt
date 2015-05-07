@@ -6979,4 +6979,7 @@ article header figure {
   margin: 0 auto;
   text-align: center; }
 
+.clearing-blackout {
+  z-index: 10000; }
+
 /*# sourceMappingURL=main.css.map */

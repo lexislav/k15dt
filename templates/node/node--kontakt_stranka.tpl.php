@@ -97,7 +97,7 @@
         <div class="m-contact-form">
             <header>
                 <i class="fa fa-paper-plane-o"></i> <?php print t('Kontaktní formulář bude odeslán na adresu:') ?>
-                <span id="targetMailInfo">adresa@koma.cz</span>
+                <span id="targetMailInfo">info@container.cz</span>
             </header>
 
           <?php
@@ -109,45 +109,45 @@
           ?>
 <!--@TODO dodelat cele vsechno omg-->
 <!---->
-<!--            <div class="m-contact-form--content">-->
-<!--                <form action="">-->
-<!--                    <input type="hidden" name="mailto" id="mailto" value=""/>-->
-<!--                    <input type="text" id="name" name="name" placeholder="Vaše jméno a příjmení" required/>-->
-<!--                    <input type="email" id="email" name="email" placeholder="Váš email" required/>-->
-<!--                    <textarea id="body" name="body" style="height: 200px" required-->
-<!--                              placeholder="Text sdělení vašeho dotazu"></textarea>-->
-<!--                    <button type="submit" class="button">Odeslat zprávu <i class="fa fa-paper-plane-o"></i></button>-->
-<!--                </form>-->
-<!--            </div>-->
-
-        </div>
-    </div>
-
-    <div class="row">
-        <footer class="m-section--footer"></footer>
-    </div>
-</div>
-
-<div class="m-section">
-    <div class="row">
-        <header class="m-section--header">
-            <div class="l-full">
-                <h2 class="m-section--hed mm-tiny mm-medium mm-center">Formulář byl úspěšně odeslán</h2>
-            </div>
-        </header>
-    </div>
-
-    <div class="row">
-        <div class="m-contact-form mm-sent">
             <div class="m-contact-form--content">
-                <p>
-                    <i class="fa fa-paper-plane-o"></i> Formulář byl úspěšně odeslán na adresu: <span>@email</span>
-                    <br/>a na vámi zadanou adresu <span>@formemail</span>
-                </p>
-                <button class="button">Odeslat novou zprávu <i class="fa fa-paper-plane-o"></i></button>
+                <form action="">
+                    <input type="hidden" name="mailto" id="mailto" value="info@container.cz"/>
+                    <input type="text" id="name" name="name" placeholder="Vaše jméno a příjmení" required/>
+                    <input type="email" id="email" name="email" placeholder="Váš email" required/>
+                    <textarea id="body" name="body" style="height: 200px" required
+                              placeholder="Text sdělení vašeho dotazu"></textarea>
+                    <button type="submit" class="button">Odeslat zprávu <i class="fa fa-paper-plane-o"></i></button>
+                </form>
             </div>
+
         </div>
     </div>
+<!---->
+<!--    <div class="row">-->
+<!--        <footer class="m-section--footer"></footer>-->
+<!--    </div>-->
+<!--</div>-->
+<!---->
+<!--<div class="m-section">-->
+<!--    <div class="row">-->
+<!--        <header class="m-section--header">-->
+<!--            <div class="l-full">-->
+<!--                <h2 class="m-section--hed mm-tiny mm-medium mm-center">Formulář byl úspěšně odeslán</h2>-->
+<!--            </div>-->
+<!--        </header>-->
+<!--    </div>-->
+<!---->
+<!--    <div class="row">-->
+<!--        <div class="m-contact-form mm-sent">-->
+<!--            <div class="m-contact-form--content">-->
+<!--                <p>-->
+<!--                    <i class="fa fa-paper-plane-o"></i> Formulář byl úspěšně odeslán na adresu: <span>@email</span>-->
+<!--                    <br/>a na vámi zadanou adresu <span>@formemail</span>-->
+<!--                </p>-->
+<!--                <button class="button">Odeslat novou zprávu <i class="fa fa-paper-plane-o"></i></button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </div>
 
 

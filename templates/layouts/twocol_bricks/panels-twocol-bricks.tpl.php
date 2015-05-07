@@ -47,7 +47,7 @@
         </div>
     </header>
     <article class="m-basic-page">
-        <header class="m-basic-page--header mm-pad-top">
+        <header class="m-basic-page--header">
             <div class="row">
                 <div class="<?=(strlen($content['right_above'])>0)?'l-third':'l-half'; ?> ">
                     <h1 class="m-basic-page--hed"><?php echo str_replace('< class="">','',$content['left_above']); ?></h1>

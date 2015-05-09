@@ -38,7 +38,7 @@ if ($user->uid == 1) {
             <ul class="m-navbar--menu m-navbar--menu-secondary">
                 <li class="m-navbar--menu-dropdown">
                     <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><em
-                            class=""><?php print t('Language') ?></em></a>
+                            class="">Language</em></a>
                     <ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
                         <?php print block_render('locale', 'language'); ?>
                     </ul>

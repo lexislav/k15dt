@@ -42,6 +42,7 @@
 
         width: auto !important;
         font-size: rem-calc(15)!important;
+        @include fontWeight(400);
         font-weight: normal !important;
 
         a {
@@ -72,6 +73,7 @@
         border-top: none !important;
         padding: 5px 20px;
         text-shadow: none;
+        @include fontWeight(400);
         font-weight: 400 !important;
 
     }
@@ -81,6 +83,7 @@
         border-top: 0;
         color: $body-font-color;
         font-weight: 400;
+        @include fontWeight(400);
         padding: 15px 20px;
         text-shadow: none;
         text-decoration: none;
@@ -143,7 +146,8 @@
     .dropdown-menu .active .mega-group-title:hover {
         text-decoration: none;
         color: $color-black !important;
-        font-weight: bold !important;
+        //font-weight: bold !important;
+        @include fontWeight(800);
         outline: 0;
         background-image: none !important;
         background-color: transparent;
@@ -155,7 +159,8 @@
 
     .dropdown-menu .mega-group-title,
     .dropdown-menu .mega-group-title:hover {
-        font-weight: bold !important;
+        //font-weight: bold !important;
+        @include fontWeight(800);
     }
 
 }

@@ -141,7 +141,8 @@
         font-size: rem-calc(18);
         line-height: 1.2em;
         margin-bottom: .5em;
-        font-weight: 600;
+        //font-weight: 600;
+        @include fontWeight(600);
     }
 
     .m-item--description {
@@ -600,6 +601,7 @@
     .m-item--description {
         pointer-events: none;
         font-weight: 400;
+        @include fontWeight(400);
         color: $color-black;
     }
 
@@ -660,6 +662,7 @@
         font-size: rem-calc(26);
         line-height: 1.2em;
         font-weight: 400;
+        @include fontWeight(400);
 
     }
 
@@ -716,6 +719,7 @@
         font-size: rem-calc(26);
         line-height: 1.2em;
         font-weight: 400;
+        @include fontWeight(400);
 
     }
 
@@ -732,6 +736,7 @@
         display: inline-block;
         padding: 10px 20px;
         font-weight: bold;
+        @include fontWeight(800);
         color: white;
         a {
             color: white;
@@ -879,6 +884,7 @@
         margin-bottom: $space;
         font-size: rem-calc(30);
         font-weight: 400;
+        @include fontWeight(400);
 
         a {
             color: $body-font-color;
@@ -933,6 +939,7 @@
         height: 100%;
         font-size: rem-calc(16);
         font-weight: 600;
+        @include fontWeight(600);
         color: $color-black;
         line-height: 1em;
         margin: 0;
@@ -1018,6 +1025,7 @@
     .m-item--hed {
         @include vertical-align();
         font-weight: 400;
+        @include fontWeight(400);
         font-size: rem-calc(14);
 
     }

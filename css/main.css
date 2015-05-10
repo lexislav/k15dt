@@ -2861,7 +2861,7 @@ body {
   background-color: #fff;
   border-top: 1px solid #dfdfe3;
   border-bottom: 1px solid #dfdfe3;
-  font-family: "Purista_Semibold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Purista_Semibold;
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: none; }
@@ -3071,6 +3071,7 @@ body {
     float: right;
     margin-left: 20px;
     font-weight: 400;
+    font-family: Purista_Medium;
     padding-top: 6px;
     padding-bottom: 6px; }
     .megacleaned > .nav > .item a {
@@ -3240,13 +3241,15 @@ body {
       line-height: 1.2em;
       color: #4A4A4A;
       font-weight: 400;
+      font-family: Purista_Medium;
       text-decoration: none; }
       .m-mega .m-mega--sub a:hover {
         color: #C20E1A; }
     .m-mega .m-mega--sub .mega-group-title {
       min-height: 50px;
       display: block;
-      font-weight: 800; }
+      font-weight: 800;
+      font-family: Purista_Bold; }
   .m-mega.is-opened {
     display: block; }
     .m-mega.is-opened .m-mega--sub > .item-submenu.is-opened {
@@ -3294,7 +3297,8 @@ body {
     padding-bottom: 25px; }
   .m-footer .m-footer--container {
     color: white;
-    font-weight: 600; }
+    font-weight: 600;
+    font-family: Purista_Semibold; }
   .m-footer em {
     font-style: normal; }
   .m-footer a {
@@ -3496,6 +3500,7 @@ body {
   *zoom: 1;
   text-transform: uppercase;
   font-weight: 800;
+  font-family: Purista_Bold;
   padding-top: 50px;
   padding-bottom: 50px; }
   .m-section--header:before, .m-section--header:after,
@@ -3543,7 +3548,8 @@ body {
   font-size: 1.875rem;
   text-transform: uppercase;
   line-height: 1.2em;
-  font-weight: 800; }
+  font-weight: 800;
+  font-family: Purista_Bold; }
   .m-section--hed.mm-border {
     border: 2px solid black;
     color: black;
@@ -3588,11 +3594,14 @@ body {
   .m-section .mm-big {
     font-size: 3.125rem; }
   .m-section .mm-tiny {
-    font-weight: 200; }
+    font-weight: 200;
+    font-family: Purista_Light; }
   .m-section .mm-normal {
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: Purista_Medium; }
   .m-section .mm-bold {
-    font-weight: 600; }
+    font-weight: 600;
+    font-family: Purista_Semibold; }
   .m-section .mm-center {
     text-align: center; }
   .m-section.mm-has-background {
@@ -3682,6 +3691,7 @@ body {
           vertical-align: middle;
           color: white;
           font-weight: 600;
+          font-family: Purista_Semibold;
           text-decoration: none;
           height: 36px;
           text-align: center; }
@@ -3694,7 +3704,8 @@ body {
             text-align: center;
             height: 64px; }
           .m-section_vertical-tabs .m-section--nav ul li.active a {
-            font-weight: 800; } }
+            font-weight: 800;
+            font-family: Purista_Bold; } }
       @media only screen and (min-width: 961px) {
         .m-section_vertical-tabs .m-section--nav ul {
           padding-bottom: 16px; }
@@ -3708,13 +3719,15 @@ body {
             .m-section_vertical-tabs .m-section--nav ul li a {
               color: white;
               font-weight: 600;
+              font-family: Purista_Semibold;
               text-decoration: none;
               margin: 0;
               padding: 0;
               padding-right: 10px;
               text-align: left; }
             .m-section_vertical-tabs .m-section--nav ul li.active a {
-              font-weight: 800; }
+              font-weight: 800;
+              font-family: Purista_Bold; }
             .m-section_vertical-tabs .m-section--nav ul li.active:after {
               display: block;
               width: 64px;
@@ -3898,6 +3911,7 @@ body {
     left: 0;
     right: 0;
     font-weight: 400;
+    font-family: Purista_Medium;
     font-size: 0.875rem;
     text-transform: none; }
     .m-section.l-login .m-section--footer a {
@@ -4271,7 +4285,7 @@ body {
     font-size: 1.125rem;
     line-height: 1.2em;
     margin-bottom: .5em;
-    font-weight: 600; }
+    font-family: Purista_Semibold; }
   .m-card_vertical .m-item--description {
     position: relative;
     font-size: 0.875rem;
@@ -4471,7 +4485,7 @@ body {
     font-size: 1.125rem;
     line-height: 1.2em;
     margin-bottom: .5em;
-    font-weight: 600; }
+    font-family: Purista_Semibold; }
   .m-card_horizontal .m-item--description {
     position: relative;
     font-size: 0.875rem;
@@ -4967,6 +4981,7 @@ body {
   .m-card_reference .m-item--description {
     pointer-events: none;
     font-weight: 400;
+    font-family: Purista_Medium;
     color: #000; }
   .m-card_reference .m-card--more {
     display: none; }
@@ -5033,7 +5048,8 @@ body {
     margin-bottom: 1em;
     font-size: 1.625rem;
     line-height: 1.2em;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: Purista_Medium; }
 
 .m-card_bigteaser article,
 .m-card_bigteaser header {
@@ -5092,7 +5108,8 @@ body {
   margin-bottom: 1em;
   font-size: 1.625rem;
   line-height: 1.2em;
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: Purista_Medium; }
 .m-card_bigteaser .m-item--description {
   font-size: 1rem; }
   .m-card_bigteaser .m-item--description p {
@@ -5102,6 +5119,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   font-weight: bold;
+  font-family: Purista_Bold;
   color: white; }
   .m-card_bigteaser .m-card--more a {
     color: white; }
@@ -5163,7 +5181,8 @@ body {
   margin-bottom: 1em;
   font-size: 1.625rem;
   line-height: 1.2em;
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: Purista_Medium; }
 .m-card_bigpromo .m-item--description {
   font-size: 1rem; }
   .m-card_bigpromo .m-item--description p {
@@ -5173,6 +5192,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   font-weight: bold;
+  font-family: Purista_Bold;
   color: white; }
   .m-card_bigpromo .m-card--more a {
     color: white; }
@@ -5286,7 +5306,8 @@ body {
   .m-card_centered-text .m-item--hed {
     margin-bottom: 50px;
     font-size: 1.875rem;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: Purista_Medium; }
     .m-card_centered-text .m-item--hed a {
       color: #4A4A4A;
       text-decoration: none; }
@@ -5344,6 +5365,7 @@ body {
     height: 100%;
     font-size: 1rem;
     font-weight: 600;
+    font-family: Purista_Semibold;
     color: #000;
     line-height: 1em;
     margin: 0; }
@@ -5419,14 +5441,17 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-weight: 400;
+  font-family: Purista_Medium;
   font-size: 0.875rem; }
 
 .m-filter {
   margin-bottom: 30px; }
   .m-filter .active-result {
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: Purista_Medium; }
   .m-filter .category {
-    font-weight: 800; }
+    font-weight: 800;
+    font-family: Purista_Bold; }
   .m-filter .l-left {
     float: left;
     width: calc(100% * 0.75 - 30px);
@@ -5506,7 +5531,8 @@ body {
   border-radius: 0;
   background: white;
   box-shadow: none;
-  font-weight: 600; }
+  font-weight: 600;
+  font-family: Purista_Semibold; }
 .chosen-container-single .chosen-with-drop .chosen-single,
 .chosen-container-single .chosen-with-drop .chosen-drop {
   border: 0 !important;
@@ -5608,6 +5634,7 @@ body {
       margin: 0; }
     .m-properties dl dt {
       font-weight: bold;
+      font-family: Purista_Bold;
       margin-right: 6px;
       clear: left; }
       .m-properties dl dt:after {
@@ -5620,7 +5647,8 @@ body {
         .m-properties dl dt.mm-label:after {
           display: none; }
       .m-properties dl dt.mm-sub {
-        font-weight: 400; }
+        font-weight: 400;
+        font-family: Purista_Medium; }
         .m-properties dl dt.mm-sub ~ dd {
           color: #979797; }
     .m-properties dl:first-of-type {
@@ -5628,7 +5656,8 @@ body {
     .m-properties dl a {
       color: #4A4A4A;
       text-decoration: none;
-      font-weight: bold; }
+      font-weight: bold;
+      font-family: Purista_Bold; }
     .m-properties dl.mm-nolabels dt {
       display: none; }
     .m-properties dl.mm-noborder {
@@ -5650,7 +5679,8 @@ body {
     position: relative; }
   .m-banner .m-banner--hed {
     font-size: 20px;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: Purista_Medium; }
     .m-banner .m-banner--hed a {
       text-decoration: none; }
       .m-banner .m-banner--hed a:hover {
@@ -5693,6 +5723,7 @@ body {
 .m-layout-object figcaption {
   font-size: 0.75rem;
   font-weight: bold;
+  font-family: Purista_Bold;
   padding-top: 0.5em;
   line-height: 1.2em; }
 .m-layout-object.mm-small {
@@ -5898,6 +5929,7 @@ article header figure {
   font-size: 2.625rem;
   line-height: 1.3em;
   font-weight: 400;
+  font-family: Purista_Medium;
   margin-top: -.2em; }
   .l-detail-page .m-story .m-story--hed a {
     text-decoration: none;
@@ -6044,6 +6076,7 @@ article header figure {
 .l-detail-page .m-reference .m-reference--hed {
   font-size: 2.25rem;
   font-weight: 400;
+  font-family: Purista_Medium;
   line-height: 1.3em;
   margin-top: -.2em;
   margin-bottom: 50px; }
@@ -6148,12 +6181,14 @@ article header figure {
     clear: both; }
   .m-address .m-address--name {
     font-size: 0.875rem;
-    font-weight: 600; }
+    font-weight: 600;
+    font-family: Purista_Semibold; }
   .m-address .m-address--job {
     font-size: 0.875rem;
     margin-bottom: 1em; }
   .m-address span {
     font-weight: bold;
+    font-family: Purista_Bold;
     color: #B5BBB4;
     display: inline-block;
     width: 12px; }
@@ -6162,6 +6197,7 @@ article header figure {
     .m-address .m-address--action a {
       color: gray;
       font-weight: bold;
+      font-family: Purista_Bold;
       text-decoration: none; }
 
 .m-contact-list .m-contact-list--column {
@@ -6211,6 +6247,7 @@ article header figure {
   line-height: 1.4em;
   padding-left: 20px;
   font-weight: 400;
+  font-family: Purista_Medium;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 .m-contact-list .m-contact-tab--action {
   text-align: right;
@@ -6302,6 +6339,7 @@ article header figure {
     height: 620px;
     font-size: 1.25rem;
     font-weight: 800;
+    font-family: Purista_Bold;
     padding-top: 20px; }
     @media only screen and (min-width: 641px) {
       .hero-tabs .content-tab {
@@ -6360,6 +6398,7 @@ article header figure {
       margin-right: 15px;
       margin-bottom: 16px;
       font-weight: 600;
+      font-family: Purista_Semibold;
       font-size: 1.0625rem;
       line-height: 1.3em;
       color: white;
@@ -6576,14 +6615,14 @@ article header figure {
 .button-group .text-label-button,
 .button-group .text-double-button {
   border-left: 1px solid white;
-  font-weight: 800;
+  font-family: Purista_Bold;
   text-align: center;
   padding: 0 10px;
   width: 25%; }
   .button-group .text-label-button span,
   .button-group .text-double-button span {
     display: block;
-    font-weight: 400;
+    font-family: Purista_Medium;
     text-align: center;
     font-size: 0.75rem; }
   .button-group .text-label-button a,
@@ -6602,7 +6641,7 @@ article header figure {
   width: 100%;
   max-width: none;
   display: inline-block;
-  font-weight: 400;
+  font-family: Purista_Medium;
   font-size: 0.75rem;
   text-align: center;
   margin-bottom: 14px; }

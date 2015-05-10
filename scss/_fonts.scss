@@ -52,3 +52,19 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+@mixin fontWeight($weight) {
+    @if($weight == 200) {
+        font-family: Purista_Light;
+    }
+    @if($weight == 400) {
+        font-family: Purista_Medium;
+    }
+    @if($weight == 600) {
+        font-family: Purista_Semibold;
+    }
+    @if($weight == 800) {
+        font-family: Purista_Bold;
+    }
+}

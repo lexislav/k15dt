@@ -76,6 +76,7 @@
             font-size: rem-calc(42);
             line-height: 1.3em;
             font-weight: 400;
+            @include fontWeight(400);
             margin-top: -.2em;
 
             a {

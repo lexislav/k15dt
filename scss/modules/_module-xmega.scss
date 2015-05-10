@@ -15,6 +15,7 @@
             float: right;
             margin-left: 20px;
             font-weight: 400;
+            @include fontWeight(400);
             padding-top: 6px;
             padding-bottom: 6px;
 
@@ -253,6 +254,7 @@
             line-height: 1.2em;
             color: $color-body-font;
             font-weight: 400;
+            @include fontWeight(400);
 
             text-decoration: none;
             &:hover {
@@ -264,6 +266,7 @@
             min-height: 50px;
             display: block;
             font-weight: 800;
+            @include fontWeight(800);
         }
 
     }

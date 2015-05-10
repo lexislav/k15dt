@@ -58,14 +58,16 @@
     .text-label-button,
     .text-double-button {
         border-left: 1px solid white;
-        font-weight: 800;
+        //font-weight: 800;
+        @include fontWeight(800);
         text-align: center;
 
         padding: 0 10px;
 
         span {
             display: block;
-            font-weight: 400;
+            //font-weight: 400;
+            @include fontWeight(400);
             text-align: center;
             font-size: rem-calc(12);
         }
@@ -92,7 +94,8 @@
         max-width: none;
 
         display: inline-block;
-        font-weight: 400;
+        //font-weight: 400;
+        @include fontWeight(400);
         font-size: rem-calc(12);
         text-align: center;
         margin-bottom: 14px;

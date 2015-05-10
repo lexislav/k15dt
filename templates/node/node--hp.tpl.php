@@ -37,7 +37,8 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
                 if ($cislo == 0) continue;
                 ?>
                 <div class="tab color-<?= $cislo ?>" slick-to="<?= $cislo ?>">
-                    <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $r['field_c_hp_odkaz']['und'][0]['target_id'] ?>"><?= $r['field_basic_title']['und'][0]['value'] ?></a>
+
+                    <a href="<?=drupal_get_path_alias('node/'.$r['field_c_hp_odkaz']['und'][0]['target_id'])?>"><?= $r['field_basic_title']['und'][0]['value'] ?></a>
                 </div>
                 <?php
             }

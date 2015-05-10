@@ -17,19 +17,19 @@ if ($user->uid == 1) {
             <ul class="m-navbar--menu m-navbar--menu-tertiary">
 
                 <li class="m-navbar--menu-social m-navbar--menu-twitter">
-                    <a target="_blank" title="" href="https://twitter.com/rww">
+                    <a target="_blank" title="" href="<?=variable_get('nastaveni_twitter', 'nastaveni')?>">
                         <span class="fa fa-twitter"><em class="">Twitter</em></span>
                     </a>
                 </li>
 
                 <li class="m-navbar--menu-social m-navbar--menu-facebook">
-                    <a target="_blank" title="" href="https://twitter.com/rww">
+                    <a target="_blank" title="" href="<?=variable_get('nastaveni_fb', 'nastaveni')?>">
                         <span class="fa fa-facebook"><em>Facebook</em></span>
                     </a>
                 </li>
 
                 <li class="m-navbar--menu-social m-navbar--menu-youtube">
-                    <a target="_blank" title="" href="https://twitter.com/rww">
+                    <a target="_blank" title="" href="<?=variable_get('nastaveni_youtube', 'nastaveni')?>">
                         <span class="fa fa-youtube-play"><em class="">YouTube</em></span>
                     </a>
                 </li>
@@ -37,7 +37,8 @@ if ($user->uid == 1) {
 
             <ul class="m-navbar--menu m-navbar--menu-secondary">
                 <li class="m-navbar--menu-dropdown">
-                    <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><em class="">Language</em></a>
+                    <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><em
+                            class="">Language</em></a>
                     <ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
                         <?php print block_render('locale', 'language'); ?>
                     </ul>
@@ -55,22 +56,20 @@ if ($user->uid == 1) {
                 return $block_rendered;
             }
 
-
-            //    print render($page['header']); ?>
-
-
-            <?php
-            //            @TODO udelat editovatelne, az bude cas
-            if ($language->language == 'en') {
-                ?>
-                <ul class="m-navbar--menu m-navbar--menu-primary">
-                    <li class="m-navbar--menu-callout">
-                        <span class="color-primary"><?php print t('Call us') ?>
-                            :</span> <?php print t('(+421) 20 577 007 711') ?>
-                    </li>
-                </ul>
-            <?php } ?>
-
+            ?>
+            <ul class="m-navbar--menu m-navbar--menu-primary">
+                <li class="m-navbar--menu-callout">
+                    <?php
+                    if ($language->language == 'cs') {
+                        print variable_get('nastaveni_tel_cs', 'nastaveni');
+                    } elseif ($language->language == 'en') {
+                        print variable_get('nastaveni_tel_en', 'nastaveni');
+                    } elseif ($language->language == 'de') {
+                        print variable_get('nastaveni_tel_de', 'nastaveni');
+                    }
+                    ?>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -80,7 +79,8 @@ if ($user->uid == 1) {
         <div class="m-navbar--container">
 
             <a class="m-navbar--logo" href="/">
-                <div class="mm-has-svg" style="background-image: url('/sites/koma/assets/images/logo-koma-modular.svg');"></div>
+                <div class="mm-has-svg"
+                     style="background-image: url('/sites/koma/assets/images/logo-koma-modular.svg');"></div>
             </a>
 
             <div class="xmega">
@@ -122,18 +122,20 @@ if ($user->uid == 1) {
 
             <article class="m-newsletter">
                 <header>
-                    <div class="m-item--hed-icon" style="background-image: url(<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/votaznik.png)"></div>
+                    <div class="m-item--hed-icon"
+                         style="background-image: url(<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/votaznik.png)"></div>
                     <h1 class="m-item--hed mm-small color-primary"><?php print t('Podpora pro zákazníky') ?></h1>
                 </header>
 
-                <div class="m-item--description"><?php print t('Nenašli jste zde odpověď na Vaše otázky? Zeptejte se nás přímo!') ?></div>
+                <div
+                    class="m-item--description"><?php print t('Nenašli jste zde odpověď na Vaše otázky? Zeptejte se nás přímo!') ?></div>
                 <button><?php print t('Zeptejte se nás') ?> &rarr;</button>
             </article>
 
         </div>
 
         <div class="m-section--item worker">
-            <img src="<?= $GLOBALS['base_url'] ?>/sites/koma/assets/images/worker.jpg" />
+            <img src="<?= $GLOBALS['base_url'] ?>/sites/koma/assets/images/worker.jpg"/>
         </div>
 
         <div class="m-section--item">
@@ -145,7 +147,8 @@ if ($user->uid == 1) {
 
                 <?php print render($page['form_email']); ?>
 
-                <div class="m-item--description"><?php print t('Odběrem našeho měsíčního ebulletinu získáte přehled o dění ve světě modulární architektury i o novinkách systému modulární výstavby KOMA.') ?></div>
+                <div
+                    class="m-item--description"><?php print t('Odběrem našeho měsíčního ebulletinu získáte přehled o dění ve světě modulární architektury i o novinkách systému modulární výstavby KOMA.') ?></div>
 
             </article>
 
@@ -161,7 +164,9 @@ if ($user->uid == 1) {
 
             <section class="m-footer--section">
                 <a class="m-footer--logo" href="/">
-                    <img src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/logo-koma-modular-inline-white.svg" alt="" />
+                    <img
+                        src="<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/logo-koma-modular-inline-white.svg"
+                        alt=""/>
                 </a>
 
             </section>
@@ -186,13 +191,13 @@ if ($user->uid == 1) {
                 <ul class="m-footer--menu-secondary">
 
                     <li class="m-footer--menu-link">
-                        <a href="" target="" title=""><i class="fa fa-facebook"></i></a>
+                        <a href="<?=variable_get('nastaveni_fb', 'nastaveni')?>" target="" title=""><i class="fa fa-facebook"></i></a>
                     </li>
                     <li class="m-footer--menu-link">
-                        <a href="" target="" title=""><i class="fa fa-twitter"></i></a>
+                        <a href="<?=variable_get('nastaveni_twitter', 'nastaveni')?>" target="" title=""><i class="fa fa-twitter"></i></a>
                     </li>
                     <li class="m-footer--menu-link">
-                        <a href="" target="" title=""><i class="fa fa-youtube-play"></i></a>
+                        <a href="<?=variable_get('nastaveni_youtube', 'nastaveni')?>" target="" title=""><i class="fa fa-youtube-play"></i></a>
                     </li>
                 </ul>
 

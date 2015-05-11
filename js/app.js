@@ -272,8 +272,10 @@ jQuery('.m-section--top').each(function () {
         e.preventDefault();
 
         var scrollTo = 0;
+        console.log("ScrollToTop");
         jQuery('body,html').animate({scrollTop:scrollTo}, '500', 'swing', function() {
-            console.log('Fill form with: ' + injectName, injectEmail, injectSubject);
+            console.log("ScrollToTopDone");
+
         });
     });
 });

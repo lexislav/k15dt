@@ -5,7 +5,7 @@
 //
 //?>
 
-<article>
+<article id="produktove-rady">
     <div class="m-section l-feed_four">
         <div class="row">
             <header class="m-section--header">
@@ -118,7 +118,7 @@ if (isset($content['field_segment_faq'][0])) {
     print render($content['field_segment_faq']);
 }
 ?>
-<div class="m-section l-feed_four" style="background-image: url('/sites/all/themes/koma/assets/images/mozaika-koma.png')">
+<div id="modularni-vystavba" class="m-section l-feed_four" style="background-image: url('/sites/all/themes/koma/assets/images/mozaika-koma.png')">
 
     <div class="row">
         <header class="m-section--header">

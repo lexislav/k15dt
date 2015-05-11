@@ -55,7 +55,7 @@
 </article>
 
 
-<div class="m-section l-feed_three bg-white">
+<div class="m-section l-feed_three bg-white" id="ke-stazeni">
 
     <div class="row">
         <header class="m-section--header">

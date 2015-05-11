@@ -264,21 +264,15 @@ jQuery(".form-select").chosen({
     //allow_single_deselect: true
 });
 
+jQuery('.m-section--top').each(function () {
+    var el = jQuery(this);
 
-//// extract links
-//
-//jQuery(".form-type-bef-link").each(function() {
-//    var link = jQuery(this);
-//    var filterElement = jQuery("<li class='m-filter--item'>"+ link.html() +"</li>");
-//    jQuery("#extractLinkTarget").append(filterElement);
-//    console.log(link);
-//});
-//
-//jQuery(".form-type-date-select").each(function() {
-//    var link = jQuery(this);
-//    var filterElement = jQuery("<li class='m-filter--item'>"+ link.html() +"</li>");
-//    jQuery("#extractLinkTarget").append(filterElement);
-//    console.log(link);
-//});
-//
+    el.click(function (e) {
+        e.preventDefault();
 
+        var scrollTo = 0;
+        jQuery('body,html').animate({scrollTop:scrollTo}, '500', 'swing', function() {
+            console.log('Fill form with: ' + injectName, injectEmail, injectSubject);
+        });
+    });
+});

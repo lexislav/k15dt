@@ -275,7 +275,7 @@ jQuery('.m-section--top').each(function () {
         console.log("ScrollToTop");
         jQuery('body,html').animate({scrollTop:scrollTo}, '500', 'swing', function() {
             console.log("ScrollToTopDone");
-
         });
+
     });
 });

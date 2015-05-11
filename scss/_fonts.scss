@@ -57,14 +57,18 @@
 @mixin fontWeight($weight) {
     @if($weight == 200) {
         font-family: Purista_Light;
+        font-weight: normal;
     }
     @if($weight == 400) {
         font-family: Purista_Medium;
+        font-weight: normal;
     }
     @if($weight == 600) {
         font-family: Purista_Semibold;
+        //font-weight: normal !important;
     }
     @if($weight == 800) {
         font-family: Purista_Bold;
+        font-weight: bold;
     }
 }

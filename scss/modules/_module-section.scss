@@ -406,6 +406,7 @@
     }
 
     .m-item--hed {
+        @include fontWeight(600);
         margin-bottom: 30px;
         line-height: 1.2em;
         position: relative;

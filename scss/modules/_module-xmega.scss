@@ -31,7 +31,7 @@
                     height: 20px;
                     background-color: $color-secondary;
                     content: "";
-                    bottom: -74px; //-38
+                    bottom: -72px; //-38
                     left: 0;
                     right: 0;
                     margin: auto;
@@ -111,7 +111,8 @@
                 a {
                     &:before {
                         @include transition(all 0.2s);
-                        bottom: -42px; //-38
+                        bottom: -42px;
+
                     }
 
                 }

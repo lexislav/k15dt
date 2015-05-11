@@ -4211,12 +4211,32 @@ button:focus {
     max-width: 600px; }
 
 .m-body--content h1, .m-body--content h2, .m-body--content h3, .m-body--content h4, .m-body--content h5, .m-body--content h6 {
-  font-family: Purista_Semibold;
-  font-weight: normal; }
+  font-family: Purista_Medium;
+  font-weight: normal;
+  color: #000; }
+
+.m-body--content h1, .m-body--content h2 {
+  font-size: 1.75rem; }
+
+.m-body--content h4, .m-body--content h5, .m-body--content h6 {
+  color: #4A4A4A; }
+
+.m-body--content ul {
+  padding-left: 18px; }
+  .m-body--content ul li {
+    list-style: square;
+    margin-bottom: 0.7em; }
 
 .m-body--content strong, .m-body--content b {
   font-family: Purista_Semibold;
   font-weight: normal; }
+
+.m-body--content a {
+  color: #C20E1A;
+  text-decoration: none; }
+  .m-body--content a:hover {
+    color: #C20E1A;
+    text-decoration: underline; }
 
 .m-aside-block--header {
   *zoom: 1;

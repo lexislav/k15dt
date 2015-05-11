@@ -1,12 +1,38 @@
 .m-body--content {
 
     h1, h2, h3, h4, h5, h6 {
-        @include fontWeight(600);
+        @include fontWeight(400);
+        color: $color-black;
+    }
+
+    h1, h2 {
+        font-size: rem-calc(28);
+    }
+
+    h4,h5,h6 {
+        color: $color-body-font;
+    }
+
+    ul {
+        padding-left: 18px;
+
+        li {
+            list-style: square;
+            margin-bottom: 0.7em;
+        }
     }
 
     strong, b {
         @include fontWeight(600);
     }
 
+    a {
+        color: $color-primary;
+        text-decoration: none;
+        &:hover {
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }
 
 }

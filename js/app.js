@@ -1,4 +1,3 @@
-
 // run foundation
 jQuery(document).foundation();
 
@@ -27,7 +26,7 @@ jQuery(function () {
         }
 
         if (nav) {
-          //  console.log("nav");
+            //  console.log("nav");
             var count = 0;
             var items = nav.find('[slick-to]');
             for (var i = 0; i < items.length; i++) {
@@ -91,20 +90,19 @@ jQuery(function () {
     });
 
 
-
 // hack megamenu, prehazení DOM kuli Safari
     var submenucounter = 0;
     var tabs = Array();
     var menuroot = jQuery("#mega");
 
     function closeTabs() {
-        for(var i=0; i<tabs.length; i++) {
+        for (var i = 0; i < tabs.length; i++) {
             tabs[i].removeClass("is-opened");
         }
     }
 
     function openTabs() {
-        for(var i=0; i<tabs.length; i++) {
+        for (var i = 0; i < tabs.length; i++) {
             tabs[i].addClass("is-opened");
         }
     }
@@ -113,6 +111,7 @@ jQuery(function () {
         closeTabs();
         menuroot.removeClass('is-opened');
     }
+
     function openAllTabs() {
         openTabs();
         menuroot.addClass('is-opened');
@@ -121,13 +120,13 @@ jQuery(function () {
     }
 
     jQuery(".megacleaned > .nav > .item > .item-submenu").each(function () {
-        var idGen = "mega-id-"+ submenucounter;
+        var idGen = "mega-id-" + submenucounter;
 
         var sub = jQuery(this);
         var par = sub.parent();
 
-        sub.attr("id",idGen);
-        par.attr("open-mega",idGen);
+        sub.attr("id", idGen);
+        par.attr("open-mega", idGen);
 
         jQuery(".m-mega--sub").append(sub);
         tabs.push(sub);
@@ -135,9 +134,9 @@ jQuery(function () {
         submenucounter++;
 
         par.hover(
-            function() {
-              //  console.log("openMega" + idGen );
-                jQuery(".megacleaned .is-hovered").each(function(){
+            function () {
+                //  console.log("openMega" + idGen );
+                jQuery(".megacleaned .is-hovered").each(function () {
                     jQuery(this).removeClass("is-hovered");
                 });
                 par.addClass("is-hovered");
@@ -146,7 +145,7 @@ jQuery(function () {
                 menuroot.addClass("is-opened");
                 jQuery('body').addClass("scroll-lock");
             },
-            function() {
+            function () {
                 //par.removeClass("is-hovered");
             }
         );
@@ -155,15 +154,16 @@ jQuery(function () {
     jQuery(".xmega").append(menuroot);
 
     jQuery("[open-mega-mobile]").click(function () {
-       console.log("open hamburger");
+        console.log("open hamburger");
         openAllTabs();
         jQuery('body').addClass("scroll-lock");
     });
 
     menuroot.hover(
-        function(){},
-        function(){
-            jQuery(".megacleaned .is-hovered").each(function(){
+        function () {
+        },
+        function () {
+            jQuery(".megacleaned .is-hovered").each(function () {
                 jQuery(this).removeClass("is-hovered");
             });
             closeMega();
@@ -176,13 +176,8 @@ jQuery(function () {
         var el = jQuery(this);
         var cols = el.find("> .column");
         //console.log(cols.length);
-        el.attr("cols",cols.length);
+        el.attr("cols", cols.length);
     });
-
-
-
-
-
 });
 
 
@@ -256,7 +251,7 @@ jQuery('[close-section]').each(function () {
 
 jQuery(".form-select").chosen({
     width: "95%",
-    inherit_select_classes:true,
+    inherit_select_classes: true,
     create_option: true,
     persistent_create_option: true,
     create_option_text: 'add',
@@ -273,7 +268,7 @@ jQuery('.m-section--top').each(function () {
 
         var scrollTo = 0;
         console.log("ScrollToTop");
-        jQuery('body,html').animate({scrollTop:scrollTo}, '500', 'swing', function() {
+        jQuery('body,html').animate({scrollTop: scrollTo}, '500', 'swing', function () {
             console.log("ScrollToTopDone");
         });
 

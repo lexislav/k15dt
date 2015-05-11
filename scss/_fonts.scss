@@ -65,7 +65,7 @@
     }
     @if($weight == 600) {
         font-family: Purista_Semibold;
-        //font-weight: normal !important;
+        font-weight: normal;
     }
     @if($weight == 800) {
         font-family: Purista_Bold;

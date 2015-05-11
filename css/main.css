@@ -3306,8 +3306,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 25px; }
   .m-footer .m-footer--container {
     color: white;
-    font-weight: 600;
-    font-family: Purista_Semibold; }
+    font-family: Purista_Semibold;
+    font-weight: normal; }
   .m-footer em {
     font-style: normal; }
   .m-footer a {
@@ -3614,7 +3614,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal; }
   .m-section .mm-bold {
     font-weight: 600;
-    font-family: Purista_Semibold; }
+    font-family: Purista_Semibold;
+    font-weight: normal; }
   .m-section .mm-center {
     text-align: center; }
   .m-section.mm-has-background {
@@ -3705,6 +3706,7 @@ h1, h2, h3, h4, h5, h6 {
           color: white;
           font-weight: 600;
           font-family: Purista_Semibold;
+          font-weight: normal;
           text-decoration: none;
           height: 36px;
           text-align: center; }
@@ -3734,6 +3736,7 @@ h1, h2, h3, h4, h5, h6 {
               color: white;
               font-weight: 600;
               font-family: Purista_Semibold;
+              font-weight: normal;
               text-decoration: none;
               margin: 0;
               padding: 0;
@@ -3809,6 +3812,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0; }
   .m-section_support .m-item--hed {
     font-family: Purista_Semibold;
+    font-weight: normal;
     margin-bottom: 30px;
     line-height: 1.2em;
     position: relative; }
@@ -4302,7 +4306,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.125rem;
     line-height: 1.2em;
     margin-bottom: .5em;
-    font-family: Purista_Semibold; }
+    font-family: Purista_Semibold;
+    font-weight: normal; }
   .m-card_vertical .m-item--description {
     position: relative;
     font-size: 0.875rem;
@@ -4502,7 +4507,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.125rem;
     line-height: 1.2em;
     margin-bottom: .5em;
-    font-family: Purista_Semibold; }
+    font-family: Purista_Semibold;
+    font-weight: normal; }
   .m-card_horizontal .m-item--description {
     position: relative;
     font-size: 0.875rem;
@@ -5390,6 +5396,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     font-weight: 600;
     font-family: Purista_Semibold;
+    font-weight: normal;
     color: #000;
     line-height: 1em;
     margin: 0; }
@@ -5558,7 +5565,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
   background: white;
   box-shadow: none;
-  font-family: Purista_Semibold; }
+  font-family: Purista_Semibold;
+  font-weight: normal; }
 .chosen-container-single .chosen-with-drop .chosen-single,
 .chosen-container-single .chosen-with-drop .chosen-drop {
   border: 0 !important;
@@ -6215,7 +6223,8 @@ article header figure {
   .m-address .m-address--name {
     font-size: 0.875rem;
     font-weight: 600;
-    font-family: Purista_Semibold; }
+    font-family: Purista_Semibold;
+    font-weight: normal; }
   .m-address .m-address--job {
     font-size: 0.875rem;
     margin-bottom: 1em; }
@@ -6435,6 +6444,7 @@ article header figure {
       margin-right: 15px;
       margin-bottom: 16px;
       font-family: Purista_Semibold;
+      font-weight: normal;
       font-size: 1.0625rem;
       line-height: 1.3em;
       color: white;

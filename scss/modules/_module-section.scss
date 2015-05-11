@@ -63,6 +63,7 @@
         cursor: pointer;
     }
 
+
     .mm-pad-double,
     &.mm-pad-double {
         padding-top: $space * 1.5;
@@ -102,6 +103,21 @@
             text-decoration: underline;
         }
     }
+
+    .breadcrumbs {
+        margin-left: 0;
+        padding-left: 0;
+        @include fontWeight(400);
+
+        a:hover {
+            text-decoration: none;
+            &:before {
+                text-decoration: none;
+                color: $color-secondary;
+            }
+        }
+    }
+
 
     .l-left,
     .l-right {

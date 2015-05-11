@@ -266,6 +266,7 @@ jQuery(".form-select").chosen({
 
 jQuery('.m-section--top').each(function () {
     var el = jQuery(this);
+    el.addClass("jsActivated");
 
     el.click(function (e) {
         e.preventDefault();

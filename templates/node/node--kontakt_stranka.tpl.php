@@ -143,7 +143,7 @@ if (isset($_POST['mailto'])) {
                 <!--@TODO dodelat cele vsechno omg-->
 
                 <div class="m-contact-form--content">
-                    <form action="http://new.koma-modular.cz/?q=kontakty" method="post">
+                    <form action="http://www.koma-modular.cz/?q=kontakty" method="post">
                         <input type="hidden" name="mailto" id="mailto" value="info@container.cz"/>
                         <input type="text" id="name" name="name" placeholder="Vaše jméno a příjmení" required/>
                         <input type="email" id="email" name="email" placeholder="Váš email" required/>

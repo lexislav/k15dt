@@ -9,10 +9,12 @@
 
     .active-result {
         font-weight: 400;
+        @include fontWeight(400);
     }
 
     .category {
         font-weight: 800;
+        @include fontWeight(800);
     }
 
     .l-left {
@@ -86,7 +88,8 @@
         border-radius: 0;
         background: white;
         box-shadow: none;
-        font-weight: 600;
+        //font-weight: 600;
+        @include fontWeight(600);
     }
 
     .chosen-with-drop {

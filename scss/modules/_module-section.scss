@@ -23,14 +23,17 @@
 
     .mm-tiny {
         font-weight: 200;
+        @include fontWeight(200);
     }
 
     .mm-normal {
         font-weight: 400;
+        @include fontWeight(400);
     }
 
     .mm-bold {
         font-weight: 600;
+        @include fontWeight(600);
     }
 
     .mm-center {
@@ -86,6 +89,7 @@
 
     text-transform: uppercase;
     font-weight: 800;
+    @include fontWeight(800);
     padding-top: $space;
     padding-bottom: $space;
 
@@ -129,6 +133,7 @@
     text-transform: uppercase;
     line-height: 1.2em;
     font-weight: 800;
+    @include fontWeight(800);
 
     &.mm-border {
         border: 2px solid black;
@@ -244,6 +249,7 @@
                     vertical-align: middle;
                     color: white;
                     font-weight: 600;
+                    @include fontWeight(600);
                     text-decoration: none;
                     height: 36px;
                     text-align: center;
@@ -266,6 +272,7 @@
                     &.active {
                         a {
                             font-weight: 800;
+                            @include fontWeight(800);
                         }
 
                     }
@@ -287,6 +294,7 @@
 
                         color: white;
                         font-weight: 600;
+                        @include fontWeight(600);
                         text-decoration: none;
                         margin: 0;
                         padding: 0;
@@ -298,6 +306,7 @@
                     &.active {
                         a {
                             font-weight: 800;
+                            @include fontWeight(800);
                         }
                         &:after {
                             display: block;
@@ -397,6 +406,7 @@
     }
 
     .m-item--hed {
+        @include fontWeight(600);
         margin-bottom: 30px;
         line-height: 1.2em;
         position: relative;
@@ -544,6 +554,7 @@
             right: 0;
 
             font-weight: 400;
+            @include fontWeight(400);
             font-size: rem-calc(14);
             text-transform: none;
 

@@ -24,6 +24,7 @@
         height: 620px;
         font-size: rem-calc(20px);
         font-weight: 800;
+        @include fontWeight(800);
         padding-top: 20px;
 
         @include media(B) {
@@ -93,7 +94,8 @@
                 margin-bottom: 0;
             }
 
-            font-weight: 600;
+            //font-weight: 600;
+            @include fontWeight(600);
             font-size: rem-calc(17);
             line-height: 1.3em;
 

@@ -3,6 +3,9 @@
 @import "../components/bourbon/app/assets/stylesheets/bourbon";
 @import "../components/lost-grid/scss/lost";
 
+// Purista
+@import "fonts";
+
 // skin variables
 @import "skin";
 @import "settings";
@@ -16,6 +19,7 @@
 // settings
 @import "base/grid";
 @import "base/globals";
+@import "base/typography";
 @import "lib/vertical-align";
 
 // layouts and modules

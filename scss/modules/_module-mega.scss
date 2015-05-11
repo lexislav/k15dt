@@ -89,6 +89,7 @@
         color: $color-black;
         font-size: rem-calc(28);
         font-weight: 800;
+        @include fontWeight(800);
         line-height: 38px;
         margin-bottom: 30px;
     }
@@ -99,6 +100,7 @@
         font-size: rem-calc(16);
         color: $color-body-font;
         font-weight: 800;
+        @include fontWeight(800);
         display: inline-block;
         vertical-align: bottom;
         height: 38px;
@@ -119,6 +121,7 @@
     .m-mega--description {
         font-size: rem-calc(20);
         font-weight: 200;
+        @include fontWeight(200);
     }
 
     .m-mega--section {

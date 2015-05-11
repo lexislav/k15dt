@@ -9,6 +9,7 @@
     figcaption {
         font-size: rem-calc(12);
         font-weight: bold;
+        @include fontWeight(800);
         padding-top: 0.5em;
         line-height: 1.2em;
     }

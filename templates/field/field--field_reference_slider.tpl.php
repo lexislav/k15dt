@@ -62,7 +62,7 @@
                 <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
+                <div class="m-section--more"><a href="http://www.koma-modular.cz/reference/archiv"><?php print t('Celý archiv') ?> &rarr;</a></div>
             </div>
         </footer>
     </div>

@@ -213,13 +213,13 @@ $rtl: false !default;
     $ratios: nth($ratios, 1);
 
     @if ($gut > 0) {
-      width: calc(100% * #{$ratios} - #{$gut});
+      width: calc(100% * #{$ratios} - #{$gut} - 1px);
       margin-left: ($gut / 2);
       margin-right: ($gut / 2);
     }
 
     @if ($gut == 0) {
-      width: calc(100% * #{$ratios});
+      width: calc(100% * #{$ratios} - 1px);
     }
   }
 }

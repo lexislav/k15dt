@@ -89,7 +89,7 @@
 
 </div>
 
-
+<div class="kotva" id="dalsi-informace"></div>
 <?php
 $block = module_invoke('views', 'block_view', 'publicita-block');
 print render($block);

@@ -40,7 +40,7 @@
 
 </article>
 
-
+<div class="kotva" id="doplnkove-produkty"></div>
 <?php
 if (isset($content['field_bigimg_a_text'][0])) {
     print render($content['field_bigimg_a_text']);

@@ -3,6 +3,7 @@
 
 
 <?php
+
 if ($user->uid == 1) {
     print $messages;
 }
@@ -85,8 +86,6 @@ if ($user->uid == 1) {
 
             <div class="xmega">
                 <?php print render($page['navigation']); ?>
-                <!--            </div>-->
-                <!--            --><? //= $zip_code = db_query("SELECT field_megamenu_html_value from {field_data_field_megamenu_html} ")->fetchField(); ?>
             </div>
         </div>
 

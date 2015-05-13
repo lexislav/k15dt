@@ -82,7 +82,7 @@
                 ?>
                 <dl class="mm-nolabels mm-noborder">
                     <dt><?=$soubor['#file']->description?></dt>
-                    <dd><a href="<?= $GLOBALS['base_url'] ?>/sites/default/files/segment_trhu/soubory/<?=$soubor['#file']->filename?>" target="_blank" title="<?=$soubor['#file']->description?>">
+                    <dd><a href="<?= file_create_url($soubor['#file']->uri)?>" target="_blank" title="<?=$soubor['#file']->description?>">
                             <i class="fa <?=$trida?>"></i> <?=$soubor['#file']->description?></a></dd>
                 </dl>
             <?php

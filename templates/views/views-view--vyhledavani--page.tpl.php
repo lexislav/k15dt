@@ -20,9 +20,11 @@
             </div>
 
         </div>
-    <?php endif; ?>
+    <?php endif;
 
-    <?php if ($rows): ?>
+    ?>
+
+    <?php if ($rows){ ?>
         <div class="row">
             <div class="l-full">
                 <h2 class="m-search--hed">výsledky vyhledávání: <?=$view->exposed_raw_input['keys']?></h2>
@@ -33,7 +35,9 @@
             </div>
         </div>
 
-    <?php elseif ($empty): ?>
+    <?php }
+
+    if(@$view->total_rows==0 AND (strlen(@$view->exposed_raw_input['keys'])>0)){ ?>
         <div class="row">
             <div class="l-single">
                 <div class="m-search--noresults">
@@ -49,7 +53,7 @@
                 </div>
             </div>
         </div>
-    <?php endif; ?>
+    <?php } ?>
 
     <div class="row">
         <footer class="m-section--footer">

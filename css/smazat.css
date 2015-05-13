@@ -45,14 +45,19 @@
 .tabs_wrap:hover {
     background: #d8d8d8;
 }
-
+.level-3 .item-submenu{
+    display: none;
+}
 
 .tabs_wrap:hover span {
 
 
     background: #383838;
 }
-
+.container-inline-date .date-padding {
+     padding: 0 !important;
+    float: left;
+}
 
 
 .messages--status{

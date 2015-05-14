@@ -8,7 +8,8 @@
     </div>
     <div class="row">
 
-        <?php print render($title_prefix); ?>
+        <?php
+        print render($title_prefix); ?>
 
         <?php print render($title_suffix); ?>
         <?php if ($header): ?>
@@ -79,7 +80,7 @@
 
         <footer class="m-section--footer">
             <div class="l-left">
-                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
             <div class="l-center">
                 <?php if ($pager):
@@ -93,7 +94,7 @@
 
             </div>
             <div class="l-right">
-                <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
+                <div class="m-section--more"><a href="http://<?=explode('?',$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'])[0]?>"><?php print t('Celý archiv') ?> &rarr;</a></div>
             </div>
         </footer>
 

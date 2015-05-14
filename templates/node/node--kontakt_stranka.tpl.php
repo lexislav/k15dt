@@ -104,7 +104,7 @@ if (isset($_POST['mailto'])) {
         <div class="row">
             <header class="m-section--header">
                 <div class="l-full">
-                    <h2 class="m-section--hed mm-tiny mm-medium mm-center">Formulář byl úspěšně odeslán</h2>
+                    <h2 class="m-section--hed mm-tiny mm-medium mm-center"><?php print t('Formulář byl úspěšně odeslán') ?></h2>
                 </div>
             </header>
         </div>
@@ -113,8 +113,8 @@ if (isset($_POST['mailto'])) {
             <div class="m-contact-form mm-sent">
                 <div class="m-contact-form--content">
                     <p>
-                        <i class="fa fa-paper-plane-o"></i> Formulář byl úspěšně odeslán na adresu: <span><?=$mailto?></span>
-                        <br/>a na vámi zadanou adresu <span><?=$mailfrom?></span>
+                        <i class="fa fa-paper-plane-o"></i> <?php print t('Formulář byl úspěšně odeslán na adresu') ?>: <span><?=$mailto?></span>
+                        <br/><?php print t('a na vámi zadanou adresu') ?> <span><?=$mailfrom?></span>
                     </p>
 <!--                    <button class="button">Odeslat novou zprávu <i class="fa fa-paper-plane-o"></i></button>-->
                 </div>
@@ -149,7 +149,7 @@ if (isset($_POST['mailto'])) {
                         <input type="email" id="email" name="email" placeholder="Váš email" required/>
                     <textarea id="body" name="body" style="height: 200px" required
                               placeholder="Text sdělení vašeho dotazu"></textarea>
-                        <button type="submit" class="button">Odeslat zprávu <i class="fa fa-paper-plane-o"></i></button>
+                        <button type="submit" class="button"><?php print t('Odeslat zprávu') ?> <i class="fa fa-paper-plane-o"></i></button>
                     </form>
                 </div>
 
@@ -191,7 +191,7 @@ if (isset($_POST['mailto'])) {
                     </div>
                     <div class="m-item--summary">
                         <h1 class="m-item--hed mm-center">
-                            <a href="">Kariéra v KOMA</a>
+                            <a href=""><?php print t('Kariéra v KOMA') ?></a>
                         </h1>
 
                         <div class="m-item--description">
@@ -217,8 +217,8 @@ if (isset($_POST['mailto'])) {
             </div>
             <div class="l-half">
                 <ul class="m-section--nav inline-right">
-                    <li><a href="<?= drupal_get_path_alias('node/1552 ') ?>">FIRMA A LIDÉ</a></li>
-                    <li><a href="<?= drupal_get_path_alias('node/1612') ?>">HODNOTY, FILOZOFIE, VIZE </a></li>
+                    <li><a href="<?= drupal_get_path_alias('node/1552 ') ?>"><?php print t('FIRMA A LIDÉ') ?></a></li>
+                    <li><a href="<?= drupal_get_path_alias('node/1612') ?>"><?php print t('HODNOTY, FILOZOFIE, VIZE') ?> </a></li>
                 </ul>
             </div>
         </footer>

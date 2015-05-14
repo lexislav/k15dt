@@ -17,7 +17,7 @@ if (isset($row->field_field_cert_nahled[0])) {
         </div>
         <div class="m-item--summary">
             <h1 class="m-item--hed">
-                <?= $fields['title']->content ?>
+                <?= $row->_field_data['nid']['entity']->title ?>
             </h1>
 
             <div class="m-item--description">

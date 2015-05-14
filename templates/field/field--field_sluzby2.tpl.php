@@ -1,4 +1,4 @@
-<div class="m-section_vertical-tabs">
+<div class="m-section_vertical-tabs" id="sluzby">
     <div class="m-section--container">
         <div slick>
             <div class="row">

@@ -4,7 +4,7 @@
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big">Reference</h2>
+                <h2 class="m-section--hed mm-big"><?php print t('Reference') ?></h2>
             </div>
         </header>
     </div>
@@ -39,7 +39,7 @@
                                     <h1 class="m-item--hed"><a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $pole['entity']->nid ?>"><?= $pole['entity']->title ?></a></h1>
 
                                     <div class="m-item--description">
-                                        <p>VYBRANÉ REFERENCE <span class="color-body-font">[<?= $rok ?>]</span></p>
+                                        <p><?php print t('VYBRANÉ REFERENCE') ?> <span class="color-body-font">[<?= $rok ?>]</span></p>
                                     </div>
                                 </div>
                             </header>
@@ -59,7 +59,7 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
                 <div class="m-section--more"><a href="http://www.koma-modular.cz/reference/archiv"><?php print t('Celý archiv') ?> &rarr;</a></div>

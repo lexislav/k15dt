@@ -9,7 +9,7 @@ $jmeno = taxonomy_term_load($pole[0])->name;
         <header class="m-section--header">
             <div class="l-full">
 
-                <h2 class="m-section--hed mm-small mm-left"><span class="color-primary" ><?=$jmeno?></span> / VYBRANÉ REFERENCE</h2>
+                <h2 class="m-section--hed mm-small mm-left"><span class="color-primary" ><?=$jmeno?></span> / <?php print t('VYBRANÉ REFERENCE') ?></h2>
             </div>
         </header>
     </div>
@@ -80,15 +80,31 @@ $jmeno = taxonomy_term_load($pole[0])->name;
         </div>
     </div>
 
+
+
+</div>
+<div class="m-section bg-white">
     <div class="row">
+
         <footer class="m-section--footer">
-            <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+            <div class="l-left">
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
-            <div class="l-half">
-                <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
+            <div class="l-center">&nbsp;
+                <?php if ($pager):
+                    $pager = str_replace('class="item-list"', 'class="m-pagination"', $pager);
+                    $pager = str_replace('class="pager"', 'class="m-pagination--container"', $pager);
+                    $pager = str_replace('pager-current', 'current', $pager);
+                    $pager = str_replace('pager-next', 'pager-next arrow', $pager);
+                    ?>
+                    <?php print $pager; ?>
+                <?php endif; ?>
+
+            </div>
+            <div class="l-right">
+                <div class="m-section--more"><a href="http://<?=explode('?',$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'])[0]?>"><?php print t('Celý archiv') ?> &rarr;</a></div>
             </div>
         </footer>
-    </div>
 
+    </div>
 </div>

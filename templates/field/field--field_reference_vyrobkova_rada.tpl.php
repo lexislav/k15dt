@@ -16,10 +16,10 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
+                <div class="m-section--more"><a href=""><?php print t('Celý archiv') ?> &rarr;</a></div>
             </div>
         </footer>
     </div>

@@ -4,20 +4,13 @@ $prev_nid = prev_next_nid($node->nid, 'prev');
 $next_nid = prev_next_nid($node->nid, 'next');
 $next_title = db_query('SELECT title_field_value FROM {field_data_title_field} WHERE entity_id = :nid AND language = :lang', array(':nid' => $next_nid[0]->next_nid, ':lang' => $node->language))->fetchField();
 $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} WHERE entity_id = :nid AND language = :lang', array(':nid' => $prev_nid[0]->prev_nid, ':lang' => $node->language))->fetchField();
+
 ?>
 
 <div class="m-section l-detail-page">
     <div class="row">
         <header class="m-section--header">
                         <div class="l-full">
-<!--                            --><?php //print $breadcrumb; ?>
-            <!--                <nav class="breadcrumbs">-->
-            <!--                    <a href="#">Home</a>-->
-            <!--                    <a href="#">Features</a>-->
-            <!--                    <a class="unavailable" href="#">Gene Splicing</a>-->
-            <!--                    <a class="current" href="#">Cloning</a>-->
-            <!--                </nav>-->
-            <!---->
                         </div>
         </header>
     </div>
@@ -30,8 +23,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                 <h1 class="m-reference--hed"><a href=""><?php print $title; ?></a></h1>
 
                 <div class="m-reference--description">
-                    <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel.
-                       Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                    <p></p>
                 </div>
                 <div class="m-reference--meta m-properties">
                     <dl>
@@ -45,7 +37,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                         <dd><?= ($content['field_reference_rok'][0]['#markup']); ?></dd>
                     </dl>
                     <dl>
-                        <dt>Země realizace: </dt>
+                        <dt><?php print t('Země realizace') ?>: </dt>
                         <dd><?= $polezemi[$content['field_reference_zeme']['#items'][0]['iso2']] ?></dd>
                     </dl>
                     <?php if (isset($content['field_reference_pomodulu']['#items'][0]['value'])): ?>
@@ -127,10 +119,10 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
+                <div class="m-section--more"><a href="http://www.koma-modular.cz/reference/archiv"><?php print t('Celý archiv') ?> &rarr;</a></div>
             </div>
         </footer>
     </div>
@@ -155,9 +147,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                             </h1>
 
                             <div class="m-item--description">
-                                <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris
-                                   rutrum
-                                   vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                                <p></p>
                             </div>
                         </div>
                     </header>
@@ -183,9 +173,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                             </h1>
 
                             <div class="m-item--description">
-                                <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris
-                                   rutrum
-                                   vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                                <p></p>
                             </div>
                         </div>
                     </header>

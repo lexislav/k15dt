@@ -11,7 +11,7 @@
         <div class="row">
             <header class="m-section--header">
                 <div class="l-half">
-                    <h1 class="m-basic-page--hed">FIRMA <span class="color-primary">& LIDÉ</span></h1>
+                    <h1 class="m-basic-page--hed"><?php print t('FIRMA') ?> <span class="color-primary">& <?php print t('LIDÉ') ?></span></h1>
                 </div>
             </header>
         </div>
@@ -60,7 +60,7 @@
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big ">KE STAŽENÍ</h2>
+                <h2 class="m-section--hed mm-big "><?php print t('KE STAŽENÍ') ?></h2>
             </div>
         </header>
     </div>

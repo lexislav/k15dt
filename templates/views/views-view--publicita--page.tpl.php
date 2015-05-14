@@ -82,7 +82,7 @@
             <div class="l-left">
                 <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
-            <div class="l-center">
+            <div class="l-center">&nbsp;
                 <?php if ($pager):
                     $pager = str_replace('class="item-list"', 'class="m-pagination"', $pager);
                     $pager = str_replace('class="pager"', 'class="m-pagination--container"', $pager);

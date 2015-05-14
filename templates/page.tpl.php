@@ -1,3 +1,4 @@
+
 <?php print render($tabs); ?>
 
 
@@ -7,6 +8,10 @@
 if ($user->uid == 1) {
     print $messages;
 }
+
+
+
+
 ?>
 
 
@@ -213,7 +218,7 @@ if ($user->uid == 1) {
 
             <section class="m-footer--subsection">
                 <a class="m-footer--author" href="/">
-                    <a href="">Od Oka</a>
+                    <a target="_blank" href="http://www.odoka.cz/">Od Oka</a>
                 </a>
             </section>
         </div>

@@ -15,7 +15,7 @@
                 <h1 class="m-story--hed"><a href=""><?php print $title; ?></a></h1>
 
                 <div class="m-story--description">
-                    <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                    <p></p>
                 </div>
 
                 <div class="m-story--meta">
@@ -79,7 +79,7 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-third">
-                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
             <div class="l-two-thirds">
                 <?php
@@ -91,7 +91,6 @@
 
                         ?>
                         <li>
-                            <!--                            @TODO UPRAVIT CESTU-->
                             <a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj&field_zpravodaj_kategorie_tid=<?= $term->tid ?>" title="<?= $term->name ?>"><?= $term->name ?></a>
                         </li>
                         <?php

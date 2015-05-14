@@ -75,9 +75,9 @@
 
         <footer class="m-section--footer">
             <div class="l-left">
-                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
-            <div class="l-center">
+            <div class="l-center">&nbsp;
                 <?php if ($pager):
                     $pager = str_replace('class="item-list"', 'class="m-pagination"', $pager);
                     $pager = str_replace('class="pager"', 'class="m-pagination--container"', $pager);
@@ -89,13 +89,12 @@
 
             </div>
             <div class="l-right">
-                <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
+                <div class="m-section--more"><a href="http://<?=explode('?',$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'])[0]?>"><?php print t('Celý archiv') ?> &rarr;</a></div>
             </div>
         </footer>
 
     </div>
 </div>
-
 
 
 

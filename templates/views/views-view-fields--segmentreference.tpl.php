@@ -31,8 +31,7 @@ if(count($view->result)>1){
                     </h1>
 
                     <div class="m-item--description">
-                        <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel.
-                            Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="m-card--more">&rarr;</div>
@@ -62,8 +61,7 @@ if(count($view->result)>1){
                     </h1>
 
                     <div class="m-item--description">
-                        <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel.
-                            Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="m-card--more">&rarr;</div>

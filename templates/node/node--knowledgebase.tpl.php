@@ -15,7 +15,7 @@
                 <h1 class="m-story--hed"><a href=""><?php print $title; ?></a></h1>
 
                 <div class="m-story--description">
-                    <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel. Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                    <p></p>
                 </div>
 
                 <div class="m-story--meta">
@@ -23,11 +23,6 @@
                     <dl>
                         <dt><?php print t('Kategorie') ?></dt><dd><?= ($content['field_knowledgebase_kategorie'][0]['#title']); ?></dd>
                     </dl>
-
-<!--                    <dl>-->
-<!--                        <dt>--><?php //print t('Datum') ?><!--</dt><dd>--><?//= ($content['field_zpravodaj_publikace'][0]['#markup']); ?><!--</dd>-->
-<!--                    </dl>-->
-
                 </div>
             </div>
         </header>
@@ -40,7 +35,7 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-third">
-                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
             <div class="l-two-thirds">
 

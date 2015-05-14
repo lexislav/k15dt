@@ -13,12 +13,6 @@
                         </div>
         </header>
     </div>
-    <!--    --><?php
-
-
-
-
-    //    ?>
     <article class="m-reference">
         <header>
             <div class="m-reference--image mm-preview-fit">
@@ -43,10 +37,10 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href=""><?php print t('Celý archiv') ?> &rarr;</a></div>
+                <div class="m-section--more"><a href="http://www.koma-modular.cz/firma-a-lide/kariera"><?php print t('Celý archiv') ?> &rarr;</a></div>
             </div>
         </footer>
     </div>

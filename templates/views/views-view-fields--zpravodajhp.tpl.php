@@ -27,8 +27,7 @@ if ($cislo == 1 OR $cislo == 4 OR $cislo == 7 OR $cislo == 10  OR $cislo == 13 O
                     </h1>
 
                     <div class="m-item--description">
-                        <p>Morbi vulputate ac quam quis feugiat. Mauris dapibus dictum ex, at sodales mauris rutrum vel.
-                            Suspendisse vestibulum enim sit amet ultricies hendrerit.</p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="m-card--more">&rarr;</div>

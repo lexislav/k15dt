@@ -32,7 +32,7 @@
 <div class="l-left">
     <ul class="m-filter--items" id="extractLinkTarget">
         <li class="label">
-            <div>Filtr zobrazení</div>
+            <div><?php print t('Filtr zobrazení') ?></div>
         </li>
         <?php foreach ($widgets as $id => $widget):
 

@@ -10,18 +10,12 @@
         <div class="row">
             <header class="m-section--header">
                 <div class="l-full">
-                    <h1 class="m-basic-page--hed mm-big mm-pad-bottom">PRODUKTY <span class="color-primary">A SLUŽBY</span></h1>
+                    <h1 class="m-basic-page--hed mm-big mm-pad-bottom"><?php print t('PRODUKTY') ?> <span class="color-primary"><?php print t('A SLUŽBY') ?></span></h1>
                 </div>
                 <div class="l-third">
                     <h2 class="mm-small color-primary"><?php print t('Výrobkové řady') ?></h2>
                 </div>
                 <div class="l-two-thirds">
-<!--                    <ul class="m-section--nav inline-right">-->
-<!--                        <li><a href="" title="">--><?php //print t('služby') ?><!--</a></li>-->
-<!--                        <li><a href="" title="">--><?php //print t('fasády') ?><!--</a></li>-->
-<!--                        <li><a href="" title="">--><?php //print t('bazar') ?><!--</a></li>-->
-<!---->
-<!--                    </ul>-->
                 </div>
             </header>
         </div>
@@ -53,7 +47,7 @@ if (isset($content['field_bigimg_a_text'][0])) {
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big"><span class="color-primary">AKTUÁLNÍ</span> NABÍDKA</h2>
+                <h2 class="m-section--hed mm-big"><span class="color-primary"><?php print t('AKTUÁLNÍ') ?></span> <?php print t('NABÍDKA') ?></h2>
             </div>
         </header>
     </div>
@@ -64,7 +58,7 @@ if (isset($content['field_bigimg_a_text'][0])) {
                 <div class="m-aside-block bg-secondary-light mm-pad">
                     <header class="m-aside-block--header">
                         <h3 class="m-aside-block--hed">
-                            BAZAR </h3>
+                            <?php print t('BAZAR') ?> </h3>
                     </header>
                     <?php
                     $block = module_invoke('views', 'block_view', 'nabidka-block');
@@ -98,7 +92,7 @@ if (isset($content['field_bigimg_a_text'][0])) {
                 <div class="m-aside-block bg-secondary-light mm-pad">
                     <header class="m-aside-block--header">
                         <h3 class="m-aside-block--hed">
-                            MODULY IHNED K ODBĚRU </h3>
+                            <?php print t('MODULY IHNED K ODBĚRU') ?> </h3>
                     </header>
                     <?php
                     $block = module_invoke('views', 'block_view', 'nabidka-block_1');
@@ -123,8 +117,8 @@ if (isset($content['field_segment_faq'][0])) {
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top">JSME PŘEDNÍ ČESKÝ VÝROBCE
-                    <br /><span class="color-primary">MODULÁRNÍ VÝSTAVBY</span></h2>
+                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top"><?php print t('JSME PŘEDNÍ ČESKÝ VÝROBCE') ?>
+                    <br /><span class="color-primary"><?php print t('MODULÁRNÍ VÝSTAVBY') ?></span></h2>
             </div>
         </header>
     </div>

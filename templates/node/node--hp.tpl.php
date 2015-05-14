@@ -54,7 +54,8 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top">JSME PŘEDNÍ ČESKÝ VÝROBCE<br /><span class="color-primary">MODULÁRNÍ VÝSTAVBY</span>
+                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top">JSME PŘEDNÍ ČESKÝ VÝROBCE<br />
+                    <span class="color-primary">MODULÁRNÍ VÝSTAVBY</span>
                 </h2>
             </div>
         </header>
@@ -85,7 +86,6 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
             <div class="l-two-thirds">
                 <ul class="m-section--nav inline-right">
                     <?php foreach ($tree as $term) { ?>
-                        <!-- @TODO UPRAVIT CESTU -->
                         <li>
                             <a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj&field_zpravodaj_kategorie_tid=<?= $term->tid ?>" title="<?= $term->name ?>"><?= $term->name ?></a>
                         </li>

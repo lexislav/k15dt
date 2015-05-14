@@ -17,7 +17,7 @@
                     <header>
                         <div class="m-item--summary">
                             <h1 class="m-item--hed">
-                                <a href="<?= $pole['field_page_link']['#items'][0]['display_url'] ?>"><?= $pole['field_basic_title']['#items'][0]['value'] ?></a>
+                                <a href="<?= @$pole['field_page_link']['#items'][0]['url'] ?>"><?= @$pole['field_basic_title']['#items'][0]['value'] ?></a>
                             </h1>
 
                             <div class="m-item--description">

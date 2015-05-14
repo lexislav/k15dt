@@ -1,8 +1,6 @@
 <?php
-//
-//dsm($node);
-//dsm($content);
 $polezemi = country_get_list();
+
 ?>
 
     <div class="m-section l-detail-page bg-white">
@@ -107,8 +105,8 @@ $polezemi = country_get_list();
 
                                         ?>
                                         <br/>
-                                        <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>">Detail
-                                            reference</a> &rarr; [
+                                        <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>">
+                                            <?php print t('Detail reference') ?></a> &rarr; [
                                         <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>/edit">editovat</a>
                                         ]
                                     </p>
@@ -117,42 +115,42 @@ $polezemi = country_get_list();
 
                             <div class="m-properties">
                                 <dl>
-                                    <dt>Zařazení</dt>
+                                    <dt><?php print t('Zařazení') ?></dt>
                                     <dd><?= $polejmen[$reference['entity']->field_reference_kategorie_stavby['und'][0]['tid']]->name ?>
                                         – <?= $polejmen[$reference['entity']->field_reference_kategorie_stavby['und'][1]['tid']]->name ?></dd>
                                 </dl>
 
                                 <dl>
-                                    <dt>Rok realizace</dt>
+                                    <dt><?php print t('Rok realizace') ?></dt>
                                     <dd><?= $rok ?></dd>
                                 </dl>
 
                                 <dl>
-                                    <dt>Země realizace</dt>
+                                    <dt><?php print t('Země realizace') ?></dt>
                                     <dd><?= $polezemi[$reference['entity']->field_reference_zeme['und'][0]['iso2']] ?></dd>
                                 </dl>
 
                                 <!--@TODO dodelat if pro zobrazeni-->
                                 <dl>
-                                    <dt class="mm-label">Technické specifikace</dt>
+                                    <dt class="mm-label"><?php print t('Technické specifikace') ?></dt>
 
                                     <?php if (isset($reference['entity']->field_reference_pomodulu['und'][0]['value'])) { ?>
-                                        <dt class="mm-sub">Počet modulů</dt>
+                                        <dt class="mm-sub"><?php print t('Počet modulů') ?></dt>
                                         <dd><?= $reference['entity']->field_reference_pomodulu['und'][0]['value'] ?></dd>
                                     <?php } ?>
 
                                     <?php if (isset($reference['entity']->field_reference_delka[$node->language][0]['value'])) { ?>
-                                        <dt class="mm-sub">Délka výroby</dt>
+                                        <dt class="mm-sub"><?php print t('Délka výroby') ?></dt>
                                         <dd><?= $reference['entity']->field_reference_delka[$node->language][0]['value'] ?></dd>
                                     <?php } ?>
 
                                     <?php if (isset($reference['entity']->field_reference_dstavby[$node->language][0]['value'])) { ?>
-                                        <dt class="mm-sub">Délka stavby</dt>
+                                        <dt class="mm-sub"><?php print t('Délka stavby') ?></dt>
                                         <dd><?= $reference['entity']->field_reference_dstavby[$node->language][0]['value'] ?></dd>
                                     <?php } ?>
 
                                     <?php if (isset($reference['entity']->field_reference_plocha['und'][0]['value'])) { ?>
-                                        <dt class="mm-sub">Užitná plocha</dt>
+                                        <dt class="mm-sub"><?php print t('Užitná plocha') ?></dt>
                                         <dd><?= $reference['entity']->field_reference_plocha['und'][0]['value'] ?>
                                             m<sup>2</sup>
                                         </dd>
@@ -228,8 +226,7 @@ print render($block);
 
                                         ?>
                                         <br/>
-                                        <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>">Detail
-                                            reference</a> &rarr; [ <a
+                                        <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>"><?php print t('Detail reference') ?></a> &rarr; [ <a
                                             href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>/edit">editovat</a>
                                         ]</p>
 

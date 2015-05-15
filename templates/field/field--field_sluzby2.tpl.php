@@ -29,16 +29,21 @@
                 <?php
                 unset($pole);
                 foreach ($items AS $poradi2 => $pole) {
-                   // if ($poradi2 == 0) continue;
+                    if($pole['field_basic_img']['#items'][0]['uri']==''){
+                        $file = file_load($pole['field_basic_img']['#items'][0]['fid']);
+                        $uri = ($file->uri);
+                    }else{
+                        $uri = $pole['field_basic_img']['#items'][0]['uri'];
+                    }
                     ?>
                     <div class="slide m-card_thumb">
                         <article class="m-story">
                             <header>
                                 <div class="m-item--image"
-                                     style="background-image: url(<?= image_style_url('x595-0', $pole['field_basic_img']['#items'][0]['uri']) ?>)">
+                                     style="background-image: url(<?= image_style_url('x595-0', $uri) ?>)">
                                     <a href="">
                                         <img
-                                            src="<?= image_style_url('x595-0', $pole['field_basic_img']['#items'][0]['uri']) ?>"
+                                            src="<?= image_style_url('x595-0', $uri) ?>"
                                             alt=""/>
                                     </a>
                                 </div>

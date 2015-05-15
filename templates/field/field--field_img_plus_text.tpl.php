@@ -1,13 +1,17 @@
 <?php
-//dsm($element);
-//dsm($items);
+if($items[0]['field_basic_img']['#items'][0]['uri']==''){
+    $file = file_load($items[0]['field_basic_img']['#items'][0]['fid']);
+    $uri = ($file->uri);
+}else{
+    $uri = $items[0]['field_basic_img']['#items'][0]['uri'];
+}
 foreach ($items AS $pole) {
     $cast = ($pole);
     //   dsm($cast);
     ?>
     <!--@TODO NONE neni styl, vyresit-->
 
-    <div class="m-section l-feed_one bg-secondary-light mm-has-background mm-pad-double" style="background-image: url(<?= image_style_url('none', $cast['field_basic_img']['#items'][0]['uri']) ?>)">
+    <div class="m-section l-feed_one bg-secondary-light mm-has-background mm-pad-double" style="background-image: url(<?= image_style_url('none', $uri) ?>)">
 
         <header class="m-section--header">
             <h2 class="m-section--hed mm-medium mm-tiny mm-center mm-border"><?= $cast['field_basic_title']['#items'][0]['value'] ?></h2>

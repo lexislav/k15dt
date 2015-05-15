@@ -78,7 +78,7 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('Nahoru',array(),array('langcode'=>'cs',)) ?> &uarr;</a></div>
             </div>
             <div class="l-half">
                 <?php

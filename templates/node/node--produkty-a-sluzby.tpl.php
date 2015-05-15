@@ -4,13 +4,12 @@
 //dsm($content);
 //
 //?>
-
 <article id="produktove-rady">
     <div class="m-section l-feed_four">
         <div class="row">
             <header class="m-section--header">
                 <div class="l-full">
-                    <h1 class="m-basic-page--hed mm-big mm-pad-bottom"><?php print t('PRODUKTY') ?> <span class="color-primary"><?php print t('A SLUŽBY') ?></span></h1>
+                    <h1 class="m-basic-page--hed mm-big mm-pad-bottom"><?php print t('PRODUCTS') ?> <span class="color-primary"><?php print t('AND SERVICES') ?></span></h1>
                 </div>
                 <div class="l-third">
                     <h2 class="mm-small color-primary"><?php print t('Výrobkové řady') ?></h2>

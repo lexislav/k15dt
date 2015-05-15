@@ -31,7 +31,7 @@ if ($row->_field_data['nid']['entity']->type == 'koma_zpravodaj') {
     $popis = 'Stránka';
 }
 
-$title = strip_tags($fields['title']->content);
+$title = strip_tags($row->_field_data['nid']['entity']->title);
 $horni_popis = $popis;
 $link = drupal_get_path_alias('node/' . $row->nid);
 

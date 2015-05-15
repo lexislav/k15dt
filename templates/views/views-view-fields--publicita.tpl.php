@@ -3,7 +3,7 @@
         <header>
             <h1 class="m-item--hed">
                 <a target="_blank" href="<?=@$row->field_field_odkazy_p_link[0]['raw']['url']?>">
-                    <?= $row->node_title ?>
+                    <?= $row->_field_data['nid']['entity']->title ?>
                 </a>
             </h1>
 

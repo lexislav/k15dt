@@ -3,13 +3,17 @@
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big"><?php print t('Faq / Znalostní báze') ?></h2>
+                <h2 class="m-section--hed mm-big"><?php print t('Faq / Knowledge base') ?></h2>
             </div>
         </header>
     </div>
 
     <div class="row rowfix">
-        <?php foreach ($element['#object']->field_segment_faq['und'] AS $pole) { ?>
+        <?php
+
+        foreach ($element['#object']->field_segment_faq['und'] AS $pole) {
+
+            ?>
             <div class="m-card_faq l-single">
 
                 <article class="m-story">

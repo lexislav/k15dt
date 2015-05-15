@@ -3,7 +3,7 @@
         <header>
             <h1 class="m-item--hed">
                 <a href="<?=drupal_get_path_alias('node/'.$row->nid)?>">
-                    <?= $row->node_title ?>
+                    <?= $row->_field_data['nid']['entity']->title ?>
                 </a>
             </h1>
 

@@ -31,7 +31,7 @@ if (isset($row->field_field_reference_main_img[0])) {
             </div>
             <div class="m-item--summary">
                 <h1 class="m-item--hed">
-                    <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>"><?= $row->node_title ?></a>
+                    <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>"><?= $row->_field_data['nid']['entity']->title ?></a>
                 </h1>
 
                 <div class="m-item--meta">

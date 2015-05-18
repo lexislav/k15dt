@@ -92,9 +92,7 @@ if (isset($_POST['mailto'])) {
     $mailfrom = $_POST['email'];
     $name = $_POST['name'];
     $text = $_POST['body'];
-
-
-    test_mail('info@container.cz', $mailto, 'Nová zpráva - kontaktní formulář KOMA',  $name."\n".$text);
+    test_mail($mailfrom, $mailto, 'Nová zpráva - kontaktní formulář KOMA',  $name."\n".$text);
     test_mail('info@container.cz', $mailfrom, 'Nová zpráva - kontaktní formulář KOMA',  $name."\n".$text);
 
 

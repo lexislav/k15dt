@@ -6,12 +6,18 @@
  *
  * @ingroup views_templates
  */
-//dpm(get_defined_vars());
-//dpm($static);
 
-
+$term = (taxonomy_get_term_by_name($title));
 global $kontaktcount;
 $kontaktcount++;
+if(isset($term[key($term)]->field_oddeleni_kontakt['und'][0]['value'])){
+    $mail = $term[key($term)]->field_oddeleni_kontakt['und'][0]['value'];
+}else{
+    $mail = 'info@container.cz';
+}
+
+
+
 ?>
 
 
@@ -28,7 +34,7 @@ if ($kontaktcount == 12) { ?>
                 <div class="m-contact-tab--mark">+</div>
                 <h3 class="m-contact-tab--hed"><?= $title; ?></h3>
 
-                <div class="m-contact-tab--action"><a fillform data-subject="Pro vedoucí útvaru" data-name="" data-email="" href=""><i class="fa fa-envelope"></i></a></div>
+                <div class="m-contact-tab--action"><a fillform data-subject="Pro vedoucí útvaru" data-name="" data-email="<?=@$mail?>" href=""><i class="fa fa-envelope"></i></a></div>
             </header>
 
         <?php endif; ?>

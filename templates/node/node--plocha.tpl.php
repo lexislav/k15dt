@@ -1,4 +1,15 @@
 <?php
+$nid= 'node/782';
+
+
+echo drupal_lookup_path('alias',$nid,'en');
+
+
+
+
+
+
+
 $tree = taxonomy_get_tree(5);
 $term = taxonomy_term_load(24);
 

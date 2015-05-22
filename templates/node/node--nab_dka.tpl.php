@@ -90,7 +90,7 @@
 
                         ?>
                         <li>
-                            <a href="<?= $GLOBALS['base_url'] ?>?q=mabidka&field_zpravodaj_kategorie_tid=<?= $term->tid ?>" title="<?= $term->name ?>"><?= $term->name ?></a>
+                            <a href="<?= test_basic_url() ?>nabidka?field_nabidka_kategorie_tid=<?= $term->tid ?>" title="<?= $term->name ?>"><?= $term->name ?></a>
                         </li>
                         <?php
                     }

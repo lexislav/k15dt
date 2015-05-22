@@ -87,7 +87,7 @@
                         <?php foreach ($tree as $term) { ?>
                             <!-- @TODO UPRAVIT CESTU -->
                             <li>
-                                <a href="<?= $GLOBALS['base_url'] ?>publicita&field_kategorie_publicity_tid=<?= $term->tid ?>" title="<?= $term->name ?>"><?= $term->name ?></a>
+                                <a href="<?= test_basic_url() ?>publicita?field_kategorie_publicity_tid=<?= $term->tid ?>" title="<?= $term->name ?>"><?= $term->name ?></a>
                             </li>
                         <?php } ?>
                     </ul>

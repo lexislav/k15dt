@@ -93,7 +93,7 @@ $polezemi = country_get_list();
 
                             <div class="m-item--summary">
                                 <h1 class="m-item--hed">
-                                    <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>"><?= $reference['entity']->title ?></a>
+                                    <a href="<?= test_lang_prefix('node/'.$reference['entity']->nid) ?>"><?= $reference['entity']->title ?></a>
                                 </h1>
 
                                 <div class="m-item--description">
@@ -105,9 +105,9 @@ $polezemi = country_get_list();
 
                                         ?>
                                         <br/>
-                                        <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>">
+                                        <a href="<?= test_lang_prefix('node/'.$reference['entity']->nid) ?>">
                                             <?php print t('Detail reference') ?></a> &rarr; [
-                                        <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>/edit">editovat</a>
+                                        <a href="<?= test_lang_prefix('node/'.$reference['entity']->nid) ?>/edit">editovat</a>
                                         ]
                                     </p>
                                 </div>
@@ -213,7 +213,7 @@ print render($block);
 
                             <div class="m-item--summary">
                                 <h1 class="m-item--hed">
-                                    <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>"><?= $reference['entity']->title ?></a>
+                                    <a href="<?= test_lang_prefix('node/'.$reference['entity']->nid) ?>"><?= $reference['entity']->title ?></a>
                                 </h1>
 
                                 <div class="m-item--description">
@@ -226,8 +226,8 @@ print render($block);
 
                                         ?>
                                         <br/>
-                                        <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>"><?php print t('Detail reference') ?></a> &rarr; [ <a
-                                            href="<?= $GLOBALS['base_url'] ?>/node/<?= $reference['entity']->nid ?>/edit">editovat</a>
+                                        <a href="<?= test_lang_prefix('node/'.$reference['entity']->nid) ?>"><?php print t('Detail reference') ?></a> &rarr; [ <a
+                                            href="<?= test_lang_prefix('node/'.$reference['entity']->nid) ?>/edit">editovat</a>
                                         ]</p>
 
                                 </div>

@@ -38,7 +38,7 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
                 ?>
                 <div class="tab color-<?= $cislo ?>" slick-to="<?= $cislo ?>">
 
-                    <a href="<?=drupal_get_path_alias('node/'.$r['field_c_hp_odkaz']['und'][0]['target_id'])?>"><?= $r['field_basic_title']['und'][0]['value'] ?></a>
+                    <a href="<?=test_lang_prefix('node/'.$r['field_c_hp_odkaz']['und'][0]['target_id'])?>"><?= $r['field_basic_title']['und'][0]['value'] ?></a>
                 </div>
                 <?php
             }
@@ -87,7 +87,7 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
                 <ul class="m-section--nav inline-right">
                     <?php foreach ($tree as $term) { ?>
                         <li>
-                            <a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj&field_zpravodaj_kategorie_tid=<?= $term->tid ?>" title="<?= $term->name ?>"><?= $term->name ?></a>
+                            <a href="<?= test_basic_url() ?>zpravodaj?field_zpravodaj_kategorie_tid=<?= $term->tid ?>" title="<?= $term->name ?>"><?= $term->name ?></a>
                         </li>
                     <?php } ?>
                 </ul>
@@ -111,7 +111,7 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
             </div>
             <div class="l-half">
                 <div class="m-section--more">
-                    <a href="<?= $GLOBALS['base_url'] ?>?q=zpravodaj"><?php print t('Zobrazit celý archiv') ?> &rarr;</a>
+                    <a href="<?= test_basic_url()?>zpravodaj"><?php print t('Zobrazit celý archiv') ?> &rarr;</a>
                 </div>
             </div>
         </footer>

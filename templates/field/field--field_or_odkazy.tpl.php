@@ -39,7 +39,7 @@
             if (isset($cast['field_page_link']['#items'][0]['url'])) {
                 $odkaz = $GLOBALS['base_url'] . '/?q=' . ($cast['field_page_link']['#items'][0]['url']);
             } else {
-                $odkaz = drupal_get_path_alias('node/' . $cast['field_ereference_segment']['#items'][0]['target_id']);
+                $odkaz = test_lang_prefix('node/' . $cast['field_ereference_segment']['#items'][0]['target_id']);
             }
 
             ?>

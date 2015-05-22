@@ -19,7 +19,7 @@
                 <article class="m-story">
                     <header>
                         <h1 class="m-item--hed">
-                            <a href="<?= $GLOBALS['base_url'] ?>/node/<?= $pole['entity']->nid ?>"><?= $pole['entity']->title ?></a>
+                            <a href="<?= test_lang_prefix('node/'.$pole['entity']->nid) ?>"><?= $pole['entity']->title ?></a>
                         </h1>
 
                         <div class="m-item--summary">

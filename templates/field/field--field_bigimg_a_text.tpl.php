@@ -14,7 +14,7 @@
                     </div>
                 </header>
             </article>
-            <div class="m-card--more "><a class="button" href="<?=drupal_get_path_alias($items[0]['field_page_link']['#items'][0]['url'])?>"><?=$items[0]['field_page_link']['#items'][0]['title']?> &rarr;</a></div>
+            <div class="m-card--more "><a class="button" href="<?=test_lang_prefix($items[0]['field_page_link']['#items'][0]['url'])?>"><?=$items[0]['field_page_link']['#items'][0]['title']?> &rarr;</a></div>
         </div>
     </div>
     <footer class="m-section--footer">

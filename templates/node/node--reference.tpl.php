@@ -33,9 +33,16 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                             – <?= ($content['field_reference_kategorie_stavby'][1]['#title']); ?></dd>
                     </dl>
                     <dl>
+                        <?php dpm($content) ?>
                         <dt><?php print t('Rok realizace') ?></dt>
                         <dd><?= ($content['field_reference_rok'][0]['#markup']); ?></dd>
                     </dl>
+                    <?php if (isset($content['field_reference_vyrobkova_rada'][0]['#title'])): ?>
+                    <dl>
+                        <dt><?php print t('Výrobková řada') ?></dt>
+                        <dd><?= ($content['field_reference_vyrobkova_rada'][0]['#title']); ?></dd>
+                    </dl>
+                    <?php endif ?>
                     <dl>
                         <dt><?php print t('Země realizace') ?>: </dt>
                         <dd><?= $polezemi[$content['field_reference_zeme']['#items'][0]['iso2']] ?></dd>
@@ -95,7 +102,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                             <h2 class="m-aside-block--hed">&rarr; <?php print t('Fotogalerie') ?></h2>
 
                             <div class="m-aside-block--meta">
-                                (<?= count($node->field_reference_fotogalerie['und'][0]['entity']->field_fotogalerie_imgs['und']) ?>
+                                (<?= count($node->field_reference_fotogalerie[$node->language][0]['entity']->field_fotogalerie_imgs['und']) ?>
                                 <?php print t('fotografií') ?>)
                             </div>
                         </div>
@@ -104,7 +111,10 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
 
                     <div class="m-aside-block--content">
                         <ul class="m-gallery" class="clearing-thumbs" data-clearing>
-                            <?php foreach ($node->field_reference_fotogalerie['und'][0]['entity']->field_fotogalerie_imgs['und'] AS $poradi => $obrazek) { ?>
+                            <?php
+
+
+                            foreach ($node->field_reference_fotogalerie[$node->language][0]['entity']->field_fotogalerie_imgs['und'] AS $poradi => $obrazek) { ?>
                                 <li class="m-gallery--item">
                                     <a href="<?= image_style_url('zadny', $obrazek['uri']) ?>"><img src="<?= image_style_url('x186-139', $obrazek['uri']) ?>"></a>
                                 </li>
@@ -137,13 +147,13 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                 <article class="m-story">
                     <header>
                         <div class="m-item--image" style="background-image: url(<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>)">
-                            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $prev_nid[0]->prev_nid ?>">
+                            <a href="<?= test_lang_prefix('node/'.$prev_nid[0]->prev_nid)?> ">
                                 <img src="<?= image_style_url('thumbnail', $prev_nid[0]->prev_img) ?>" alt="" />
                             </a>
                         </div>
                         <div class="m-item--summary">
                             <h1 class="m-item--hed">
-                                <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $prev_nid[0]->prev_nid ?>"><?= $prev_title ?></a>
+                                <a href="<?= test_lang_prefix('node/'.$prev_nid[0]->prev_nid) ?>"><?= $prev_title ?></a>
                             </h1>
 
                             <div class="m-item--description">
@@ -163,13 +173,13 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                 <article class="m-story">
                     <header>
                         <div class="m-item--image" style="background-image: url(<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>)">
-                            <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $next_nid[0]->next_nid ?>">
+                            <a href="<?= test_lang_prefix('node/'.$next_nid[0]->next_nid)  ?>">
                                 <img src="<?= image_style_url('thumbnail', $next_nid[0]->next_img) ?>" alt="" />
                             </a>
                         </div>
                         <div class="m-item--summary">
                             <h1 class="m-item--hed">
-                                <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $next_nid[0]->next_nid ?>"><?= $next_title ?></a>
+                                <a href="<?= test_lang_prefix('node/'.$next_nid[0]->next_nid) ?>"><?= $next_title ?></a>
                             </h1>
 
                             <div class="m-item--description">

@@ -33,7 +33,7 @@ if ($row->_field_data['nid']['entity']->type == 'koma_zpravodaj') {
 
 $title = strip_tags($row->_field_data['nid']['entity']->title);
 $horni_popis = $popis;
-$link = drupal_get_path_alias('node/' . $row->nid);
+$link = test_lang_prefix('node/' . $row->nid);
 
 
 /*echo $title . '<br />';

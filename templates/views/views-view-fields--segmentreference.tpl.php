@@ -21,7 +21,7 @@ if(count($view->result)>1){
         <article class="m-story">
             <header>
                 <div class="m-item--image" style="background-image: url(<?= image_style_url('x618-480', $uricko) ?>)">
-                    <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>">
+                    <a href="<?= test_lang_prefix('node/'.$row->nid) ?>">
                         <img src="<?= image_style_url('x618-480', $uricko) ?>" alt=""/>
                     </a>
                 </div>
@@ -51,7 +51,7 @@ if(count($view->result)>1){
         <article class="m-story">
             <header>
                 <div class="m-item--image" style="background-image: url(<?= image_style_url('x618-480', $uricko) ?>)">
-                    <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $row->nid ?>">
+                    <a href="<?= test_lang_prefix('node/'.$row->nid) ?>">
                         <img src="<?= image_style_url('x618-480', $uricko) ?>" alt=""/>
                     </a>
                 </div>

@@ -30,13 +30,13 @@
                         <article class="m-story">
                             <header>
                                 <div class="m-item--image" style="background-image: url(<?= image_style_url('x1266-0', $uricko) ?>)">
-                                    <a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $pole['entity']->nid ?>">
+                                    <a href="<?=test_lang_prefix('node/'.$pole['entity']->nid) ?>">
                                         <img src="<?= image_style_url('x1266-0', $uricko) ?>" alt="" />
                                     </a>
                                 </div>
 
                                 <div class="m-item--summary">
-                                    <h1 class="m-item--hed"><a href="<?= $GLOBALS['base_url'] ?>/?q=node/<?= $pole['entity']->nid ?>"><?= $pole['entity']->title ?></a></h1>
+                                    <h1 class="m-item--hed"><a href="<?= test_lang_prefix('node/'.$pole['entity']->nid) ?>"><?= $pole['entity']->title ?></a></h1>
 
                                     <div class="m-item--description">
                                         <p><?php print t('VYBRANÉ REFERENCE') ?> <span class="color-body-font">[<?= $rok ?>]</span></p>

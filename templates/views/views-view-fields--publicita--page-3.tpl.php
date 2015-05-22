@@ -2,7 +2,7 @@
     <article class="m-story">
         <header>
             <h1 class="m-item--hed">
-                <a href="<?=drupal_get_path_alias('node/'.$row->nid)?>">
+                <a href="<?=test_lang_prefix('node/'.$row->nid)?>">
                     <?= $row->_field_data['nid']['entity']->title ?>
                 </a>
             </h1>

@@ -92,13 +92,18 @@ if (isset($_POST['mailto'])) {
     $mailfrom = $_POST['email'];
     $name = $_POST['name'];
     $text = $_POST['body'];
-    test_mail($mailfrom, $mailto, 'Nová zpráva - kontaktní formulář KOMA',  $name."\n".$text);
-    test_mail('info@container.cz', $mailfrom, 'Nová zpráva - kontaktní formulář KOMA',  $name."\n".$text);
+   test_mail($mailfrom, $mailto, 'Nová zpráva - kontaktní formulář KOMA',  $name."\n".$text);
+   test_mail('info@container.cz', $mailfrom, 'Nová zpráva - kontaktní formulář KOMA',  $name."\n".$text);
+
+
+
+
+
 
 
     ?>
 
-    <div class="m-section">
+    <div class="m-section" id="contact-form">
         <div class="row">
             <header class="m-section--header">
                 <div class="l-full">
@@ -114,7 +119,8 @@ if (isset($_POST['mailto'])) {
                         <i class="fa fa-paper-plane-o"></i> <?php print t('Formulář byl úspěšně odeslán na adresu') ?>: <span><?=$mailto?></span>
                         <br/><?php print t('a na vámi zadanou adresu') ?> <span><?=$mailfrom?></span>
                     </p>
-<!--                    <button class="button">Odeslat novou zprávu <i class="fa fa-paper-plane-o"></i></button>-->
+                    <a href="http://<?=$_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']?>" class="button">Odeslat novou zprávu <i class="fa fa-paper-plane-o"></i></a>
+                    <br />
                 </div>
             </div>
         </div>
@@ -141,7 +147,7 @@ if (isset($_POST['mailto'])) {
                 <!--@TODO dodelat cele vsechno omg-->
 
                 <div class="m-contact-form--content">
-                    <form action="http://www.koma-modular.cz/?q=kontakty" method="post">
+                    <form action="http://www.koma-modular.cz/?q=kontakty#contact-form" method="post">
                         <input type="hidden" name="mailto" id="mailto" value="info@container.cz"/>
                         <input type="text" id="name" name="name" placeholder="Vaše jméno a příjmení" required/>
                         <input type="email" id="email" name="email" placeholder="Váš email" required/>
@@ -197,7 +203,7 @@ if (isset($_POST['mailto'])) {
                         </div>
 
                         <div class="m-card--more bg-8">
-                            <a href="<?= drupal_get_path_alias('firma-a-lide/kariera') ?>"
+                            <a href="<?= test_lang_prefix('firma-a-lide/kariera') ?>"
                                title="<?php print t('Aktuální volná místa') ?>"><?php print t('Aktuální volná místa') ?>
                                 &nbsp;→</a>
                         </div>
@@ -215,8 +221,8 @@ if (isset($_POST['mailto'])) {
             </div>
             <div class="l-half">
                 <ul class="m-section--nav inline-right">
-                    <li><a href="<?= drupal_get_path_alias('node/1552 ') ?>"><?php print t('FIRMA A LIDÉ') ?></a></li>
-                    <li><a href="<?= drupal_get_path_alias('node/1612') ?>"><?php print t('HODNOTY, FILOZOFIE, VIZE') ?> </a></li>
+                    <li><a href="<?= test_lang_prefix('node/1552 ') ?>"><?php print t('FIRMA A LIDÉ') ?></a></li>
+                    <li><a href="<?= test_lang_prefix('node/1612') ?>"><?php print t('HODNOTY, FILOZOFIE, VIZE') ?> </a></li>
                 </ul>
             </div>
         </footer>

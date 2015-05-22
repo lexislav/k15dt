@@ -54,8 +54,8 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top">JSME PŘEDNÍ ČESKÝ VÝROBCE<br />
-                    <span class="color-primary">MODULÁRNÍ VÝSTAVBY</span>
+                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top"><?=$content['field_hp_1_prvni_text']['#items'][0]['value']?><br />
+                    <span class="color-primary"><?=$content['field_hp_1_druhy_text']['#items'][0]['value']?></span>
                 </h2>
             </div>
         </header>

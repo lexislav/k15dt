@@ -21,7 +21,7 @@
                 <div class="m-story--meta">
 
                     <dl>
-                        <dt><?php print t('Kategorie') ?></dt><dd><?= ($content['field_zpravodaj_kategorie'][0]['#title']); ?></dd>
+                        <dt><?php print t('Category') ?></dt><dd><?= ($content['field_zpravodaj_kategorie'][0]['#title']); ?></dd>
                     </dl>
 
                     <dl>
@@ -51,10 +51,10 @@
                     <div class="m-aside-block">
                         <header class="m-aside-block--header">
                             <div class="m-aside-block--summary">
-                                <h2 class="m-aside-block--hed">&rarr; <?php print t('Fotogalerie') ?></h2>
+                                <h2 class="m-aside-block--hed">&rarr; <?php print t('Photo gallery') ?></h2>
 
                                 <div class="m-aside-block--meta">
-                                    (<?= count($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und']) ?> <?php print t('fotografií') ?>)
+                                    (<?= count($node->field_zpravodaj_foogalerie['und'][0]['entity']->field_fotogalerie_imgs['und']) ?> <?php print t('photographs') ?>)
                                 </div>
                             </div>
                         </header>
@@ -79,7 +79,7 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-third">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-two-thirds">
                 <?php

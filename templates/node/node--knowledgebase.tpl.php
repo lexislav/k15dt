@@ -35,7 +35,7 @@
                 <div class="m-story--meta">
 
                     <dl>
-                        <dt><?php print t('Kategorie') ?></dt><dd><?= ($content['field_knowledgebase_kategorie'][0]['#title']); ?></dd>
+                        <dt><?php print t('Category') ?></dt><dd><?= ($content['field_knowledgebase_kategorie'][0]['#title']); ?></dd>
                     </dl>
                 </div>
             </div>
@@ -49,7 +49,7 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-third">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-two-thirds">
 

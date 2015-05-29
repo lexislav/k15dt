@@ -9,7 +9,7 @@ $jmeno = taxonomy_term_load($pole[0])->name;
         <header class="m-section--header">
             <div class="l-full">
 
-                <h2 class="m-section--hed mm-small mm-left"><span class="color-primary" ><?=$jmeno?></span> / <?php print t('VYBRANÉ REFERENCE') ?></h2>
+                <h2 class="m-section--hed mm-small mm-left"><span class="color-primary" ><?=$jmeno?></span> / <?php print t('SELECTED REFERENCES') ?></h2>
             </div>
         </header>
     </div>
@@ -88,7 +88,7 @@ $jmeno = taxonomy_term_load($pole[0])->name;
 
         <footer class="m-section--footer">
             <div class="l-left">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-center">&nbsp;
                 <?php if ($pager):
@@ -102,7 +102,7 @@ $jmeno = taxonomy_term_load($pole[0])->name;
 
             </div>
             <div class="l-right">
-                <div class="m-section--more"><a href="http://<?=explode('?',$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'])[0]?>"><?php print t('Celý archiv') ?> &rarr;</a></div>
+                <div class="m-section--more"><a href="http://<?=explode('?',$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'])[0]?>"><?php print t('WHOLE ARCHIVES') ?> &rarr;</a></div>
             </div>
         </footer>
 

@@ -12,7 +12,7 @@
                     <h1 class="m-basic-page--hed mm-big mm-pad-bottom"><?php print t('PRODUCTS') ?> <span class="color-primary"><?php print t('AND SERVICES') ?></span></h1>
                 </div>
                 <div class="l-third">
-                    <h2 class="mm-small color-primary"><?php print t('Výrobkové řady') ?></h2>
+                    <h2 class="mm-small color-primary"><?php print t('PRODUCT SERIES') ?></h2>
                 </div>
                 <div class="l-two-thirds">
                 </div>
@@ -46,7 +46,7 @@ if (isset($content['field_bigimg_a_text'][0])) {
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big"><span class="color-primary"><?php print t('AKTUÁLNÍ') ?></span> <?php print t('NABÍDKA') ?></h2>
+                <h2 class="m-section--hed mm-big"><span class="color-primary"><?php print t('CURRENT') ?></span> <?php print t('OFFER') ?></h2>
             </div>
         </header>
     </div>
@@ -57,7 +57,7 @@ if (isset($content['field_bigimg_a_text'][0])) {
                 <div class="m-aside-block bg-secondary-light mm-pad">
                     <header class="m-aside-block--header">
                         <h3 class="m-aside-block--hed">
-                            <?php print t('BAZAR') ?> </h3>
+                            <?php print t('SECOND-HAND SHOP') ?> </h3>
                     </header>
                     <?php
                     $block = module_invoke('views', 'block_view', 'nabidka-block');
@@ -91,7 +91,7 @@ if (isset($content['field_bigimg_a_text'][0])) {
                 <div class="m-aside-block bg-secondary-light mm-pad">
                     <header class="m-aside-block--header">
                         <h3 class="m-aside-block--hed">
-                            <?php print t('MODULY IHNED K ODBĚRU') ?> </h3>
+                            <?php print t('MODULES READY FOR SALE') ?> </h3>
                     </header>
                     <?php
                     $block = module_invoke('views', 'block_view', 'nabidka-block_1');
@@ -116,8 +116,8 @@ if (isset($content['field_segment_faq'][0])) {
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top"><?php print t('JSME PŘEDNÍ ČESKÝ VÝROBCE') ?>
-                    <br /><span class="color-primary"><?php print t('MODULÁRNÍ VÝSTAVBY') ?></span></h2>
+                <h2 class="m-section--hed mm-big mm-tiny mm-center mm-pad-bottom mm-pad-top"><?php print t('WE ARE A LEADING CZECH MANUFACTURER OF') ?>
+                    <br /><span class="color-primary"><?php print t('MODULAR STRUCTURES') ?></span></h2>
             </div>
         </header>
     </div>
@@ -129,7 +129,7 @@ if (isset($content['field_segment_faq'][0])) {
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-half"></div>
         </footer>

@@ -2,6 +2,7 @@
 <?php
 $wrapper = entity_metadata_wrapper('node', $node);
 $pole_slider = $content['field_hlavni_slider']['#items'];
+// dpm($content['field_hlavni_slider']);
 ?>
 <div class="hero-tabs" slick>
     <div class="hero-slides" carousel>
@@ -35,10 +36,12 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
             <?php
             foreach ($pole_slider as $cislo => $r) {
                 if ($cislo == 0) continue;
+
+        $odkaz_nid = $content['field_hlavni_slider']['#object']->field_hlavni_slider['cs'][$cislo]['field_c_hp_odkaz']['und'][0]['target_id'];
                 ?>
                 <div class="tab color-<?= $cislo ?>" slick-to="<?= $cislo ?>">
 
-                    <a href="<?=test_lang_prefix('node/'.$r['field_c_hp_odkaz']['und'][0]['target_id'])?>"><?= $r['field_basic_title']['und'][0]['value'] ?></a>
+                    <a href="<?=test_lang_prefix('node/'.$odkaz_nid)?>"><?= $r['field_basic_title']['und'][0]['value'] ?></a>
                 </div>
                 <?php
             }
@@ -107,11 +110,11 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
                 <div class="m-section--more">
-                    <a href="<?= test_basic_url()?>zpravodaj"><?php print t('Zobrazit celý archiv') ?> &rarr;</a>
+                    <a href="<?= test_basic_url()?>zpravodaj"><?php print t('WHOLE ARCHIVES') ?> &rarr;</a>
                 </div>
             </div>
         </footer>
@@ -141,7 +144,7 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-half"></div>
         </footer>

@@ -19,7 +19,7 @@
                 <div class="m-reference--description"></div>
                 <div class="m-reference--meta m-properties">
                     <dl>
-                        <dt><?php print t('Zařazení certifikátu') ?></dt>
+                        <dt><?php print t('Classification') ?></dt>
                         <dd><?= ($content['field_cert_kategorie'][0]['#title']); ?></dd>
                     </dl>
                     <dl>
@@ -40,11 +40,11 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
 
-                      <div class="m-section--more"><a href="http://www.koma-modular.cz/o-firme/certifikace"><?php print t('Celý archiv') ?> &rarr;</a></div>
+                      <div class="m-section--more"><a href="http://www.koma-modular.cz/o-firme/certifikace"><?php print t('WHOLE ARCHIVES') ?> &rarr;</a></div>
             </div>
         </footer>
     </div>

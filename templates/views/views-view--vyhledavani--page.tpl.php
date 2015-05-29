@@ -3,7 +3,7 @@
     <div class="row">
         <header class="m-section--header">
             <div class="l-full">
-                <h1 class="m-section--hed mm-big mm-tiny mm-left"><?php print t('Vyhledávání') ?></h1>
+                <h1 class="m-section--hed mm-big mm-tiny mm-left"><?php print t('SEARCH ENGINE') ?></h1>
             </div>
         </header>
     </div>
@@ -27,7 +27,7 @@
     <?php if ($rows){ ?>
         <div class="row">
             <div class="l-full">
-                <h2 class="m-search--hed"><?php print t('výsledky vyhledávání') ?>: <?=$view->exposed_raw_input['keys']?></h2>
+                <h2 class="m-search--hed"><?php print t('search results') ?>: <?=$view->exposed_raw_input['keys']?></h2>
             </div>
 
             <div class="m-search--results l-feed_list">
@@ -41,12 +41,10 @@
         <div class="row">
             <div class="l-single">
                 <div class="m-search--noresults">
-                    <h2 class="m-search--hed"><?php print t('Vyhledávání nepřineslo žádné výsledky.') ?></h2>
+                    <h2 class="m-search--hed"><?php print t('The search has yielded no result.') ?></h2>
 
                     <div class="m-search--description">
-                        <p><?php print t('Zkontrolujte správnost vašeho pravopisu.
-                            Odstraňte uvozovky. Výrazu Výhody modulární výstavby ukaže více výsledků než "výhody modulární výstavby".
-                            Doplnění dotazu o logickou spojku OR, například modul OR kontejner zobrazí více výsledků než modul kontejner.') ?> </p>
+                        <p><?php print t('Check if the spelling is correct. Remove quotation marks. The search query Benefits of modular construction will yield more results than "benefits of modular construction". If you extend your inquiry with the logical conjunction "OR", for example -module OR container-, you will get more results than for the search query -module container-.') ?> </p>
 
                         <?php print $empty; ?>
                     </div>
@@ -58,7 +56,7 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-left">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-center">
                 <?php if ($pager):

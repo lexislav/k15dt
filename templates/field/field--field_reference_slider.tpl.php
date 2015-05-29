@@ -39,7 +39,7 @@
                                     <h1 class="m-item--hed"><a href="<?= test_lang_prefix('node/'.$pole['entity']->nid) ?>"><?= $pole['entity']->title ?></a></h1>
 
                                     <div class="m-item--description">
-                                        <p><?php print t('VYBRANÉ REFERENCE') ?> <span class="color-body-font">[<?= $rok ?>]</span></p>
+                                        <p><?php print t('SELECTED REFERENCES') ?> <span class="color-body-font">[<?= $rok ?>]</span></p>
                                     </div>
                                 </div>
                             </header>
@@ -59,10 +59,10 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href="http://www.koma-modular.cz/reference/archiv"><?php print t('Celý archiv') ?> &rarr;</a></div>
+                <div class="m-section--more"><a href="http://www.koma-modular.cz/reference/archiv"><?php print t('WHOLE ARCHIVES') ?> &rarr;</a></div>
             </div>
         </footer>
     </div>

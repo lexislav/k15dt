@@ -30,7 +30,7 @@
 <div class="l-left">
     <ul class="m-filter--items chosen-yes">
         <li class="label">
-            <div><?php print t('Filtr zobrazení') ?></div>
+            <div><?php print t('Display filter') ?></div>
         </li>
         <?php foreach ($widgets as $id => $widget): ?>
             <li>

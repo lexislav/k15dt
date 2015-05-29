@@ -22,7 +22,7 @@
                 <div class="m-reference--description"></div>
                 <div class="m-reference--meta m-properties">
                     <dl>
-                        <dt><?php print t('Zařazení publicity') ?></dt>
+                        <dt><?php print t('Classification') ?></dt>
                         <dd><?= ($content['field_kategorie_publicity']['#items'][0]['taxonomy_term']->name); ?></dd>
                     </dl>
                     <dl>
@@ -43,10 +43,10 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href=""><?php print t('Celý archiv') ?> &rarr;</a></div>
+                <div class="m-section--more"><a href=""><?php print t('WHOLE ARCHIVES') ?> &rarr;</a></div>
             </div>
         </footer>
     </div>

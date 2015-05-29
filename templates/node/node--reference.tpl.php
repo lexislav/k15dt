@@ -28,28 +28,28 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                 <div class="m-reference--meta m-properties">
                     <dl>
                         <!--                        @TODO kategorie predelat-->
-                        <dt><?php print t('Zařazení') ?></dt>
+                        <dt><?php print t('Classification') ?></dt>
                         <dd><?= ($content['field_reference_kategorie_stavby'][0]['#title']); ?>
                             – <?= ($content['field_reference_kategorie_stavby'][1]['#title']); ?></dd>
                     </dl>
                     <dl>
                         <?php dpm($content) ?>
-                        <dt><?php print t('Rok realizace') ?></dt>
+                        <dt><?php print t('Year of implementation') ?></dt>
                         <dd><?= ($content['field_reference_rok'][0]['#markup']); ?></dd>
                     </dl>
                     <?php if (isset($content['field_reference_vyrobkova_rada'][0]['#title'])): ?>
                     <dl>
-                        <dt><?php print t('Výrobková řada') ?></dt>
+                        <dt><?php print t('PRODUCT SERIES') ?></dt>
                         <dd><?= ($content['field_reference_vyrobkova_rada'][0]['#title']); ?></dd>
                     </dl>
                     <?php endif ?>
                     <dl>
-                        <dt><?php print t('Země realizace') ?>: </dt>
+                        <dt><?php print t('Country of implementation') ?>: </dt>
                         <dd><?= $polezemi[$content['field_reference_zeme']['#items'][0]['iso2']] ?></dd>
                     </dl>
                     <?php if (isset($content['field_reference_pomodulu']['#items'][0]['value'])): ?>
                         <dl>
-                            <dt class="mm-label"><?php print t('Technické specifikace') ?></dt>
+                            <dt class="mm-label"><?php print t('Technical Specifications') ?></dt>
                             <?php if (isset($content['field_reference_pomodulu']['#items'][0]['value'])): ?>
                                 <dt class="mm-sub"><?= ($content['field_reference_pomodulu']['#title']); ?></dt>
                                 <dd><?= ($content['field_reference_pomodulu']['#items'][0]['value']); ?></dd><?php endif ?>
@@ -99,11 +99,11 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                 <div class="m-aside-block">
                     <header class="m-aside-block--header">
                         <div class="m-aside-block--summary">
-                            <h2 class="m-aside-block--hed">&rarr; <?php print t('Fotogalerie') ?></h2>
+                            <h2 class="m-aside-block--hed">&rarr; <?php print t('Photo gallery') ?></h2>
 
                             <div class="m-aside-block--meta">
                                 (<?= count($node->field_reference_fotogalerie[$node->language][0]['entity']->field_fotogalerie_imgs['und']) ?>
-                                <?php print t('fotografií') ?>)
+                                <?php print t('photographs') ?>)
                             </div>
                         </div>
                     </header>
@@ -129,10 +129,10 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href="http://www.koma-modular.cz/reference/archiv"><?php print t('Celý archiv') ?> &rarr;</a></div>
+                <div class="m-section--more"><a href="http://www.koma-modular.cz/reference/archiv"><?php print t('WHOLE ARCHIVES') ?> &rarr;</a></div>
             </div>
         </footer>
     </div>

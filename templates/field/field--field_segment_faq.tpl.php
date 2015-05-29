@@ -37,12 +37,12 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
                 <ul class="m-section--nav inline-right">
-                    <li><a href="" title=""><?php print t('Technická pomoc') ?></a></li>
-                    <li><a href=""><?php print t('informace pro architekty') ?></a></li>
+                    <li><a href="" title=""><?php print t('TECHNICAL ASSISTANCE') ?></a></li>
+                    <li><a href=""><?php print t('Information for architects') ?></a></li>
                 </ul>
             </div>
         </footer>

@@ -52,13 +52,13 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <button class="button"><?php print t('Zeptejte se nás') ?></button>
+                <button class="button"><?php print t('Ask us') ?></button>
             </div>
             <div class="l-half">
                 <ul class="m-section--nav inline-right">
-                    <li><a href="#kariera"><?php print t('Kariéra v KOMA') ?> </a></li>
-                    <li><a href="#adresar"><?php print t('Adresář') ?> </a></li>
-                    <li><a href="#formSection">&darr; <?php print t('Kontaktní formulář') ?> </a></li>
+                    <li><a href="#kariera"><?php print t('Career with KOMA') ?> </a></li>
+                    <li><a href="#adresar"><?php print t('Directory') ?> </a></li>
+                    <li><a href="#formSection">&darr; <?php print t('Contact form') ?> </a></li>
                 </ul>
             </div>
         </footer>
@@ -71,7 +71,7 @@
     <div class="row">
         <header class="m-section--header">
             <div class="l-half">
-                <h2 class="m-section--hed mm-small color-primary"><?php print t('Adresář firmy') ?></h2>
+                <h2 class="m-section--hed mm-small color-primary"><?php print t('COMPANY DIRECTORY') ?></h2>
             </div>
         </header>
     </div>
@@ -130,8 +130,8 @@ if (isset($_POST['mailto'])) {
         <div class="row">
             <header class="m-section--header">
                 <div class="l-full">
-                    <h2 class="m-section--hed mm-tiny mm-medium mm-center"><?php print t('Chcete se na něco zeptat?') ?>
-                        <span class="color-primary"> <?php print t('Napište Nám') ?></span></h2>
+                    <h2 class="m-section--hed mm-tiny mm-medium mm-center"><?php print t('DO YOU WANT TO ASK ABOUT ANYTHING?') ?>
+                        <span class="color-primary"> <?php print t('WRITE TO US') ?></span></h2>
                 </div>
             </header>
         </div>
@@ -139,7 +139,7 @@ if (isset($_POST['mailto'])) {
         <div class="row">
             <div class="m-contact-form">
                 <header>
-                    <i class="fa fa-paper-plane-o"></i> <?php print t('Kontaktní formulář bude odeslán na adresu:') ?>
+                    <i class="fa fa-paper-plane-o"></i> <?php print t('The contact form will be sent to the following address') ?>:
                     <span id="targetMailInfo">info@container.cz</span>
                 </header>
 
@@ -149,11 +149,11 @@ if (isset($_POST['mailto'])) {
                 <div class="m-contact-form--content">
                     <form action="http://www.koma-modular.cz/?q=kontakty#contact-form" method="post">
                         <input type="hidden" name="mailto" id="mailto" value="info@container.cz"/>
-                        <input type="text" id="name" name="name" placeholder="Vaše jméno a příjmení" required/>
-                        <input type="email" id="email" name="email" placeholder="Váš email" required/>
+                        <input type="text" id="name" name="name" placeholder="<?php print t('Your first and surname') ?>" required/>
+                        <input type="email" id="email" name="email" placeholder="<?php print t('Your e-mail address') ?>" required/>
                     <textarea id="body" name="body" style="height: 200px" required
-                              placeholder="Text sdělení vašeho dotazu"></textarea>
-                        <button type="submit" class="button"><?php print t('Odeslat zprávu') ?> <i class="fa fa-paper-plane-o"></i></button>
+                              placeholder="<?php print t('The text of your question') ?>"></textarea>
+                        <button type="submit" class="button"><?php print t('Send the message') ?> <i class="fa fa-paper-plane-o"></i></button>
                     </form>
                 </div>
 
@@ -217,7 +217,7 @@ if (isset($_POST['mailto'])) {
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
                 <ul class="m-section--nav inline-right">

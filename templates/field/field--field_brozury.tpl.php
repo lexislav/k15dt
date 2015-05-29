@@ -1,7 +1,7 @@
 <aside>
     <div class="m-aside-block bg-secondary-light mm-pad">
         <header class="m-aside-block--header">
-            <h3 class="m-aside-block--hed"><?php print t('Brožury') ?></h3>
+            <h3 class="m-aside-block--hed"><?php print t('Brochures') ?></h3>
         </header>
         <div class="m-reference--meta m-properties">
             <?php

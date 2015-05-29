@@ -37,10 +37,10 @@
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href=""><?php print t('Nahoru') ?> &uarr;</a></div>
+                <div class="m-section--top"><a href=""><?php print t('UP') ?> &uarr;</a></div>
             </div>
             <div class="l-half">
-                <div class="m-section--more"><a href="http://www.koma-modular.cz/firma-a-lide/kariera"><?php print t('Celý archiv') ?> &rarr;</a></div>
+                <div class="m-section--more"><a href="http://www.koma-modular.cz/firma-a-lide/kariera"><?php print t('WHOLE ARCHIVES') ?> &rarr;</a></div>
             </div>
         </footer>
     </div>

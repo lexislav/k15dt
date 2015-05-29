@@ -3,7 +3,7 @@
     <div class="m-section l-feed_four">
 <!---->
 <!--        <div class="row">-->
-<!--            <header class="m-section--header mm-center">Fotogalerie - rez: to tu nema co delat</header>-->
+<!--            <header class="m-section--header mm-center">Photo gallery - rez: to tu nema co delat</header>-->
 <!--        </div>-->
 
         <div class="row rowfix">

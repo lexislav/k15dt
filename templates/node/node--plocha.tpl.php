@@ -142,7 +142,7 @@ $translated_term = $term->name_field[$language][0]['value'];
         <footer class="m-section--footer">
             <footer class="m-section--footer">
                 <div class="l-left">
-                    <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+                    <div class="m-section--top"><a href="">UP &uarr;</a></div>
                 </div>
                 <div class="l-center">
 
@@ -162,7 +162,7 @@ $translated_term = $term->name_field[$language][0]['value'];
 
                 </div>
                 <div class="l-right">
-                    <div class="m-section--more"><a href="">Celý archiv &rarr;</a></div>
+                    <div class="m-section--more"><a href="">WHOLE ARCHIVES &rarr;</a></div>
                 </div>
             </footer>
         </footer>
@@ -215,7 +215,7 @@ $translated_term = $term->name_field[$language][0]['value'];
     <div class="row">
         <footer class="m-section--footer">
             <div class="l-half">
-                <div class="m-section--top"><a href="">Nahoru &uarr;</a></div>
+                <div class="m-section--top"><a href="">UP &uarr;</a></div>
             </div>
             <div class="l-half">
                 <ul class="m-section--nav inline-right">

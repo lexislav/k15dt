@@ -9,7 +9,7 @@
 
             <div class="m-item--summary">
                 <div class="m-item--description">
-                    <p><?= $fields['nothing']->content ?></p>
+
                 </div>
             </div>
         </header>

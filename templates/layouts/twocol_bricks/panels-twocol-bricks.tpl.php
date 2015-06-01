@@ -28,6 +28,10 @@
             <div class="l-full">
                 <nav class="breadcrumbs">
                     <?php
+
+
+
+
                     if(count(drupal_get_breadcrumb())>1){
                         foreach (drupal_get_breadcrumb() AS $drobek) {
                             echo $drobek;

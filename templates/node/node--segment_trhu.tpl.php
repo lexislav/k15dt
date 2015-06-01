@@ -1,6 +1,6 @@
 <?php
 $polezemi = country_get_list();
-
+global $language;
 ?>
 
     <div class="m-section l-detail-page bg-white">
@@ -96,11 +96,11 @@ $polezemi = country_get_list();
                                     <a href="<?= test_lang_prefix('node/'.$reference['entity']->nid) ?>"><?= $reference['entity']->title ?></a>
                                 </h1>
 
-                                <div class="m-item--description">
-                                    <p><?php if (isset($reference['entity']->field_reference_perex[$node->language][0]['value'])) {
-                                            echo $reference['entity']->field_reference_perex[$node->language][0]['value'];
+                                <div class="m-item--description  ">
+                                    <p><?php if (isset($reference['entity']->field_reference_perex[$language->language][0]['value'])) {
+                                            echo $reference['entity']->field_reference_perex[$language->language][0]['value'];
                                         } else {
-                                            echo truncate($reference['entity']->field_reference_text[$node->language][0]['value']);
+                                            echo truncate($reference['entity']->field_reference_text[$language->language][0]['value']);
                                         }
 
                                         ?>
@@ -139,14 +139,14 @@ $polezemi = country_get_list();
                                         <dd><?= $reference['entity']->field_reference_pomodulu['und'][0]['value'] ?></dd>
                                     <?php } ?>
 
-                                    <?php if (isset($reference['entity']->field_reference_delka[$node->language][0]['value'])) { ?>
+                                    <?php if (isset($reference['entity']->field_reference_delka[$language->language][0]['value'])) { ?>
                                         <dt class="mm-sub"><?php print t('Length of manufacture') ?></dt>
-                                        <dd><?= $reference['entity']->field_reference_delka[$node->language][0]['value'] ?></dd>
+                                        <dd><?= $reference['entity']->field_reference_delka[$language->language][0]['value'] ?></dd>
                                     <?php } ?>
 
-                                    <?php if (isset($reference['entity']->field_reference_dstavby[$node->language][0]['value'])) { ?>
+                                    <?php if (isset($reference['entity']->field_reference_dstavby[$language->language][0]['value'])) { ?>
                                         <dt class="mm-sub"><?php print t('Length of construction') ?></dt>
-                                        <dd><?= $reference['entity']->field_reference_dstavby[$node->language][0]['value'] ?></dd>
+                                        <dd><?= $reference['entity']->field_reference_dstavby[$language->language][0]['value'] ?></dd>
                                     <?php } ?>
 
                                     <?php if (isset($reference['entity']->field_reference_plocha['und'][0]['value'])) { ?>
@@ -218,10 +218,10 @@ print render($block);
 
                                 <div class="m-item--description">
 
-                                    <p><?php if (isset($reference['entity']->field_reference_perex[$node->language][0]['value'])) {
-                                            echo $reference['entity']->field_reference_perex[$node->language][0]['value'];
+                                    <p><?php if (isset($reference['entity']->field_reference_perex[$language->language][0]['value'])) {
+                                            echo $reference['entity']->field_reference_perex[$language->language][0]['value'];
                                         } else {
-                                            echo truncate($reference['entity']->field_reference_text[$node->language][0]['value']);
+                                            echo truncate($reference['entity']->field_reference_text[$language->language][0]['value']);
                                         }
 
                                         ?>

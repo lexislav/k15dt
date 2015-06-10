@@ -89,7 +89,7 @@ $pole_slider = $content['field_hlavni_slider']['#items'];
             <div class="l-two-thirds">
                 <ul class="m-section--nav inline-right">
                     <?php foreach ($tree as $term) { ?>
-                        <li>
+                        <li class="tid_<?= $term->tid ?>">
                             <a href="<?= test_basic_url() ?>zpravodaj?field_zpravodaj_kategorie_tid=<?= $term->tid ?>" title="<?= $term->name ?>"><?= $term->name ?></a>
                         </li>
                     <?php } ?>

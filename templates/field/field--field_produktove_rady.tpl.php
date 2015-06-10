@@ -2,7 +2,6 @@
 
     <div class="row rowfix">
         <?php
-
         foreach ($element['#items'] AS $pole) {
 
 
@@ -30,7 +29,7 @@
                                 </h1>
 
                                 <div class="m-item--description">
-                                    <?=@$pole['entity']->field_basic_popis_2[$pole['entity']->language][0]['value']?>
+                                    <?=@$pole['entity']->field_basic_popis_2[test_lang_code()][0]['value']?>
                                 </div>
                             </div>
                         </header>

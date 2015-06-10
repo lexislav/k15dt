@@ -41,8 +41,8 @@
             </div>
             <div class="l-half">
                 <ul class="m-section--nav inline-right">
-                    <li><a href="" title=""><?php print t('TECHNICAL ASSISTANCE') ?></a></li>
-                    <li><a href=""><?php print t('Information for architects') ?></a></li>
+                    <li><a href="<?= test_basic_url() ?>znalostni-baze?field_knowledgebase_kategorie_tid=122" title=""><?php print t('TECHNICAL ASSISTANCE') ?></a></li>
+                    <li><a href="<?= test_basic_url() ?>znalostni-baze?field_knowledgebase_kategorie_tid=123"><?php print t('Information for architects') ?></a></li>
                 </ul>
             </div>
         </footer>

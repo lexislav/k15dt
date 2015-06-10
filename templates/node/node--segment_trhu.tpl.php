@@ -12,7 +12,7 @@ global $language;
                             <nav class="breadcrumbs">
                                 <?php
                                 foreach (drupal_get_breadcrumb() AS $drobek) {
-                                    echo $drobek;
+                                echo $drobek;
                                 }
                                 ?>
                             </nav>

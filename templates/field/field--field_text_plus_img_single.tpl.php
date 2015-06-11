@@ -23,7 +23,7 @@
                         ?>
 
                         <div class="m-card--more <?php echo $barvaClass; ?>">
-                            <a href="<?= $items[0]['field_page_link']['#items'][0]['url'] ?>" title="<?= $items[0]['field_page_link']['#items'][0]['title'] ?>"><?= $items[0]['field_page_link']['#items'][0]['title'] ?></a>
+                            <a href="<?= test_lang_prefix($items[0]['field_page_link']['#items'][0]['url']) ?>" title="<?= $items[0]['field_page_link']['#items'][0]['title'] ?>"><?= $items[0]['field_page_link']['#items'][0]['title'] ?></a>
                         </div>
                     </div>
                 </header>

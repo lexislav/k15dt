@@ -33,7 +33,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                             – <?= ($content['field_reference_kategorie_stavby'][1]['#title']); ?></dd>
                     </dl>
                     <dl>
-                        <?php dpm($content) ?>
+
                         <dt><?php print t('Year of implementation') ?></dt>
                         <dd><?= ($content['field_reference_rok'][0]['#markup']); ?></dd>
                     </dl>
@@ -102,7 +102,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                             <h2 class="m-aside-block--hed">&rarr; <?php print t('Photo gallery') ?></h2>
 
                             <div class="m-aside-block--meta">
-                                (<?= count($node->field_reference_fotogalerie[$node->language][0]['entity']->field_fotogalerie_imgs['und']) ?>
+                                (<?= count($node->field_reference_fotogalerie[test_lang_code()][0]['entity']->field_fotogalerie_imgs['und']) ?>
                                 <?php print t('photographs') ?>)
                             </div>
                         </div>
@@ -114,7 +114,7 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                             <?php
 
 
-                            foreach ($node->field_reference_fotogalerie[$node->language][0]['entity']->field_fotogalerie_imgs['und'] AS $poradi => $obrazek) { ?>
+                            foreach ($node->field_reference_fotogalerie[test_lang_code()][0]['entity']->field_fotogalerie_imgs['und'] AS $poradi => $obrazek) { ?>
                                 <li class="m-gallery--item">
                                     <a href="<?= image_style_url('zadny', $obrazek['uri']) ?>"><img src="<?= image_style_url('x186-139', $obrazek['uri']) ?>"></a>
                                 </li>

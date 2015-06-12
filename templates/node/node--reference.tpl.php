@@ -1,5 +1,4 @@
 <?php
-$polezemi = country_get_list();
 $prev_nid = prev_next_nid($node->nid, 'prev');
 $next_nid = prev_next_nid($node->nid, 'next');
 $next_title = db_query('SELECT title_field_value FROM {field_data_title_field} WHERE entity_id = :nid AND language = :lang', array(':nid' => $next_nid[0]->next_nid, ':lang' => $node->language))->fetchField();
@@ -44,8 +43,8 @@ $prev_title = db_query('SELECT title_field_value FROM {field_data_title_field} W
                     </dl>
                     <?php endif ?>
                     <dl>
-                        <dt><?php print t('Country of implementation') ?>: </dt>
-                        <dd><?= $polezemi[$content['field_reference_zeme']['#items'][0]['iso2']] ?></dd>
+                        <dt><?php print t('Country of implementation') ?> </dt>
+                        <dd><?=  test_get_list($content['field_reference_zeme']['#items'][0]['iso2']);?></dd>
                     </dl>
                     <?php if (isset($content['field_reference_pomodulu']['#items'][0]['value'])): ?>
                         <dl>

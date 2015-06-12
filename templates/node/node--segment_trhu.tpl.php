@@ -1,5 +1,5 @@
 <?php
-$polezemi = country_get_list();
+
 global $language;
 ?>
 
@@ -127,7 +127,7 @@ global $language;
 
                                 <dl>
                                     <dt><?php print t('Country of implementation') ?></dt>
-                                    <dd><?= $polezemi[$reference['entity']->field_reference_zeme['und'][0]['iso2']] ?></dd>
+                                    <dd><?=  test_get_list($reference['entity']->field_reference_zeme['und'][0]['iso2']);?></dd>
                                 </dl>
 
                                 <!--@TODO dodelat if pro zobrazeni-->

@@ -29,6 +29,37 @@
     width: 110px;
     float: left;
 }
+.tid_120{
+    display: none !important;
+}
+
+.tabledrag-changed{
+    color: #9b0b15
+}
+.page-poradi-zamestnancu .m-section--hed{
+    display: none;
+}
+.page-poradi-zamestnancu table caption{
+    font-weight: bold;
+}
+a.tabledrag-handle .handle {
+
+    height: 29px;
+    margin: -4px 5px 0 50px;
+    padding: 0.42em 0.5em;
+    width: 26px;
+    font-size: 21px;
+}
+#views-form-weight-page table{
+    width: 50%;
+}
+.novej .tabs_wrap {
+    border: 5px solid green;
+
+}
+.starej .tabs_wrap {
+    border: 5px solid blue;
+}
 .tabs-primary a {
     font-size: 18px;
      color: #383838;

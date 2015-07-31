@@ -46,6 +46,7 @@
 
 
                 if ($widget->id == 'edit-field-zpravodaj-publikace-value') {
+
                     $widget->widget = str_replace('>-', '>', $widget->widget);
                 }
                 print $widget->widget;

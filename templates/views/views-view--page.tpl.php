@@ -1,3 +1,4 @@
+<!--views-view--page.tpl.php-->
 <?php
 
 $trida = 'l-feed_four';

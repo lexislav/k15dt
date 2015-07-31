@@ -7,6 +7,10 @@
 
 if ($user->uid == 1) {
     print $messages;
+
+
+
+
 }
 
 
@@ -128,12 +132,12 @@ if ($user->uid == 1) {
                 <header>
                     <div class="m-item--hed-icon"
                          style="background-image: url(<?= $GLOBALS['base_url'] ?>/sites/all/themes/koma/assets/images/votaznik.png)"></div>
-                    <h1 class="m-item--hed mm-small color-primary"><?php print t('Podpora pro zákazníky') ?></h1>
+                    <h1 class="m-item--hed mm-small color-primary"><?php print t('Customer support') ?></h1>
                 </header>
 
                 <div
-                    class="m-item--description"><?php print t('Nenašli jste zde odpověď na Vaše otázky? Zeptejte se nás přímo!') ?></div>
-                <button><?php print t('Zeptejte se nás') ?> &rarr;</button>
+                    class="m-item--description"><?php print t('Have you not found answers to your questions here? Ask us directly!') ?></div>
+                <button><?php print t('Ask us') ?> &rarr;</button>
             </article>
 
         </div>
@@ -146,13 +150,13 @@ if ($user->uid == 1) {
 
             <article class="m-bulletin">
                 <header>
-                    <h1 class="m-item--hed mm-small color-primary"><?php print t('Podpora pro zákazníky') ?></h1>
+                    <h1 class="m-item--hed mm-small color-primary"><?php print t('Customer support') ?></h1>
                 </header>
 
                 <?php print render($page['form_email']); ?>
 
                 <div
-                    class="m-item--description"><?php print t('Odběrem našeho měsíčního ebulletinu získáte přehled o dění ve světě modulární architektury i o novinkách systému modulární výstavby KOMA.') ?></div>
+                    class="m-item--description"><?php print t('If you subscribe to our monthly e-bulletin you will be periodically informed about the latest developments in the world of modular architecture and new offers of the KOMA modular building system.') ?></div>
 
             </article>
 

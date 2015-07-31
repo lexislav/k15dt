@@ -27,19 +27,20 @@
             114 => 10
         );
 
-        foreach ($items AS $cast) {
+
+        foreach ($items AS $poradi => $cast) {
+
+            $target_id = ($element['#object']->field_or_odkazy['cs'][$poradi]['field_ereference_segment']['und'][0]['target_id']);
+            $node_target = node_load($target_id); // $nid contains the node id
 
 
-//            if (isset($cast['field_ereference_segment']['#items'][0]['target_id'])) {
-//                $odkaz = $GLOBALS['base_url']."/?q=node/".$cast['field_ereference_segment']['#items'][0]['target_id'];
-//            } else {
-//                $odkaz = $cast['field_or_link']['#items'][0]['value'];
-//            }
+
 
             if (isset($cast['field_page_link']['#items'][0]['url'])) {
-                $odkaz = $GLOBALS['base_url'] . '/?q=' . ($cast['field_page_link']['#items'][0]['url']);
+
+                $odkaz =  ($cast['field_page_link']['#items'][0]['display_url']);
             } else {
-                $odkaz = test_lang_prefix('node/' . $cast['field_ereference_segment']['#items'][0]['target_id']);
+                $odkaz = test_lang_prefix('node/' . $element['#object']->field_or_odkazy['cs'][$poradi]['field_ereference_segment']['und'][0]['target_id']);
             }
 
             ?>
@@ -48,14 +49,14 @@
 
                 <article class="m-story">
                     <header>
-                        <div class="m-item--image" style="background-image: url(<?= image_style_url('x595-0', $cast['field_ereference_segment']['#items'][0]['entity']->field_segment_img['und'][0]['uri']) ?>)">
+                        <div class="m-item--image" style="background-image: url(<?= image_style_url('x595-0', $node_target->field_segment_img['und'][0]['uri']) ?>)">
                             <a href="<?= $odkaz ?>">
-                                <img src="<?= image_style_url('x595-0', $cast['field_ereference_segment']['#items'][0]['entity']->field_segment_img['und'][0]['uri']) ?>" alt="" />
+                                <img src="<?= image_style_url('x595-0',$node_target->field_segment_img['und'][0]['uri']) ?>" alt="" />
                             </a>
                         </div>
                         <div class="m-item--summary">
                             <h1 class="m-item--hed">
-                                <a href="<?= $odkaz ?>"><?= $cast['field_ereference_segment'][0]['#markup'] ?></a>
+                                <a href="<?= $odkaz ?>"><?= $node_target->title ?></a>
                             </h1>
 
                             <div class="m-item--description">
@@ -68,7 +69,9 @@
 
             </div>
 
-        <?php } ?>
+        <?php
+            unset($node_target);
+        } ?>
     </div>
 
     <div class="row">

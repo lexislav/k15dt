@@ -16,7 +16,7 @@
                                 if ($poradi == 0) continue;
                                 ?>
                                 <li slick-to="<?= ($poradi) ?>"><a
-                                        href="<?= @$pole['field_page_link']['#items'][0]['url'] ?>"><?= $pole['field_basic_title']['#items'][0]['value'] ?></a>
+                                        href="<?= @test_lang_prefix($pole['field_page_link']['#items'][0]['url']) ?>"><?= $pole['field_basic_title']['#items'][0]['value'] ?></a>
                                 </li>
                             <?php
                             }
@@ -48,7 +48,7 @@
                                     </a>
                                 </div>
                                 <h1 class="m-item--hed">
-                                    <a href="<?= @$pole['field_page_link']['#items'][0]['url'] ?>"><?= @$pole['field_basic_popis']['#items'][0]['value'] ?></a>
+                                    <a href="<?= @test_lang_prefix($pole['field_page_link']['#items'][0]['url']) ?>"><?= @$pole['field_basic_popis']['#items'][0]['value'] ?></a>
                                 </h1>
 
                                 <div class="m-item--description">

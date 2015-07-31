@@ -87,6 +87,9 @@
 </div>
 
 <div class="panel-panel panel-col-bottom">
-    <?php print $content['bottom']; ?>
+    <?php
+
+
+    print $content['bottom']; ?>
 </div>
 

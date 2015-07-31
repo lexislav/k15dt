@@ -1,4 +1,4 @@
-
+<!--views-view--zpravodaj.tpl.php-->
 
 <div class="m-section l-feed_two">
     <div class="row">
@@ -95,3 +95,4 @@
 
     </div>
 </div>
+<!--views-view--zpravodaj.tpl.php-->

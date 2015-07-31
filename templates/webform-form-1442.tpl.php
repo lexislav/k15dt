@@ -48,7 +48,7 @@ if (isset($form['preview_message'])) {
       id="webform-client-form-1442" accept-charset="UTF-8">
     <div class="input-group">
 
-        <input class="email form-text form-email required" placeholder="Zadejte svou e-mailovou adresu" type="email"
+        <input class="email form-text form-email required" placeholder="<?php print t('Enter your e-mail address') ?>" type="email"
                id="edit-submitted-email-e-mail" name="submitted[email_e_mail]" size="60">
 
         <input type="hidden" name="details[sid]">

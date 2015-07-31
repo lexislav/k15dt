@@ -13,7 +13,7 @@
     <meta name="abstract" content="výcuc">
     <meta name="keywords" content="klíčová slova">
 
-    <title>KOMA Group</title>
+    <title>KOMA Group2</title>
 
     <link rel="stylesheet" href="css/style.css">
     <!--[if lt IE 9]>
@@ -23,7 +23,7 @@
 <body>
 
 
-<img src="assets/logo-koma-group.svg" alt="KOMA-GROUP.CZ" title="Logo KOMA Group" />
+<!--<img src="assets/logo-koma-group.svg" alt="KOMA-GROUP.CZ" title="Logo KOMA Group" />-->
 
 </body>
 </html>

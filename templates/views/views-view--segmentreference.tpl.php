@@ -1,3 +1,4 @@
+<!--views-view--segmentreference.tpl.php-->
 <div class="m-section l-feed_block-carousel bg-white">
 <?php
  $pole = explode(',',$view->query->where[0]['conditions'][1]['value']);

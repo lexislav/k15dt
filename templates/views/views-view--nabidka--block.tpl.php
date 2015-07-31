@@ -1,4 +1,4 @@
-
+<!--views-view--nabidka--block.tpl.php-->
         <div class="m-reference--meta m-properties">
             <?php
             print render($title_prefix); ?>

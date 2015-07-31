@@ -1,3 +1,4 @@
+<!--views-view--buletin.tpl.php-->
 <aside>
     <div class="m-aside-block bg-secondary-light mm-pad">
         <header class="m-aside-block--header">

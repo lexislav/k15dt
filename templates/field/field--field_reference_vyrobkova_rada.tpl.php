@@ -1,3 +1,4 @@
+<!--field--field_reference_vyrobkova_rada.tpl.php-->
 <div class="m-section l-feed_block-carousel">
 
     <header class="m-section--header"></header>
@@ -25,3 +26,4 @@
     </div>
 
 </div>
+<!--field--field_reference_vyrobkova_rada.tpl.php-->
